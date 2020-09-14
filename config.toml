@@ -1,4 +1,4 @@
-baseURL = "https://quarcs.netlify.app"
+baseURL = "https://quarcs-lab.netlify.app"
 languageCode = "en-us"
 title = "QuaRCS lab"
 theme = "timer-hugo"

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asia-Pacific Journal of Regional Science on QuaRCS lab</title>
+    <link>/tags/asia-pacific-journal-of-regional-science/</link>
+    <description>Recent content in Asia-Pacific Journal of Regional Science on QuaRCS lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/asia-pacific-journal-of-regional-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Regional Efficiency Convergence and Efficiency Clusters: Evidence from the Provinces of Indonesia 1990–2010</title>
+      <link>/blog/efficiency-clusters-indonesia-1990-2010/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/efficiency-clusters-indonesia-1990-2010/</guid>
+      <description>Improving production efficiency at the regional level is often considered a means to reduce regional inequality. This article studies regional efficiency convergence across provinces in Indonesia over the 1990–2010 period. Through the lens of both classical and distributional convergence frameworks, the dispersion dynamics of the following three indicators are contrasted: overall efficiency, pure efficiency, and scale efficiency. Results from the classical convergence approach suggest that—on average—there is regional convergence in all these three efficiency measures.</description>
+    </item>
+    
+  </channel>
+</rss>

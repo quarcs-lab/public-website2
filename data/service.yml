@@ -1,0 +1,23 @@
+enable  : true
+title   : Current research projects
+subtitle: 
+#image   : images/team.jpg
+serviceItem :
+  - icon  : ion-ios-world-outline
+    title : Across countries
+    description: >
+      Testing for Distributional Divergence in the Pillars of Global Sustainable Development: Integrating the Insights from a New Hierarchical Clustering Algorithm 
+
+  - icon  : ion-ios-barcode-outline
+    title : Across subnational regions
+    description: >
+      Economic and social disparities across subnational regions of the world
+
+  - icon  : ion-ios-analytics-outline
+    title : Across subnational regions of Indonesia
+    description: >
+      Disparities, convergence, and spatial effects across regions of Indonesia
+ 
+ 
+# We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
+# or https://ionicons.com/v4/cheatsheet.html

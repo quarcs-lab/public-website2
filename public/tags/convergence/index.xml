@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>convergence on QuaRCS lab</title>
+    <link>/tags/convergence/</link>
+    <description>Recent content in convergence on QuaRCS lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/convergence/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Productivity Differences and Convergence Clubs in Latin America</title>
+      <link>/blog/convergence-clubs-countries-latin-america/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/convergence-clubs-countries-latin-america/</guid>
+      <description>By Carlos Mendez ABSTRACT There is a growing literature that highlights that the development potential of Latin America is highly constrained by its low productivity. In this context, this paper evaluates the productivity differences across 20 Latin American countries over the 1980-2014 period. Through the lens of a non-linear dynamic factor model, this paper finds that the productivity dynamics of Latin America appear to be characterized by a lack of overall convergence and the formation of multiple local convergence clubs.</description>
+    </item>
+    
+  </channel>
+</rss>

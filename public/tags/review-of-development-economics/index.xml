@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Review of Development Economics on QuaRCS lab</title>
+    <link>/tags/review-of-development-economics/</link>
+    <description>Recent content in Review of Development Economics on QuaRCS lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/review-of-development-economics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disparities in Regional Productivity, Capital Accumulation, and Efficiency across Indonesia: A Club Convergence Approach</title>
+      <link>/blog/project2019s-indonesia-provinces-club-convergence/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/project2019s-indonesia-provinces-club-convergence/</guid>
+      <description>This paper studies the evolution of regional disparities in labor productivity, capital accumulation, and efficiency across Indonesian provinces over the 1990-2010 period. Through the lens of a non-linear dynamic factor model, we first test the hypothesis that all provinces would eventually converge to a common steady-state path. We reject this hypothesis and find that the provincial dynamics of labor productivity are characterized by two convergence clubs. We next evaluate the dynamics of the proximate determinants of labor productivity and find some mixed results.</description>
+    </item>
+    
+  </channel>
+</rss>

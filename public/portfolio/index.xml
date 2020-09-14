@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolios on QuaRCS lab</title>
+    <link>/portfolio/</link>
+    <description>Recent content in Portfolios on QuaRCS lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Research publications</title>
+      <link>/portfolio/all-publications/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/all-publications/</guid>
+      <description>Research publications  Abstracts and illustriation of each published work are available here: TBA
+ Mendez, Carlos, and Mitsuhiko Kataoka. 2020. “Disparities in Regional Productivity, Capital Accumulation, and Efficiency across Indonesia: A Club Convergence Approach.” Review of Development Economics, Forthcoming.
+Mendez, Carlos, and Felipe Santos. 2020. “Regional Convergence and Spatial Dependence across Subnational Regions in ASEAN: Evidence from Satellite Nighttime Light Data.” Regional Science Policy and Practice, Forthcoming.
+Mendez, Carlos. 2020.</description>
+    </item>
+    
+    <item>
+      <title>Book launch</title>
+      <link>/portfolio/book-mendez2020/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/book-mendez2020/</guid>
+      <description>About the book  Testing for economic convergence across countries has been a central issue in the literature of economic growth and development. This book introduces a modern framework to study the cross-country convergence dynamics of labor productivity and its proximate sources: capital accumulation and aggregate efficiency. In particular, recent convergence dynamics of developed as well as developing countries are evaluated through the lens of a non-linear dynamic factor model and a clustering algorithm for panel data.</description>
+    </item>
+    
+    <item>
+      <title>Datasets and tutorials</title>
+      <link>/portfolio/data-tutorials/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/data-tutorials/</guid>
+      <description>Datasets:   Gunawan, A. and Mendez, C. (2020). Provincial income, convergence clubs and structural change in Indonesia 2001-2017: An interactive and automated exploration in R. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/data-indonesia-34-provinces-clubs-2001-2017
+  Mendez, C., Siew, S., Chan, R., and Tang, D. (2020). Productivity differences in the ASEAN community: An interactive and automated exploration in R. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/data-productivity-asean-1972-2017
+  Mendez, C. (2020). Regional inequality across countries 1992-2012: An interactive and automated exploration in R.</description>
+    </item>
+    
+    <item>
+      <title>Learning community</title>
+      <link>/portfolio/learning-community/</link>
+      <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/learning-community/</guid>
+      <description>Learning community  The QuaRCS-lab learning community provides a platform for mastering the research methods and tools that are used across the lines of research of the lab.
+ Apply for access here: https://www.facebook.com/groups/QuaRCS.Lab/</description>
+    </item>
+    
+    <item>
+      <title>QuaRCS-lab webinar series</title>
+      <link>/portfolio/webinars/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/webinars/</guid>
+      <description>QuaRCS-lab webinar series  The QuaRCS-lab webinar series provides a platform for young researchers around the world to present and discuss their work.
+   The webinars take place twice in a month on Thursdays via ZOOM. The time and date of the webinars can vary depending on the location of the speaker.
+  Dates and time are based on the Japanese Stardard Time (JST) zone.
+  October-December 2020 Series  [2020/10/01] 17:30-18:30 (JST), Linda Glawe (University of Hagen, Germany): Schooling is Not Learning: Impact of the Learning-Adjusted Years of Schooling on Economic Growth.</description>
+    </item>
+    
+  </channel>
+</rss>

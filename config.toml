@@ -1,0 +1,112 @@
+baseURL = "https://quarcs-lab.rbind.io"
+languageCode = "en-us"
+title = "QuaRCS lab"
+theme = "timer-hugo"
+
+# We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
+
+# Navbar Menus
+[[menu.main]]
+name    = "People"
+url     = "about"
+weight  = 20
+[[menu.main]]
+name    = "Projects"
+url     = "service"
+weight  = 30
+[[menu.main]]
+name    = "Research"
+url     = "blog"
+weight  = 40
+[[menu.main]]
+name    = "Webinars"
+url     = "portfolio/webinars"
+weight  = 50
+[[menu.main]]
+name    = "Data"
+url     = "portfolio/data-tutorials"
+weight  = 50
+[[menu.main]]
+name    = "Community"
+url     = "https://www.facebook.com/groups/QuaRCS.Lab/"
+weight  = 55
+[[menu.main]]
+name    = "Github"
+url     = "https://github.com/quarcs-lab"
+weight  = 57
+[[menu.main]]
+name    = "Contact"
+url     = "https://carlos-mendez.rbind.io/#contact"
+weight  = 60
+
+# Site Params
+[params]
+home = "Home"
+logo = "images/logo.png"
+dateFormat = "6 January 2006"
+# Meta data
+description = "Airspace Hugo theme"
+author = "Themefisher"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+# contact form action
+contactFormAction = "#" # contact form works with https://formspree.io
+
+# Banner Section
+[params.banner]
+enable  = true
+bgImage = "images/slider7.jpg"
+heading = "We conduct reasearch about"
+description = "Quantitative Regional and Computational Science"
+# button
+btn     = true
+btnText = "Research Publications"
+btnURL  = "blog"
+
+# flip text
+[[params.banner.flipText]]
+title   = "Geography of Development"
+[[params.banner.flipText]]
+title   = "Regional Inequality"
+[[params.banner.flipText]]
+title   = "Regional Growth"
+[[params.banner.flipText]]
+title   = "Economic and Social Convergence"
+[[params.banner.flipText]]
+title   = "Labor markets and macroeconomic shocks"
+[[params.banner.flipText]]
+title   = "Economic growth and structural change"
+
+# Homepage About Section
+[params.about]
+enable  = true
+title   = "ABOUT US"
+content = "In the QuaRCS lab, we exploit the integration of econometrics, data science, and machine learning methods to understand and inform the process of economic growth and development of countries, regions, and industries. <br> <br> The QuaRCS lab is also a member of the UN Sustainable Development Solutions Network (SDSN). As such, it helps mobilize scientific knowledge and technological expertise to promote global sustainable development.  "
+image   = "images/about/about.png"
+
+# Call to Action
+[params.cta]
+enable  = true
+title   = "Do you conduct similar research?"
+content = "We welcome potential collaborations"
+btnText = "Contact us"
+btnURL  = "https://carlos-mendez.rbind.io/#contact"
+
+# Portfolio Section On Homepage
+[params.portfolio]
+enable  = true
+title   = "Activities"
+subtitle= ""
+
+# social icon
+[[params.socialIcon]]
+icon = "ion-social-facebook"
+url = "https://www.facebook.com/groups/QuaRCS.Lab/"
+
+#[[params.socialIcon]]
+#icon = "ion-social-instagram"
+#url = "#"
+
+#[[params.socialIcon]]
+#icon = "ion-social-linkedin"
+#url = "#"

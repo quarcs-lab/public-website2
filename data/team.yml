@@ -1,0 +1,157 @@
+enable  : true
+title   : Research team
+members  :
+
+#  - name  : Anang Gunawan
+#    image : images/team/team-4.jpg
+#    designation : Doctoral student (D3), Indonesia
+#    description : Research topic TBA
+#    facebook    : https://www.fb.com/themefisher
+#    twitter     : https://www.twitter.com/themefisher
+#    linkedIn    : https://www.linkedin.com/themefisher
+#    googleplus  : https://plus.google.com/themefisher
+#    website     : https://carlos-mendez.rbind.io
+#    web         : https://carlos-mendez.rbind.io        
+
+# Note : The website option has been added by modifying the html code of the file themes/timer-hugo/layouts/partials/team.html
+# the added html code is 
+# </a>
+# {{ end }} 
+# {{ with .website }}
+# <a href="{{ . }}" target="_blank">
+# <i class="ion-android-globe"></i>
+# </a>
+
+# Note : The web option has been added by modifying the html code of the file themes/timer-hugo/layouts/partials/team.html
+# the added html code is 
+#</a>
+#{{ end }}
+#{{ with .web }}
+#<a href="{{ . }}" target="_blank" style="text: 2px -2px 1px;">Website
+#</a>
+
+
+# Use this website to generate rounded pictures https://crop-circle.imageonline.co
+# Students can update their information using this google doc
+#  https://docs.google.com/document/d/1l-SheFf9yFIeXAFsMyUw52s3vvns-kuD5bw2KkSf1kA/edit?usp=sharing
+
+
+  - name  : Carlos Mendez
+    image : images/team/carlos-mendez.jpg
+    designation : Associate professor, Bolivia
+    description : "Research fields: Development macroeconomics, regional economics, spatial econometrics"
+    net         : https://www.researchgate.net/profile/Carlos_Mendez54
+    linkedIn    : www.linkedin.com/in/mendezguerra
+    web         : https://carlos-mendez.rbind.io
+    # ContactEmail: carlosmendez777@gmail.com
+    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
+ 
+
+
+  - name  : Anang Budi Gunawan
+    image : images/team/anang-gunawan.jpg
+    designation : Doctoral student (D3), Indonesia
+    description : "Research topic: Designing Industrial Policies for Growth, Equality, and Poverty Reduction in Indonesia."
+    net         : https://www.researchgate.net/profile/Anang_Gunawan
+    linkedIn    : https://www.linkedin.com/in/anang-budi-gunawan-a934751b1/
+    web         : https://www.researchgate.net/profile/Anang_Gunawan
+    # ContactEmail: anang.gunawan1005@gmail.com
+    # GSIDEmail: gunawan.anang.budi@d.mbox.nagoya-u.ac.jp 
+
+
+
+  - name  : Katikar Tipayalai
+    image : images/team/katikar-tipayalai.jpg
+    designation : Doctoral student (D3), Thailand
+    description : "Research topic: The Impact of the Introduction of Foreign Labor on the Thai Economy" 
+    net         : https://www.researchgate.net/profile/Katikar_Tipayalai
+    linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
+    web         : https://www.researchgate.net/profile/Katikar_Tipayalai
+    # ContactEmail: katikar.tipayalai@gmail.com
+    # GSIDEmail: 
+
+
+
+
+  - name  : Waruni Perera
+    image : images/team/waruni-perera.jpg
+    designation : Doctoral student (D3), Sri Lanka
+    description : "Research topic: Financial and Social performance of   Microfinance Institutions : Efficiency and Convergence" 
+    net         : https://www.researchgate.net/profile/Waruni_Perera
+    linkedIn    : https://www.linkedin.com/in/waruni-perera-37a2a859/       
+    web         : https://www.researchgate.net/profile/Waruni_Perera
+    # ContactEmail: waruniperera89@gmail.com
+    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
+
+
+
+
+
+  - name  : Harry Aginta
+    image : images/team/harry-aginta.jpg
+    designation : Doctoral student (D1), Indonesia
+    description : "Research topic: Regional inflation dynamics in Indonesia"
+    net         : https://www.researchgate.net/profile/Harry_Aginta2
+    linkedIn    : https://www.linkedin.com/in/harry-aginta-6a968735/
+    web         : https://www.researchgate.net/profile/Harry_Aginta2
+    # ContactEmail: haginta@gmail.com
+    # GSIDEmail: aginta.harry@c.mbox.nagoya-u.ac.jp
+
+
+
+  - name  : Felipe Santos-Marquez
+    image : images/team/felipe-santos.jpg
+    designation : Master student (M2), Colombia
+    description : "Research topic: Socio-economic regional inequality in Colombia" 
+    net         : https://www.researchgate.net/profile/Felipe_Santos-Marquez
+    linkedIn    : https://www.linkedin.com/in/felipe-santos-marquez-0a5273181/
+    web         : https://felipe-santos.rbind.io/
+    # ContactEmail: juansantosmarquez90@gmail.com
+    # GSIDEmail:  santos.marquez.juan.felipe@e.mbox.nagoya-u.ac.jp
+
+
+
+  - name  : Ragdad Cani Miranti
+    image : images/team/cani-miranti.jpg
+    designation : Master student (M2), Indonesia
+    description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia" 
+    net         : https://www.researchgate.net/profile/Ragdad_Miranti
+    linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
+    web         : https://www.researchgate.net/profile/Ragdad_Miranti
+    # ContactEmail: canimiranti@bps.go.id
+    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
+
+
+
+  - name  : Sook Yan Siew
+    image : images/team/sook-yan.jpg
+    designation : Master student (M1), Malaysia
+    description : "Research topic: Human development convergence and spatial effects across subnational regions of Asia Pacific" 
+    net         : https://www.researchgate.net/profile/ADDprofileHere
+    linkedIn    : https://www.linkedin.com/ADDprofileHere
+    web         : https://www.researchgate.net/profile/ADDprofileHere
+    # ContactEmail: ADDemailHERE
+
+
+
+  - name  : Yuka Kimura
+    image : images/team/yuka-kimura.jpg
+    designation : Master student (M1), Japan
+    description : "Research topic: Economic and social convergence in ASEAN+3: National and subnational evidence" 
+    net         : https://www.researchgate.net/profile/ADDprofileHere
+    linkedIn    : https://www.linkedin.com/ADDprofileHere
+    web         : https://www.researchgate.net/profile/ADDprofileHere
+    # ContactEmail: ADDemailHERE
+
+    
+
+  - name  : Zhen Hua
+    image : images/team/zhen-hua.jpg
+    designation : Research student (R1), China
+    description : "Research topic: Regional economic growth and disparities in Yangtze Delta" 
+    net         : https://www.researchgate.net/profile/ADDprofileHere
+    linkedIn    : https://www.linkedin.com/ADDprofileHere
+    web         : https://www.researchgate.net/profile/ADDprofileHere
+    # ContactEmail: ADDemailHERE
+
+ 

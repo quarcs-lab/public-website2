@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>QuaRCS lab</title>
+    <link>/</link>
+    <description>Recent content on QuaRCS lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Research publications</title>
+      <link>/portfolio/all-publications/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/all-publications/</guid>
+      <description>Research publications  Abstracts and illustriation of each published work are available here: TBA
+ Mendez, Carlos, and Mitsuhiko Kataoka. 2020. “Disparities in Regional Productivity, Capital Accumulation, and Efficiency across Indonesia: A Club Convergence Approach.” Review of Development Economics, Forthcoming.
+Mendez, Carlos, and Felipe Santos. 2020. “Regional Convergence and Spatial Dependence across Subnational Regions in ASEAN: Evidence from Satellite Nighttime Light Data.” Regional Science Policy and Practice, Forthcoming.
+Mendez, Carlos. 2020.</description>
+    </item>
+    
+    <item>
+      <title>Book launch</title>
+      <link>/portfolio/book-mendez2020/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/book-mendez2020/</guid>
+      <description>About the book  Testing for economic convergence across countries has been a central issue in the literature of economic growth and development. This book introduces a modern framework to study the cross-country convergence dynamics of labor productivity and its proximate sources: capital accumulation and aggregate efficiency. In particular, recent convergence dynamics of developed as well as developing countries are evaluated through the lens of a non-linear dynamic factor model and a clustering algorithm for panel data.</description>
+    </item>
+    
+    <item>
+      <title>Datasets and tutorials</title>
+      <link>/portfolio/data-tutorials/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/data-tutorials/</guid>
+      <description>Datasets:   Gunawan, A. and Mendez, C. (2020). Provincial income, convergence clubs and structural change in Indonesia 2001-2017: An interactive and automated exploration in R. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/data-indonesia-34-provinces-clubs-2001-2017
+  Mendez, C., Siew, S., Chan, R., and Tang, D. (2020). Productivity differences in the ASEAN community: An interactive and automated exploration in R. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/data-productivity-asean-1972-2017
+  Mendez, C. (2020). Regional inequality across countries 1992-2012: An interactive and automated exploration in R.</description>
+    </item>
+    
+    <item>
+      <title>Learning community</title>
+      <link>/portfolio/learning-community/</link>
+      <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/learning-community/</guid>
+      <description>Learning community  The QuaRCS-lab learning community provides a platform for mastering the research methods and tools that are used across the lines of research of the lab.
+ Apply for access here: https://www.facebook.com/groups/QuaRCS.Lab/</description>
+    </item>
+    
+    <item>
+      <title>QuaRCS-lab webinar series</title>
+      <link>/portfolio/webinars/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/webinars/</guid>
+      <description>QuaRCS-lab webinar series  The QuaRCS-lab webinar series provides a platform for young researchers around the world to present and discuss their work.
+   The webinars take place twice in a month on Thursdays via ZOOM. The time and date of the webinars can vary depending on the location of the speaker.
+  Dates and time are based on the Japanese Stardard Time (JST) zone.
+  October-December 2020 Series  [2020/10/01] 17:30-18:30 (JST), Linda Glawe (University of Hagen, Germany): Schooling is Not Learning: Impact of the Learning-Adjusted Years of Schooling on Economic Growth.</description>
+    </item>
+    
+    <item>
+      <title>Regional Convergence and Spatial Dependence across Subnational Regions of ASEAN: Evidence from Satellite Nighttime Light Data</title>
+      <link>/blog/project2019l-asean-disparities-lights-maps/</link>
+      <pubDate>Mon, 17 Aug 2020 13:07:31 +0200</pubDate>
+      
+      <guid>/blog/project2019l-asean-disparities-lights-maps/</guid>
+      <description>Satellite nighttime light data are increasingly used for evaluating the performance of economies in which official statics are non-existent, limited, or non-comparable. In this paper, we use a novel luminosity-based measure of GDP per capita to study regional convergence and spatial dependence across 274 subnational regions of the Association of South East Asian Nations (ASEAN) over the 1998-2012 period. Specifically, we first evaluate the usefulness of this new luminosity indicator in the context of ASEAN regions.</description>
+    </item>
+    
+    <item>
+      <title>Disparities in Regional Productivity, Capital Accumulation, and Efficiency across Indonesia: A Club Convergence Approach</title>
+      <link>/blog/project2019s-indonesia-provinces-club-convergence/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/project2019s-indonesia-provinces-club-convergence/</guid>
+      <description>This paper studies the evolution of regional disparities in labor productivity, capital accumulation, and efficiency across Indonesian provinces over the 1990-2010 period. Through the lens of a non-linear dynamic factor model, we first test the hypothesis that all provinces would eventually converge to a common steady-state path. We reject this hypothesis and find that the provincial dynamics of labor productivity are characterized by two convergence clubs. We next evaluate the dynamics of the proximate determinants of labor productivity and find some mixed results.</description>
+    </item>
+    
+    <item>
+      <title>Regional Efficiency Convergence and Efficiency Clusters: Evidence from the Provinces of Indonesia 1990–2010</title>
+      <link>/blog/efficiency-clusters-indonesia-1990-2010/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/efficiency-clusters-indonesia-1990-2010/</guid>
+      <description>Improving production efficiency at the regional level is often considered a means to reduce regional inequality. This article studies regional efficiency convergence across provinces in Indonesia over the 1990–2010 period. Through the lens of both classical and distributional convergence frameworks, the dispersion dynamics of the following three indicators are contrasted: overall efficiency, pure efficiency, and scale efficiency. Results from the classical convergence approach suggest that—on average—there is regional convergence in all these three efficiency measures.</description>
+    </item>
+    
+    <item>
+      <title>Regional Income Disparities, Distributional Convergence, and Spatial Effects:District-Level Evidence from Indonesia 2000-2017</title>
+      <link>/blog/project2019e-spatialdependence-indonesia/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/project2019e-spatialdependence-indonesia/</guid>
+      <description>Using a novel dataset, this paper studies the spatio-temporal dynamics of income per capita across provinces and districts in Indonesia over the 2000-2017 period. First, an exploratory spatial analysis suggests that spatial autocorrelation is only significant at the district level and it appears to be robust from 2013 to 2017. Thus, at the district level, we proceed to use a spatial filtering model for decomposing income into a spatially independent component and a spatial residual.</description>
+    </item>
+    
+    <item>
+      <title>Regional Convergence, Spatial Scale, and Spatial Dependence: Evidence from Homicides and Personal Injuries in Colombia 2010-2018</title>
+      <link>/blog/homicide-disparities-colombia/</link>
+      <pubDate>Sun, 17 Nov 2019 13:07:31 +0200</pubDate>
+      
+      <guid>/blog/homicide-disparities-colombia/</guid>
+      <description>By Felipe Santos-Marquez and Carlos Mendez. Prepared for the ARSC 2019 at Saga University.
+ABSTRACT This paper studies regional convergence and spatial dependence of homicides and personal injuries in Colombia. In particular, through the lens of both classical and distributional convergence frameworks, two spatial scales are contrasted: municipalities and states. For both homicides and personal injuries, sigma convergence is only found at the state level. In contrast, beta convergence is found at both state and municipal level.</description>
+    </item>
+    
+    <item>
+      <title>Productivity Differences and Convergence Clubs in Latin America</title>
+      <link>/blog/convergence-clubs-countries-latin-america/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/convergence-clubs-countries-latin-america/</guid>
+      <description>By Carlos Mendez ABSTRACT There is a growing literature that highlights that the development potential of Latin America is highly constrained by its low productivity. In this context, this paper evaluates the productivity differences across 20 Latin American countries over the 1980-2014 period. Through the lens of a non-linear dynamic factor model, this paper finds that the productivity dynamics of Latin America appear to be characterized by a lack of overall convergence and the formation of multiple local convergence clubs.</description>
+    </item>
+    
+    <item>
+      <title>Lack of Global Convergence and the Formation of Multiple Welfare Clubs across Countries: An Unsupervised Machine Learning Approach</title>
+      <link>/blog/lack-global-convergence-welfare/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/lack-global-convergence-welfare/</guid>
+      <description>The cross-country convergence hypothesis is one of the central topics of long-run macroeconomics. This paper revisits this hypothesis in a context beyond GDP. It uses a novel welfare index that incorporates measures of consumption, leisure, life expectancy, and inequality. Based on a sample of 128 countries over the 1980&amp;ndash;2007 period, the lack of global sigma and beta convergence is first documented. Next, the paper incorporates some recent developments from the unsupervised machine learning literature to evaluate the existence of local convergence.</description>
+    </item>
+    
+  </channel>
+</rss>

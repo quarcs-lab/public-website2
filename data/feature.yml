@@ -1,0 +1,34 @@
+enable  : true
+title   : Research methods
+subtitle: 
+item    :
+ - icon  : ion-ios-barcode-outline
+   title : Modern data science
+   description : >
+      To conduct research across all our projects, we use a modern data science workflow.
+
+ - icon  : ion-ios-analytics-outline
+   title : Applied econometrics
+   description : >
+      To conduct research across all our projects, we implement the latest advances in applied econometrics.
+
+ - icon  : ion-ios-barcode-outline
+   title : Machine learning
+   description : >
+      To conduct research acroos various projects, we use various clustering algorithms from the unsupervised manchine learning literature.
+
+ - icon  : ion-ios-world-outline
+   title : Spatial econometrics
+   description : >
+      Exploratory spatial data analysis (ESDA), exploratory space-time data analysis (ESTDA), spatial dependence, spatial heterogoenity.
+
+ - icon  : ion-ios-barcode-outline
+   title : Nonparametric econometrics
+   description : >
+      Nonparametric density estimation, mixture densities.
+
+ - icon  : ion-ios-analytics-outline
+   title : Bayesian econometrics
+   description : >
+      Bayesian model averaging.
+

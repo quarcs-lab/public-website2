@@ -1,4 +1,4 @@
-baseURL = "https://quarcs-lab.rbind.io"
+baseURL = "https://quarcs.netlify.app"
 languageCode = "en-us"
 title = "QuaRCS lab"
 theme = "timer-hugo"

@@ -6,7 +6,7 @@ description : "Webinar series"
 caption: Find out more
 image: images/portfolio/webinars.jpg
 category: ["webinar"]
-liveLink: https://forms.gle/KgmDJqkzG1sfxDf2A
+liveLink: 
 
 
 ---

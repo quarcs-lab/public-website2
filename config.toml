@@ -52,6 +52,15 @@ googleAnalitycsID = "Your ID"
 # contact form action
 contactFormAction = "#" # contact form works with https://formspree.io
 
+
+# Homepage About Section
+[params.about]
+enable  = true
+title   = "ABOUT US"
+content = "In the QuaRCS lab, we exploit the integration of econometrics, data science, and machine learning methods to understand and inform the process of economic growth and development of countries, regions, and industries. <br> <br> The QuaRCS lab is also a member of the UN Sustainable Development Solutions Network (SDSN). As such, it helps mobilize scientific knowledge and technological expertise to promote global sustainable development.  "
+image   = "images/about/about.png"
+
+
 # Banner Section
 [params.banner]
 enable  = true
@@ -77,12 +86,6 @@ title   = "Labor markets and macroeconomic shocks"
 [[params.banner.flipText]]
 title   = "Economic growth and structural change"
 
-# Homepage About Section
-[params.about]
-enable  = true
-title   = "ABOUT US"
-content = "In the QuaRCS lab, we exploit the integration of econometrics, data science, and machine learning methods to understand and inform the process of economic growth and development of countries, regions, and industries. <br> <br> The QuaRCS lab is also a member of the UN Sustainable Development Solutions Network (SDSN). As such, it helps mobilize scientific knowledge and technological expertise to promote global sustainable development.  "
-image   = "images/about/about.png"
 
 # Call to Action
 [params.cta]

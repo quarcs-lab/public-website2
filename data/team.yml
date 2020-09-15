@@ -46,7 +46,15 @@ members  :
     # ContactEmail: carlosmendez777@gmail.com
     # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
  
-
+  - name  : Erick Gonzales Rocha
+    image : images/team/erick-gonzales.jpg
+    designation : Research collaborator. Programme management officer, United Nations
+    description : "Research fields: Development economics, labor economics, institutional economics"
+    net         : https://www.researchgate.net/profile/Erick_Gonzales_Rocha
+    linkedIn    : www.linkedin.com/in/erickgonzalesrocha
+    web         : https://erickgonzalesrocha.wordpress.com/
+    # ContactEmail: egonzalesr@gmail.com
+    # GSIDEmail: egonzalesr@gmail.com
 
   - name  : Anang Budi Gunawan
     image : images/team/anang-gunawan2.jpg

@@ -1,4 +1,4 @@
-baseURL = "https://quarcs-lab.netlify.app"
+baseURL = "https://quarcs-lab.org/"
 languageCode = "en-us"
 title = "QuaRCS lab"
 theme = "timer-hugo"
@@ -65,11 +65,11 @@ btnURL  = "blog"
 
 # flip text
 [[params.banner.flipText]]
-title   = "Geography of Development"
-[[params.banner.flipText]]
 title   = "Regional Inequality"
 [[params.banner.flipText]]
 title   = "Regional Growth"
+[[params.banner.flipText]]
+title   = "Geography of Development"
 [[params.banner.flipText]]
 title   = "Economic and Social Convergence"
 [[params.banner.flipText]]

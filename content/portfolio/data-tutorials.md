@@ -23,6 +23,8 @@ liveLink:
 
 - Mendez, C. (2019). Overall efficiency, pure technical efficiency, and scale efficiency across provinces in Indonesia 1990 and 2010. R Studio/RPubs. Available at <https://rpubs.com/quarcs-lab/efficiency-clusters-indonesia-1990-2010>
 
+
+
 ## Interactive Data Explorations:
 
 - [Is Indonesia suffering from premature deindustrialization? If so, what are the regional dynamics of this process?](https://carlosmendez777.shinyapps.io/data-indonesia-34-provinces-clubs-2001-2017)
@@ -37,7 +39,9 @@ liveLink:
 
 - [What is the relationship between GDP per capita and CO2 emissions per capita? How does it differ across regions? Can you find something unintuitive in South Asia? Why?](https://jgassen.shinyapps.io/expand_co2/)
 
+
 ## Tutorials:
+
 
 ### Spatial Analysis
 
@@ -54,15 +58,24 @@ liveLink:
 
 ### Convergence Analysis
 
+- Mendez C.(2020). Club convergence analysis in Stata. Forthcoming at https://github.com/quarcs-lab/mendez2020-convergence-clubs-code-data
+
 - Mendez C. (2020). Classical sigma and beta convergence analysis in R: Using the REAT 2.1 Package. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/classical-convergence-reat21
 
 - Mendez C. (2020). Univariate distribution dynamics in R: Using the ggridges package. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/univariate-distribution-dynamics
 
 - Mendez C. (2020). Bivariate distribution dynamics analysis in R. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/tutorial-bivariate-distribution-dynamics
 
+
 ### Time Series Analysis
 
 - Mendez C. (2020). Long Run vs Short Run Decompositions in R: The HP filter vs the Hamilton filter. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/long-run-filters
+
+
+### Cross-sectional Analysis
+
+- Mendez C. (2020). An interactive exploration of cross-sectional data: Using the package ExPanDaR to generate interactive web applications. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/explore-cross-section-interactively
+
 
 ### Panel Data Analysis
 
@@ -70,9 +83,6 @@ liveLink:
 
 - Mendez C. (2020). Wrangling and plotting panel data in R: Using the package panelr. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/learn-panelr
 
-### Cross-sectional Analysis
-
-- Mendez C. (2020). An interactive exploration of cross-sectional data: Using the package ExPanDaR to generate interactive web applications. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/explore-cross-section-interactively
 
 
 ### Other

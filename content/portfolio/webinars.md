@@ -15,7 +15,7 @@ liveLink:
 
 > The QuaRCS-lab webinar series provides a platform for young researchers around the world to present and discuss their work.
 
-- The webinars take place twice in a month on Thursdays via ZOOM. The time and date of the webinars can vary depending on the location of the speaker. 
+- The webinars take place once or twice in a month via ZOOM. The time and date can vary depending on the location of the speaker. 
 
 - Dates and time are based on the Japanese Stardard Time (JST) zone.
 

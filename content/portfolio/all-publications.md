@@ -15,6 +15,9 @@ liveLink: "blog"
 > Abstracts and illustriation of each published work are available here: <https://quarcs-lab.org/blog>
 
 
+Mendez, Carlos. 2020. Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries. Springer. Forthcoming. [[E-book version]](https://www.springer.com/gp/book/9789811586286) [[Printed version]](https://www.amazon.co.jp/Convergence-Clubs-Productivity-Proximate-Sources/dp/9811586284/ref=sr_1_1?dchild=1&keywords=%22Convergence+Clubs+in+Labor+Productivity+and+its+Proximate+Sources%22&qid=1599180007&sr=8-1)
+
+
 Mendez, Carlos, and Felipe Santos. 2020. “Regional Convergence and Spatial Dependence across Subnational Regions in ASEAN: Evidence from Satellite Nighttime Light Data.” Regional Science Policy and Practice, Forthcoming. [[Pre-print version]](https://carlos-mendez.rbind.io/publication/20200817-rspp/) [[Gated publised version]](https://rsaiconnect.onlinelibrary.wiley.com/doi/abs/10.1111/rsp3.12335)
 
 

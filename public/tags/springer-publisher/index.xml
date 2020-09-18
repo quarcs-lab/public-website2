@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Springer Publisher on QuaRCS lab</title>
+    <link>/tags/springer-publisher/</link>
+    <description>Recent content in Springer Publisher on QuaRCS lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Sep 2020 13:07:31 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/springer-publisher/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries</title>
+      <link>/blog/mendez2020-book-convergence-clubs/</link>
+      <pubDate>Thu, 17 Sep 2020 13:07:31 +0200</pubDate>
+      
+      <guid>/blog/mendez2020-book-convergence-clubs/</guid>
+      <description>Testing for economic convergence across countries has been a central issue in the literature of economic growth and development. This book introduces a modern framework to study the cross-country convergence dynamics of labor productivity and its proximate sources: capital accumulation and aggregate efficiency. In particular, recent convergence dynamics of developed as well as developing countries are evaluated through the lens of a non-linear dynamic factor model and a clustering algorithm for panel data.</description>
+    </item>
+    
+  </channel>
+</rss>

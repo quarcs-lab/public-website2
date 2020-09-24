@@ -15,6 +15,9 @@ liveLink: "blog"
 > Abstracts and illustriation of each published work are available here: <https://quarcs-lab.org/blog>
 
 
+Santos-Marquez, Felipe, and Carlos Mendez 2020. “Regional Convergence, Spatial Scale, and Spatial Dependence: Evidence from Homicides and Personal Injuries in Colombia 2010-2018.” Regional Science Policy and Practice, Forthcoming. 
+
+
 Mendez, Carlos. 2020. Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries. Springer. Forthcoming. [[E-book version]](https://www.springer.com/gp/book/9789811586286) [[Printed version]](https://www.amazon.co.jp/Convergence-Clubs-Productivity-Proximate-Sources/dp/9811586284/ref=sr_1_1?dchild=1&keywords=%22Convergence+Clubs+in+Labor+Productivity+and+its+Proximate+Sources%22&qid=1599180007&sr=8-1)
 
 
@@ -31,3 +34,6 @@ Mendez, Carlos. 2019. “Lack of Global Convergence and the Formation of Multipl
 
 
 Mendez, Carlos. 2018. “Beta, Sigma and Distributional Convergence in Human Development? Evidence from the Metropolitan Regions of Bolivia.” Latin American Journal of Economic Development 30 (Nov): 87–115. [[Open publised version]](https://carlos-mendez.rbind.io/publication/20181106lajed/)
+
+
+Mendez, Carlos. 2018. On the distribution dynamics of human development: Evidence from the metropolitan regions of Bolivia. Economics Bulletin, 38(4), 2467-2475. [[Open publised version]](https://ideas.repec.org/a/ebl/ecbull/eb-18-00452.html)

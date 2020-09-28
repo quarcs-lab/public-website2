@@ -36,6 +36,9 @@ Mendez, Carlos. 2020. “Regional Efficiency Convergence and Efficiency Clusters
 Mendez, Carlos. 2019. “Lack of Global Convergence and the Formation of Multiple Welfare Clubs across Countries: An Unsupervised Machine Learning Approach.” Economies 7 (3): 1–17. [[Open publised version]](https://www.mdpi.com/2227-7099/7/3/74)
 
 
+Dominguez, Alvaro, and Carlos Mendez. 2019. "Industrial Productivity Divergence and Input-Output Network Structures: Evidence from Japan 1973–2012". Economies 7 (2): 1–14. [[Open publised version]](https://www.mdpi.com/2227-7099/7/2/52)
+
+
 Mendez, Carlos. 2018. “Beta, Sigma and Distributional Convergence in Human Development? Evidence from the Metropolitan Regions of Bolivia.” Latin American Journal of Economic Development 30 (Nov): 87–115. [[Open publised version]](https://carlos-mendez.rbind.io/publication/20181106lajed/)
 
 

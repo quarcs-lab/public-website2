@@ -13,7 +13,7 @@ liveLink:
 
 ### QuaRCS-lab webinar series
 
-> The QuaRCS-lab webinar series provides a platform for young researchers around the world to present and discuss their work.
+> The QuaRCS-lab webinar series provides a platform for researchers around the world to present and discuss their latest quantitative research about sustainable development, economic growth, and regional inequality. If you are interested in these topics as well as quantitative methods, please register and join us.
 
 - The webinars take place once or twice in a month via ZOOM. The time and date can vary depending on the location of the speaker. 
 
@@ -28,6 +28,7 @@ liveLink:
 
 
 > [2020/11/26] 20:00-21:30 (JST), [Adres Vallone](https://www.researchgate.net/profile/Andres_Vallone) (Universidad Católica del Norte, Chile): Beyond GDP: An analysis of the socio-economic diversity of European regions. [Register here](https://us02web.zoom.us/webinar/register/WN_k9Emjj0_R9aRNY8J3UJ4KA)
+
 
 
 

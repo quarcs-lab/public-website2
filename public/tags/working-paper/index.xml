@@ -6,10 +6,19 @@
     <description>Recent content in Working Paper on QuaRCS lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/working-paper/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Economic and Social Disparities across Subnational Regions of South America: A Spatial Convergence Approach</title>
+      <link>/blog/mendez2020-economic-and-social-convergence-south-america/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/mendez2020-economic-and-social-convergence-south-america/</guid>
+      <description>This paper studies the evolution of economic and social disparities across South America. By exploiting a novel multi-country subnational dataset, we evaluate the evolution of the gross national income per-capita (GNI) and the human development index (HDI) across 151 subnational regions over the 1990-2018 period. In particular, regional dynamics are evaluated through the lens of two spatial convergence frameworks. The first framework highlights the role of spatial dependence. Results indicate that for both GNI and HDI there is an overall process of regional convergence.</description>
+    </item>
     
     <item>
       <title>Regional Income Disparities, Distributional Convergence, and Spatial Effects:District-Level Evidence from Indonesia 2000-2017</title>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Asia-Pacific Journal of Regional Science on QuaRCS lab</title>
-    <link>/tags/asia-pacific-journal-of-regional-science/</link>
-    <description>Recent content in Asia-Pacific Journal of Regional Science on QuaRCS lab</description>
+    <title>Published paper on QuaRCS lab</title>
+    <link>/tags/published-paper/</link>
+    <description>Recent content in Published paper on QuaRCS lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Nov 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/asia-pacific-journal-of-regional-science/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/published-paper/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>/blog/aginta2020-spatial-dynamics-of-consumer-price-in-indonesia/</guid>
       <description>This paper aims to identify convergence clubs in regional price across 34 provinces in Indonesia and investigate conditioning factors of club formation. We analyze regional monthly consumer price data from January 2012 to December 2019 with a novel club convergence test developed by Phillips and Sul (Econometerica 756:1771–1855, 2007), and show that regional consumer price does not converge into a single universal equilibrium. Instead, there are four convergence clubs identified. Further investigation shows that labor productivity, inflation expectation, consumption growth, and spatial externalities influence the convergence club formation.</description>
-    </item>
-    
-    <item>
-      <title>Regional Efficiency Convergence and Efficiency Clusters: Evidence from the Provinces of Indonesia 1990–2010</title>
-      <link>/blog/efficiency-clusters-indonesia-1990-2010/</link>
-      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/efficiency-clusters-indonesia-1990-2010/</guid>
-      <description>Improving production efficiency at the regional level is often considered a means to reduce regional inequality. This article studies regional efficiency convergence across provinces in Indonesia over the 1990–2010 period. Through the lens of both classical and distributional convergence frameworks, the dispersion dynamics of the following three indicators are contrasted: overall efficiency, pure efficiency, and scale efficiency. Results from the classical convergence approach suggest that—on average—there is regional convergence in all these three efficiency measures.</description>
     </item>
     
   </channel>

@@ -4,7 +4,7 @@ type: portfolio
 date: 2020-08-20
 description : "Webinar series"
 caption: Find out more
-image: images/portfolio/webinar2.jpg
+image: images/portfolio/webinar3.jpg
 category: ["webinar"]
 liveLink: 
 
@@ -34,4 +34,4 @@ liveLink:
 . [Register here](https://us02web.zoom.us/webinar/register/WN_nge5Ohw5Q_q40FgBHCNBeA)
 
 
-
+> [2020/12/17] 18:00-19:30 (JST), [Eleonora Cutrini](http://docenti.unimc.it/eleonora.cutrini) (University of Macerata, Italy): Economic integration, structural change, and uneven development in the European Union. [Register here](https://us02web.zoom.us/webinar/register/WN_f8Iu1LilTH-LO3jbNA-woQ)

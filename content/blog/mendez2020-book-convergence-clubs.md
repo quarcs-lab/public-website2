@@ -1,7 +1,7 @@
 ---
 title: "Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries"
 author: Carlos Mendez
-date: "2020-09-17T13:07:31+02:00"
+date: "2020-11-11T13:07:31+02:00"
 type: post
 tags: ["Springer Publisher"]
 image: "images/blog/book-cover-mendez2020.jpg"
@@ -12,9 +12,8 @@ Testing for economic convergence across countries has been a central issue in th
 
 
 - About the author: <https://carlos-mendez.rbind.io>
-- [Pre-order the ebook](https://www.springer.com/gp/book/9789811586286)
-- [Pre-order the printed book](https://www.amazon.co.jp/Convergence-Clubs-Productivity-Proximate-Sources/dp/9811586284/ref=sr_1_1?dchild=1&keywords=%22Convergence+Clubs+in+Labor+Productivity+and+its+Proximate+Sources%22&qid=1599180007&sr=8-1) 
-- Data, code, and tutorials: Forthcoming
+- [Order the ebook](https://www.springer.com/gp/book/9789811586286)
+- [Order the printed book](https://www.amazon.co.jp/Convergence-Clubs-Productivity-Proximate-Sources/dp/9811586284/ref=sr_1_1?dchild=1&keywords=%22Convergence+Clubs+in+Labor+Productivity+and+its+Proximate+Sources%22&qid=1599180007&sr=8-1) 
 - Related research: <https://quarcs-lab.rbind.io>
 
 ## Table of contents

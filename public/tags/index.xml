@@ -6,7 +6,7 @@
     <description>Recent content in Tags on QuaRCS lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Sep 2020 13:07:31 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2020 13:07:31 +0200</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title>Springer Publisher</title>
       <link>/tags/springer-publisher/</link>
-      <pubDate>Thu, 17 Sep 2020 13:07:31 +0200</pubDate>
+      <pubDate>Wed, 11 Nov 2020 13:07:31 +0200</pubDate>
       
       <guid>/tags/springer-publisher/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Working Paper</title>
+      <link>/tags/working-paper/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/working-paper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asia-Pacific Journal of Regional Science</title>
+      <link>/tags/asia-pacific-journal-of-regional-science/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/asia-pacific-journal-of-regional-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Economics Bulletin</title>
+      <link>/tags/economics-bulletin/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/economics-bulletin/</guid>
       <description></description>
     </item>
     
@@ -35,24 +62,6 @@
       <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/review-of-development-economics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Asia-Pacific Journal of Regional Science</title>
-      <link>/tags/asia-pacific-journal-of-regional-science/</link>
-      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/asia-pacific-journal-of-regional-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Working Paper</title>
-      <link>/tags/working-paper/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/working-paper/</guid>
       <description></description>
     </item>
     

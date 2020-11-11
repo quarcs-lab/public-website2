@@ -6,7 +6,7 @@
     <description>Recent content on QuaRCS lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Sep 2020 13:07:31 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2020 13:07:31 +0200</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +14,37 @@
     <item>
       <title>Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries</title>
       <link>/blog/mendez2020-book-convergence-clubs/</link>
-      <pubDate>Thu, 17 Sep 2020 13:07:31 +0200</pubDate>
+      <pubDate>Wed, 11 Nov 2020 13:07:31 +0200</pubDate>
       
       <guid>/blog/mendez2020-book-convergence-clubs/</guid>
       <description>Testing for economic convergence across countries has been a central issue in the literature of economic growth and development. This book introduces a modern framework to study the cross-country convergence dynamics of labor productivity and its proximate sources: capital accumulation and aggregate efficiency. In particular, recent convergence dynamics of developed as well as developing countries are evaluated through the lens of a non-linear dynamic factor model and a clustering algorithm for panel data.</description>
+    </item>
+    
+    <item>
+      <title>Economic and Social Disparities across Subnational Regions of South America: A Spatial Convergence Approach</title>
+      <link>/blog/mendez2020-economic-and-social-convergence-south-america/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/mendez2020-economic-and-social-convergence-south-america/</guid>
+      <description>This paper studies the evolution of economic and social disparities across South America. By exploiting a novel multi-country subnational dataset, we evaluate the evolution of the gross national income per-capita (GNI) and the human development index (HDI) across 151 subnational regions over the 1990-2018 period. In particular, regional dynamics are evaluated through the lens of two spatial convergence frameworks. The first framework highlights the role of spatial dependence. Results indicate that for both GNI and HDI there is an overall process of regional convergence.</description>
+    </item>
+    
+    <item>
+      <title>Does the law of one price hold in 82 Indonesian cities? Evidence from a club convergence approach</title>
+      <link>/blog/aginta2020-one-price-law-in-indonesia/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/aginta2020-one-price-law-in-indonesia/</guid>
+      <description>This study re-examines regional price convergence across 82 cities in Indonesia. We implement club convergence analysis developed by Phillips and Sul (2007, 2009) on monthly aggregate consumer price data and its components from January 2014 to December 2019. We do not find evidence of overall convergence in aggregate consumer price data. Instead, we identify four club convergence. Using disaggregated data, four new outcomes arise; first, none of the consumer price components show overall convergence but multiple club convergence do exist, second, there is variability in the number and composition of clubs among consumer price components, third, the price of foodstuffs and education-related commodities in most cities converge to the higher level, and fourth, the formation of club convergence in aggregate price is attributed largely by housing, processed foods, transport, and health components.</description>
+    </item>
+    
+    <item>
+      <title>Spatial dynamics of consumer price in Indonesia: Convergence clubs and conditioning factors</title>
+      <link>/blog/aginta2020-spatial-dynamics-of-consumer-price-in-indonesia/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/aginta2020-spatial-dynamics-of-consumer-price-in-indonesia/</guid>
+      <description>This paper aims to identify convergence clubs in regional price across 34 provinces in Indonesia and investigate conditioning factors of club formation. We analyze regional monthly consumer price data from January 2012 to December 2019 with a novel club convergence test developed by Phillips and Sul (Econometerica 756:1771–1855, 2007), and show that regional consumer price does not converge into a single universal equilibrium. Instead, there are four convergence clubs identified. Further investigation shows that labor productivity, inflation expectation, consumption growth, and spatial externalities influence the convergence club formation.</description>
     </item>
     
     <item>
@@ -26,10 +53,10 @@
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/portfolio/all-publications/</guid>
-      <description>Research publications  Abstracts and illustriation of each published work are available here: https://quarcs-lab.org/blog
- Mendez, Carlos. 2020. Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries. Springer. Forthcoming. [E-book version] [Printed version]
-Santos-Marquez, Felipe, and Carlos Mendez 2020. “Regional Convergence, Spatial Scale, and Spatial Dependence: Evidence from Homicides and Personal Injuries in Colombia 2010-2018.” Regional Science Policy and Practice, Forthcoming.
-Mendez, Carlos, and Felipe Santos.</description>
+      <description>Research publications  Further information including current projects, slides, and summaries are available here: https://quarcs-lab.org/blog
+ Mendez, Carlos. 2020. Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries. Springer. [E-book version] [Printed version]
+Aginta, Harry. 2020. &amp;ldquo;Spatial dynamics of consumer price in Indonesia: Convergence clubs and conditioning factors.&amp;rdquo; Asia-Pacific Journal of Regional Science, Forthcoming. [Published version]
+Aginta, Harry. 2020. &amp;ldquo;Does the law of one price hold in 82 Indonesian cities?</description>
     </item>
     
     <item>

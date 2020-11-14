@@ -39,6 +39,24 @@
     </item>
     
     <item>
+      <title>Spatial Beta-Convergence Forecasting Models: Evidence from Municipal Homicide Rates in Colombia</title>
+      <link>/research/santos2020-spatial-beta-forecasting/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/santos2020-spatial-beta-forecasting/</guid>
+      <description>Homicide rates are forecasted for 1120 inland municipalities in Colombia. Using data from 2003 to 2018, five different forecasting methods are used: ETS, ARIMA, STAR, a classical beta convergence based model and a spatial beta convergence model. Time series cross validation for 4-year ahead forecasts is implemented to assess the accuracy of all models. It is found that the STAR and the beta models have the lowest root mean squared errors.</description>
+    </item>
+    
+    <item>
+      <title>Regional Convergence, Spatial Scale, and Spatial Dependence: Evidence from Homicides and Personal Injuries in Colombia 2010-2018</title>
+      <link>/research/homicide-disparities-colombia/</link>
+      <pubDate>Sat, 07 Nov 2020 13:07:31 +0200</pubDate>
+      
+      <guid>/research/homicide-disparities-colombia/</guid>
+      <description>This paper studies regional convergence and spatial dependence of homicides and personal injuries in Colombia. In particular, through the lens of both classical and distributional convergence frameworks, two spatial scales are contrasted: municipalities and states. For both homicides and personal injuries, sigma convergence is only found at the state level. In contrast, beta convergence is found at both state and municipal level. The non‐parametric convergence framework highlights further contrasting patterns. For homicides at the state level, four convergence clusters are found, while two clusters are present at the municipal level.</description>
+    </item>
+    
+    <item>
       <title>Does the law of one price hold in 82 Indonesian cities? Evidence from a club convergence approach</title>
       <link>/research/aginta2020-one-price-law-in-indonesia/</link>
       <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
@@ -90,16 +108,6 @@
       
       <guid>/research/project2019e-spatialdependence-indonesia/</guid>
       <description>Using a novel dataset, this paper studies the spatio-temporal dynamics of income per capita across provinces and districts in Indonesia over the 2000-2017 period. First, an exploratory spatial analysis suggests that spatial autocorrelation is only significant at the district level and it appears to be robust from 2013 to 2017. Thus, at the district level, we proceed to use a spatial filtering model for decomposing income into a spatially independent component and a spatial residual.</description>
-    </item>
-    
-    <item>
-      <title>Regional Convergence, Spatial Scale, and Spatial Dependence: Evidence from Homicides and Personal Injuries in Colombia 2010-2018</title>
-      <link>/research/homicide-disparities-colombia/</link>
-      <pubDate>Sun, 17 Nov 2019 13:07:31 +0200</pubDate>
-      
-      <guid>/research/homicide-disparities-colombia/</guid>
-      <description>By Felipe Santos-Marquez and Carlos Mendez. Prepared for the ARSC 2019 at Saga University.
-ABSTRACT This paper studies regional convergence and spatial dependence of homicides and personal injuries in Colombia. In particular, through the lens of both classical and distributional convergence frameworks, two spatial scales are contrasted: municipalities and states. For both homicides and personal injuries, sigma convergence is only found at the state level. In contrast, beta convergence is found at both state and municipal level.</description>
     </item>
     
     <item>

@@ -6,10 +6,19 @@
     <description>Recent content in Regional Science Policy and Practice on QuaRCS lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2020 13:07:31 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2020 13:07:31 +0200</lastBuildDate>
     
 	<atom:link href="/tags/regional-science-policy-and-practice/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Regional Convergence, Spatial Scale, and Spatial Dependence: Evidence from Homicides and Personal Injuries in Colombia 2010-2018</title>
+      <link>/research/homicide-disparities-colombia/</link>
+      <pubDate>Sat, 07 Nov 2020 13:07:31 +0200</pubDate>
+      
+      <guid>/research/homicide-disparities-colombia/</guid>
+      <description>This paper studies regional convergence and spatial dependence of homicides and personal injuries in Colombia. In particular, through the lens of both classical and distributional convergence frameworks, two spatial scales are contrasted: municipalities and states. For both homicides and personal injuries, sigma convergence is only found at the state level. In contrast, beta convergence is found at both state and municipal level. The non‐parametric convergence framework highlights further contrasting patterns. For homicides at the state level, four convergence clusters are found, while two clusters are present at the municipal level.</description>
+    </item>
     
     <item>
       <title>Regional Convergence and Spatial Dependence across Subnational Regions of ASEAN: Evidence from Satellite Nighttime Light Data</title>

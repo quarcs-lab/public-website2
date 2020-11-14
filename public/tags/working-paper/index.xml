@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>Spatial Beta-Convergence Forecasting Models: Evidence from Municipal Homicide Rates in Colombia</title>
+      <link>/research/santos2020-spatial-beta-forecasting/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/santos2020-spatial-beta-forecasting/</guid>
+      <description>Homicide rates are forecasted for 1120 inland municipalities in Colombia. Using data from 2003 to 2018, five different forecasting methods are used: ETS, ARIMA, STAR, a classical beta convergence based model and a spatial beta convergence model. Time series cross validation for 4-year ahead forecasts is implemented to assess the accuracy of all models. It is found that the STAR and the beta models have the lowest root mean squared errors.</description>
+    </item>
+    
+    <item>
       <title>Regional Income Disparities, Distributional Convergence, and Spatial Effects:District-Level Evidence from Indonesia 2000-2017</title>
       <link>/old-blog/project2019e-spatialdependence-indonesia/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
@@ -62,16 +71,6 @@
       <pubDate>Sun, 17 Nov 2019 13:07:31 +0200</pubDate>
       
       <guid>/old-blog/homicide-disparities-colombia/</guid>
-      <description>By Felipe Santos-Marquez and Carlos Mendez. Prepared for the ARSC 2019 at Saga University.
-ABSTRACT This paper studies regional convergence and spatial dependence of homicides and personal injuries in Colombia. In particular, through the lens of both classical and distributional convergence frameworks, two spatial scales are contrasted: municipalities and states. For both homicides and personal injuries, sigma convergence is only found at the state level. In contrast, beta convergence is found at both state and municipal level.</description>
-    </item>
-    
-    <item>
-      <title>Regional Convergence, Spatial Scale, and Spatial Dependence: Evidence from Homicides and Personal Injuries in Colombia 2010-2018</title>
-      <link>/research/homicide-disparities-colombia/</link>
-      <pubDate>Sun, 17 Nov 2019 13:07:31 +0200</pubDate>
-      
-      <guid>/research/homicide-disparities-colombia/</guid>
       <description>By Felipe Santos-Marquez and Carlos Mendez. Prepared for the ARSC 2019 at Saga University.
 ABSTRACT This paper studies regional convergence and spatial dependence of homicides and personal injuries in Colombia. In particular, through the lens of both classical and distributional convergence frameworks, two spatial scales are contrasted: municipalities and states. For both homicides and personal injuries, sigma convergence is only found at the state level. In contrast, beta convergence is found at both state and municipal level.</description>
     </item>

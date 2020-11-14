@@ -6,21 +6,36 @@
     <description>Recent content in Portfolios on QuaRCS lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Research publications</title>
+      <title>Publications</title>
       <link>/portfolio/all-publications/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>/portfolio/all-publications/</guid>
-      <description>Research publications  Further information including current projects, slides, and summaries are available here: https://quarcs-lab.org/blog
+      <description>Research publications  Further information including current projects, slides, and summaries are available here: https://quarcs-lab.org/research
  Mendez, Carlos. 2020. Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries. Springer. [E-book version] [Printed version]
 Aginta, Harry. 2020. &amp;ldquo;Spatial dynamics of consumer price in Indonesia: Convergence clubs and conditioning factors.&amp;rdquo; Asia-Pacific Journal of Regional Science, Forthcoming. [Published version]
 Aginta, Harry. 2020. &amp;ldquo;Does the law of one price hold in 82 Indonesian cities?</description>
+    </item>
+    
+    <item>
+      <title>Research projects</title>
+      <link>/portfolio/research-projects/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/research-projects/</guid>
+      <description>Main research lines  A more detailed description of current projects, slides, and summaries are available at https://quarcs-lab.org/research
+   (A) The wealth of subnations: A view from outer space
+  (B) Subnational inequality in human development in Latin America
+  (C) Regional development, growth, and inequality in Indonesia
+  (D) Regional inequality and convergence in Thailand
+  (E) Spatiotemporal methods for regional inequality
+  </description>
     </item>
     
     <item>
@@ -44,6 +59,16 @@ Aginta, Harry. 2020. &amp;ldquo;Does the law of one price hold in 82 Indonesian 
     </item>
     
     <item>
+      <title>QuaRCS-lab webinar series</title>
+      <link>/portfolio/webinars/</link>
+      <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/webinars/</guid>
+      <description>QuaRCS-lab webinar series  The QuaRCS-lab webinar series provides a platform for researchers around the world to present and discuss their latest quantitative research about sustainable development, economic growth, and regional inequality. If you are interested in these topics as well as quantitative methods, please register and join us.
+   The webinars take place once or twice in a month via ZOOM. The time and date can vary depending on the location of the speaker.</description>
+    </item>
+    
+    <item>
       <title>Learning community</title>
       <link>/portfolio/learning-community/</link>
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
@@ -51,16 +76,6 @@ Aginta, Harry. 2020. &amp;ldquo;Does the law of one price hold in 82 Indonesian 
       <guid>/portfolio/learning-community/</guid>
       <description>Learning community  The QuaRCS-lab learning community provides a platform for mastering the research methods and tools that are used across the lines of research of the lab.
  Apply for access here: https://www.facebook.com/groups/QuaRCS.Lab/</description>
-    </item>
-    
-    <item>
-      <title>QuaRCS-lab webinar series</title>
-      <link>/portfolio/webinars/</link>
-      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/webinars/</guid>
-      <description>QuaRCS-lab webinar series  The QuaRCS-lab webinar series provides a platform for researchers around the world to present and discuss their latest quantitative research about sustainable development, economic growth, and regional inequality. If you are interested in these topics as well as quantitative methods, please register and join us.
-   The webinars take place once or twice in a month via ZOOM. The time and date can vary depending on the location of the speaker.</description>
     </item>
     
   </channel>

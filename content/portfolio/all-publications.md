@@ -1,18 +1,18 @@
 ---
-title: "Research publications"
+title: "Publications"
 type: portfolio
-date: 2020-09-01
-description : "Research publications"
+date: 2020-11-11
+description : "Pablished papers, book chapter, and books"
 caption: Find out more
 image: images/portfolio/all-publications.jpg
-category: []
-liveLink: "blog"
+category: ["Research Outcomes"]
+liveLink: "research"
 ---
 
 
 ### Research publications
 
-> Further information including current projects, slides, and summaries are available here: <https://quarcs-lab.org/blog>
+> Further information including current projects, slides, and summaries are available here: <https://quarcs-lab.org/research>
 
 
 Mendez, Carlos. 2020. Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries. Springer. [[E-book version]](https://www.springer.com/gp/book/9789811586286) [[Printed version]](https://www.amazon.co.jp/Convergence-Clubs-Productivity-Proximate-Sources/dp/9811586284/ref=sr_1_1?dchild=1&keywords=%22Convergence+Clubs+in+Labor+Productivity+and+its+Proximate+Sources%22&qid=1599180007&sr=8-1)

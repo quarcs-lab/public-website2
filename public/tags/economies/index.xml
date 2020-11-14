@@ -13,10 +13,19 @@
     
     <item>
       <title>Lack of Global Convergence and the Formation of Multiple Welfare Clubs across Countries: An Unsupervised Machine Learning Approach</title>
-      <link>/blog/lack-global-convergence-welfare/</link>
+      <link>/old-blog/lack-global-convergence-welfare/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lack-global-convergence-welfare/</guid>
+      <guid>/old-blog/lack-global-convergence-welfare/</guid>
+      <description>The cross-country convergence hypothesis is one of the central topics of long-run macroeconomics. This paper revisits this hypothesis in a context beyond GDP. It uses a novel welfare index that incorporates measures of consumption, leisure, life expectancy, and inequality. Based on a sample of 128 countries over the 1980&amp;ndash;2007 period, the lack of global sigma and beta convergence is first documented. Next, the paper incorporates some recent developments from the unsupervised machine learning literature to evaluate the existence of local convergence.</description>
+    </item>
+    
+    <item>
+      <title>Lack of Global Convergence and the Formation of Multiple Welfare Clubs across Countries: An Unsupervised Machine Learning Approach</title>
+      <link>/research/lack-global-convergence-welfare/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/research/lack-global-convergence-welfare/</guid>
       <description>The cross-country convergence hypothesis is one of the central topics of long-run macroeconomics. This paper revisits this hypothesis in a context beyond GDP. It uses a novel welfare index that incorporates measures of consumption, leisure, life expectancy, and inequality. Based on a sample of 128 countries over the 1980&amp;ndash;2007 period, the lack of global sigma and beta convergence is first documented. Next, the paper incorporates some recent developments from the unsupervised machine learning literature to evaluate the existence of local convergence.</description>
     </item>
     

@@ -13,28 +13,65 @@
     
     <item>
       <title>Economic and Social Disparities across Subnational Regions of South America: A Spatial Convergence Approach</title>
-      <link>/blog/mendez2020-economic-and-social-convergence-south-america/</link>
+      <link>/old-blog/mendez2020-economic-and-social-convergence-south-america/</link>
       <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/mendez2020-economic-and-social-convergence-south-america/</guid>
+      <guid>/old-blog/mendez2020-economic-and-social-convergence-south-america/</guid>
       <description>This paper studies the evolution of economic and social disparities across South America. By exploiting a novel multi-country subnational dataset, we evaluate the evolution of the gross national income per-capita (GNI) and the human development index (HDI) across 151 subnational regions over the 1990-2018 period. In particular, regional dynamics are evaluated through the lens of two spatial convergence frameworks. The first framework highlights the role of spatial dependence. Results indicate that for both GNI and HDI there is an overall process of regional convergence.</description>
     </item>
     
     <item>
+      <title>Economic and Social Disparities across Subnational Regions of South America: A Spatial Convergence Approach</title>
+      <link>/research/mendez2020-economic-and-social-convergence-south-america/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/mendez2020-economic-and-social-convergence-south-america/</guid>
+      <description>This paper studies the evolution of economic and social disparities across South America. By exploiting a novel multi-country subnational dataset, we evaluate the evolution of the gross national income per-capita (GNI) and the human development index (HDI) across 151 subnational regions over the 1990-2018 period. In particular, regional dynamics are evaluated through the lens of two spatial convergence frameworks. The first framework highlights the role of spatial dependence. Results indicate that for both GNI and HDI there is an overall process of regional convergence.</description>
+    </item>
+    
+    <item>
+      <title>Human Capital Constraints, Spatial Dependence, and Regionalization in Bolivia: A Spatial Clustering Approach</title>
+      <link>/research/mendez2020-human-capital-constraints-bolivia/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/mendez2020-human-capital-constraints-bolivia/</guid>
+      <description>Using a novel municipal-level dataset and spatial clustering methods, this article studies the distribution of human capital constraints across 339 municipalities in Bolivia. In particular, the spatial distribution of five human capital constraints are evaluated: chronic malnutrition in children, non-Spanish speaking population, secondary dropout rate of males, secondary dropout rates of females, and the inequality of years of education. Through the lens of both spatial dependence and regionalization frameworks, the municipalities of Bolivia are endogenously classified according to both their level of human capital constraints and their locational similarity.</description>
+    </item>
+    
+    <item>
       <title>Regional Income Disparities, Distributional Convergence, and Spatial Effects:District-Level Evidence from Indonesia 2000-2017</title>
-      <link>/blog/project2019e-spatialdependence-indonesia/</link>
+      <link>/old-blog/project2019e-spatialdependence-indonesia/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/project2019e-spatialdependence-indonesia/</guid>
+      <guid>/old-blog/project2019e-spatialdependence-indonesia/</guid>
+      <description>Using a novel dataset, this paper studies the spatio-temporal dynamics of income per capita across provinces and districts in Indonesia over the 2000-2017 period. First, an exploratory spatial analysis suggests that spatial autocorrelation is only significant at the district level and it appears to be robust from 2013 to 2017. Thus, at the district level, we proceed to use a spatial filtering model for decomposing income into a spatially independent component and a spatial residual.</description>
+    </item>
+    
+    <item>
+      <title>Regional Income Disparities, Distributional Convergence, and Spatial Effects:District-Level Evidence from Indonesia 2000-2017</title>
+      <link>/research/project2019e-spatialdependence-indonesia/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/research/project2019e-spatialdependence-indonesia/</guid>
       <description>Using a novel dataset, this paper studies the spatio-temporal dynamics of income per capita across provinces and districts in Indonesia over the 2000-2017 period. First, an exploratory spatial analysis suggests that spatial autocorrelation is only significant at the district level and it appears to be robust from 2013 to 2017. Thus, at the district level, we proceed to use a spatial filtering model for decomposing income into a spatially independent component and a spatial residual.</description>
     </item>
     
     <item>
       <title>Regional Convergence, Spatial Scale, and Spatial Dependence: Evidence from Homicides and Personal Injuries in Colombia 2010-2018</title>
-      <link>/blog/homicide-disparities-colombia/</link>
+      <link>/old-blog/homicide-disparities-colombia/</link>
       <pubDate>Sun, 17 Nov 2019 13:07:31 +0200</pubDate>
       
-      <guid>/blog/homicide-disparities-colombia/</guid>
+      <guid>/old-blog/homicide-disparities-colombia/</guid>
+      <description>By Felipe Santos-Marquez and Carlos Mendez. Prepared for the ARSC 2019 at Saga University.
+ABSTRACT This paper studies regional convergence and spatial dependence of homicides and personal injuries in Colombia. In particular, through the lens of both classical and distributional convergence frameworks, two spatial scales are contrasted: municipalities and states. For both homicides and personal injuries, sigma convergence is only found at the state level. In contrast, beta convergence is found at both state and municipal level.</description>
+    </item>
+    
+    <item>
+      <title>Regional Convergence, Spatial Scale, and Spatial Dependence: Evidence from Homicides and Personal Injuries in Colombia 2010-2018</title>
+      <link>/research/homicide-disparities-colombia/</link>
+      <pubDate>Sun, 17 Nov 2019 13:07:31 +0200</pubDate>
+      
+      <guid>/research/homicide-disparities-colombia/</guid>
       <description>By Felipe Santos-Marquez and Carlos Mendez. Prepared for the ARSC 2019 at Saga University.
 ABSTRACT This paper studies regional convergence and spatial dependence of homicides and personal injuries in Colombia. In particular, through the lens of both classical and distributional convergence frameworks, two spatial scales are contrasted: municipalities and states. For both homicides and personal injuries, sigma convergence is only found at the state level. In contrast, beta convergence is found at both state and municipal level.</description>
     </item>

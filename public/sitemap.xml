@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/mendez2020-book-convergence-clubs/</loc>
+    <loc>/old-blog/mendez2020-book-convergence-clubs/</loc>
+    <lastmod>2020-11-11T13:07:31+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/mendez2020-book-convergence-clubs/</loc>
     <lastmod>2020-11-11T13:07:31+02:00</lastmod>
   </url>
   
@@ -23,7 +28,32 @@
   </url>
   
   <url>
-    <loc>/blog/mendez2020-economic-and-social-convergence-south-america/</loc>
+    <loc>/old-blog/mendez2020-economic-and-social-convergence-south-america/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/mendez2020-economic-and-social-convergence-south-america/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/mendez2020-human-capital-constraints-bolivia/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/all-publications/</loc>
+    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/research-projects/</loc>
     <lastmod>2020-11-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,7 +68,12 @@
   </url>
   
   <url>
-    <loc>/blog/aginta2020-one-price-law-in-indonesia/</loc>
+    <loc>/old-blog/aginta2020-one-price-law-in-indonesia/</loc>
+    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/aginta2020-one-price-law-in-indonesia/</loc>
     <lastmod>2020-11-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,18 +83,13 @@
   </url>
   
   <url>
-    <loc>/blog/aginta2020-spatial-dynamics-of-consumer-price-in-indonesia/</loc>
+    <loc>/old-blog/aginta2020-spatial-dynamics-of-consumer-price-in-indonesia/</loc>
     <lastmod>2020-11-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/portfolio/</loc>
-    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/portfolio/all-publications/</loc>
-    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+    <loc>/research/aginta2020-spatial-dynamics-of-consumer-price-in-indonesia/</loc>
+    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -73,17 +103,22 @@
   </url>
   
   <url>
+    <loc>/portfolio/webinars/</loc>
+    <lastmod>2020-08-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/portfolio/learning-community/</loc>
     <lastmod>2020-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/portfolio/webinars/</loc>
-    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+    <loc>/old-blog/project2019l-asean-disparities-lights-maps/</loc>
+    <lastmod>2020-08-17T13:07:31+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/project2019l-asean-disparities-lights-maps/</loc>
+    <loc>/research/project2019l-asean-disparities-lights-maps/</loc>
     <lastmod>2020-08-17T13:07:31+02:00</lastmod>
   </url>
   
@@ -93,7 +128,12 @@
   </url>
   
   <url>
-    <loc>/blog/project2019s-indonesia-provinces-club-convergence/</loc>
+    <loc>/old-blog/project2019s-indonesia-provinces-club-convergence/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/project2019s-indonesia-provinces-club-convergence/</loc>
     <lastmod>2020-08-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -103,17 +143,32 @@
   </url>
   
   <url>
-    <loc>/blog/efficiency-clusters-indonesia-1990-2010/</loc>
+    <loc>/old-blog/efficiency-clusters-indonesia-1990-2010/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/project2019e-spatialdependence-indonesia/</loc>
+    <loc>/research/efficiency-clusters-indonesia-1990-2010/</loc>
+    <lastmod>2020-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/old-blog/project2019e-spatialdependence-indonesia/</loc>
     <lastmod>2019-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/homicide-disparities-colombia/</loc>
+    <loc>/research/project2019e-spatialdependence-indonesia/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/old-blog/homicide-disparities-colombia/</loc>
+    <lastmod>2019-11-17T13:07:31+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/homicide-disparities-colombia/</loc>
     <lastmod>2019-11-17T13:07:31+02:00</lastmod>
   </url>
   
@@ -123,7 +178,12 @@
   </url>
   
   <url>
-    <loc>/blog/convergence-clubs-countries-latin-america/</loc>
+    <loc>/old-blog/convergence-clubs-countries-latin-america/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/convergence-clubs-countries-latin-america/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -133,12 +193,22 @@
   </url>
   
   <url>
-    <loc>/blog/lack-global-convergence-welfare/</loc>
+    <loc>/old-blog/lack-global-convergence-welfare/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
+    <loc>/research/lack-global-convergence-welfare/</loc>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/old-blog/</loc>
+    <lastmod>2018-07-15T12:32:37+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/</loc>
     <lastmod>2018-07-15T12:32:37+06:00</lastmod>
   </url>
   

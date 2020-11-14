@@ -12,7 +12,7 @@ url     = "about"
 weight  = 20
 [[menu.main]]
 name    = "Research"
-url     = "blog"
+url     = "research"
 weight  = 40
 [[menu.main]]
 name    = "Webinars"
@@ -26,10 +26,10 @@ weight  = 60
 name    = "Community"
 url     = "https://www.facebook.com/groups/QuaRCS.Lab/"
 weight  = 70
-[[menu.main]]
-name    = "Projects"
-url     = "service"
-weight  = 80
+#[[menu.main]]
+#name    = "Projects"
+#url     = "service"
+#weight  = 80
 [[menu.main]]
 name    = "Github"
 url     = "https://github.com/quarcs-lab"
@@ -69,8 +69,8 @@ heading = "We conduct reasearch about"
 description = "Quantitative Regional and Computational Science"
 # button
 btn     = true
-btnText = "Research Publications"
-btnURL  = "blog"
+btnText = "Research Projects and Outcomes"
+btnURL  = "research"
 
 # flip text
 [[params.banner.flipText]]

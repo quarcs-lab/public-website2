@@ -1,7 +1,7 @@
 ---
 title: "QuaRCS-lab webinar series"
 type: portfolio
-date: 2020-08-20
+date: 2020-08-26
 description : "Webinar series"
 caption: Find out more
 image: images/portfolio/webinar3.jpg

@@ -2,7 +2,7 @@
 title: "Regional Income Disparities and Convergence Clubs in Indonesia: New District-Level Evidence"
 author: Harry Aginta, Anang Gunawan, Carlos Mendez
 type: post
-date: "2020-11-21"
+date: "2020-11-20"
 tags: ["Working paper"]
 image: "images/blog/project2019c-slides-jaae2020-indonesia-clubs-districts.jpg"
 ---

@@ -6,10 +6,19 @@
     <description>Recent content in Tags on QuaRCS lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2020 13:07:31 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Working Paper</title>
+      <link>/tags/working-paper/</link>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/working-paper/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Springer Publisher</title>
@@ -17,15 +26,6 @@
       <pubDate>Wed, 11 Nov 2020 13:07:31 +0200</pubDate>
       
       <guid>/tags/springer-publisher/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Working Paper</title>
-      <link>/tags/working-paper/</link>
-      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/working-paper/</guid>
       <description></description>
     </item>
     

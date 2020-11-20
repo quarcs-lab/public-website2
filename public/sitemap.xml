@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/project2019c-slides-jaae2020-indonesia-clubs-districts/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/working-paper/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/old-blog/mendez2020-book-convergence-clubs/</loc>
     <lastmod>2020-11-11T13:07:31+02:00</lastmod>
   </url>
@@ -13,17 +33,7 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-11-11T13:07:31+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/springer-publisher/</loc>
-    <lastmod>2020-11-11T13:07:31+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-11-11T13:07:31+02:00</lastmod>
   </url>
   
@@ -54,11 +64,6 @@
   
   <url>
     <loc>/portfolio/research-projects/</loc>
-    <lastmod>2020-11-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/working-paper/</loc>
     <lastmod>2020-11-11T00:00:00+00:00</lastmod>
   </url>
   

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Working Paper on QuaRCS lab</title>
+    <title>Working paper on QuaRCS lab</title>
     <link>/tags/working-paper/</link>
-    <description>Recent content in Working Paper on QuaRCS lab</description>
+    <description>Recent content in Working paper on QuaRCS lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 20 Nov 2020 00:00:00 +0000</lastBuildDate>
@@ -18,15 +18,6 @@
       
       <guid>/research/project2019c-slides-jaae2020-indonesia-clubs-districts/</guid>
       <description>This paper aims to re-examine the regional convergence hypothesis on income in Indonesia over the 2000-2017 period. By applying a non-linear dynamic factor model, this paper tests the club convergence hypothesis using a novel dataset of income at the district level. The results show significant five convergence clubs in Indonesian districts&amp;rsquo; income dynamics, implying the persistence of income disparity problems across districts even after implementing the decentralization policy. The subsequent analysis reveals two appealing features regarding the convergence clubs.</description>
-    </item>
-    
-    <item>
-      <title>Economic and Social Disparities across Subnational Regions of South America: A Spatial Convergence Approach</title>
-      <link>/old-blog/mendez2020-economic-and-social-convergence-south-america/</link>
-      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/old-blog/mendez2020-economic-and-social-convergence-south-america/</guid>
-      <description>This paper studies the evolution of economic and social disparities across South America. By exploiting a novel multi-country subnational dataset, we evaluate the evolution of the gross national income per-capita (GNI) and the human development index (HDI) across 151 subnational regions over the 1990-2018 period. In particular, regional dynamics are evaluated through the lens of two spatial convergence frameworks. The first framework highlights the role of spatial dependence. Results indicate that for both GNI and HDI there is an overall process of regional convergence.</description>
     </item>
     
     <item>
@@ -67,30 +58,11 @@
     
     <item>
       <title>Regional Income Disparities, Distributional Convergence, and Spatial Effects:District-Level Evidence from Indonesia 2000-2017</title>
-      <link>/old-blog/project2019e-spatialdependence-indonesia/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/old-blog/project2019e-spatialdependence-indonesia/</guid>
-      <description>Using a novel dataset, this paper studies the spatio-temporal dynamics of income per capita across provinces and districts in Indonesia over the 2000-2017 period. First, an exploratory spatial analysis suggests that spatial autocorrelation is only significant at the district level and it appears to be robust from 2013 to 2017. Thus, at the district level, we proceed to use a spatial filtering model for decomposing income into a spatially independent component and a spatial residual.</description>
-    </item>
-    
-    <item>
-      <title>Regional Income Disparities, Distributional Convergence, and Spatial Effects:District-Level Evidence from Indonesia 2000-2017</title>
       <link>/research/project2019e-spatialdependence-indonesia/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/research/project2019e-spatialdependence-indonesia/</guid>
       <description>Using a novel dataset constructed for this study, the spatio temporal dynamics of income per capita across 34 provinces and 514 districts in Indonesia over the 2010-2017 period are analyzed. First, an exploratory spatial analysis suggests that spatial autocorrelation is only significant at the district level, and it appears to be robust from 2013 to 2017. Consequently, at this level, a spatial filtering model is used for decomposing income into a spatially independent component and a spatial residual.</description>
-    </item>
-    
-    <item>
-      <title>Regional Convergence, Spatial Scale, and Spatial Dependence: Evidence from Homicides and Personal Injuries in Colombia 2010-2018</title>
-      <link>/old-blog/homicide-disparities-colombia/</link>
-      <pubDate>Sun, 17 Nov 2019 13:07:31 +0200</pubDate>
-      
-      <guid>/old-blog/homicide-disparities-colombia/</guid>
-      <description>By Felipe Santos-Marquez and Carlos Mendez. Prepared for the ARSC 2019 at Saga University.
-ABSTRACT This paper studies regional convergence and spatial dependence of homicides and personal injuries in Colombia. In particular, through the lens of both classical and distributional convergence frameworks, two spatial scales are contrasted: municipalities and states. For both homicides and personal injuries, sigma convergence is only found at the state level. In contrast, beta convergence is found at both state and municipal level.</description>
     </item>
     
   </channel>

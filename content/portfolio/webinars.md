@@ -13,11 +13,13 @@ liveLink:
 
 ### QuaRCS-lab webinar series
 
-> The QuaRCS-lab webinar series provides a platform for researchers around the world to present and discuss their latest quantitative research about sustainable development, economic growth, and regional inequality. If you are interested in these topics as well as quantitative methods, please register and join us.
+> The QuaRCS-lab webinar series provides a platform for researchers around the world to present and discuss their latest quantitative research about sustainable development, economic growth, and regional inequality. If you are interested in these topics as well as quantitative methods, please register and [join our mailing list](https://forms.gle/4aQyEfMqZ4bLscCU7).
 
 - The webinars take place once or twice in a month via ZOOM. The time and date can vary depending on the location of the speaker. 
 
-- Dates and time are based on the Japanese Stardard Time (JST) zone.
+- Dates and time are based on the Japanese Stardard Time (JST) zone. To verify the difference wit your time zone, we recommend using <https://everytimezone.com>
+
+- [Join our mailing list](https://forms.gle/4aQyEfMqZ4bLscCU7) to recieve the lastest news about current and forthcoming webinars.
 
 #### October-December 2020 Series
 

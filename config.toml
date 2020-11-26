@@ -24,7 +24,7 @@ url     = "portfolio/data-tutorials"
 weight  = 60
 [[menu.main]]
 name    = "Community"
-url     = "https://www.facebook.com/groups/QuaRCS.Lab/"
+url     = "https://forms.gle/4aQyEfMqZ4bLscCU7"
 weight  = 70
 #[[menu.main]]
 #name    = "Projects"
@@ -91,9 +91,9 @@ title   = "Economic growth and structural change"
 [params.cta]
 enable  = true
 title   = "Do you conduct similar research?"
-content = "We welcome potential collaborations"
-btnText = "Contact us"
-btnURL  = "https://carlos-mendez.rbind.io/#contact"
+content = "Join our mailing list and get in touch with us"
+btnText = "JOIN US"
+btnURL  = "https://forms.gle/4aQyEfMqZ4bLscCU7"
 
 # Portfolio Section On Homepage
 [params.portfolio]

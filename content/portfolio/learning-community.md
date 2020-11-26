@@ -12,7 +12,9 @@ liveLink: https://www.facebook.com/groups/QuaRCS.Lab
 
 ### Learning community
 
-> The QuaRCS-lab learning community provides a platform for mastering the research methods and tools that are used across the lines of research of the lab.
+> Our private learning community provides a platform for learning the research methods and tools that are used across the research lines of the QuaRCS lab.
 
-Apply for access here: https://www.facebook.com/groups/QuaRCS.Lab/
+Apply for access here: <https://www.facebook.com/groups/QuaRCS.Lab>
+
+
 

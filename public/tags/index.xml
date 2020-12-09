@@ -6,10 +6,19 @@
     <description>Recent content in Tags on QuaRCS lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Dec 2020 13:07:31 +0200</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Regional Science Policy and Practice</title>
+      <link>/tags/regional-science-policy-and-practice/</link>
+      <pubDate>Tue, 08 Dec 2020 13:07:31 +0200</pubDate>
+      
+      <guid>/tags/regional-science-policy-and-practice/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Working paper</title>
@@ -26,15 +35,6 @@
       <pubDate>Wed, 11 Nov 2020 13:07:31 +0200</pubDate>
       
       <guid>/tags/springer-publisher/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Regional Science Policy and Practice</title>
-      <link>/tags/regional-science-policy-and-practice/</link>
-      <pubDate>Sat, 07 Nov 2020 13:07:31 +0200</pubDate>
-      
-      <guid>/tags/regional-science-policy-and-practice/</guid>
       <description></description>
     </item>
     

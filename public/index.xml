@@ -6,10 +6,19 @@
     <description>Recent content on QuaRCS lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Dec 2020 13:07:31 +0200</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Regional Convergence and Spatial Dependence across Subnational Regions of ASEAN: Evidence from Satellite Nighttime Light Data</title>
+      <link>/research/project2019l-asean-disparities-lights-maps/</link>
+      <pubDate>Tue, 08 Dec 2020 13:07:31 +0200</pubDate>
+      
+      <guid>/research/project2019l-asean-disparities-lights-maps/</guid>
+      <description>Satellite nighttime light data are increasingly used for evaluating the performance of economies in which official statics are non-existent, limited, or non-comparable. In this paper, we use a novel luminosity-based measure of GDP per capita to study regional convergence and spatial dependence across 274 subnational regions of the Association of South East Asian Nations (ASEAN) over the 1998-2012 period. Specifically, we first evaluate the usefulness of this new luminosity indicator in the context of ASEAN regions.</description>
+    </item>
     
     <item>
       <title>Regional Income Disparities and Convergence Clubs in Indonesia: New District-Level Evidence</title>
@@ -157,15 +166,6 @@ Aginta, Harry. 2020. &amp;ldquo;Does the law of one price hold in 82 Indonesian 
       <guid>/portfolio/learning-community/</guid>
       <description>Learning community  Our private learning community provides a platform for learning the research methods and tools that are used across the research lines of the QuaRCS lab.
  Apply for access here: https://www.facebook.com/groups/QuaRCS.Lab</description>
-    </item>
-    
-    <item>
-      <title>Regional Convergence and Spatial Dependence across Subnational Regions of ASEAN: Evidence from Satellite Nighttime Light Data</title>
-      <link>/research/project2019l-asean-disparities-lights-maps/</link>
-      <pubDate>Mon, 17 Aug 2020 13:07:31 +0200</pubDate>
-      
-      <guid>/research/project2019l-asean-disparities-lights-maps/</guid>
-      <description>Satellite nighttime light data are increasingly used for evaluating the performance of economies in which official statics are non-existent, limited, or non-comparable. In this paper, we use a novel luminosity-based measure of GDP per capita to study regional convergence and spatial dependence across 274 subnational regions of the Association of South East Asian Nations (ASEAN) over the 1998-2012 period. Specifically, we first evaluate the usefulness of this new luminosity indicator in the context of ASEAN regions.</description>
     </item>
     
     <item>

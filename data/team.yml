@@ -46,6 +46,16 @@ members  :
     # ContactEmail: carlosmendez777@gmail.com
     # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
  
+  - name  : Felipe Santos-Marquez
+    image : images/team/felipe-santos.jpg
+    designation : Research collaborator, Dresden University of Technology.
+    description : "Research interests: Development Economics, Regional Inequality, Spatial econometrics" 
+    net         : https://www.researchgate.net/profile/Felipe_Santos-Marquez
+    linkedIn    : https://www.linkedin.com/in/felipe-santos-marquez-0a5273181/
+    web         : https://felipe-santos.rbind.io/
+    # ContactEmail: juansantosmarquez90@gmail.com
+    # GSIDEmail:  santos.marquez.juan.felipe@e.mbox.nagoya-u.ac.jp
+ 
   - name  : Erick Gonzales Rocha
     image : images/team/erick-gonzales.jpg
     designation : Research collaborator. Programme management officer, United Nations
@@ -104,19 +114,6 @@ members  :
     web         : https://www.researchgate.net/profile/Harry_Aginta2
     # ContactEmail: haginta@gmail.com
     # GSIDEmail: aginta.harry@c.mbox.nagoya-u.ac.jp
-
-
-
-  - name  : Felipe Santos-Marquez
-    image : images/team/felipe-santos.jpg
-    designation : Operations coordinator of the QuaRCS lab. Master student (M2), Nagoya University.
-    description : "Research topic: Socio-economic regional inequality in Colombia" 
-    net         : https://www.researchgate.net/profile/Felipe_Santos-Marquez
-    linkedIn    : https://www.linkedin.com/in/felipe-santos-marquez-0a5273181/
-    web         : https://felipe-santos.rbind.io/
-    # ContactEmail: juansantosmarquez90@gmail.com
-    # GSIDEmail:  santos.marquez.juan.felipe@e.mbox.nagoya-u.ac.jp
-
 
 
   - name  : Ragdad Cani Miranti

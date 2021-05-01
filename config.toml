@@ -31,6 +31,10 @@ weight  = 70
 #url     = "service"
 #weight  = 80
 [[menu.main]]
+name    = "Events"
+url     = "https://lu.ma/quarcs"
+weight  = 45
+[[menu.main]]
 name    = "Github"
 url     = "https://github.com/quarcs-lab"
 weight  = 90

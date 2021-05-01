@@ -6,11 +6,7 @@
     <description>Recent content in Economies on QuaRCS lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/economies/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/economies/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lack of Global Convergence and the Formation of Multiple Welfare Clubs across Countries: An Unsupervised Machine Learning Approach</title>
       <link>/research/lack-global-convergence-welfare/</link>

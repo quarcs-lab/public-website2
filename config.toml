@@ -97,7 +97,7 @@ enable  = true
 title   = "Do you conduct similar research?"
 content = "Join our mailing list and get in touch with us"
 btnText = "JOIN US"
-btnURL  = "https://forms.gle/4aQyEfMqZ4bLscCU7"
+btnURL  = "https://lu.ma/quarcs"
 
 # Portfolio Section On Homepage
 [params.portfolio]

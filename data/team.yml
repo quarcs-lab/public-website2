@@ -11,19 +11,19 @@ members  :
 #    linkedIn    : https://www.linkedin.com/themefisher
 #    googleplus  : https://plus.google.com/themefisher
 #    website     : https://carlos-mendez.rbind.io
-#    web         : https://carlos-mendez.rbind.io        
+#    web         : https://carlos-mendez.rbind.io
 
 # Note : The website option has been added by modifying the html code of the file themes/timer-hugo/layouts/partials/team.html
-# the added html code is 
+# the added html code is
 # </a>
-# {{ end }} 
+# {{ end }}
 # {{ with .website }}
 # <a href="{{ . }}" target="_blank">
 # <i class="ion-android-globe"></i>
 # </a>
 
 # Note : The web option has been added by modifying the html code of the file themes/timer-hugo/layouts/partials/team.html
-# the added html code is 
+# the added html code is
 #</a>
 #{{ end }}
 #{{ with .web }}
@@ -38,33 +38,45 @@ members  :
 
   - name  : Carlos Mendez
     image : images/team/carlos-mendez.jpg
-    designation : Academic director of the QuaRCS-lab. Associate professor, Nagoya University.
+    designation : Director of the QuaRCS-lab. Associate professor, Nagoya University, Japan.
     description : "Research interests: Development Macroeconomics, Regional Economics, Spatial econometrics"
     net         : https://www.researchgate.net/profile/Carlos_Mendez54
     linkedIn    : www.linkedin.com/in/mendezguerra
     web         : https://carlos-mendez.rbind.io
     # ContactEmail: carlosmendez777@gmail.com
     # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
- 
+
   - name  : Felipe Santos-Marquez
     image : images/team/felipe-santos.jpg
-    designation : Research collaborator, Dresden University of Technology.
-    description : "Research interests: Development Economics, Regional Inequality, Spatial econometrics" 
+    designation : Research associate, Dresden University of Technology, Germany.
+    description : "Research interests: Development Economics, Regional Inequality, Spatial econometrics"
     net         : https://www.researchgate.net/profile/Felipe_Santos-Marquez
     linkedIn    : https://www.linkedin.com/in/felipe-santos-marquez-0a5273181/
     web         : https://felipe-santos.rbind.io/
     # ContactEmail: juansantosmarquez90@gmail.com
     # GSIDEmail:  santos.marquez.juan.felipe@e.mbox.nagoya-u.ac.jp
- 
+
+  - name  : Ragdad Cani Miranti
+    image : images/team/cani-miranti.jpg
+    designation : Research associate. Analyst, Central Agency on Statistics BPS, Indonesia.
+    description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia"
+    net         : https://www.researchgate.net/profile/Ragdad_Miranti
+    linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
+    web         : https://www.researchgate.net/profile/Ragdad_Miranti
+    # ContactEmail: canimiranti@bps.go.id
+    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
+
+
   - name  : Erick Gonzales Rocha
     image : images/team/erick-gonzales.jpg
-    designation : Research collaborator. Programme management officer, United Nations
+    designation : Research associate. Programme management officer, United Nations, Japan.
     description : "Research interests: Development economics, Labor economics, Institutional economics"
     net         : https://www.researchgate.net/profile/Erick_Gonzales_Rocha
     linkedIn    : www.linkedin.com/in/erickgonzalesrocha
     web         : https://erickgonzalesrocha.wordpress.com/
     # ContactEmail: egonzalesr@gmail.com
     # GSIDEmail: egonzalesr@gmail.com
+
 
   - name  : Anang Budi Gunawan
     image : images/team/anang-gunawan2.jpg
@@ -74,40 +86,24 @@ members  :
     linkedIn    : https://www.linkedin.com/in/anang-budi-gunawan-a934751b1/
     web         : http://anang-gunawan.rbind.io/
     # ContactEmail: anang.gunawan1005@gmail.com
-    # GSIDEmail: gunawan.anang.budi@d.mbox.nagoya-u.ac.jp 
+    # GSIDEmail: gunawan.anang.budi@d.mbox.nagoya-u.ac.jp
 
 
 
   - name  : Katikar Tipayalai
     image : images/team/katikar-tipayalai.jpg
     designation : Research collaborator. Government official, Ministry of finance of Thailand.
-    description : "Research topic: Development economics, Migration, Spatial analysis" 
+    description : "Research topic: Development economics, Migration, Spatial analysis"
     net         : https://www.researchgate.net/profile/Katikar_Tipayalai
     linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
     web         : https://www.researchgate.net/profile/Katikar_Tipayalai
     # ContactEmail: katikar.tipayalai@gmail.com
-    # GSIDEmail: 
-
-
-
-
-  - name  : Waruni Perera
-    image : images/team/waruni-perera.jpg
-    designation : Research collaborator. Doctoral student (D3), Nagoya University.
-    description : "Research topic: Financial and Social performance of   Microfinance Institutions : Efficiency and Convergence" 
-    net         : https://www.researchgate.net/profile/Waruni_Perera
-    linkedIn    : https://www.linkedin.com/in/waruni-perera-37a2a859/       
-    web         : https://www.researchgate.net/profile/Waruni_Perera
-    # ContactEmail: waruniperera89@gmail.com
-    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
-
-
-
+    # GSIDEmail:
 
 
   - name  : Harry Aginta
     image : images/team/harry-aginta.jpg
-    designation : Research collaborator. Seminar coordinator. Doctoral student (D1), Nagoya University.
+    designation : Research collaborator. Doctoral student, Nagoya University, Japan.
     description : "Research topic: Regional inflation dynamics in Indonesia"
     net         : https://www.researchgate.net/profile/Harry_Aginta2
     linkedIn    : https://www.linkedin.com/in/harry-aginta-6a968735/
@@ -116,22 +112,10 @@ members  :
     # GSIDEmail: aginta.harry@c.mbox.nagoya-u.ac.jp
 
 
-  - name  : Ragdad Cani Miranti
-    image : images/team/cani-miranti.jpg
-    designation : Research collaborator. Master student (M2), Nagoya University.
-    description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia" 
-    net         : https://www.researchgate.net/profile/Ragdad_Miranti
-    linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
-    web         : https://www.researchgate.net/profile/Ragdad_Miranti
-    # ContactEmail: canimiranti@bps.go.id
-    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
-
-
-
   - name  : Sook Yan Siew
     image : images/team/sook-yan.jpg
-    designation : Research assistant. Master student (M1), Nagoya University.
-    description : "Research topic: Human development convergence and spatial effects across subnational regions of Asia Pacific" 
+    designation : Research collaborator. Master student, Nagoya University, Japan.
+    description : "Research topic: Human development convergence and spatial effects across subnational regions of Asia Pacific"
     net         : https://www.researchgate.net/profile/ADDprofileHere
     linkedIn    : https://www.linkedin.com/ADDprofileHere
     web         : https://www.researchgate.net/profile/ADDprofileHere
@@ -142,21 +126,8 @@ members  :
 #  - name  : Yuka Kimura
 #    image : images/team/yuka-kimura.jpg
 #    designation : Master student (M1), Nagoya University.
-#    description : "Research topic: Economic and social convergence in ASEAN+3: National and subnational evidence" 
+#    description : "Research topic: Economic and social convergence in ASEAN+3: National and subnational evidence"
 #    net         : https://www.researchgate.net/profile/ADDprofileHere
 #    linkedIn    : https://www.linkedin.com/ADDprofileHere
 #    web         : https://www.researchgate.net/profile/ADDprofileHere
     # ContactEmail: ADDemailHERE
-
-    
-
-#  - name  : Zhen Hua
-#    image : images/team/zhen-hua.jpg
-#    designation : Research student (R1), Nagoya University.
-#    description : "Research topic: Regional economic growth and disparities in Yangtze Delta" 
-#    net         : https://www.researchgate.net/profile/ADDprofileHere
-#    linkedIn    : https://www.linkedin.com/ADDprofileHere
-#    web         : https://www.researchgate.net/profile/ADDprofileHere
-    # ContactEmail: ADDemailHERE
-
- 

@@ -1,5 +1,5 @@
 enable  : true
-title   : Research team
+title   : Researchers of the QuaRCS-lab network
 members  :
 
 #  - name  : Anang Gunawan
@@ -38,7 +38,7 @@ members  :
 
   - name  : Carlos Mendez
     image : images/team/carlos-mendez.jpg
-    designation : Director of the QuaRCS-lab. Associate professor, Nagoya University, Japan.
+    designation : Research associate. Associate professor, Nagoya University, JAPAN.
     description : "Research interests: Development Macroeconomics, Regional Economics, Spatial econometrics"
     net         : https://www.researchgate.net/profile/Carlos_Mendez54
     linkedIn    : www.linkedin.com/in/mendezguerra
@@ -48,7 +48,7 @@ members  :
 
   - name  : Felipe Santos-Marquez
     image : images/team/felipe-santos.jpg
-    designation : Research associate, Dresden University of Technology, Germany.
+    designation : Research associate. Dresden University of Technology, GERMANY.
     description : "Research interests: Development Economics, Regional Inequality, Spatial econometrics"
     net         : https://www.researchgate.net/profile/Felipe_Santos-Marquez
     linkedIn    : https://www.linkedin.com/in/felipe-santos-marquez-0a5273181/
@@ -59,7 +59,7 @@ members  :
 
   - name  : Harry Aginta
     image : images/team/harry-aginta.jpg
-    designation : Research collaborator. Doctoral student, Nagoya University, Japan.
+    designation : Research collaborator. Doctoral student, Nagoya University, JAPAN.
     description : "Research topic: Regional inflation dynamics in Indonesia"
     net         : https://www.researchgate.net/profile/Harry_Aginta2
     linkedIn    : https://www.linkedin.com/in/harry-aginta-6a968735/
@@ -70,7 +70,7 @@ members  :
 
   - name  : Ragdad Cani Miranti
     image : images/team/cani-miranti.jpg
-    designation : Research associate. Analyst, Central Agency on Statistics BPS, Indonesia.
+    designation : Research associate. Analyst, Central Agency on Statistics BPS, INDONESIA.
     description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia"
     net         : https://www.researchgate.net/profile/Ragdad_Miranti
     linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
@@ -81,7 +81,7 @@ members  :
 
   - name  : Erick Gonzales Rocha
     image : images/team/erick-gonzales.jpg
-    designation : Research collaborator. Programme management officer, United Nations, Japan.
+    designation : Research collaborator. Programme management officer, United Nations, JAPAN.
     description : "Research interests: Development economics, Labor economics, Institutional economics"
     net         : https://www.researchgate.net/profile/Erick_Gonzales_Rocha
     linkedIn    : www.linkedin.com/in/erickgonzalesrocha
@@ -92,7 +92,7 @@ members  :
 
   - name  : Anang Budi Gunawan
     image : images/team/anang-gunawan2.jpg
-    designation : Research collaborator. Regional development planner, Ministry of development planning of Indonesia.
+    designation : Research collaborator. Regional development planner, Ministry of development planning of INDONESIA.
     description : "Research interests: Development economics, Regional development, Spatial Analysis"
     net         : https://www.researchgate.net/profile/Anang_Gunawan
     linkedIn    : https://www.linkedin.com/in/anang-budi-gunawan-a934751b1/
@@ -104,7 +104,7 @@ members  :
 
   - name  : Katikar Tipayalai
     image : images/team/katikar-tipayalai.jpg
-    designation : Research collaborator. Government official, Ministry of finance of Thailand.
+    designation : Research collaborator. Government official, Ministry of finance of THAILAND.
     description : "Research topic: Development economics, Migration, Spatial analysis"
     net         : https://www.researchgate.net/profile/Katikar_Tipayalai
     linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
@@ -115,7 +115,7 @@ members  :
 
   - name  : Sook Yan Siew
     image : images/team/sook-yan.jpg
-    designation : Research collaborator. Master student, Nagoya University, Japan.
+    designation : Research collaborator. Master student, Nagoya University, JAPAN.
     description : "Research topic: Human development convergence and spatial effects across subnational regions of Asia Pacific"
     net         : https://www.researchgate.net/profile/ADDprofileHere
     linkedIn    : https://www.linkedin.com/ADDprofileHere

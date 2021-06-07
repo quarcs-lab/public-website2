@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>QuaRCS lab</title>
+    <title>QuaRCS-lab Network</title>
     <link>/</link>
-    <description>Recent content on QuaRCS lab</description>
+    <description>Recent content on QuaRCS-lab Network</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Dec 2020 13:07:31 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />

@@ -1,6 +1,6 @@
 baseURL = "https://quarcs-lab.org/"
 languageCode = "en-us"
-title = "QuaRCS lab"
+title = "QuaRCS-lab Network"
 theme = "timer-hugo"
 
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/

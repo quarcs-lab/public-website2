@@ -90,6 +90,18 @@ members  :
     # GSIDEmail: egonzalesr@gmail.com
 
 
+  - name  : Ugur Ursavas
+    image : images/team/ugur-ursavas.jpg
+    designation : Research collaborator. Research Assistant, Zonguldak Bülent Ecevit University, TURKEY.
+    description : "Research interests: Economic Growth and Development, Regional Economics,  Spatial Analysis."
+    net         : https://www.researchgate.net/profile/Ugur-Ursavas
+    linkedIn    : https://www.researchgate.net/profile/Ugur-Ursavas
+    web         : https://www.researchgate.net/profile/Ugur-Ursavas
+    # ContactEmail: ugurursavas@hotmail.com
+    # GSIDEmail: 
+
+
+
   - name  : Anang Budi Gunawan
     image : images/team/anang-gunawan2.jpg
     designation : Research collaborator. Regional development planner, Ministry of development planning of INDONESIA.

@@ -69,7 +69,7 @@ image   = "images/about/about.png"
 [params.banner]
 enable  = true
 bgImage = "images/slider7.jpg"
-heading = "We conduct reasearch about"
+heading = "We conduct research about"
 description = "Quantitative Regional and Computational Science"
 # button
 btn     = true

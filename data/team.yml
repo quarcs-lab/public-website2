@@ -46,6 +46,7 @@ members  :
     # ContactEmail: carlosmendez777@gmail.com
     # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
 
+
   - name  : Felipe Santos-Marquez
     image : images/team/felipe-santos.jpg
     designation : Research director. Dresden University of Technology, GERMANY.
@@ -55,6 +56,16 @@ members  :
     web         : https://felipe-santos.rbind.io/
     # ContactEmail: juansantosmarquez90@gmail.com
     # GSIDEmail:  santos.marquez.juan.felipe@e.mbox.nagoya-u.ac.jp
+
+
+  - name  : Linda Glawe
+    image : images/team/linda-glawe.jpg
+    designation : Research director. Researcher, University of Hagen, GERMANY.
+    description : "Research interests: Economic Growth and Development, Regional Economics, Human Capital, Spatial Econometrics"
+    net         : https://www.researchgate.net/profile/Linda-Glawe
+    linkedIn    : https://www.researchgate.net/profile/Linda-Glawe
+    web         : https://www.fernuni-hagen.de/ls_wagner/en/team/linda.glawe.shtml
+    # ContactEmail: linda.glawe@fernuni-hagen.de
 
 
   - name  : Harry Aginta

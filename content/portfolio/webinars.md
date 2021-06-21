@@ -24,6 +24,9 @@ liveLink:
 #### List of forthcoming and previous webinars
 
 
+> [2021/07/06] 18:00-19:00 (JST), [Katarzyna Kopczewska](https://scholar.google.com/citations?user=iTq62wYAAAAJ&hl=en) (University of Warsaw, Poland): Spatial Machine Learning : New opportunities for regional science. [Register here](https://lu.ma/6sb31rvz)
+
+
 > [2020/12/17] 18:00-19:30 (JST), [Eleonora Cutrini](http://docenti.unimc.it/eleonora.cutrini) (University of Macerata, Italy): Economic integration, structural change, and uneven development in the European Union. [Register here](https://us02web.zoom.us/webinar/register/WN_f8Iu1LilTH-LO3jbNA-woQ)
 
 

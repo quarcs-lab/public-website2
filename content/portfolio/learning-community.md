@@ -1,20 +1,26 @@
 ---
-title: "Learning community"
+title: "Global community"
 type: portfolio
 date: 2020-08-25
-description : "Learning community"
+description : "Global community"
 caption: Find out more
 image: images/portfolio/learning-community.jpg
 category: []
-liveLink: https://www.facebook.com/groups/QuaRCS.Lab
+liveLink: https://lu.ma/community/com-roILjCzNchGnS6A/join
 ---
 
 
-### Learning community
+### Global learning and research community
 
-> Our private learning community provides a platform for learning the research methods and tools that are used across the research lines of the QuaRCS lab.
+> We’ve set up this online community as a space where you can sign up for events, meet other members,  access our webinars, and join our  learning community.
 
-Apply for access here: <https://www.facebook.com/groups/QuaRCS.Lab>
+- Our webinars provide a platform for researchers around the world to present and discuss their research on spatial data science, econometrics, and sustainable development. 
+
+- Our online learning community (accessible via Discord) provides a friendly environment that guides and encourages your learning of spatial data science, econometrics, and machine learning.
+
+
+
+Apply for access here: <https://lu.ma/community/com-roILjCzNchGnS6A/join>
 
 
 

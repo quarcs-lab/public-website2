@@ -91,9 +91,9 @@ title   = "Economic growth and structural change"
 [params.cta]
 enable  = true
 title   = "Do you conduct similar research?"
-content = "Join our mailing list and get in touch with us"
+content = "Join our research and learning community"
 btnText = "JOIN US"
-btnURL  = "https://lu.ma/quarcs"
+btnURL  = "https://lu.ma/community/com-roILjCzNchGnS6A/join"
 
 # Portfolio Section On Homepage
 [params.portfolio]
@@ -104,7 +104,7 @@ subtitle= ""
 # social icon
 [[params.socialIcon]]
 icon = "ion-social-facebook"
-url = "https://www.facebook.com/groups/QuaRCS.Lab/"
+url = "https://lu.ma/community/com-roILjCzNchGnS6A/joinom/groups/QuaRCS.Lab/"
 
 #[[params.socialIcon]]
 #icon = "ion-social-instagram"

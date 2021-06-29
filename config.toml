@@ -22,17 +22,13 @@ weight  = 50
 name    = "Data"
 url     = "portfolio/data-tutorials"
 weight  = 60
-[[menu.main]]
-name    = "Community"
-url     = "https://forms.gle/4aQyEfMqZ4bLscCU7"
-weight  = 70
 #[[menu.main]]
 #name    = "Projects"
 #url     = "service"
 #weight  = 80
 [[menu.main]]
-name    = "Events"
-url     = "https://lu.ma/quarcs"
+name    = "Community"
+url     = "https://lu.ma/community/com-roILjCzNchGnS6A/join"
 weight  = 45
 [[menu.main]]
 name    = "Github"

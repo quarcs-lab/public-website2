@@ -12,6 +12,3 @@ Using a novel municipal-level dataset and spatial clustering methods, this artic
 
 [- Summary slides](https://speakerdeck.com/quarcs/human-capital-constraints-spatial-dependence-and-regionalization-in-bolivia-a-spatial-clustering-approach)
 
-
-[- Video reponse to commentators](https://www.loom.com/share/b3bda47111524135bea8f70a407cfc10)
-

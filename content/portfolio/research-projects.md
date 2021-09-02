@@ -15,14 +15,11 @@ liveLink: "research"
 > A more detailed description of current projects, slides, and summaries are available at <https://quarcs-lab.org/research>
 
 
-- (A) The wealth of subnations: A view from outer space
+- (A) Measuring the wealth and health of subnations: A view from outer space
 
-- (B) Subnational inequality in human development in Latin America
+- (B) Modeling the wealth and health of subnations: A spatial econometric approach
 
-- (C) Regional development, growth, and inequality in Indonesia
+- (C) The quantitative geography of development, growth, and inequality
 
-- (D) Regional inequality and convergence in Thailand
-
-- (E) Spatiotemporal methods for regional inequality
 
 

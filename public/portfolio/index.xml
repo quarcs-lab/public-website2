@@ -14,9 +14,9 @@
       
       <guid>/portfolio/all-publications/</guid>
       <description>Research publications  Further information including current projects, slides, and summaries are available here: https://quarcs-lab.org/research
- Mendez, Carlos. 2020. Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries. Springer. [E-book version] [Printed version]
-Aginta, Harry. 2020. &amp;ldquo;Spatial dynamics of consumer price in Indonesia: Convergence clubs and conditioning factors.&amp;rdquo; Asia-Pacific Journal of Regional Science, Forthcoming. [Published version]
-Aginta, Harry. 2020. &amp;ldquo;Does the law of one price hold in 82 Indonesian cities?</description>
+ Mendez, Carlos. &amp;amp; Gonzales, Erick. 2021. &amp;ldquo;Human Capital Constraints, Spatial Dependence, and Regionalization in Bolivia: A Spatial Clustering Approach.&amp;rdquo;&amp;quot; Economia, 44(87), 115-145. [Open published version]
+Mendez, Carlos. 2020. Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries. Springer. [E-book version] [Printed version]
+Aginta, Harry. 2020. &amp;ldquo;Spatial dynamics of consumer price in Indonesia: Convergence clubs and conditioning factors.</description>
     </item>
     
     <item>
@@ -26,11 +26,9 @@ Aginta, Harry. 2020. &amp;ldquo;Does the law of one price hold in 82 Indonesian 
       
       <guid>/portfolio/research-projects/</guid>
       <description>Main research lines  A more detailed description of current projects, slides, and summaries are available at https://quarcs-lab.org/research
-   (A) The wealth of subnations: A view from outer space
-  (B) Subnational inequality in human development in Latin America
-  (C) Regional development, growth, and inequality in Indonesia
-  (D) Regional inequality and convergence in Thailand
-  (E) Spatiotemporal methods for regional inequality
+   (A) Measuring the wealth and health of subnations: A view from outer space
+  (B) Modeling the wealth and health of subnations: A spatial econometric approach
+  (C) The quantitative geography of development, growth, and inequality
   </description>
     </item>
     
@@ -65,13 +63,14 @@ Aginta, Harry. 2020. &amp;ldquo;Does the law of one price hold in 82 Indonesian 
     </item>
     
     <item>
-      <title>Learning community</title>
+      <title>Global community</title>
       <link>/portfolio/learning-community/</link>
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/portfolio/learning-community/</guid>
-      <description>Learning community  Our private learning community provides a platform for learning the research methods and tools that are used across the research lines of the QuaRCS lab.
- Apply for access here: https://www.facebook.com/groups/QuaRCS.Lab</description>
+      <description>Global learning and research community  We’ve set up this online community as a space where you can sign up for events, meet other members, access our webinars, and join our learning community.
+   Our webinars provide a platform for researchers around the world to present and discuss their research on spatial data science, econometrics, and sustainable development.
+  Our online learning community (accessible via Discord) provides a friendly environment that guides and encourages your learning of spatial data science, econometrics, and machine learning.</description>
     </item>
     
   </channel>

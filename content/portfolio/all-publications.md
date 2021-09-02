@@ -9,6 +9,16 @@ category: ["Research Outcomes"]
 liveLink: "research"
 ---
 
+### Main research programs
+
+- (A) The quantitative geography of development, growth, and inequality
+
+- (B) Spatial machine learning and development clusters
+
+- (C) Measuring the wealth and health of subnations: A view from outer space
+
+- (D) Modeling the wealth and health of subnations: A spatial econometric approach
+
 
 ### Research publications
 

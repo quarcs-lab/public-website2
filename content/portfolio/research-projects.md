@@ -14,12 +14,15 @@ liveLink: "research"
 
 > A more detailed description of current projects, slides, and summaries are available at <https://quarcs-lab.org/research>
 
+- (A) The quantitative geography of development, growth, and inequality
 
-- (A) Measuring the wealth and health of subnations: A view from outer space
+- (B) Spatial machine learning and development clusters
 
-- (B) Modeling the wealth and health of subnations: A spatial econometric approach
+- (C) Measuring the wealth and health of subnations: A view from outer space
 
-- (C) The quantitative geography of development, growth, and inequality
+- (D) Modeling the wealth and health of subnations: A spatial econometric approach
+
+
 
 
 

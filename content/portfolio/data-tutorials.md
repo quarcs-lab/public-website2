@@ -45,6 +45,12 @@ liveLink:
 
 ### Spatial Analysis
 
+- Mendez C. (2021). Measuring the evolution of spatial dependence and spatial inequality: A tutorial using Python. Available at [https://deepnote.com/@carlos-mendez](https://deepnote.com/@carlos-mendez/PYTHON-Spatial-dependence-and-inequality-dynamics-TdpNxK-MSP2b33sYpe_vjg)
+
+- Mendez C. (2021). Introduction to exploratory space-time data analysis (ESTDA) using Python. Available at [https://deepnote.com/@carlos-mendez](https://deepnote.com/@carlos-mendez/PYTHON-Intro-to-space-time-data-analysis-XRMI-FfoQ1ahIUKIOicrVg)
+
+- Mendez C. (2021). Basic spatial econometrics using Python. Available at [https://deepnote.com/@carlos-mendez](https://deepnote.com/@carlos-mendez/PYTHON-Basic-spatial-econometrics-He5bDBGzQI6SAdyUpgmWNQ)
+
 - Mendez C. (2020). Making maps in R: Using the sf and tmap Packages. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/tutorial-maps-in-r
 
 - Mendez C. (2020). Spatial autocorrelation analysis in R. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/spatial-autocorrelation
@@ -58,7 +64,9 @@ liveLink:
 
 ### Convergence Analysis
 
-- Mendez C.(2020). Club convergence analysis in Stata. Forthcoming at https://github.com/quarcs-lab/mendez2020-convergence-clubs-code-data
+- Mendez C. (2021). The augmented Solow model: A tutorial using R and Stata. Available at [https://deepnote.com/@carlos-mendez](https://deepnote.com/@carlos-mendez/R-Augmented-Solow-Model-2Q91UJCcQH2ClZuknoF2Tw)
+
+- Mendez C.(2020). Club convergence analysis in Stata. Available at https://github.com/quarcs-lab/mendez2020-convergence-clubs-code-data
 
 - Mendez C. (2020). Classical sigma and beta convergence analysis in R: Using the REAT 2.1 Package. R Studio/RPubs. Available at https://rpubs.com/quarcs-lab/classical-convergence-reat21
 

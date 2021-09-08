@@ -14,13 +14,15 @@ liveLink: "research"
 
 > A more detailed description of current projects, slides, and summaries are available at <https://quarcs-lab.org/research>
 
-- (A) The quantitative geography of sustainable development, growth, and inequality
+- (A) The quantitative geography of sustainable development: Remote sensing, spatial econometrics, and spatial machine learning
 
-- (B) Measuring the wealth and inequality of subnations: A view from outer space
+- (B) Regional growth, inequality, and convergence: Perspectives from spatial econometrics and machine learning
 
-- (C) Modeling the wealth and inequality of subnations: A spatial econometric approach
+- (C) Measuring the wealth and inequality of subnations: Views from outer space using satellite remote sensing 
 
-- (D) Spatial machine learning and development clusters
+- (D) Modeling the wealth and inequality of subnations: Spatial spillovers and spatial heterogeneity
+
+- (E) Spatial machine learning and development clusters
 
 
 

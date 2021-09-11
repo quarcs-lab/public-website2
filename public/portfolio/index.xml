@@ -61,8 +61,8 @@
       <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/portfolio/webinars/</guid>
-      <description>QuaRCS-network webinar series  The QuaRCS-network webinar series provides a platform for researchers around the world to present and discuss their research on spatial data science, econometrics, and regional development. If you are interested in these topics as well as quantitative methods, please register and join our mailing list.
-   The webinars take place once or twice in a month via ZOOM. The time and date can vary depending on the location of the speaker.</description>
+      <description>QuaRCS-network webinar series  The QuaRCS-network webinar series provides a platform for researchers around the world to present and discuss their research on spatial data science, econometrics, and regional development. If you are interested in these topics as well as quantitative methods, please register here.
+ </description>
     </item>
     
     <item>
@@ -71,9 +71,8 @@
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/portfolio/learning-community/</guid>
-      <description>Global learning and research community  We’ve set up this online community as a space where you can sign up for events, meet other members, access our webinars, and join our learning community.
-   Our webinars provide a platform for researchers around the world to present and discuss their research on spatial data science, econometrics, and sustainable development.
-  Our online learning community (accessible via Discord) provides a friendly environment that guides and encourages your learning of spatial data science, econometrics, and machine learning.</description>
+      <description>Open learning community  We’ve set up an online learning community (accessible via Discord) that provides a friendly environment to learn econometrics, spatial data science, and machine learning.
+ </description>
     </item>
     
   </channel>

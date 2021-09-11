@@ -15,8 +15,14 @@ name    = "Research"
 url     = "research"
 weight  = 40
 [[menu.main]]
-name    = "Webinars"
-url     = "portfolio/webinars"
+name    = "Events"
+#url     = "portfolio/webinars"
+url     = "https://lu.ma/quarcs"
+weight  = 43
+[[menu.main]]
+name    = "Learning"
+#url     = "portfolio/webinars"
+url     = "https://discord.gg/NKb5GJJmkd"
 weight  = 50
 [[menu.main]]
 name    = "Data"

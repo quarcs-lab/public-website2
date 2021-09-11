@@ -38,7 +38,7 @@ members  :
 
   - name  : Carlos Mendez
     image : images/team/carlos-mendez.jpg
-    designation : Research director. Associate professor, Nagoya University, JAPAN.
+    designation : Founding research director. Associate professor, Nagoya University, JAPAN.
     description : "Research interests: Development Macroeconomics, Regional Economics, Spatial econometrics"
     net         : https://www.researchgate.net/profile/Carlos_Mendez54
     linkedIn    : www.linkedin.com/in/mendezguerra
@@ -49,7 +49,7 @@ members  :
 
   - name  : Felipe Santos-Marquez
     image : images/team/felipe-santos.jpg
-    designation : Research director. Dresden University of Technology, GERMANY.
+    designation : Founding research director. Researcher, Dresden University of Technology, GERMANY.
     description : "Research interests: Development Economics, Regional Inequality, Spatial econometrics"
     net         : https://www.researchgate.net/profile/Felipe_Santos-Marquez
     linkedIn    : https://www.linkedin.com/in/felipe-santos-marquez-0a5273181/
@@ -124,6 +124,24 @@ members  :
     # GSIDEmail: gunawan.anang.budi@d.mbox.nagoya-u.ac.jp
 
 
+  - name  : Sujana Kabiraj
+    image : images/team/Sujana-Kabiraj.png
+    designation : Research collaborator. Assistant Professor, University of Wisconsin-Stevens Point, USA.
+    description : "Research interests: Economic growth, regional economics, Indian economy"
+    net         : https://sites.google.com/site/sujanakabiraj/
+    linkedIn    : https://sites.google.com/site/sujanakabiraj/
+    web         : https://sites.google.com/site/sujanakabiraj/
+    # ContactEmail: skabiraj@uwsp.edu 
+
+  - name  : Jesson Pagaduan
+    image : images/team/Jesson-Pagaduan.png
+    designation : Research collaborator. Consultant, Asian Development Bank, PHILIPPINES.
+    description : "Research interests: Macroeconomics, Development Economics, Spatial Economic Analysis"
+    net         : https://sites.google.com/view/jessonpagaduan/
+    linkedIn    : https://sites.google.com/view/jessonpagaduan/
+    web         : https://sites.google.com/view/jessonpagaduan/
+    # ContactEmail: jpagaduan.consultant@adb.org
+
 
   - name  : Katikar Tipayalai
     image : images/team/katikar-tipayalai.jpg
@@ -134,6 +152,15 @@ members  :
     web         : https://www.researchgate.net/profile/Katikar_Tipayalai
     # ContactEmail: katikar.tipayalai@gmail.com
     # GSIDEmail:
+
+  - name  : Mehak Sachdeva
+    image : images/team/Mehak-Sachdeva.png
+    designation : Research collaborator. PhD candidate, Arizona State University, USA.
+    description : "Research interests: Computational spatial science, Urban analysis, Statistical analysis"
+    net         : https://sgsup.asu.edu/mehak-sachdeva
+    linkedIn    : https://sgsup.asu.edu/mehak-sachdeva
+    web         : https://sgsup.asu.edu/mehak-sachdeva
+    # ContactEmail: jpagaduan.consultant@adb.org
 
 
   - name  : Sook Yan Siew

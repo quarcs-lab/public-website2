@@ -48,7 +48,7 @@ members  :
 
 
   - name  : Felipe Santos-Marquez
-    image : images/team/felipe-santos.jpg
+    image : images/team/felipe-santos.png
     designation : Founding research director. Researcher, Dresden University of Technology, GERMANY.
     description : "Research interests: Development Economics, Regional Inequality, Spatial econometrics"
     net         : https://www.researchgate.net/profile/Felipe_Santos-Marquez
@@ -78,6 +78,16 @@ members  :
     # ContactEmail: haginta@gmail.com
     # GSIDEmail: aginta.harry@c.mbox.nagoya-u.ac.jp
 
+  - name  : Erick Gonzales Rocha
+    image : images/team/erick-gonzales.jpg
+    designation : Research collaborator. Programme management officer, United Nations, JAPAN.
+    description : "Research interests: Development economics, Labor economics, Institutional economics"
+    net         : https://www.researchgate.net/profile/Erick_Gonzales_Rocha
+    linkedIn    : www.linkedin.com/in/erickgonzalesrocha
+    web         : https://erickgonzalesrocha.wordpress.com/
+    # ContactEmail: egonzalesr@gmail.com
+    # GSIDEmail: egonzalesr@gmail.com
+
 
   - name  : Ragdad Cani Miranti
     image : images/team/cani-miranti.jpg
@@ -88,17 +98,6 @@ members  :
     web         : https://www.researchgate.net/profile/Ragdad_Miranti
     # ContactEmail: canimiranti@bps.go.id
     # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
-
-
-  - name  : Erick Gonzales Rocha
-    image : images/team/erick-gonzales.jpg
-    designation : Research collaborator. Programme management officer, United Nations, JAPAN.
-    description : "Research interests: Development economics, Labor economics, Institutional economics"
-    net         : https://www.researchgate.net/profile/Erick_Gonzales_Rocha
-    linkedIn    : www.linkedin.com/in/erickgonzalesrocha
-    web         : https://erickgonzalesrocha.wordpress.com/
-    # ContactEmail: egonzalesr@gmail.com
-    # GSIDEmail: egonzalesr@gmail.com
 
 
   - name  : Ugur Ursavas

@@ -58,12 +58,11 @@
       <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>/portfolio/all-publications/</guid>
-      <description>Main research programs   (A) The quantitative geography of development, growth, and inequality
-  (B) Spatial machine learning and development clusters
-  (C) Measuring the wealth and health of subnations: A view from outer space
-  (D) Modeling the wealth and health of subnations: A spatial econometric approach
-  Research publications  Further information including current projects, slides, and summaries are available here: https://quarcs-lab.org/research
- Mendez, Carlos.</description>
+      <description>Main research programs   (A) The quantitative geography of sustainable development: Remote sensing, spatial econometrics, and spatial machine learning
+  (B) Regional growth, inequality, and convergence: Perspectives from spatial econometrics and machine learning
+  (C) Measuring the wealth and inequality of subnations: Views from outer space using satellite remote sensing
+  (D) Modeling the wealth and inequality of subnations: Spatial spillovers and spatial heterogeneity
+  (E) Spatial machine learning and development clusters</description>
     </item>
     
     <item>
@@ -73,11 +72,10 @@
       
       <guid>/portfolio/research-projects/</guid>
       <description>Main research lines  A more detailed description of current projects, slides, and summaries are available at https://quarcs-lab.org/research
-   (A) The quantitative geography of development, growth, and inequality
-  (B) Spatial machine learning and development clusters
-  (C) Measuring the wealth and health of subnations: A view from outer space
-  (D) Modeling the wealth and health of subnations: A spatial econometric approach
-  </description>
+   (A) The quantitative geography of sustainable development: Remote sensing, spatial econometrics, and spatial machine learning
+  (B) Regional growth, inequality, and convergence: Perspectives from spatial econometrics and machine learning
+  (C) Measuring the wealth and inequality of subnations: Views from outer space using satellite remote sensing
+  (D) Modeling the wealth and inequality of subnations: Spatial spillovers and spatial heterogeneity</description>
     </item>
     
     <item>
@@ -131,7 +129,7 @@
       <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/portfolio/book-mendez2020/</guid>
-      <description>About the book  Testing for economic convergence across countries has been a central issue in the literature of economic growth and development. This book introduces a modern framework to study the cross-country convergence dynamics of labor productivity and its proximate sources: capital accumulation and aggregate efficiency. In particular, recent convergence dynamics of developed as well as developing countries are evaluated through the lens of a non-linear dynamic factor model and a clustering algorithm for panel data.</description>
+      <description>Convergence clubs in labor productivity and its proximate sources: Evidence from developed and developing countries About the book Testing for economic convergence across countries has been a central issue in the literature of economic growth and development. This book introduces a modern framework to study the cross-country convergence dynamics of labor productivity and its proximate sources: capital accumulation and aggregate efficiency. In particular, recent convergence dynamics of developed as well as developing countries are evaluated through the lens of a non-linear dynamic factor model and a clustering algorithm for panel data.</description>
     </item>
     
     <item>

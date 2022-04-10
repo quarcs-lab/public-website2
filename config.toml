@@ -19,13 +19,13 @@ name    = "Events"
 #url     = "portfolio/webinars"
 url     = "https://lu.ma/quarcs"
 weight  = 43
-[[menu.main]]
-name    = "Learning"
+#[[menu.main]]
+#name    = "Learning"
 #url     = "portfolio/webinars"
-url     = "https://discord.gg/NKb5GJJmkd"
-weight  = 50
+#url     = "https://discord.gg/NKb5GJJmkd"
+#weight  = 50
 [[menu.main]]
-name    = "Data"
+name    = "Tutorials"
 url     = "portfolio/data-tutorials"
 weight  = 60
 #[[menu.main]]
@@ -34,7 +34,7 @@ weight  = 60
 #weight  = 80
 [[menu.main]]
 name    = "Community"
-url     = "https://lu.ma/community/com-roILjCzNchGnS6A/join"
+url     = "https://discord.gg/NKb5GJJmkd"
 weight  = 45
 [[menu.main]]
 name    = "Github"

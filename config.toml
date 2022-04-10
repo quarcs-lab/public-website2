@@ -97,7 +97,7 @@ enable  = true
 title   = "Do you conduct similar research?"
 content = "Join our research and learning community"
 btnText = "JOIN US"
-btnURL  = "https://lu.ma/quarcs-network"
+btnURL  = "https://discord.gg/NKb5GJJmkd"
 
 # Portfolio Section On Homepage
 [params.portfolio]
@@ -108,7 +108,7 @@ subtitle= ""
 # social icon
 [[params.socialIcon]]
 icon = "ion-social-facebook"
-url = "https://lu.ma/quarcs-network"
+url = "https://discord.gg/NKb5GJJmkd"
 
 #[[params.socialIcon]]
 #icon = "ion-social-instagram"

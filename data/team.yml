@@ -78,6 +78,16 @@ members  :
     # ContactEmail: haginta@gmail.com
     # GSIDEmail: aginta.harry@c.mbox.nagoya-u.ac.jp
 
+  - name  : Alvaro Dominguez
+    image : images/team/Alvaro-dominguez.jpg
+    designation : Research collaborator. Assistant Professor, Asian Growth Research Institute, JAPAN.
+    description : "Research interests: Economics of Networks, Environmental Economics, Spatial analysis"
+    net         : http://en.agi.or.jp/staff/alvaro-dominguez/
+    linkedIn    : http://en.agi.or.jp/staff/alvaro-dominguez/
+    web         : http://en.agi.or.jp/staff/alvaro-dominguez/
+    # ContactEmail: egonzalesr@gmail.com
+    # GSIDEmail: egonzalesr@gmail.com
+
   - name  : Erick Gonzales Rocha
     image : images/team/erick-gonzales.jpg
     designation : Research collaborator. Programme management officer, United Nations, JAPAN.
@@ -88,16 +98,26 @@ members  :
     # ContactEmail: egonzalesr@gmail.com
     # GSIDEmail: egonzalesr@gmail.com
 
+  - name  : Tifani Husna Siregar
+    image : images/team/tifani.png
+    designation : Research collaborator. Assistant Professor, Waseda University, JAPAN.
+    description : "Research interests: Labor economics, Applied microeconometrics, Spatial econometrics"
+    net         : https://tifanihusna.netlify.app/
+    linkedIn    : https://www.linkedin.com/in/tifani-husna-siregar-17850525/
+    web         : https://tifanihusna.netlify.app/
+    # ContactEmail: ugurursavas@hotmail.com
+    # GSIDEmail: 
 
-  - name  : Ragdad Cani Miranti
-    image : images/team/cani-miranti.jpg
-    designation : Research collaborator. Analyst, Central Agency on Statistics BPS, INDONESIA.
-    description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia"
-    net         : https://www.researchgate.net/profile/Ragdad_Miranti
-    linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
-    web         : https://www.researchgate.net/profile/Ragdad_Miranti
-    # ContactEmail: canimiranti@bps.go.id
-    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
+
+  - name  : Katikar Tipayalai
+    image : images/team/katikar-tipayalai.jpg
+    designation : Research collaborator. Lecturer, Chulalongkorn University, THAILAND.
+    description : "Research topic: Development economics, Migration, Spatial analysis"
+    net         : https://www.researchgate.net/profile/Katikar_Tipayalai
+    linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
+    web         : https://www.econ.chula.ac.th/faculty-staff/%e0%b8%81%e0%b8%95%e0%b8%b4%e0%b8%81%e0%b8%b2-%e0%b8%97%e0%b8%b4%e0%b8%9e%e0%b8%a2%e0%b8%b2%e0%b8%a5%e0%b8%b1%e0%b8%a2-%e0%b8%ad-%e0%b8%94%e0%b8%a3/
+    # ContactEmail: katikar.tipayalai@gmail.com
+    # GSIDEmail:
 
 
   - name  : Ugur Ursavas
@@ -110,17 +130,6 @@ members  :
     # ContactEmail: ugurursavas@hotmail.com
     # GSIDEmail: 
 
-
-
-  - name  : Anang Budi Gunawan
-    image : images/team/anang-gunawan2.jpg
-    designation : Research collaborator. Regional development planner, Ministry of development planning of INDONESIA.
-    description : "Research interests: Development economics, Regional development, Spatial Analysis"
-    net         : https://www.researchgate.net/profile/Anang_Gunawan
-    linkedIn    : https://www.linkedin.com/in/anang-budi-gunawan-a934751b1/
-    web         : http://anang-gunawan.rbind.io/
-    # ContactEmail: anang.gunawan1005@gmail.com
-    # GSIDEmail: gunawan.anang.budi@d.mbox.nagoya-u.ac.jp
 
 
   - name  : Sujana Kabiraj
@@ -142,16 +151,6 @@ members  :
     # ContactEmail: jpagaduan.consultant@adb.org
 
 
-  - name  : Katikar Tipayalai
-    image : images/team/katikar-tipayalai.jpg
-    designation : Research collaborator. Government official, Ministry of finance of THAILAND.
-    description : "Research topic: Development economics, Migration, Spatial analysis"
-    net         : https://www.researchgate.net/profile/Katikar_Tipayalai
-    linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
-    web         : https://www.researchgate.net/profile/Katikar_Tipayalai
-    # ContactEmail: katikar.tipayalai@gmail.com
-    # GSIDEmail:
-
   - name  : Mehak Sachdeva
     image : images/team/Mehak-Sachdeva.png
     designation : Research collaborator. PhD candidate, Arizona State University, USA.
@@ -161,6 +160,25 @@ members  :
     web         : https://sgsup.asu.edu/mehak-sachdeva
     # ContactEmail: jpagaduan.consultant@adb.org
 
+  - name  : Anang Budi Gunawan
+    image : images/team/anang-gunawan2.jpg
+    designation : Research collaborator. Regional development planner, Ministry of development planning of INDONESIA.
+    description : "Research interests: Development economics, Regional development, Spatial Analysis"
+    net         : https://www.researchgate.net/profile/Anang_Gunawan
+    linkedIn    : https://www.linkedin.com/in/anang-budi-gunawan-a934751b1/
+    web         : http://anang-gunawan.rbind.io/
+    # ContactEmail: anang.gunawan1005@gmail.com
+    # GSIDEmail: gunawan.anang.budi@d.mbox.nagoya-u.ac.jp
+
+  - name  : Ragdad Cani Miranti
+    image : images/team/cani-miranti.jpg
+    designation : Research collaborator. Analyst, Central Agency on Statistics BPS, INDONESIA.
+    description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia"
+    net         : https://www.researchgate.net/profile/Ragdad_Miranti
+    linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
+    web         : https://www.researchgate.net/profile/Ragdad_Miranti
+    # ContactEmail: canimiranti@bps.go.id
+    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
 
   - name  : Sook Yan Siew
     image : images/team/sook-yan.jpg

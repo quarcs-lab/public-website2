@@ -78,8 +78,21 @@ members  :
     # ContactEmail: haginta@gmail.com
     # GSIDEmail: aginta.harry@c.mbox.nagoya-u.ac.jp
 
+
+
+  - name  : Tifani Husna Siregar
+    image : images/team/tifani.png
+    designation : Research collaborator. Assistant Professor, Waseda University, JAPAN.
+    description : "Research interests: Labor economics, Applied microeconometrics, Spatial econometrics"
+    net         : https://tifanihusna.netlify.app/
+    linkedIn    : https://www.linkedin.com/in/tifani-husna-siregar-17850525/
+    web         : https://tifanihusna.netlify.app/
+    # ContactEmail: ugurursavas@hotmail.com
+    # GSIDEmail: 
+
+
   - name  : Alvaro Dominguez
-    image : images/team/Alvaro-dominguez.jpg
+    image : images/team/Alvaro-dominguez.png
     designation : Research collaborator. Assistant Professor, Asian Growth Research Institute, JAPAN.
     description : "Research interests: Economics of Networks, Environmental Economics, Spatial analysis"
     net         : http://en.agi.or.jp/staff/alvaro-dominguez/
@@ -87,6 +100,7 @@ members  :
     web         : http://en.agi.or.jp/staff/alvaro-dominguez/
     # ContactEmail: egonzalesr@gmail.com
     # GSIDEmail: egonzalesr@gmail.com
+
 
   - name  : Erick Gonzales Rocha
     image : images/team/erick-gonzales.jpg
@@ -98,15 +112,7 @@ members  :
     # ContactEmail: egonzalesr@gmail.com
     # GSIDEmail: egonzalesr@gmail.com
 
-  - name  : Tifani Husna Siregar
-    image : images/team/tifani.png
-    designation : Research collaborator. Assistant Professor, Waseda University, JAPAN.
-    description : "Research interests: Labor economics, Applied microeconometrics, Spatial econometrics"
-    net         : https://tifanihusna.netlify.app/
-    linkedIn    : https://www.linkedin.com/in/tifani-husna-siregar-17850525/
-    web         : https://tifanihusna.netlify.app/
-    # ContactEmail: ugurursavas@hotmail.com
-    # GSIDEmail: 
+
 
 
   - name  : Katikar Tipayalai

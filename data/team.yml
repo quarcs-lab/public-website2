@@ -112,6 +112,14 @@ members  :
     # ContactEmail: egonzalesr@gmail.com
     # GSIDEmail: egonzalesr@gmail.com
 
+  - name  : Lykke Andersen
+    image : images/team/lykke-andersen.png
+    designation : Research collaborator. Executive Director of SDSN, BOLIVIA.
+    description : "Research interests: Sustainable development, Environmental economics, Applied econometrics"
+    net         : https://www.inesad.edu.bo/en/lykke-e-andersen/
+    linkedIn    : https://twitter.com/lykkeeandersenv
+    web         : https://www.inesad.edu.bo/en/lykke-e-andersen/
+    # ContactEmail: lykke.e.andersen@sdsnbolivia.org 
 
 
 
@@ -166,6 +174,17 @@ members  :
     web         : https://sgsup.asu.edu/mehak-sachdeva
     # ContactEmail: jpagaduan.consultant@adb.org
 
+  - name  : Ragdad Cani Miranti
+    image : images/team/cani-miranti.jpg
+    designation : Research collaborator. Analyst, Central Agency on Statistics BPS, INDONESIA.
+    description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia"
+    net         : https://www.researchgate.net/profile/Ragdad_Miranti
+    linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
+    web         : https://www.researchgate.net/profile/Ragdad_Miranti
+    # ContactEmail: canimiranti@bps.go.id
+    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
+
+
   - name  : Anang Budi Gunawan
     image : images/team/anang-gunawan2.jpg
     designation : Research collaborator. Regional development planner, Ministry of development planning of INDONESIA.
@@ -176,15 +195,6 @@ members  :
     # ContactEmail: anang.gunawan1005@gmail.com
     # GSIDEmail: gunawan.anang.budi@d.mbox.nagoya-u.ac.jp
 
-  - name  : Ragdad Cani Miranti
-    image : images/team/cani-miranti.jpg
-    designation : Research collaborator. Analyst, Central Agency on Statistics BPS, INDONESIA.
-    description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia"
-    net         : https://www.researchgate.net/profile/Ragdad_Miranti
-    linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
-    web         : https://www.researchgate.net/profile/Ragdad_Miranti
-    # ContactEmail: canimiranti@bps.go.id
-    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
 
   - name  : Sook Yan Siew
     image : images/team/sook-yan.jpg

@@ -43,8 +43,7 @@ members  :
     net         : https://www.researchgate.net/profile/Carlos_Mendez54
     linkedIn    : www.linkedin.com/in/mendezguerra
     web         : https://carlos-mendez.rbind.io
-    # ContactEmail: carlosmendez777@gmail.com
-    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
+
 
 
   - name  : Felipe Santos-Marquez
@@ -54,8 +53,6 @@ members  :
     net         : https://www.researchgate.net/profile/Felipe_Santos-Marquez
     linkedIn    : https://www.linkedin.com/in/felipe-santos-marquez-0a5273181/
     web         : https://felipe-santos.rbind.io/
-    # ContactEmail: juansantosmarquez90@gmail.com
-    # GSIDEmail:  santos.marquez.juan.felipe@e.mbox.nagoya-u.ac.jp
 
 
   - name  : Linda Glawe
@@ -65,7 +62,6 @@ members  :
     net         : https://www.researchgate.net/profile/Linda-Glawe
     linkedIn    : https://www.researchgate.net/profile/Linda-Glawe
     web         : https://www.fernuni-hagen.de/macroeconomics-wagner/en/staff/linda.glawe.shtml
-    # ContactEmail: linda.glawe@fernuni-hagen.de
 
 
   - name  : Harry Aginta
@@ -75,8 +71,6 @@ members  :
     net         : https://www.researchgate.net/profile/Harry_Aginta2
     linkedIn    : https://www.linkedin.com/in/harry-aginta-6a968735/
     web         : https://www.researchgate.net/profile/Harry_Aginta2
-    # ContactEmail: haginta@gmail.com
-    # GSIDEmail: aginta.harry@c.mbox.nagoya-u.ac.jp
 
 
 
@@ -98,8 +92,6 @@ members  :
     net         : http://en.agi.or.jp/staff/alvaro-dominguez/
     linkedIn    : http://en.agi.or.jp/staff/alvaro-dominguez/
     web         : http://en.agi.or.jp/staff/alvaro-dominguez/
-    # ContactEmail: egonzalesr@gmail.com
-    # GSIDEmail: egonzalesr@gmail.com
 
 
   - name  : Erick Gonzales Rocha
@@ -109,8 +101,7 @@ members  :
     net         : https://www.researchgate.net/profile/Erick_Gonzales_Rocha
     linkedIn    : www.linkedin.com/in/erickgonzalesrocha
     web         : https://erickgonzalesrocha.wordpress.com/
-    # ContactEmail: egonzalesr@gmail.com
-    # GSIDEmail: egonzalesr@gmail.com
+
 
   - name  : Lykke Andersen
     image : images/team/lykke-andersen.png
@@ -119,7 +110,7 @@ members  :
     net         : https://www.inesad.edu.bo/en/lykke-e-andersen/
     linkedIn    : https://twitter.com/lykkeeandersenv
     web         : https://www.inesad.edu.bo/en/lykke-e-andersen/
-    # ContactEmail: lykke.e.andersen@sdsnbolivia.org 
+
 
 
 
@@ -130,8 +121,6 @@ members  :
     net         : https://www.researchgate.net/profile/Katikar_Tipayalai
     linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
     web         : https://www.econ.chula.ac.th/faculty-staff/%e0%b8%81%e0%b8%95%e0%b8%b4%e0%b8%81%e0%b8%b2-%e0%b8%97%e0%b8%b4%e0%b8%9e%e0%b8%a2%e0%b8%b2%e0%b8%a5%e0%b8%b1%e0%b8%a2-%e0%b8%ad-%e0%b8%94%e0%b8%a3/
-    # ContactEmail: katikar.tipayalai@gmail.com
-    # GSIDEmail:
 
 
   - name  : Ugur Ursavas
@@ -141,8 +130,6 @@ members  :
     net         : https://www.researchgate.net/profile/Ugur-Ursavas
     linkedIn    : https://www.researchgate.net/profile/Ugur-Ursavas
     web         : https://www.researchgate.net/profile/Ugur-Ursavas
-    # ContactEmail: ugurursavas@hotmail.com
-    # GSIDEmail: 
 
 
 
@@ -153,7 +140,7 @@ members  :
     net         : https://sites.google.com/site/sujanakabiraj/
     linkedIn    : https://sites.google.com/site/sujanakabiraj/
     web         : https://sites.google.com/site/sujanakabiraj/
-    # ContactEmail: skabiraj@uwsp.edu 
+
 
   - name  : Jesson Pagaduan
     image : images/team/Jesson-Pagaduan.png
@@ -162,17 +149,15 @@ members  :
     net         : https://sites.google.com/view/jessonpagaduan/
     linkedIn    : https://sites.google.com/view/jessonpagaduan/
     web         : https://sites.google.com/view/jessonpagaduan/
-    # ContactEmail: jpagaduan.consultant@adb.org
 
 
   - name  : Mehak Sachdeva
     image : images/team/Mehak-Sachdeva.png
     designation : Research collaborator. PhD candidate, Arizona State University, USA.
     description : "Research interests: Computational spatial science, Urban analysis, Statistical analysis"
-    net         : https://sgsup.asu.edu/mehak-sachdeva
-    linkedIn    : https://sgsup.asu.edu/mehak-sachdeva
-    web         : https://sgsup.asu.edu/mehak-sachdeva
-    # ContactEmail: jpagaduan.consultant@adb.org
+    net         : https://www.mehaksachdeva.com
+    linkedIn    : https://www.mehaksachdeva.com
+    web         : https://www.mehaksachdeva.com
 
   - name  : Ragdad Cani Miranti
     image : images/team/cani-miranti.jpg
@@ -181,8 +166,6 @@ members  :
     net         : https://www.researchgate.net/profile/Ragdad_Miranti
     linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
     web         : https://www.researchgate.net/profile/Ragdad_Miranti
-    # ContactEmail: canimiranti@bps.go.id
-    # GSIDEmail: carlos@gsid.nagoya-u.ac.jp
 
 
   - name  : Anang Budi Gunawan
@@ -192,8 +175,7 @@ members  :
     net         : https://www.researchgate.net/profile/Anang_Gunawan
     linkedIn    : https://www.linkedin.com/in/anang-budi-gunawan-a934751b1/
     web         : http://anang-gunawan.rbind.io/
-    # ContactEmail: anang.gunawan1005@gmail.com
-    # GSIDEmail: gunawan.anang.budi@d.mbox.nagoya-u.ac.jp
+
 
 
   - name  : Sook Yan Siew
@@ -203,15 +185,7 @@ members  :
     net         : https://www.researchgate.net/profile/ADDprofileHere
     linkedIn    : https://www.linkedin.com/ADDprofileHere
     web         : https://www.researchgate.net/profile/ADDprofileHere
-    # ContactEmail: ADDemailHERE
 
 
 
-#  - name  : Yuka Kimura
-#    image : images/team/yuka-kimura.jpg
-#    designation : Master student (M1), Nagoya University.
-#    description : "Research topic: Economic and social convergence in ASEAN+3: National and subnational evidence"
-#    net         : https://www.researchgate.net/profile/ADDprofileHere
-#    linkedIn    : https://www.linkedin.com/ADDprofileHere
-#    web         : https://www.researchgate.net/profile/ADDprofileHere
-    # ContactEmail: ADDemailHERE
+

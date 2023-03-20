@@ -12,7 +12,7 @@ liveLink: https://discord.gg/NKb5GJJmkd
 
 ### Open learning community
 
-> We’ve set up [an online learning community (accessible via Discord)](https://discord.gg/NKb5GJJmkd) that provides a friendly environment to learn econometrics, spatial data science, and machine learning.
+> We’ve set up [an online learning community (accessible via Discord)](https://discord.gg/pfEmxwSEHy) that provides a friendly environment to learn econometrics, spatial data science, and machine learning.
 
 
 

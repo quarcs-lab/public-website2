@@ -34,7 +34,7 @@ weight  = 60
 #weight  = 80
 [[menu.main]]
 name    = "Community"
-url     = "https://discord.gg/NKb5GJJmkd"
+url     = "https://discord.gg/pfEmxwSEHy"
 weight  = 45
 [[menu.main]]
 name    = "Github"
@@ -63,7 +63,7 @@ contactFormAction = "#" # contact form works with https://formspree.io
 [params.about]
 enable  = true
 title   = "ABOUT US"
-content = "In the QuaRCS network, we conduct research on quantitative regional and computational science. We exploit the integration of spatial data science, econometrics, and machine learning to understand and inform the process of sustainable development across subnational regions and countries. <br> <br> The QuaRCS network is also part of the UN Sustainable Development Solutions Network (SDSN). As such, it helps mobilize scientific knowledge and technological expertise to promote global sustainable development."
+content = "In the QuaRCS network, we conduct research on quantitative regional and computational science. We exploit the integration of development economics, spatial data science, and econometrics to understand and inform the process of sustainable development across subnational regions and countries. <br> <br> The QuaRCS network is also part of the UN Sustainable Development Solutions Network (SDSN). As such, it helps mobilize scientific knowledge and technological expertise to promote global sustainable development."
 image   = "images/about/about.png"
 
 
@@ -97,7 +97,7 @@ enable  = true
 title   = "Do you conduct similar research?"
 content = "Join our research and learning community"
 btnText = "JOIN US"
-btnURL  = "https://discord.gg/NKb5GJJmkd"
+btnURL  = "https://discord.gg/pfEmxwSEHy"
 
 # Portfolio Section On Homepage
 [params.portfolio]
@@ -108,7 +108,7 @@ subtitle= ""
 # social icon
 [[params.socialIcon]]
 icon = "ion-social-facebook"
-url = "https://discord.gg/NKb5GJJmkd"
+url = "https://discord.gg/pfEmxwSEHy"
 
 #[[params.socialIcon]]
 #icon = "ion-social-instagram"

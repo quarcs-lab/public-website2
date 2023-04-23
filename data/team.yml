@@ -72,15 +72,23 @@ members  :
     linkedIn    : https://www.linkedin.com/in/harry-aginta-6a968735/
     web         : https://www.researchgate.net/profile/Harry_Aginta2
 
+  - name  : Mitsuhiko Mitsuhiko
+    image : images/team/mitsuhiko-kataoka.png
+    designation : Research collaborator.  Professor, Rikkyo University, JAPAN.
+    description : "Research interests: Regional Economics, Economic Development, Efficiency Analysis"
+    net         : https://www.researchgate.net/profile/Mitsuhiko-Kataoka
+    linkedIn    : https://researchmap.jp/mkata
+    web         : https://univdb.rikkyo.ac.jp/view?l=en&u=100001600
 
 
-  - name  : Tifani Husna Siregar
-    image : images/team/tifani.png
-    designation : Research collaborator. Assistant Professor, Waseda University, JAPAN.
-    description : "Research interests: Labor economics, Applied microeconometrics, Spatial econometrics"
-    net         : https://tifanihusna.netlify.app/
-    linkedIn    : https://www.linkedin.com/in/tifani-husna-siregar-17850525/
-    web         : https://tifanihusna.netlify.app/
+
+  #- name  : Tifani Husna Siregar
+    #image : images/team/tifani.png
+    #designation : Research collaborator. Assistant Professor, Waseda University, JAPAN.
+    #description : "Research interests: Labor economics, Applied microeconometrics, Spatial econometrics"
+    #net         : https://tifanihusna.netlify.app/
+    #linkedIn    : https://www.linkedin.com/in/tifani-husna-siregar-17850525/
+    #web         : https://tifanihusna.netlify.app/
     # ContactEmail: ugurursavas@hotmail.com
     # GSIDEmail: 
 

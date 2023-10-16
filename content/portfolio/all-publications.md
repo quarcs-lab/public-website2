@@ -27,6 +27,9 @@ liveLink: "research"
 
 > Further information including current projects, slides, and summaries are available here: <https://quarcs-lab.org/research>
 
+Harry Aginta, Carlos Mendez, Masakazu Someya (2023). Regional Okun’s law and endogeneity: evidence from the Indonesian districts. Applied Economics Letters. [[Published version]](https://www.tandfonline.com/eprint/CBRAD7SK4SSQDKF425QT/full?target=10.1080/13504851.2023.2267814)
+
+
 Mendez, Carlos. & Gonzales, Erick. 2021. "Human Capital Constraints, Spatial Dependence, and Regionalization in Bolivia: A Spatial Clustering Approach."" Economia, 44(87), 115-145. [[Open published version]](https://revistas.pucp.edu.pe/index.php/economia/article/view/24021/22804) 
 
 

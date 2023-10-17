@@ -1,25 +1,22 @@
 ---
-title: "The new title"
+title: "Regional Okun’s law and endogeneity: evidence from the Indonesian districts"
 author: Harry Aginta, Carlos Mendez and Masakazu Someay
-date: "2020-12-08T13:07:31+02:00"
+date: "2023-10-17 T13:07:31+02:00"
 type: post
-tags: ["paper"]
+tags: ["Regional Labor Market, Okun’s Law, Causal Inference, Instrumental Variable, Indonesia "]
 image: "https://carlos-mendez.org/publication/20231012-ael/featured.jpeg "
 ---
 
 
-Add abstract here
+This paper investigates the regional Okun’s law across 514 districts of Indonesia over the 2011–2020 period. To handle the endogeneity issue, we apply a two-stage least squares (2SLS) model and use regional temperature as instrument for economic growth. Our results show that the Okun’s coefficient becomes statistically significant only after endogeneity is addressed. Consistent with the prevalent economic divide between the western and eastern regions of Indonesia, we find that Okun’s law applies solely to the more industrialized western regions.
 
 
-[- Link to the working paper](https://carlos-mendez.rbind.io/pdf/manuscript-project2019L.pdf)
+
+[- Link to the published paper](https://www.tandfonline.com/eprint/CBRAD7SK4SSQDKF425QT/full?target=10.1080/13504851.2023.2267814)
 
 
-[- Link to the published paper](https://rsaiconnect.onlinelibrary.wiley.com/doi/10.1111/rsp3.12335)
+[- Link to public slides](https://www.canva.com/design/DAFq9W8GUaI/hwxuKlm3qj6-TCjzwWW7QA/view?utm_content=DAFq9W8GUaI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 
-[- Link to public slides](https://www.researchgate.net/publication/346786750_Regional_Convergence_and_Spatial_Dependence_across_Subnational_Regions_in_ASEAN_Evidence_from_Satellite_Nighttime_Light_Data_Motivation?channel=doi&linkId=5fd0ae8ea6fdcc697bef9431&showFulltext=true)
-
-
-[- Presentation slides](https://project2019l-slides-jsrsai2020.netlify.app/)
 
 

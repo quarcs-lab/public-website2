@@ -36,34 +36,34 @@ Cutrini, Eleonora. and  Mendez, Carlos. (2023). Convergence clubs and spatial st
 Mendez, Carlos. (2023). Measuring and understanding regional inequality through the lens of the Indonesian experience. Asia-Pacific Journal of Regional Science. [[Published version]](https://rdcu.be/diloc)
 
 
-Ursavas,Ugur. and Mendez, Carlos. (2022). Regional income convergence and conditioning factors in Turkey: Revisiting the role of spatial dependence and neighbor effects. Annals of Regional Science.[[Published version]](https://link.springer.com/article/10.1007/s00168-022-01168-0)
+Ursavas, Ugur. and Mendez, Carlos. (2022). Regional income convergence and conditioning factors in Turkey: Revisiting the role of spatial dependence and neighbor effects. Annals of Regional Science.[[Published version]](https://link.springer.com/article/10.1007/s00168-022-01168-0)
 
 
-Glawe,Linda. and Mendez, Carlos. (2022). Schooling ain’t learning in Europe: A club convergence perspective. Comparative Economic Studies. [[Published version]](https://link.springer.com/content/pdf/10.1057/s41294-022-00194-3.pdf)
+Glawe, Linda. and Mendez, Carlos. (2022). Schooling ain’t learning in Europe: A club convergence perspective. Comparative Economic Studies. [[Published version]](https://link.springer.com/content/pdf/10.1057/s41294-022-00194-3.pdf)
 
 
-Miranti,Cani. and Mendez, Carlos. (2022). Social and economic convergence across districts in Indonesia: A spatial econometric approach. Bulletin of Indonesian Economic Studies. [[Published version]](https://doi.org/10.1080/00074918.2022.2071415)
+Miranti, Cani. and Mendez, Carlos. (2022). Social and economic convergence across districts in Indonesia: A spatial econometric approach. Bulletin of Indonesian Economic Studies. [[Published version]](https://doi.org/10.1080/00074918.2022.2071415)
 
 
-Tipayalai,Katikar. and  Mendez, Carlos. (2022). Regional convergence and spatial dependence in Thailand: Global and local assessments. Journal of the Asia Pacific Economy. [[Published version]](https://www.tandfonline.com/doi/full/10.1080/13547860.2022.2041286)
+Tipayalai, Katikar. and  Mendez, Carlos. (2022). Regional convergence and spatial dependence in Thailand: Global and local assessments. Journal of the Asia Pacific Economy. [[Published version]](https://www.tandfonline.com/doi/full/10.1080/13547860.2022.2041286)
 
 
-Mendez,Carlos. and Santos, Felipe. (2022). Economic and social disparities across subnational regions of South America: A spatial convergence approach. Comparative Economic Studies. [[Published version]](https://rdcu.be/cElhh)
+Mendez, Carlos. and Santos, Felipe. (2022). Economic and social disparities across subnational regions of South America: A spatial convergence approach. Comparative Economic Studies. [[Published version]](https://rdcu.be/cElhh)
 
 
-Dominguez,Alvaro. Santos,Felipe. and  Mendez, Carlos. (2021). Sectoral productivity convergence, input-output structure, and network communities in Japan. Structural Change and Economic Dynamics.[[Published version]](https://www.sciencedirect.com/science/article/pii/S0954349X21001442)
+Dominguez, Alvaro. Santos,Felipe. and  Mendez, Carlos. (2021). Sectoral productivity convergence, input-output structure, and network communities in Japan. Structural Change and Economic Dynamics.[[Published version]](https://www.sciencedirect.com/science/article/pii/S0954349X21001442)
 
 
-Gunawan,Anang. Mendez,Carlos. and Otsubo, Shigeru. (2021). Provincial income convergence clubs in Indonesia: Identification and conditioning factors. Growth and Change.[[Published version]](https://onlinelibrary.wiley.com/share/author/8YJQZTJ2RQUTKMRQGAQG?target=10.1111/grow.12553)
+Gunawan, Anang. Mendez, Carlos. and Otsubo, Shigeru. (2021). Provincial income convergence clubs in Indonesia: Identification and conditioning factors. Growth and Change.[[Published version]](https://onlinelibrary.wiley.com/share/author/8YJQZTJ2RQUTKMRQGAQG?target=10.1111/grow.12553)
 
 
 Mendez, Carlos. & Gonzales, Erick. (2021). "Human Capital Constraints, Spatial Dependence, and Regionalization in Bolivia: A Spatial Clustering Approach."" Economia, 44(87), 115-145. [[Open published version]](https://revistas.pucp.edu.pe/index.php/economia/article/view/24021/22804) 
 
 
-Aginta,Harry. Miranti, Cani. and Mendez, Carlos. (2021). Regional Economic Growth Convergence and Spatial Growth Spillovers at Times of COVID-19 Pandemic in Indonesia. In Resosudarmo B. et al. (Ed.), Regional Perspectives of Covid-19 in Indonesia.[[Source Document]](https://books.google.co.id/books?id=D1NKEAAAQBAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false)
+Aginta, Harry. Miranti, Cani. and Mendez, Carlos. (2021). Regional Economic Growth Convergence and Spatial Growth Spillovers at Times of COVID-19 Pandemic in Indonesia. In Resosudarmo B. et al. (Ed.), Regional Perspectives of Covid-19 in Indonesia.[[Source Document]](https://books.google.co.id/books?id=D1NKEAAAQBAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false)
 
 
-Santos,Felipe. Gunawan,Anang. and Mendez, Carlos. (2021). Regional income disparities, distributional convergence, and spatial effects: Evidence from Indonesian regions 2010–2017. GeoJournal.[[Open published version]](https://link.springer.com/content/pdf/10.1007/s10708-021-10377-7.pdf)
+Santos, Felipe. Gunawan, Anang. and Mendez, Carlos. (2021). Regional income disparities, distributional convergence, and spatial effects: Evidence from Indonesian regions 2010–2017. GeoJournal.[[Open published version]](https://link.springer.com/content/pdf/10.1007/s10708-021-10377-7.pdf)
 
 
 Aginta, Harry. Gunawan, Anang. and Mendez, Carlos. (2021). Regional income disparities and convergence clubs in Indonesia: New district-level evidence. Journal of the Asia Pacific Economy.[[Open published version]](https://www.tandfonline.com/eprint/KXAV4WXQANYIX2EYHFY5/full?target=10.1080/13547860.2020.1868107)

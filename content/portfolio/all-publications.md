@@ -30,7 +30,7 @@ liveLink: "research"
 Harry Aginta, Carlos Mendez, Masakazu Someya (2023). Regional Okun’s law and endogeneity: evidence from the Indonesian districts. Applied Economics Letters. [[Published version]](https://www.tandfonline.com/eprint/CBRAD7SK4SSQDKF425QT/full?target=10.1080/13504851.2023.2267814)
 
 
-Eleonora Cutrini, Carlos Mendez (2023). Convergence clubs and spatial structural change in the European Union. Structural Change and Economic Dynamics. [[Published version]] (https://www.sciencedirect.com/science/article/pii/S0954349X23000991?via%3Dihub)
+Eleonora Cutrini, Carlos Mendez (2023). Convergence clubs and spatial structural change in the European Union. Structural Change and Economic Dynamics. [[Published version]](https://www.sciencedirect.com/science/article/pii/S0954349X23000991?via%3Dihub)
 
 
 Mendez, Carlos. & Gonzales, Erick. 2021. "Human Capital Constraints, Spatial Dependence, and Regionalization in Bolivia: A Spatial Clustering Approach."" Economia, 44(87), 115-145. [[Open published version]](https://revistas.pucp.edu.pe/index.php/economia/article/view/24021/22804) 

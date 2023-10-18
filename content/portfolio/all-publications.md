@@ -1,7 +1,7 @@
 ---
 title: "Publications"
 type: portfolio
-date: 2020-11-11
+date: 2023-10-18
 description : "Pablished papers, book chapter, and books"
 caption: Find out more
 image: images/portfolio/all-publications.jpg

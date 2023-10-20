@@ -195,5 +195,11 @@ members  :
   #   web         : https://www.researchgate.net/profile/ADDprofileHere
 
 
-
+  - name  : Katerine Restrepo
+    image : images/team/katerine-restrepo.png
+    designation : Research collaborator. Ph.D. student, Nagoya University, JAPAN.
+    description : "Research interests: Development Economics, Regional Inequality, Nutritional Inequality, Spatial econometrics"
+    net         : https://www.researchgate.net/profile/Katerine_Restrepo
+    linkedIn    : https://www.linkedin.com/in/katerine-restrepo-gomez-2a555830/
+    web         : https://katerinerestrepo.my.canva.site/
 

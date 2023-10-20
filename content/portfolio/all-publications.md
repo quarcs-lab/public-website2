@@ -33,7 +33,13 @@ Aginta, Harry. Mendez, Carlos. &  Someya, Masakazu. (2023). Regional Okun’s la
 Cutrini, Eleonora. and  Mendez, Carlos. (2023). Convergence clubs and spatial structural change in the European Union. Structural Change and Economic Dynamics. [[Published version]](https://www.sciencedirect.com/science/article/pii/S0954349X23000991?via%3Dihub)
 
 
+Glawe, Linda. and Wagner,Helmut. (2023). New Evidence on the Human Capital Dynamics within China: Is There a Human Capital Trap? Singapore Economic Review. [[Published version]](https://www.worldscientific.com/doi/full/10.1142/S0217590823500145)
+
+
 Mendez, Carlos. (2023). Measuring and understanding regional inequality through the lens of the Indonesian experience. Asia-Pacific Journal of Regional Science. [[Published version]](https://rdcu.be/diloc)
+
+
+Glawe, Linda. and Wagner,Helmut. (2023).The 'Double Trap' in China - Multiple Equilibria in Institutions and Income and Their Causal Relationship. Open Economies Review.  [[Published version]](https://link.springer.com/article/10.1007/s11079-022-09693-3)
 
 
 Ursavas, Ugur. and Mendez, Carlos. (2022). Regional income convergence and conditioning factors in Turkey: Revisiting the role of spatial dependence and neighbor effects. Annals of Regional Science.[[Published version]](https://link.springer.com/article/10.1007/s00168-022-01168-0)

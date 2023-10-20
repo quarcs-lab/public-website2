@@ -56,7 +56,7 @@ members  :
 
 
   - name  : Linda Glawe
-    image : images/team/linda-glawe.jpg
+    image : images/team/linda-glawe2.png
     designation : Junior Professor, Chemnitz University of Technology, GERMANY
     description : "Research interests: Economic Growth and Development, Regional Economics, Human Capital, Spatial Econometrics"
     net         : https://www.researchgate.net/profile/Linda-Glawe
@@ -186,13 +186,13 @@ members  :
 
 
 
-  - name  : Sook Yan Siew
-    image : images/team/sook-yan.jpg
-    designation : Research collaborator. Master student, Nagoya University, JAPAN.
-    description : "Research topic: Human development convergence and spatial effects across subnational regions of Asia Pacific"
-    net         : https://www.researchgate.net/profile/ADDprofileHere
-    linkedIn    : https://www.linkedin.com/ADDprofileHere
-    web         : https://www.researchgate.net/profile/ADDprofileHere
+  # - name  : Sook Yan Siew
+  #   image : images/team/sook-yan.jpg
+  #   designation : Research collaborator. Master student, Nagoya University, JAPAN.
+  #   description : "Research topic: Human development convergence and spatial effects across subnational regions of Asia Pacific"
+  #   net         : https://www.researchgate.net/profile/ADDprofileHere
+  #   linkedIn    : https://www.linkedin.com/ADDprofileHere
+  #   web         : https://www.researchgate.net/profile/ADDprofileHere
 
 
 

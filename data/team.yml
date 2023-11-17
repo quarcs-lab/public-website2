@@ -191,7 +191,14 @@ members  :
   #   linkedIn    : https://www.linkedin.com/ADDprofileHere
   #   web         : https://www.researchgate.net/profile/ADDprofileHere
 
-
+ - name  : Yilin Chen
+    image : images/team/Yilin-Chen.jpg
+    designation : Research collaborator. Ph.D. student, Nagoya University, JAPAN.
+    description : "Research interests: Regional Inequality, Structural change, Spatial econometrics, Geospatial Big Data Analysis"
+    net         : https://www.researchgate.net/profile/Yilin-Chen-41
+    linkedIn    : https://www.linkedin.com/in/yilin-chen-657aa81a3/
+    web         : https://yilinchen.my.canva.site/
+    
   - name  : Katerine Restrepo
     image : images/team/katerine-restrepo2.png
     designation : Research collaborator. Ph.D. student, Nagoya University, JAPAN.

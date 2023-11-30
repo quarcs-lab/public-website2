@@ -12,7 +12,7 @@ This paper studies the evolution of economic and social disparities across South
 
 
 
-- [Link to the published paper](https://link.springer.com/epdf/10.1057/s41294-021-00181-0?sharing_token=3kup6dBUamqmLY8YvuRRj1xOt48VBPO10Uv7D6sAgHszwjewgR0Uae31sRufxytSiygtA7D-F0fhsoFBtf3yWOzC7w4KDPXlz8q8IJ57ePzHmQdMX6XD8sLzdl4-P9CCeBLyHvqocxporC1IribicJBi7rVlP8skEgdY-mXsU_M%3D)
+[- Link  to the published paper](https://link.springer.com/epdf/10.1057/s41294-021-00181-0?sharing_token=3kup6dBUamqmLY8YvuRRj1xOt48VBPO10Uv7D6sAgHszwjewgR0Uae31sRufxytSiygtA7D-F0fhsoFBtf3yWOzC7w4KDPXlz8q8IJ57ePzHmQdMX6XD8sLzdl4-P9CCeBLyHvqocxporC1IribicJBi7rVlP8skEgdY-mXsU_M%3D)
 
 
 [- Link to public slides](https://project2020e-slides.netlify.app/#1)

@@ -14,7 +14,7 @@ This paper evaluates social and economic convergence across 514 districts in Ind
 
 [- Link to the published paper](https://www.tandfonline.com/doi/abs/10.1080/00074918.2022.2071415)
 
-[- Link to summary slides ](https://project2019b-slides.netlify.app/)
+
 
 
 

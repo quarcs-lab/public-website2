@@ -14,7 +14,7 @@ This paper studies regional income convergence and its conditioning factors acro
 
 [- Link to the published paper](https://link.springer.com/article/10.1007/s00168-022-01168-0)
 
-[- Linkto the presentation slides](https://www.canva.com/design/DAFJAn-t4NU/EFldux653z2u7rfUHLFY7w/view?utm_content=DAFJAn-t4NU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+[- Link to the presentation slides](https://www.canva.com/design/DAFJAn-t4NU/EFldux653z2u7rfUHLFY7w/view?utm_content=DAFJAn-t4NU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 
 

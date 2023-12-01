@@ -27,10 +27,15 @@ liveLink: "research"
 
 > Further information including current projects, slides, and summaries are available here: <https://quarcs-lab.org/research>
 
+Mendez, C., Siregar, T.H. (2023). Regional unemployment dynamics in Indonesia: serial persistence, spatial dependence, and common factors. Lett Spat Resour Sci 16, 40  [[Published version]](https://link.springer.com/article/10.1007/s12076-023-00364-6)
+
 Aginta, Harry. Mendez, Carlos. &  Someya, Masakazu. (2023). Regional Okun’s law and endogeneity: evidence from the Indonesian districts. Applied Economics Letters. [[Published version]](https://www.tandfonline.com/eprint/CBRAD7SK4SSQDKF425QT/full?target=10.1080/13504851.2023.2267814)
 
 
 Cutrini, Eleonora. and  Mendez, Carlos. (2023). Convergence clubs and spatial structural change in the European Union. Structural Change and Economic Dynamics. [[Published version]](https://www.sciencedirect.com/science/article/pii/S0954349X23000991?via%3Dihub)
+
+
+Chen, Y., Kpoviessi, D.O. & Aginta, H. (2023). Investigating regional income convergence in China: an exploratory spatio-temporal perspective. Lett Spat Resour Sci 16, 17.  [[Published version]](https://link.springer.com/article/10.1007/s12076-023-00343-x)
 
 
 Glawe, Linda. and Wagner, Helmut. (2023). New Evidence on the Human Capital Dynamics within China: Is There a Human Capital Trap? Singapore Economic Review. [[Published version]](https://www.worldscientific.com/doi/full/10.1142/S0217590823500145)

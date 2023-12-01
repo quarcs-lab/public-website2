@@ -27,7 +27,8 @@ liveLink: "research"
 
 > Further information including current projects, slides, and summaries are available here: <https://quarcs-lab.org/research>
 
-Mendez, C., Siregar, T.H. (2023). Regional unemployment dynamics in Indonesia: serial persistence, spatial dependence, and common factors. Lett Spat Resour Sci 16, 40  [[Published version]](https://link.springer.com/article/10.1007/s12076-023-00364-6)
+Mendez, Carlos. Siregar, Tifani Husna. (2023). Regional unemployment dynamics in Indonesia: serial persistence, spatial dependence, and common factors. Lett Spat Resour Sci 16, 40  [[Published version]](https://link.springer.com/article/10.1007/s12076-023-00364-6)
+
 
 Aginta, Harry. Mendez, Carlos. &  Someya, Masakazu. (2023). Regional Okun’s law and endogeneity: evidence from the Indonesian districts. Applied Economics Letters. [[Published version]](https://www.tandfonline.com/eprint/CBRAD7SK4SSQDKF425QT/full?target=10.1080/13504851.2023.2267814)
 
@@ -35,7 +36,10 @@ Aginta, Harry. Mendez, Carlos. &  Someya, Masakazu. (2023). Regional Okun’s la
 Cutrini, Eleonora. and  Mendez, Carlos. (2023). Convergence clubs and spatial structural change in the European Union. Structural Change and Economic Dynamics. [[Published version]](https://www.sciencedirect.com/science/article/pii/S0954349X23000991?via%3Dihub)
 
 
-Chen, Y., Kpoviessi, D.O. & Aginta, H. (2023). Investigating regional income convergence in China: an exploratory spatio-temporal perspective. Lett Spat Resour Sci 16, 17.  [[Published version]](https://link.springer.com/article/10.1007/s12076-023-00343-x)
+Chen, Yilin. Kpoviessi, Doheto Othniel. & Aginta, Harry. (2023). Investigating regional income convergence in China: an exploratory spatio-temporal perspective. Lett Spat Resour Sci 16, 17.  [[Published version]](https://link.springer.com/article/10.1007/s12076-023-00343-x)
+
+
+Aginta, Harry. (2023).Inflation and spatial spillovers in a large archipelago: Evidence from Indonesia. Economic Papers A journal of applied economics and policy.[[Published version]](https://onlinelibrary.wiley.com/doi/10.1111/1759-3441.12381)
 
 
 Glawe, Linda. and Wagner, Helmut. (2023). New Evidence on the Human Capital Dynamics within China: Is There a Human Capital Trap? Singapore Economic Review. [[Published version]](https://www.worldscientific.com/doi/full/10.1142/S0217590823500145)
@@ -47,6 +51,9 @@ Mendez, Carlos. (2023). Measuring and understanding regional inequality through 
 Glawe, Linda. and Wagner, Helmut. (2023).The 'Double Trap' in China - Multiple Equilibria in Institutions and Income and Their Causal Relationship. Open Economies Review.  [[Published version]](https://link.springer.com/article/10.1007/s11079-022-09693-3)
 
 
+Aginta, Harry. (2023).Revisiting the Phillips curve for Indonesia: What can we learn from regional data?.Journal of Asian Economics.[[Published version]](https://www.sciencedirect.com/science/article/pii/S104900782300012X?via%3Dihub)
+
+
 Ursavas, Ugur. and Mendez, Carlos. (2022). Regional income convergence and conditioning factors in Turkey: Revisiting the role of spatial dependence and neighbor effects. Annals of Regional Science.[[Published version]](https://link.springer.com/article/10.1007/s00168-022-01168-0)
 
 
@@ -56,10 +63,24 @@ Glawe, Linda. and Mendez, Carlos. (2022). Schooling ain’t learning in Europe: 
 Miranti, Cani. and Mendez, Carlos. (2022). Social and economic convergence across districts in Indonesia: A spatial econometric approach. Bulletin of Indonesian Economic Studies. [[Published version]](https://doi.org/10.1080/00074918.2022.2071415)
 
 
+ Wiryawan,Bangkit A. Aginta,Harry.  & Fazaalloh,Al Muizzuddin. (2023) Does GVC participation help industrial upgrading in developing countries? New evidence from panel data analysis, The Journal of International Trade & Economic Development, 32:7, 1112-1129.[[Published version]](https://www.tandfonline.com/doi/full/10.1080/09638199.2022.2149840?scroll=top&needAccess=true)
+
+
+Santos-Marquez, Felipe. (2022). Spatial beta-convergence forecasting models: Evidence from municipal homicide rates in Colombia. Journal of Forecasting, 41(2), 294–302.[[Published version]](https://onlinelibrary.wiley.com/doi/epdf/10.1002/for.2816)
+
+
 Tipayalai, Katikar. and  Mendez, Carlos. (2022). Regional convergence and spatial dependence in Thailand: Global and local assessments. Journal of the Asia Pacific Economy. [[Published version]](https://www.tandfonline.com/doi/full/10.1080/13547860.2022.2041286)
 
 
+Aginta, Harry. (2022).Spatiotemporal analysis of regional inflation in an emerging country: The case of Indonesia. Regional Science Policy & Practice.[[Published version]](https://rsaiconnect.onlinelibrary.wiley.com/doi/10.1111/rsp3.12539)
+
+
 Mendez, Carlos. and Santos, Felipe. (2022). Economic and social disparities across subnational regions of South America: A spatial convergence approach. Comparative Economic Studies. [[Published version]](https://rdcu.be/cElhh)
+
+
+Rifki Maulana, Muhamad. and Aginta, Harry. (2022).Testing for convergence clubs in real wage across Indonesian provinces from 2008 to 2020. Regional Statistics.[[Published version]](https://www.ksh.hu/statszemle_archive/regstat/2022/2022_03/rs120305.pdf)
+
+Aginta, Harry. and Masakazu, Someya. (2022).Regional economic structure and heterogeneous effects of monetary policy: evidence from Indonesian provinces. Journal of Economic Structures. [[Published version]](https://journalofeconomicstructures.springeropen.com/articles/10.1186/s40008-021-00260-6)
 
 
 Dominguez, Alvaro. Santos,Felipe. and  Mendez, Carlos. (2021). Sectoral productivity convergence, input-output structure, and network communities in Japan. Structural Change and Economic Dynamics.[[Published version]](https://www.sciencedirect.com/science/article/pii/S0954349X21001442)

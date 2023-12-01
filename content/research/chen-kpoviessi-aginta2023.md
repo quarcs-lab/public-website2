@@ -4,7 +4,7 @@ author: Yilin Chen, Dohèto Othniel Kpoviessi and Harry Aginta
 date: "2023-04-18"
 type: post
 tags: ["Income convergence, Exploratory Spatial Data Analysis, Investment, Human Capital, China "]
-image: quarcs-lab/public-website2/static/images/team/chen-aguinta2022-image.png
+image: images/team/chen-aguinta2022-image.png
 ---
 
 

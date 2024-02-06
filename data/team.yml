@@ -56,23 +56,23 @@ members  :
 
 
   - name  : Linda Glawe
-    image : images/team/linda-glawe.jpg
-    designation : Research director. Researcher, University of Hagen, GERMANY.
+    image : images/team/linda-glawe2.png
+    designation : Research director. Junior Professor, Chemnitz University of Technology, GERMANY
     description : "Research interests: Economic Growth and Development, Regional Economics, Human Capital, Spatial Econometrics"
     net         : https://www.researchgate.net/profile/Linda-Glawe
     linkedIn    : https://www.researchgate.net/profile/Linda-Glawe
-    web         : https://www.fernuni-hagen.de/macroeconomics-wagner/en/staff/linda.glawe.shtml
+    web         : https://www.lindaglawe.com/
 
 
   - name  : Harry Aginta
     image : images/team/harry-aginta.jpg
-    designation : Research director. Doctoral student, Nagoya University, JAPAN.
+    designation : Research director. Senior Economist, Bank Indonesia, INDONESIA.
     description : "Research topic: Regional inflation dynamics in Indonesia"
     net         : https://www.researchgate.net/profile/Harry_Aginta2
     linkedIn    : https://www.linkedin.com/in/harry-aginta-6a968735/
     web         : https://www.researchgate.net/profile/Harry_Aginta2
 
-  - name  : Mitsuhiko Mitsuhiko
+  - name  : Mitsuhiko Kataoka
     image : images/team/mitsuhiko-kataoka.png
     designation : Research collaborator.  Professor, Rikkyo University, JAPAN.
     description : "Research interests: Regional Economics, Economic Development, Efficiency Analysis"
@@ -80,6 +80,13 @@ members  :
     linkedIn    : https://researchmap.jp/mkata
     web         : https://univdb.rikkyo.ac.jp/view?l=en&u=100001600
 
+  - name  : Mehak Sachdeva
+    image : images/team/Mehak-Sachdeva.png
+    designation : Research collaborator. Faculty Fellow, New York University, USA.
+    description : "Research interests: Computational spatial science, Urban analysis, Statistical analysis with GIS"
+    net         : https://www.mehaksachdeva.com
+    linkedIn    : https://www.mehaksachdeva.com
+    web         : https://www.mehaksachdeva.com
 
 
   #- name  : Tifani Husna Siregar
@@ -120,17 +127,6 @@ members  :
     web         : https://www.inesad.edu.bo/en/lykke-e-andersen/
 
 
-
-
-  - name  : Katikar Tipayalai
-    image : images/team/katikar-tipayalai.jpg
-    designation : Research collaborator. Lecturer, Chulalongkorn University, THAILAND.
-    description : "Research topic: Development economics, Migration, Spatial analysis"
-    net         : https://www.researchgate.net/profile/Katikar_Tipayalai
-    linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
-    web         : https://www.econ.chula.ac.th/faculty-staff/%e0%b8%81%e0%b8%95%e0%b8%b4%e0%b8%81%e0%b8%b2-%e0%b8%97%e0%b8%b4%e0%b8%9e%e0%b8%a2%e0%b8%b2%e0%b8%a5%e0%b8%b1%e0%b8%a2-%e0%b8%ad-%e0%b8%94%e0%b8%a3/
-
-
   - name  : Ugur Ursavas
     image : images/team/ugur-ursavas.jpg
     designation : Research collaborator. Research Assistant, Zonguldak Bülent Ecevit University, TURKEY.
@@ -150,22 +146,23 @@ members  :
     web         : https://sites.google.com/site/sujanakabiraj/
 
 
-  - name  : Jesson Pagaduan
-    image : images/team/Jesson-Pagaduan.png
-    designation : Research collaborator. Consultant, Asian Development Bank, PHILIPPINES.
-    description : "Research interests: Macroeconomics, Development Economics, Spatial Economic Analysis"
-    net         : https://sites.google.com/view/jessonpagaduan/
-    linkedIn    : https://sites.google.com/view/jessonpagaduan/
-    web         : https://sites.google.com/view/jessonpagaduan/
+  - name  : Katikar Tipayalai
+    image : images/team/katikar-tipayalai.jpg
+    designation : Research collaborator. Lecturer, Chulalongkorn University, THAILAND.
+    description : "Research topic: Development economics, Migration, Spatial analysis"
+    net         : https://www.researchgate.net/profile/Katikar_Tipayalai
+    linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
+    web         : https://www.econ.chula.ac.th/faculty-staff/%e0%b8%81%e0%b8%95%e0%b8%b4%e0%b8%81%e0%b8%b2-%e0%b8%97%e0%b8%b4%e0%b8%9e%e0%b8%a2%e0%b8%b2%e0%b8%a5%e0%b8%b1%e0%b8%a2-%e0%b8%ad-%e0%b8%94%e0%b8%a3/
 
 
-  - name  : Mehak Sachdeva
-    image : images/team/Mehak-Sachdeva.png
-    designation : Research collaborator. PhD candidate, Arizona State University, USA.
-    description : "Research interests: Computational spatial science, Urban analysis, Statistical analysis"
-    net         : https://www.mehaksachdeva.com
-    linkedIn    : https://www.mehaksachdeva.com
-    web         : https://www.mehaksachdeva.com
+#  - name  : Jesson Pagaduan
+#    image : images/team/Jesson-Pagaduan.png
+#    designation : Research collaborator. Consultant, Asian Development Bank, PHILIPPINES.
+#    description : "Research interests: Macroeconomics, Development Economics, Spatial Economic Analysis"
+#    net         : https://sites.google.com/view/jessonpagaduan/
+#    linkedIn    : https://sites.google.com/view/jessonpagaduan/
+#    web         : https://sites.google.com/view/jessonpagaduan/
+
 
   - name  : Ragdad Cani Miranti
     image : images/team/cani-miranti.jpg
@@ -186,14 +183,35 @@ members  :
 
 
 
-  - name  : Sook Yan Siew
-    image : images/team/sook-yan.jpg
-    designation : Research collaborator. Master student, Nagoya University, JAPAN.
-    description : "Research topic: Human development convergence and spatial effects across subnational regions of Asia Pacific"
+  # - name  : Sook Yan Siew
+  #   image : images/team/sook-yan.jpg
+  #   designation : Research collaborator. Master student, Nagoya University, JAPAN.
+  #   description : "Research topic: Human development convergence and spatial effects across subnational regions of Asia Pacific"
+  #   net         : https://www.researchgate.net/profile/ADDprofileHere
+  #   linkedIn    : https://www.linkedin.com/ADDprofileHere
+  #   web         : https://www.researchgate.net/profile/ADDprofileHere
+
+  - name  : Osmar Bolivar
+    image : images/team/Osmar-Bolivar.png
+    designation : Research collaborator. Lead Researcher, Ministry of Finance, BOLIVIA.
+    description : "Research interests: Development Economics, Machine Learning, Econometrics, Remote Sensing"
     net         : https://www.researchgate.net/profile/ADDprofileHere
-    linkedIn    : https://www.linkedin.com/ADDprofileHere
-    web         : https://www.researchgate.net/profile/ADDprofileHere
+    linkedIn    : https://www.linkedin.com/in/osmar-bolivar-rosales/
+    web         : https://osmarbolivar.weebly.com/
 
+  - name  : Yilin Chen
+    image : images/team/Yilin-Chen.jpg
+    designation : Research collaborator. Ph.D. student, Nagoya University, JAPAN.
+    description : "Research interests: Regional Inequality, Structural change, Spatial econometrics, Geospatial Big Data Analysis"
+    net         : https://www.researchgate.net/profile/Yilin-Chen-41
+    linkedIn    : https://www.linkedin.com/in/yilin-chen-657aa81a3/
+    web         : https://yilinchen.my.canva.site/
 
-
+  - name  : Katerine Restrepo
+    image : images/team/katerine-restrepo2.png
+    designation : Research collaborator. Ph.D. student, Nagoya University, JAPAN.
+    description : "Research interests: Development Economics, Regional Inequality, Nutritional Inequality, Spatial econometrics"
+    net         : https://www.researchgate.net/profile/Katerine_Restrepo
+    linkedIn    : https://www.linkedin.com/in/katerine-restrepo-gomez-2a555830/
+    web         : https://katerinerestrepo.my.canva.site/
 

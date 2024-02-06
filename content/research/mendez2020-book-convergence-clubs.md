@@ -26,9 +26,7 @@ Testing for economic convergence across countries has been a central issue in th
 6.  Convergence clubs in aggregate efficiency
 7.  Concluding remarks and new research directions
 
-## Book flyer
 
-![Alt text](https://monosnap.com/image/NhHNpO2DJep5bKTgjkpjHiXrJk6ThX)
 
 
 

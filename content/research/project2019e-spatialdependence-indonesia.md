@@ -2,8 +2,8 @@
 title: "Regional Income Disparities, Distributional Convergence, and Spatial Effects:District-Level Evidence from Indonesia 2000-2017"
 author: Carlos Mendez, Anang Budi Gunawan, and Felipe Santos-Marquez
 type: post
-date: "2019-11-21"
-tags: ["Working paper"]
+date: "2021-01-11"
+tags: ["Distributional Convergence, Getis Filter, Spatial Filter, Distribution Dynamics, Club Convergence, Indonesia, Regional Inequality"]
 image: "images/blog/indonesia-distribution-dynamics-non-spatial-districs.jpg"
 ---
 
@@ -12,3 +12,5 @@ Using a novel dataset constructed for this study, the spatio temporal dynamics o
 
 
 - [Link to the presentation slides](https://project2019e-slides-jepa.netlify.app/#1)
+
+[- Link to the published paper](https://link.springer.com/content/pdf/10.1007/s10708-021-10377-7.pdf)

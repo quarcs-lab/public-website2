@@ -27,6 +27,13 @@ liveLink: "research"
 
 > Further information including current projects, slides, and summaries are available here: <https://quarcs-lab.org/research>
 
+
+Li, Jiaqi. (2024). Examining the impact of digital financial inclusion on economic development in urban and rural areas of China using remote sensing. GeoJournal. [[Published version]](https://link.springer.com/article/10.1007/s10708-024-11005-w)
+
+
+Chen, Yilin. (2024) . Regional decline and structural changes in Northeast China: an exploratory space–time approach. Asia-Pacific Journal of Regional Science. [[Published version]](https://link.springer.com/article/10.1007/s41685-023-00328-0) 
+
+
 Mendez, Carlos. Siregar, Tifani Husna. (2023). Regional unemployment dynamics in Indonesia: serial persistence, spatial dependence, and common factors. Lett Spat Resour Sci 16, 40  [[Published version]](https://link.springer.com/article/10.1007/s12076-023-00364-6)
 
 

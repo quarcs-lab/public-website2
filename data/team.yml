@@ -1,5 +1,5 @@
 enable  : true
-title   : "QuaRCS network: Directors and collaborators"
+title   : "QuaRCS network: Directors and associates"
 members  :
 
 #  - name  : Anang Gunawan
@@ -74,7 +74,7 @@ members  :
 
   - name  : Mitsuhiko Kataoka
     image : images/team/mitsuhiko-kataoka.png
-    designation : Research collaborator.  Professor, Rikkyo University, JAPAN.
+    designation : Research associate.  Professor, Rikkyo University, JAPAN.
     description : "Research interests: Regional Economics, Economic Development, Efficiency Analysis"
     net         : https://www.researchgate.net/profile/Mitsuhiko-Kataoka
     linkedIn    : https://researchmap.jp/mkata
@@ -82,7 +82,7 @@ members  :
 
   - name  : Mehak Sachdeva
     image : images/team/Mehak-Sachdeva.png
-    designation : Research collaborator. Faculty Fellow, New York University, USA.
+    designation : Research associate. Faculty Fellow, New York University, USA.
     description : "Research interests: Computational spatial science, Urban analysis, Statistical analysis with GIS"
     net         : https://www.mehaksachdeva.com
     linkedIn    : https://www.mehaksachdeva.com
@@ -91,7 +91,7 @@ members  :
 
   #- name  : Tifani Husna Siregar
     #image : images/team/tifani.png
-    #designation : Research collaborator. Assistant Professor, Waseda University, JAPAN.
+    #designation : Research associate. Assistant Professor, Waseda University, JAPAN.
     #description : "Research interests: Labor economics, Applied microeconometrics, Spatial econometrics"
     #net         : https://tifanihusna.netlify.app/
     #linkedIn    : https://www.linkedin.com/in/tifani-husna-siregar-17850525/
@@ -102,7 +102,7 @@ members  :
 
   - name  : Alvaro Dominguez
     image : images/team/Alvaro-dominguez.png
-    designation : Research collaborator. Assistant Professor, Asian Growth Research Institute, JAPAN.
+    designation : Research associate. Assistant Professor, Asian Growth Research Institute, JAPAN.
     description : "Research interests: Economics of Networks, Environmental Economics, Spatial analysis"
     net         : http://en.agi.or.jp/staff/alvaro-dominguez/
     linkedIn    : http://en.agi.or.jp/staff/alvaro-dominguez/
@@ -111,7 +111,7 @@ members  :
 
   - name  : Erick Gonzales Rocha
     image : images/team/erick-gonzales.jpg
-    designation : Research collaborator. Programme management officer, United Nations, JAPAN.
+    designation : Research associate. Economic Affairs Officer, United Nations, SWITZERLAND.
     description : "Research interests: Development economics, Labor economics, Institutional economics"
     net         : https://www.researchgate.net/profile/Erick_Gonzales_Rocha
     linkedIn    : www.linkedin.com/in/erickgonzalesrocha
@@ -120,7 +120,7 @@ members  :
 
   - name  : Lykke Andersen
     image : images/team/lykke-andersen.png
-    designation : Research collaborator. Executive Director of SDSN, BOLIVIA.
+    designation : Research associate. Executive Director of SDSN, BOLIVIA.
     description : "Research interests: Sustainable development, Environmental economics, Applied econometrics"
     net         : https://www.inesad.edu.bo/en/lykke-e-andersen/
     linkedIn    : https://twitter.com/lykkeeandersenv
@@ -129,7 +129,7 @@ members  :
 
   - name  : Ugur Ursavas
     image : images/team/ugur-ursavas.jpg
-    designation : Research collaborator. Research Assistant, Zonguldak Bülent Ecevit University, TURKEY.
+    designation : Research associate. Research Assistant, Zonguldak Bülent Ecevit University, TURKEY.
     description : "Research interests: Economic Growth and Development, Regional Economics,  Spatial Analysis."
     net         : https://www.researchgate.net/profile/Ugur-Ursavas
     linkedIn    : https://www.researchgate.net/profile/Ugur-Ursavas
@@ -139,7 +139,7 @@ members  :
 
   - name  : Sujana Kabiraj
     image : images/team/Sujana-Kabiraj.png
-    designation : Research collaborator. Assistant Professor, University of Wisconsin-Stevens Point, USA.
+    designation : Research associate. Assistant Professor, University of Wisconsin-Stevens Point, USA.
     description : "Research interests: Economic growth, regional economics, Indian economy"
     net         : https://sites.google.com/site/sujanakabiraj/
     linkedIn    : https://sites.google.com/site/sujanakabiraj/
@@ -148,7 +148,7 @@ members  :
 
   - name  : Katikar Tipayalai
     image : images/team/katikar-tipayalai.jpg
-    designation : Research collaborator. Lecturer, Chulalongkorn University, THAILAND.
+    designation : Research associate. Lecturer, Chulalongkorn University, THAILAND.
     description : "Research topic: Development economics, Migration, Spatial analysis"
     net         : https://www.researchgate.net/profile/Katikar_Tipayalai
     linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
@@ -157,7 +157,7 @@ members  :
 
 #  - name  : Jesson Pagaduan
 #    image : images/team/Jesson-Pagaduan.png
-#    designation : Research collaborator. Consultant, Asian Development Bank, PHILIPPINES.
+#    designation : Research associate. Consultant, Asian Development Bank, PHILIPPINES.
 #    description : "Research interests: Macroeconomics, Development Economics, Spatial Economic Analysis"
 #    net         : https://sites.google.com/view/jessonpagaduan/
 #    linkedIn    : https://sites.google.com/view/jessonpagaduan/
@@ -166,7 +166,7 @@ members  :
 
   - name  : Ragdad Cani Miranti
     image : images/team/cani-miranti.jpg
-    designation : Research collaborator. Analyst, Central Agency on Statistics BPS, INDONESIA.
+    designation : Research associate. Analyst, Central Agency on Statistics BPS, INDONESIA.
     description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia"
     net         : https://www.researchgate.net/profile/Ragdad_Miranti
     linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
@@ -175,7 +175,7 @@ members  :
 
   - name  : Anang Budi Gunawan
     image : images/team/anang-gunawan2.jpg
-    designation : Research collaborator. Regional development planner, Ministry of development planning of INDONESIA.
+    designation : Research associate. Regional development planner, Ministry of development planning of INDONESIA.
     description : "Research interests: Development economics, Regional development, Spatial Analysis"
     net         : https://www.researchgate.net/profile/Anang_Gunawan
     linkedIn    : https://www.linkedin.com/in/anang-budi-gunawan-a934751b1/
@@ -185,7 +185,7 @@ members  :
 
   # - name  : Sook Yan Siew
   #   image : images/team/sook-yan.jpg
-  #   designation : Research collaborator. Master student, Nagoya University, JAPAN.
+  #   designation : Research associate. Master student, Nagoya University, JAPAN.
   #   description : "Research topic: Human development convergence and spatial effects across subnational regions of Asia Pacific"
   #   net         : https://www.researchgate.net/profile/ADDprofileHere
   #   linkedIn    : https://www.linkedin.com/ADDprofileHere
@@ -193,7 +193,7 @@ members  :
 
   - name  : Osmar Bolivar
     image : images/team/Osmar-Bolivar.png
-    designation : Research collaborator. Lead Researcher, Ministry of Finance, BOLIVIA.
+    designation : Research associate. Lead Researcher, Ministry of Finance, BOLIVIA.
     description : "Research interests: Development Economics, Machine Learning, Econometrics, Remote Sensing"
     net         : https://osmarbolivar.github.io/
     linkedIn    : https://www.linkedin.com/in/osmar-bolivar-rosales/
@@ -201,7 +201,7 @@ members  :
 
   - name  : Yilin Chen
     image : images/team/Yilin-Chen.jpg
-    designation : Research collaborator. Ph.D. student, Nagoya University, JAPAN.
+    designation : Research associate. Ph.D. student, Nagoya University, JAPAN.
     description : "Research interests: Regional Inequality, Structural change, Spatial econometrics, Geospatial Big Data Analysis"
     net         : https://www.researchgate.net/profile/Yilin-Chen-41
     linkedIn    : https://www.linkedin.com/in/yilin-chen-657aa81a3/
@@ -209,7 +209,7 @@ members  :
 
   - name  : Katerine Restrepo
     image : images/team/katerine-restrepo2.png
-    designation : Research collaborator. Ph.D. student, Nagoya University, JAPAN.
+    designation : Research associate. Ph.D. student, Nagoya University, JAPAN.
     description : "Research interests: Development Economics, Regional Inequality, Nutritional Inequality, Spatial econometrics"
     net         : https://www.researchgate.net/profile/Katerine_Restrepo
     linkedIn    : https://www.linkedin.com/in/katerine-restrepo-gomez-2a555830/

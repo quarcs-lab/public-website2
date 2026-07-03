@@ -18,6 +18,18 @@
         <div class="row">
             <div class="col-md-12">
 
+                {{ $rp := index .Site.Data "research-projects" }}
+                {{ with $rp }}
+                <div class="research-programs-block">
+                    <h3>Main research programs</h3>
+                    <ul class="research-programs">
+                        {{ range .items }}
+                        <li><strong>{{ .title }}</strong> — {{ .description }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+
                 {{ with .Content }}<div class="publications-intro">{{ . }}</div>{{ end }}
 
                 {{ $pubs := where (where .Site.RegularPages "Section" "research") "Params.type" "post" }}
@@ -47,8 +59,11 @@
 </section>
 
 <style>
+.research-programs-block h3,.publications-intro h3{margin-top:1.6rem;}
+.research-programs{padding-left:1.2rem;margin:.8rem 0 1.6rem;}
+.research-programs li{margin-bottom:.6rem;line-height:1.5;color:#3a3a3a;}
+.research-programs strong{color:#2a2a2a;}
 .publications-intro{margin-bottom:2rem;}
-.publications-intro h3{margin-top:1.6rem;}
 .pub-list{padding-left:1.4rem;margin:1rem 0 1.5rem;}
 .pub-item{margin-bottom:1rem;line-height:1.5;color:#3a3a3a;}
 .pub-item em{color:#555;}

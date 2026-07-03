@@ -1237,6 +1237,9 @@ article {
 
 .team-member .team-img .team-pic {
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .team-member .team_designation {

@@ -13,10 +13,11 @@
   <title>{{ .Title }}</title>
   <link rel="icon" href="{{ "images/favicon.ico" | absURL }}">
 
-  {{ "<!-- Google Fonts: Space Grotesk (display) + Inter (body) -->" | safeHTML }}
+  {{ "<!-- Google Fonts: Space Grotesk (display) + Inter (body); loaded non-render-blocking with a fallback stack -->" | safeHTML }}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"></noscript>
 
   {{ "<!-- Twitter Bootstrs CSS -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/bootstrap/bootstrap.min.css" | absURL }}">

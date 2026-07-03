@@ -89,7 +89,6 @@ a { transition: color .25s var(--ease); }
   font-weight: 600;
   letter-spacing: .04em;
   transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease), color .25s var(--ease);
-  will-change: transform;
 }
 .btn:hover { transform: translateY(-2px); }
 
@@ -230,7 +229,6 @@ a { transition: color .25s var(--ease); }
   color: var(--cyan);
   padding: .12em 0;
 }
-.cd-headline.slide .cd-words-wrapper { color: var(--cyan); }
 
 #hero-area h2 {
   color: var(--text-dim);
@@ -427,7 +425,9 @@ figure figcaption p { color: var(--muted); }
   height: 2px;
   background: linear-gradient(90deg, var(--cyan-600), var(--amber));
 }
-article {
+/* Scoped to .research-item so the card style does not leak onto taxonomy
+   (/tags/…) pages, which share the same #blog-full-width > article markup. */
+.research-item {
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -436,10 +436,10 @@ article {
   background: var(--surface);
   transition: transform .3s var(--ease), box-shadow .3s var(--ease);
 }
-article:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.research-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
 .blog-post-image { margin-top: 0; border-radius: var(--radius-sm); overflow: hidden; }
 .blog-post-image img { transition: transform .5s var(--ease); width: 100%; }
-article:hover .blog-post-image img { transform: scale(1.03); }
+.research-item:hover .blog-post-image img { transform: scale(1.03); }
 .blog-content h2 a { color: var(--text-dark); font-family: var(--font-display); transition: color .25s var(--ease); }
 .blog-content h2 a:hover { color: var(--cyan-ink); }
 .blog-content .blog-meta a { color: var(--cyan-ink); }
@@ -506,6 +506,9 @@ article:hover .blog-post-image img { transform: scale(1.03); }
 
 /* ---------------------------------------------------------- Footer */
 #footer { background: var(--ink); color: rgba(238, 242, 251, .7); padding: 34px 0; }
+/* The global `p { color: var(--muted) }` (light-context gray) would otherwise beat the
+   footer's inherited light color on this dark background — restore legible text. */
+#footer .copyright { color: rgba(238, 242, 251, .72); }
 #footer .copyright a { color: var(--cyan); }
 #footer .social li a { color: var(--text-dim); transition: color .25s var(--ease); }
 #footer .social li a:hover { color: var(--cyan); }

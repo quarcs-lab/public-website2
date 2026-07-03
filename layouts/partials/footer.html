@@ -41,8 +41,8 @@
 {{ "<!-- Fancybox -->" | safeHTML }}
 <script src="{{ `plugins/facncybox/jquery.fancybox.js` | absURL }}"></script>
 {{ "<!-- template main js -->" | safeHTML }}
-{{ $script := resources.Get "js/script.js" | minify}}
-<script src="{{ $script.Permalink }}"></script>
+{{ $script := resources.Get "js/script.js" | minify | fingerprint }}
+<script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 {{ "<!-- custom modern refresh js -->" | safeHTML }}
 {{ $custom := resources.Get "js/custom.js" | minify | fingerprint }}
 <script src="{{ $custom.Permalink }}"></script>

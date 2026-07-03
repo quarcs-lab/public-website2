@@ -71,6 +71,8 @@ btnURL  = "research"
 
 # flip text
 [[params.banner.flipText]]
+title   = "Sustainable Regional Development"
+[[params.banner.flipText]]
 title   = "The Geography of Development"
 [[params.banner.flipText]]
 title   = "Regional Growth and Inequality"
@@ -78,8 +80,6 @@ title   = "Regional Growth and Inequality"
 title   = "Spatial Structural Change"
 [[params.banner.flipText]]
 title   = "Spatial Energy Economics"
-[[params.banner.flipText]]
-title   = "Sustainable Regional Development"
 
 
 # Call to Action

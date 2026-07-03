@@ -3,7 +3,7 @@ title: "Regional income convergence and conditioning factors in Turkey: Revisiti
 author: Ugur Ursavas and Carlos Mendez
 date: "2022-08-07"
 type: post
-tags: ["Spatial Dependence, Structural Change, Spatial Econometrics, Exploratory Spatial Data Analysis, Club Convergence, Turkey"]
+tags: ["Annals of Regional Science"]
 image: "images/blog/ursavas-mendez2022-regional-income-convergence.jpg"
 ---
 

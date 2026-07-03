@@ -2,7 +2,7 @@
 title: Productivity Differences and Convergence Clubs in Latin America
 date: 2019-11-16
 type: post
-tags: ["convergence"]
+tags: ["Working paper"]
 image: images/blog/clubs-countries-la.jpg
 author: Carlos Mendez
 ---

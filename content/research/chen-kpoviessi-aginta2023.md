@@ -3,7 +3,7 @@ title: "Investigating regional income convergence in China: an exploratory spati
 author: Yilin Chen, Dohèto Othniel Kpoviessi and Harry Aginta 
 date: "2023-04-18"
 type: post
-tags: ["Income convergence, Exploratory Spatial Data Analysis, Investment, Human Capital, China"]
+tags: ["Letters in Spatial and Resource Sciences"]
 image: images/team/chen-aguinta2022-image.png
 ---
 

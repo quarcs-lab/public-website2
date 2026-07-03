@@ -18,9 +18,10 @@ this file is just the rules and pointers, not a duplicate.
 ## Golden rules
 
 1. **Never edit `themes/timer-hugo/**` to customize.** Shadow the file from the project root
-   instead. Current overrides: `layouts/partials/{head,footer,banner}.html`,
-   `layouts/research/list.html`, `layouts/portfolio/resources.html`, `assets/css/custom.css`,
-   `assets/js/custom.js`. (Theme copies still exist but are ignored — edit the root ones.)
+   instead. Current overrides: `layouts/partials/{head,footer,banner,team,team-card}.html`,
+   `layouts/people/list.html`, `layouts/research/list.html`, `layouts/portfolio/resources.html`,
+   `assets/css/custom.css`, `assets/js/custom.js`. (Theme copies still exist but are ignored —
+   edit the root ones.)
 2. **Load order is load-bearing:** `custom.css` loads after theme `style.css` (in `head.html`)
    and `custom.js` after `script.js` (in `footer.html`). Keep it that way or overrides lose.
 3. **Do not remove `wow.min.js`** from `footer.html` — theme `script.js` calls

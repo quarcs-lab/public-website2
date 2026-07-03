@@ -3,7 +3,7 @@ title: "Social and economic convergence across districts in Indonesia: A spatial
 author: Cani Miranti and Carlos Mendez 
 date: "2022-04-29"
 type: post
-tags: ["Regional Inequality, Spatial Dependence, Spatial Econometrics, Convergence, Indonesia"]
+tags: ["Bulletin of Indonesian Economic Studies"]
 image: "images/blog/miranti-mendez2022-social-and-economic-convergence.jpg"
 ---
 

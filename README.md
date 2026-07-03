@@ -83,7 +83,7 @@ You don't need this to make content changes, but to preview locally:
 ├── content/               # Markdown content, one folder per section
 │   ├── research/          #   ~80 publication .md files + _index.md  → Research page
 │   ├── portfolio/         #   6 "Activities" cards + the Tutorials hub page
-│   ├── about/_index.md    #   People page (title only; roster comes from data/team.yml)
+│   ├── people/_index.md   #   People page at /people/ (aliases /about/); roster from data/team.yml
 │   ├── contact|gallery|service/_index.md   # latent (not linked in the menu)
 │
 ├── data/                  # YAML that feeds templates (see "Editing content")
@@ -93,7 +93,8 @@ You don't need this to make content changes, but to preview locally:
 │   └── about|service|gallery|contact|client.yml  # blank / latent / disabled
 │
 ├── layouts/               # PROJECT-ROOT template overrides (win over the theme)
-│   ├── partials/{head,footer,banner}.html
+│   ├── partials/{head,footer,banner,team,team-card}.html
+│   ├── people/list.html            # People page: grouped, animated team grid
 │   ├── research/list.html          # filterable publication list
 │   └── portfolio/resources.html    # filterable tutorials/datasets/projects hub
 │
@@ -126,11 +127,14 @@ overridden:
 | `layouts/partials/banner.html` | theme `banner.html` | Cinematic hero: layered media (parallax + Ken-Burns zoom), gradient overlay, rotating keywords, scroll cue. |
 | `layouts/research/list.html` | theme `_default/list.html` (research section) | Publications grouped by year with JS search + year + type filters. |
 | `layouts/portfolio/resources.html` | *(new; `layout: resources`)* | Datasets/tutorials/projects hub, rendered from `data/resources.yml`. |
+| `layouts/people/list.html` | *(new; `people` section)* | People page: intro header + team grid + CTA (drops the theme's empty blurb/feature/clients sections). |
+| `layouts/partials/team.html` | theme `team.html` | Splits `data/team.yml` into **Directors/Associates** groups (by role) with an intro lead. |
+| `layouts/partials/team-card.html` | *(new)* | One member card: circular ringed avatar, country pill, clamped role/bio, icon social links, fast row-reset reveal. |
 | `assets/css/custom.css` | overrides theme `style.css` | The design system (see [Design system](#design-system)). |
 | `assets/js/custom.js` | *(new)* | Hero scroll parallax. |
 
-Everything else (the navbar `header.html`, `about/list.html`, the homepage `index.html`, the
-`about/portfolio/feature/cta/team` partials, `single.html`, `404.html`, and all
+Everything else (the navbar `header.html`, the homepage `index.html`, the
+`about/portfolio/feature/cta` partials, `single.html`, `404.html`, and all
 `static/plugins/*`) comes straight from the theme. **The load order matters:** `custom.css`
 must load after `style.css`, and `custom.js` after `script.js`, or the overrides lose.
 
@@ -273,8 +277,8 @@ Key pieces:
 - **Latent sections:** `content/{contact,gallery,service}/` and
   `data/{contact,gallery,service}.yml` still contain theme placeholder text and aren't linked in
   the menu — ignore them (don't mistake `data/contact.yml`'s "Kings Street" text for real data).
-- **`data/about.yml` is intentionally blank**, so the People page's top blurb renders empty; the
-  roster comes entirely from `team.yml`.
+- **`data/about.yml` is intentionally blank** — the People page (`layouts/people/list.html`) no
+  longer renders that section anyway; the roster comes entirely from `team.yml`.
 
 ## Credits & license
 

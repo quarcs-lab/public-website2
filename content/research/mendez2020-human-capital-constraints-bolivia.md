@@ -3,7 +3,7 @@ title: "Human Capital Constraints, Spatial Dependence, and Regionalization in Bo
 author: Carlos Mendez and Erick Gonzales
 type: post
 date: "2021-03-16"
-tags: ["Human Capital, Spatial Dependence, Regionalization, Clusters, Principal Components, Spatial Clusters, Bolivia"]
+tags: ["Economía"]
 image: "images/blog/mendez2020-human-capital-constraints-bolivia.jpg"
 ---
 

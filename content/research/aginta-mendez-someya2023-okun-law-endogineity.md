@@ -3,7 +3,7 @@ title: "Regional Okun’s law and endogeneity: evidence from the Indonesian dist
 author: Harry Aginta, Carlos Mendez and Masakazu Someya
 date: "2023-10-16"
 type: post
-tags: ["Regional Labor Market, Okun’s Law, Causal Inference, Instrumental Variable, Indonesia"]
+tags: ["Applied Economics Letters"]
 image: "images/blog/aginta-mendez-someya2023-okun-law-endogineity.jpeg"
 ---
 

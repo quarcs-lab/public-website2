@@ -3,7 +3,7 @@ title: "Sectoral productivity convergence, input-output structure and network co
 author: Alvaro Dominguez, Felipe Santos and Carlos Mendez 
 date: "2021-12-15"
 type: post
-tags: ["Productivity, Convergence, Input-Output, Networks, Japan"]
+tags: ["Structural Change and Economic Dynamics"]
 image: "images/blog/dominguez-santos-mendez2021-sectoral-productivity.jpg"
 ---
 

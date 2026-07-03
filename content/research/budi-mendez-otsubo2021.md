@@ -3,7 +3,7 @@ title: "Provincial income convergence clubs in Indonesia: Identification and con
 author: Anang Gunawan, Carlos Mendez  and Shigeru Otsubo 
 date: "2021-08-15"
 type: post
-tags: ["Club Convergence, Logit Model, Industrialization, Indonesia"]
+tags: ["Growth and Change"]
 image: "images/blog/budi-mendez-otsubo2021.jpg"
 ---
 

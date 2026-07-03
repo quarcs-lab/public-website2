@@ -1,0 +1,39 @@
+{{/* Renders a single team member card. Expects a dict: { "m": <member>, "index": <int> }.
+     The stagger delay resets every 4 cards (one desktop row) so the whole grid reveals fast. */}}
+{{ $m := .m }}
+{{ $index := .index }}
+<div class="col-lg-3 col-sm-6 col-6 team-col">
+  <article class="team-member wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul (mod $index 4) 60 }}ms">
+
+    {{ with $m.image }}
+    <div class="team-img">
+      <img src="{{ . | absURL }}" class="team-pic" alt="Portrait of {{ $m.name }}"
+           width="150" height="150" loading="lazy" decoding="async">
+    </div>
+    {{ end }}
+
+    {{ with $m.name }}<h3 class="team_name">{{ . }}</h3>{{ end }}
+
+    {{/* Pull the trailing ALL-CAPS country token into a pill; keep the rest as the role line.
+         The $-anchored regex only matches the final caps token, never a mid-string acronym
+         like (TU Dresden), (UNDRR), SDSN, or ADBI. Falls back to the raw designation. */}}
+    {{ with $m.designation }}
+      {{ $caps := findRE `[A-Z][A-Z]+(?:\s[A-Z]+)*\.?$` . }}
+      {{ if $caps }}
+        <p class="team_designation">{{ replaceRE `,?\s*[A-Z][A-Z]+(?:\s[A-Z]+)*\.?$` "" . }}</p>
+        <span class="team-country"><i class="ion-location"></i>{{ replaceRE `\.$` "" (index $caps 0) }}</span>
+      {{ else }}
+        <p class="team_designation">{{ . }}</p>
+      {{ end }}
+    {{ end }}
+
+    {{ with $m.description }}<p class="team_text">{{ . }}</p>{{ end }}
+
+    <p class="social-icons">
+      {{ with $m.net }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $m.name }} &mdash; research profile"><i class="ion-earth"></i></a>{{ end }}
+      {{ with $m.linkedIn }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $m.name }} on LinkedIn"><i class="ion-social-linkedin"></i></a>{{ end }}
+      {{ with $m.web }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $m.name }} &mdash; personal website"><i class="ion-link"></i></a>{{ end }}
+    </p>
+
+  </article>
+</div>

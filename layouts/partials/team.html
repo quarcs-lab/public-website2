@@ -1,0 +1,62 @@
+{{ if .Site.Data.team.enable }}
+{{ "<!-- People / Team Section Start -->" | safeHTML }}
+<section id="team">
+  <div class="container">
+
+    {{/* ---------- Intro header ---------- */}}
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center team-intro">
+        <p class="team-eyebrow">The QuaRCS network</p>
+        <h2 class="subtitle">Meet the network</h2>
+        <p class="team-lead">QuaRCS-lab is an international research network in Quantitative
+          Regional and Computational Science &mdash; studying regional inequality, economic
+          convergence, and spatial dynamics with open, reproducible methods. Meet the directors
+          and associates behind the work.</p>
+      </div>
+    </div>
+
+    {{/* ---------- Split the flat roster by ROLE (first sentence only, so an
+         associate whose bio mentions "Executive Director" is not miscounted) ---------- */}}
+    {{ $directors := slice }}
+    {{ $associates := slice }}
+    {{ range .Site.Data.team.members }}
+      {{ $role := index (split .designation ".") 0 }}
+      {{ if in (lower $role) "director" }}
+        {{ $directors = $directors | append . }}
+      {{ else }}
+        {{ $associates = $associates | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{/* ---------- Directors ---------- */}}
+    {{ with $directors }}
+    <div class="team-group">
+      <div class="row"><div class="col-12">
+        <h3 class="team-group-title">Directors <span class="count">{{ len . }}</span></h3>
+      </div></div>
+      <div class="row">
+        {{ range $index, $m := . }}
+          {{ partial "team-card.html" (dict "m" $m "index" $index) }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{/* ---------- Associates ---------- */}}
+    {{ with $associates }}
+    <div class="team-group">
+      <div class="row"><div class="col-12">
+        <h3 class="team-group-title">Associates <span class="count">{{ len . }}</span></h3>
+      </div></div>
+      <div class="row">
+        {{ range $index, $m := . }}
+          {{ partial "team-card.html" (dict "m" $m "index" $index) }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ "<!-- People / Team Section End -->" | safeHTML }}
+{{ end }}

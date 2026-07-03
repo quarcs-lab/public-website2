@@ -3,7 +3,7 @@ title: "Regional convergence and spatial dependence in Thailand: Global and loca
 author: Katikar Tipayalai and Carlos Mendez 
 date: "2022-03-03"
 type: post
-tags: ["Regional Inequality, Spatial Dependence, Spatial Heterogeneity,  Convergence, Club Convergence, Thailand"]
+tags: ["Journal of the Asia Pacific Economy"]
 image: "images/blog/tipayalai-mendez2022-regional-convergence.jpg"
 ---
 

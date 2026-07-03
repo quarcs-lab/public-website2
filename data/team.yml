@@ -41,14 +41,14 @@ members  :
     designation : Founding research director. Associate professor, Nagoya University, JAPAN.
     description : "Research interests: Development Macroeconomics, Regional Economics, Spatial econometrics"
     net         : https://www.researchgate.net/profile/Carlos_Mendez54
-    linkedIn    : www.linkedin.com/in/mendezguerra
+    linkedIn    : https://www.linkedin.com/in/mendezguerra
     web         : https://carlos-mendez.org
 
 
 
   - name  : Felipe Santos-Marquez
     image : images/team/felipe-santos.png
-    designation : Founding research director. Researcher, Dresden University of Technology, GERMANY.
+    designation : Founding research director. Ph.D. in Economics (TU Dresden), based in Nagoya, JAPAN.
     description : "Research interests: Development Economics, Regional Inequality, Spatial econometrics"
     net         : https://www.researchgate.net/profile/Felipe_Santos-Marquez
     linkedIn    : https://www.linkedin.com/in/felipe-santos-marquez-0a5273181/
@@ -57,7 +57,7 @@ members  :
 
   - name  : Linda Glawe
     image : images/team/linda-glawe2.png
-    designation : Research director. Junior Professor, Chemnitz University of Technology, GERMANY
+    designation : Research director. Tenure-Track Professor of Empirical Economics, University of Rostock, GERMANY.
     description : "Research interests: Economic Growth and Development, Regional Economics, Human Capital, Spatial Econometrics"
     net         : https://www.researchgate.net/profile/Linda-Glawe
     linkedIn    : https://www.researchgate.net/profile/Linda-Glawe
@@ -74,7 +74,7 @@ members  :
 
   - name  : Mitsuhiko Kataoka
     image : images/team/mitsuhiko-kataoka.png
-    designation : Research associate.  Professor, Rikkyo University, JAPAN.
+    designation : Research associate. Professor, Rikkyo University, JAPAN.
     description : "Research interests: Regional Economics, Economic Development, Efficiency Analysis"
     net         : https://www.researchgate.net/profile/Mitsuhiko-Kataoka
     linkedIn    : https://researchmap.jp/mkata
@@ -82,7 +82,7 @@ members  :
 
   - name  : Mehak Sachdeva
     image : images/team/Mehak-Sachdeva.png
-    designation : Research associate. Faculty Fellow, New York University, USA.
+    designation : Research associate. Assistant Professor of Urban Science, Florida State University, USA.
     description : "Research interests: Computational spatial science, Urban analysis, Statistical analysis with GIS"
     net         : https://www.mehaksachdeva.com
     linkedIn    : https://www.mehaksachdeva.com
@@ -102,19 +102,19 @@ members  :
 
   - name  : Alvaro Dominguez
     image : images/team/Alvaro-dominguez.png
-    designation : Research associate. Assistant Professor, Asian Growth Research Institute, JAPAN.
+    designation : Research associate. Lecturer, Nagoya University, JAPAN.
     description : "Research interests: Economics of Networks, Environmental Economics, Spatial analysis"
-    net         : http://en.agi.or.jp/staff/alvaro-dominguez/
-    linkedIn    : http://en.agi.or.jp/staff/alvaro-dominguez/
-    web         : http://en.agi.or.jp/staff/alvaro-dominguez/
+    net         : https://researchmap.jp/alvdom?lang=en
+    linkedIn    : https://scholar.google.com/citations?user=_lhGUjkAAAAJ
+    web         : https://scholar.google.com/citations?user=_lhGUjkAAAAJ
 
 
   - name  : Erick Gonzales Rocha
     image : images/team/erick-gonzales.jpg
-    designation : Research associate. Economic Affairs Officer, United Nations, SWITZERLAND.
+    designation : Research associate. Economic Affairs Officer, United Nations Office for Disaster Risk Reduction (UNDRR), SWITZERLAND.
     description : "Research interests: Development economics, Labor economics, Institutional economics"
     net         : https://www.researchgate.net/profile/Erick_Gonzales_Rocha
-    linkedIn    : www.linkedin.com/in/erickgonzalesrocha
+    linkedIn    : https://www.linkedin.com/in/erickgonzalesrocha
     web         : https://erickgonzalesrocha.wordpress.com/
 
 
@@ -123,13 +123,13 @@ members  :
     designation : Research associate. Executive Director of SDSN, BOLIVIA.
     description : "Research interests: Sustainable development, Environmental economics, Applied econometrics"
     net         : https://www.inesad.edu.bo/en/lykke-e-andersen/
-    linkedIn    : https://twitter.com/lykkeeandersenv
+    linkedIn    : https://x.com/lykkeeandersenv
     web         : https://www.inesad.edu.bo/en/lykke-e-andersen/
 
 
   - name  : Ugur Ursavas
     image : images/team/ugur-ursavas.jpg
-    designation : Research associate. Research Assistant, Zonguldak Bülent Ecevit University, TURKEY.
+    designation : Research associate. Associate Professor, Zonguldak Bülent Ecevit University, TURKEY.
     description : "Research interests: Economic Growth and Development, Regional Economics,  Spatial Analysis."
     net         : https://www.researchgate.net/profile/Ugur-Ursavas
     linkedIn    : https://www.researchgate.net/profile/Ugur-Ursavas
@@ -139,7 +139,7 @@ members  :
 
   - name  : Sujana Kabiraj
     image : images/team/Sujana-Kabiraj.png
-    designation : Research associate. Assistant Professor, University of Wisconsin-Stevens Point, USA.
+    designation : Research associate. Associate Professor, Shiv Nadar University, INDIA.
     description : "Research interests: Economic growth, regional economics, Indian economy"
     net         : https://sites.google.com/site/sujanakabiraj/
     linkedIn    : https://sites.google.com/site/sujanakabiraj/
@@ -148,11 +148,11 @@ members  :
 
   - name  : Katikar Tipayalai
     image : images/team/katikar-tipayalai.jpg
-    designation : Research associate. Lecturer, Chulalongkorn University, THAILAND.
+    designation : Research associate. Assistant Professor, Chulalongkorn University, THAILAND.
     description : "Research topic: Development economics, Migration, Spatial analysis"
     net         : https://www.researchgate.net/profile/Katikar_Tipayalai
     linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
-    web         : https://www.econ.chula.ac.th/faculty-staff/%e0%b8%81%e0%b8%95%e0%b8%b4%e0%b8%81%e0%b8%b2-%e0%b8%97%e0%b8%b4%e0%b8%9e%e0%b8%a2%e0%b8%b2%e0%b8%a5%e0%b8%b1%e0%b8%a2-%e0%b8%ad-%e0%b8%94%e0%b8%a3/
+    web         : https://www.econ.chula.ac.th/portfolio/%e0%b8%81%e0%b8%95%e0%b8%b4%e0%b8%81%e0%b8%b2-%e0%b8%97%e0%b8%b4%e0%b8%9e%e0%b8%a2%e0%b8%b2%e0%b8%a5%e0%b8%b1%e0%b8%a2/
 
 
 #  - name  : Jesson Pagaduan
@@ -166,7 +166,7 @@ members  :
 
   - name  : Ragdad Cani Miranti
     image : images/team/cani-miranti.jpg
-    designation : Research associate. Analyst, Central Agency on Statistics BPS, INDONESIA.
+    designation : Research associate. PhD Candidate, University of Manchester, UNITED KINGDOM.
     description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia"
     net         : https://www.researchgate.net/profile/Ragdad_Miranti
     linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
@@ -193,7 +193,7 @@ members  :
 
   - name  : Osmar Bolivar
     image : images/team/Osmar-Bolivar.png
-    designation : Research associate. Lead Researcher, Ministry of Finance, BOLIVIA.
+    designation : Research associate. Economist, CEBEC-CAINCO, BOLIVIA.
     description : "Research interests: Development Economics, Machine Learning, Econometrics, Remote Sensing"
     net         : https://osmarbolivar.github.io/
     linkedIn    : https://www.linkedin.com/in/osmar-bolivar-rosales/
@@ -201,7 +201,7 @@ members  :
 
   - name  : Yilin Chen
     image : images/team/Yilin-Chen.jpg
-    designation : Research associate. Ph.D. student, Nagoya University, JAPAN.
+    designation : Research associate. Ph.D., Nagoya University, JAPAN.
     description : "Research interests: Regional Inequality, Structural change, Spatial econometrics, Geospatial Big Data Analysis"
     net         : https://www.researchgate.net/profile/Yilin-Chen-41
     linkedIn    : https://www.linkedin.com/in/yilin-chen-657aa81a3/

@@ -256,9 +256,9 @@ Key pieces:
   zoom (CSS) + scroll parallax (`assets/js/custom.js`); all motion respects
   `prefers-reduced-motion`.
 - **Logo/favicons:** hand-built **vector** set in `static/images/` — `logo-white.svg` (nav, via
-  `params.logo`), `logo-stacked.svg` (About card, via `params.about.image`), and
-  `favicon.svg` / `favicon.ico` / `apple-touch-icon.png` (wired in `head.html`). These are
-  resolution-independent — scale them freely.
+  `params.logo`) and `favicon.svg` / `favicon.ico` / `apple-touch-icon.png` (wired in
+  `head.html`); these are resolution-independent. The About-section image (`params.about.image`)
+  is the raster `about/about.png`; `logo-stacked.svg` remains as an unused vector alternate.
 
 ## Conventions & gotchas
 

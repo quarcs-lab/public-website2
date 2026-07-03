@@ -2,3 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# Hugo build artifacts (Netlify builds from source)
+/public/
+/resources/
+.hugo_build.lock

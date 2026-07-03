@@ -89,15 +89,13 @@ members  :
     web         : https://www.mehaksachdeva.com
 
 
-  #- name  : Tifani Husna Siregar
-    #image : images/team/tifani.png
-    #designation : Research associate. Assistant Professor, Waseda University, JAPAN.
-    #description : "Research interests: Labor economics, Applied microeconometrics, Spatial econometrics"
-    #net         : https://tifanihusna.netlify.app/
-    #linkedIn    : https://www.linkedin.com/in/tifani-husna-siregar-17850525/
-    #web         : https://tifanihusna.netlify.app/
-    # ContactEmail: ugurursavas@hotmail.com
-    # GSIDEmail: 
+  - name  : Tifani Husna Siregar
+    image : images/team/tifani.png
+    designation : Research associate. Postdoctoral Fellow, King Fahd University of Petroleum and Minerals, SAUDI ARABIA.
+    description : "Research interests: Applied spatial econometrics, Regional economics, Labor markets, Causal inference"
+    net         : https://tifanihusna.netlify.app/
+    linkedIn    : https://www.linkedin.com/in/tifani-husna-siregar-17850525/
+    web         : https://tifanihusna.netlify.app/
 
 
   - name  : Alvaro Dominguez
@@ -146,13 +144,13 @@ members  :
     web         : https://sites.google.com/site/sujanakabiraj/
 
 
-  - name  : Katikar Tipayalai
-    image : images/team/katikar-tipayalai.jpg
-    designation : Research associate. Assistant Professor, Chulalongkorn University, THAILAND.
-    description : "Research topic: Development economics, Migration, Spatial analysis"
-    net         : https://www.researchgate.net/profile/Katikar_Tipayalai
-    linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
-    web         : https://www.econ.chula.ac.th/portfolio/%e0%b8%81%e0%b8%95%e0%b8%b4%e0%b8%81%e0%b8%b2-%e0%b8%97%e0%b8%b4%e0%b8%9e%e0%b8%a2%e0%b8%b2%e0%b8%a5%e0%b8%b1%e0%b8%a2/
+#  - name  : Katikar Tipayalai
+#    image : images/team/katikar-tipayalai.jpg
+#    designation : Research associate. Assistant Professor, Chulalongkorn University, THAILAND.
+#    description : "Research topic: Development economics, Migration, Spatial analysis"
+#    net         : https://www.researchgate.net/profile/Katikar_Tipayalai
+#    linkedIn    : https://www.linkedin.com/in/katikar-tipayalai-3457261b6/
+#    web         : https://www.econ.chula.ac.th/portfolio/%e0%b8%81%e0%b8%95%e0%b8%b4%e0%b8%81%e0%b8%b2-%e0%b8%97%e0%b8%b4%e0%b8%9e%e0%b8%a2%e0%b8%b2%e0%b8%a5%e0%b8%b1%e0%b8%a2/
 
 
 #  - name  : Jesson Pagaduan
@@ -164,22 +162,22 @@ members  :
 #    web         : https://sites.google.com/view/jessonpagaduan/
 
 
-  - name  : Ragdad Cani Miranti
-    image : images/team/cani-miranti.jpg
-    designation : Research associate. PhD Candidate, University of Manchester, UNITED KINGDOM.
-    description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia"
-    net         : https://www.researchgate.net/profile/Ragdad_Miranti
-    linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
-    web         : https://www.researchgate.net/profile/Ragdad_Miranti
+#  - name  : Ragdad Cani Miranti
+#    image : images/team/cani-miranti.jpg
+#    designation : Research associate. PhD Candidate, University of Manchester, UNITED KINGDOM.
+#    description : "Research topic: Regional Poverty, Convergence and Spatial Effect across Districts in Indonesia"
+#    net         : https://www.researchgate.net/profile/Ragdad_Miranti
+#    linkedIn    : https://www.linkedin.com/in/ragdad-cani-miranti-a9a97668/
+#    web         : https://www.researchgate.net/profile/Ragdad_Miranti
 
 
-  - name  : Anang Budi Gunawan
-    image : images/team/anang-gunawan2.jpg
-    designation : Research associate. Regional development planner, Ministry of development planning of INDONESIA.
-    description : "Research interests: Development economics, Regional development, Spatial Analysis"
-    net         : https://www.researchgate.net/profile/Anang_Gunawan
-    linkedIn    : https://www.linkedin.com/in/anang-budi-gunawan-a934751b1/
-    web         : http://anang-gunawan.rbind.io/
+#  - name  : Anang Budi Gunawan
+#    image : images/team/anang-gunawan2.jpg
+#    designation : Research associate. Regional development planner, Ministry of development planning of INDONESIA.
+#    description : "Research interests: Development economics, Regional development, Spatial Analysis"
+#    net         : https://www.researchgate.net/profile/Anang_Gunawan
+#    linkedIn    : https://www.linkedin.com/in/anang-budi-gunawan-a934751b1/
+#    web         : http://anang-gunawan.rbind.io/
 
 
 
@@ -199,13 +197,13 @@ members  :
     linkedIn    : https://www.linkedin.com/in/osmar-bolivar-rosales/
     web         : https://osmarbolivar.github.io/
 
-  - name  : Yilin Chen
-    image : images/team/Yilin-Chen.jpg
-    designation : Research associate. Ph.D., Nagoya University, JAPAN.
-    description : "Research interests: Regional Inequality, Structural change, Spatial econometrics, Geospatial Big Data Analysis"
-    net         : https://www.researchgate.net/profile/Yilin-Chen-41
-    linkedIn    : https://www.linkedin.com/in/yilin-chen-657aa81a3/
-    web         : https://yilinchen.my.canva.site/
+#  - name  : Yilin Chen
+#    image : images/team/Yilin-Chen.jpg
+#    designation : Research associate. Ph.D., Nagoya University, JAPAN.
+#    description : "Research interests: Regional Inequality, Structural change, Spatial econometrics, Geospatial Big Data Analysis"
+#    net         : https://www.researchgate.net/profile/Yilin-Chen-41
+#    linkedIn    : https://www.linkedin.com/in/yilin-chen-657aa81a3/
+#    web         : https://yilinchen.my.canva.site/
 
   - name  : Katerine Restrepo
     image : images/team/katerine-restrepo2.png
@@ -214,4 +212,12 @@ members  :
     net         : https://www.researchgate.net/profile/Katerine_Restrepo
     linkedIn    : https://www.linkedin.com/in/katerine-restrepo-gomez-2a555830/
     web         : https://katerinerestrepo.my.canva.site/
+
+
+  - name  : Jiaqi Li
+    image : images/team/jiaqi-li.webp
+    designation : Research associate. Research Associate at Asian Development Bank Institute (ADBI), JAPAN.
+    description : "Research interests: Digital financial inclusion, Regional economic growth, Environmental economics, Remote sensing"
+    net         : https://www.adb.org/adbi/about/staff-profiles/jiaqi-li
+    web         : https://www.adb.org/adbi/about/staff-profiles/jiaqi-li
 

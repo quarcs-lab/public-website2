@@ -98,12 +98,14 @@ a { transition: color .25s var(--ease); }
 .hvr-bounce-to-right:hover { color: var(--ink) !important; }
 
 /* --------------------------------------------------------------- Navbar */
+/* Dark frosted-glass nav — the white logo (logo-white.png) + light links read
+   over the dark hero at top and over light content once scrolled. */
 .top-bar {
-  background: rgba(255, 255, 255, .82);
+  background: rgba(9, 14, 32, .72);
   -webkit-backdrop-filter: blur(16px) saturate(150%);
   backdrop-filter: blur(16px) saturate(150%);
-  border-bottom: 1px solid rgba(15, 24, 54, .08);
-  box-shadow: 0 8px 30px rgba(10, 16, 36, .12);
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: 0 10px 30px rgba(4, 8, 20, .35);
   padding: 10px 0;
   transition: background .3s var(--ease), padding .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
 }
@@ -112,27 +114,26 @@ a { transition: color .25s var(--ease); }
 .navbar,
 .navbar.bg-light { background: transparent !important; }
 
-/* At the very top (over the dark hero): airier frosted glass, still opaque
-   enough to keep the dark logo + nav links legible over the photo. */
+/* At the very top (over the dark hero): airier, more transparent glass. */
 .top-bar.animated-header {
-  background: rgba(255, 255, 255, .60);
-  border-bottom-color: rgba(255, 255, 255, .25);
-  box-shadow: 0 6px 24px rgba(10, 16, 36, .10);
+  background: rgba(9, 14, 32, .34);
+  border-bottom-color: rgba(255, 255, 255, .10);
+  box-shadow: none;
   padding: 16px 0;
 }
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-  .top-bar { background: rgba(255, 255, 255, .96); }
-  .top-bar.animated-header { background: rgba(255, 255, 255, .88); }
+  .top-bar { background: rgba(9, 14, 32, .94); }
+  .top-bar.animated-header { background: rgba(9, 14, 32, .6); }
 }
 .navbar-brand img {
-  height: 38px;
+  height: 40px;
   width: auto;
   transition: transform .3s var(--ease);
 }
 .navbar-brand:hover img { transform: scale(1.03); }
 
 .navbar .nav-item .nav-link {
-  color: var(--text-dark) !important;
+  color: rgba(238, 242, 251, .92) !important;
   font-weight: 600;
   letter-spacing: .02em;
   position: relative;
@@ -147,14 +148,20 @@ a { transition: color .25s var(--ease); }
   bottom: -2px;
   height: 2px;
   border-radius: var(--radius-pill);
-  background: linear-gradient(90deg, var(--cyan-600), var(--amber));
+  background: linear-gradient(90deg, var(--cyan), var(--amber));
   transform: scaleX(0);
   transform-origin: left;
   transition: transform .3s var(--ease);
 }
-.navbar .nav-item .nav-link:hover { color: var(--cyan-ink) !important; }
+.navbar .nav-item .nav-link:hover { color: #fff !important; }
 .navbar .nav-item .nav-link:hover::after { transform: scaleX(1); }
 .navbar .nav-item:last-child .nav-link::after { right: 0; }
+
+/* Mobile hamburger → white (theme uses navbar-light's dark icon) */
+.navbar-toggler { border-color: rgba(255, 255, 255, .3); }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.92%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
 /* ----------------------------------------------------------------- Hero */
 #hero-area {

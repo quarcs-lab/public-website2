@@ -1,0 +1,359 @@
+enable  : true
+title   : "Datasets, tutorials & projects"
+intro   : "Open datasets, interactive explorations, hands-on tutorials, and research projects on the quantitative geography of development. Use the search box and filters to find resources by type and topic."
+
+# Controlled vocabulary — drives the filter dropdowns (and their order)
+types:
+  - Dataset
+  - Interactive app
+  - Tutorial
+  - Project
+
+topics:
+  - Spatial analysis
+  - Regional convergence
+  - GIS & Remote sensing
+  - Panel data
+  - Time series
+  - Cross-sectional
+  - Development & productivity
+
+# One entry per resource. Fields: title, type, topic, url (required);
+# author, lang, desc (optional). type/topic must match the vocab above.
+items:
+
+  # ---------------- Datasets ----------------
+  - title  : "Provincial income, convergence clubs and structural change in Indonesia 2001–2017"
+    type   : Dataset
+    topic  : Regional convergence
+    author : "Gunawan & Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/data-indonesia-34-provinces-clubs-2001-2017"
+
+  - title  : "Productivity differences in the ASEAN community 1972–2017"
+    type   : Dataset
+    topic  : Development & productivity
+    author : "Mendez, Siew, Chan & Tang (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/data-productivity-asean-1972-2017"
+
+  - title  : "Regional inequality across countries 1992–2012"
+    type   : Dataset
+    topic  : GIS & Remote sensing
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/data-regional-lights-gdp-inequality-1992-2012"
+
+  - title  : "Provincial GDP and unemployment in Indonesia 1986–2018"
+    type   : Dataset
+    topic  : Regional convergence
+    author : "Aginta & Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/okun-indonesia-provinces-1986-2018"
+
+  - title  : "Overall, pure technical, and scale efficiency across provinces in Indonesia 1990 & 2010"
+    type   : Dataset
+    topic  : Development & productivity
+    author : "Mendez (2019)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/efficiency-clusters-indonesia-1990-2010"
+
+  # ---------------- Interactive apps ----------------
+  - title  : "Is Indonesia suffering from premature deindustrialization? Regional dynamics explorer"
+    type   : Interactive app
+    topic  : Regional convergence
+    lang   : R/Shiny
+    url    : "https://carlosmendez777.shinyapps.io/data-indonesia-34-provinces-clubs-2001-2017"
+
+  - title  : "Productivity differences across ASEAN countries: an interactive explorer"
+    type   : Interactive app
+    topic  : Development & productivity
+    lang   : R/Shiny
+    url    : "https://carlosmendez777.shinyapps.io/data-productivity-asean-1972-2017"
+
+  - title  : "Regional income differences across the world: an interactive explorer"
+    type   : Interactive app
+    topic  : GIS & Remote sensing
+    lang   : R/Shiny
+    url    : "https://carlosmendez777.shinyapps.io/data-regional-lights-gdp-inequality-1992-2012"
+
+  - title  : "Life expectancy vs GDP per capita (cross-section): an interactive explorer"
+    type   : Interactive app
+    topic  : Cross-sectional
+    lang   : R/Shiny
+    url    : "https://carlosmendez777.shinyapps.io/short-project-explore-cross-section-interactively"
+
+  - title  : "Life expectancy vs GDP per capita (panel): an interactive explorer"
+    type   : Interactive app
+    topic  : Panel data
+    lang   : R/Shiny
+    url    : "https://carlosmendez777.shinyapps.io/short-project-explore-panel-interactively/"
+
+  - title  : "GDP per capita vs CO2 emissions across regions: an interactive explorer"
+    type   : Interactive app
+    topic  : Cross-sectional
+    lang   : R/Shiny
+    url    : "https://jgassen.shinyapps.io/expand_co2/"
+
+  # ---------------- Tutorials: Spatial analysis ----------------
+  - title  : "Measuring the evolution of spatial dependence and spatial inequality"
+    type   : Tutorial
+    topic  : Spatial analysis
+    author : "Mendez (2021)"
+    lang   : Python
+    url    : "https://deepnote.com/@carlos-mendez/PYTHON-Spatial-dependence-and-inequality-dynamics-TdpNxK-MSP2b33sYpe_vjg"
+
+  - title  : "Introduction to exploratory space-time data analysis (ESTDA)"
+    type   : Tutorial
+    topic  : Spatial analysis
+    author : "Mendez (2021)"
+    lang   : Python
+    url    : "https://deepnote.com/@carlos-mendez/PYTHON-Intro-to-space-time-data-analysis-XRMI-FfoQ1ahIUKIOicrVg"
+
+  - title  : "Basic spatial econometrics"
+    type   : Tutorial
+    topic  : Spatial analysis
+    author : "Mendez (2021)"
+    lang   : Python
+    url    : "https://deepnote.com/@carlos-mendez/PYTHON-Basic-spatial-econometrics-He5bDBGzQI6SAdyUpgmWNQ"
+
+  - title  : "Making maps in R: using the sf and tmap packages"
+    type   : Tutorial
+    topic  : Spatial analysis
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/tutorial-maps-in-r"
+
+  - title  : "Spatial autocorrelation analysis in R"
+    type   : Tutorial
+    topic  : Spatial analysis
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/spatial-autocorrelation"
+
+  - title  : "Local Moran's I and multiple spatial scales in R"
+    type   : Tutorial
+    topic  : Spatial analysis
+    author : "Santos-Marquez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/FelipeSantos/LISA_tmap_geoda"
+
+  - title  : "Spatial regression analysis in R"
+    type   : Tutorial
+    topic  : Spatial analysis
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/tutorial-spatial-regression"
+
+  - title  : "Geographically weighted regression using the spgwr package in R"
+    type   : Tutorial
+    topic  : Spatial analysis
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/tutorial-gwr1"
+
+  - title  : "Multiscale geographically weighted regression: spatially varying convergence in Indonesia"
+    type   : Tutorial
+    topic  : Spatial analysis
+    author : "Mendez"
+    lang   : Python
+    url    : "https://carlos-mendez.org/post/python_mgwr/"
+
+  - title  : "Exploratory spatial data analysis: clusters and dynamics of human development in South America"
+    type   : Tutorial
+    topic  : Spatial analysis
+    author : "Mendez"
+    lang   : Python
+    url    : "https://carlos-mendez.org/post/python_esda2/"
+
+  - title  : "Spatial dynamic panel data modeling in R: cigarette demand across US states"
+    type   : Tutorial
+    topic  : Spatial analysis
+    author : "Mendez"
+    lang   : R
+    url    : "https://carlos-mendez.org/post/r_sdpdmod/"
+
+  # ---------------- Tutorials: Regional convergence ----------------
+  - title  : "The augmented Solow model: a tutorial using R and Stata"
+    type   : Tutorial
+    topic  : Regional convergence
+    author : "Mendez (2021)"
+    lang   : R/Stata
+    url    : "https://deepnote.com/@carlos-mendez/R-Augmented-Solow-Model-2Q91UJCcQH2ClZuknoF2Tw"
+
+  - title  : "Club convergence analysis in Stata"
+    type   : Tutorial
+    topic  : Regional convergence
+    author : "Mendez (2020)"
+    lang   : Stata
+    url    : "https://github.com/quarcs-lab/mendez2020-convergence-clubs-code-data"
+
+  - title  : "Classical sigma and beta convergence analysis in R: using the REAT 2.1 package"
+    type   : Tutorial
+    topic  : Regional convergence
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/classical-convergence-reat21"
+
+  - title  : "Univariate distribution dynamics in R: using the ggridges package"
+    type   : Tutorial
+    topic  : Regional convergence
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/univariate-distribution-dynamics"
+
+  - title  : "Bivariate distribution dynamics analysis in R"
+    type   : Tutorial
+    topic  : Regional convergence
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/tutorial-bivariate-distribution-dynamics"
+
+  - title  : "Beta and sigma convergence across countries: a Stata tutorial"
+    type   : Tutorial
+    topic  : Regional convergence
+    author : "Mendez"
+    lang   : Stata
+    url    : "https://carlos-mendez.org/post/stata_convergence/"
+
+  - title  : "Spatial inequality and the Kuznets curve: parametric and semiparametric estimates in R"
+    type   : Tutorial
+    topic  : Regional convergence
+    author : "Mendez"
+    lang   : R
+    url    : "https://carlos-mendez.org/post/r_kuznets/"
+
+  # ---------------- Tutorials: GIS & Remote sensing ----------------
+  - title  : "Regional inequality from outer space: predicting GDP from nighttime lights in Python"
+    type   : Tutorial
+    topic  : GIS & Remote sensing
+    author : "Mendez"
+    lang   : Python
+    url    : "https://carlos-mendez.org/post/python_kuznets_dmsp/"
+
+  - title  : "Regional dynamics of VIIRS-like nighttime lights 1992–2023"
+    type   : Tutorial
+    topic  : GIS & Remote sensing
+    author : "Mendez"
+    lang   : GEE
+    url    : "https://carlos-mendez.org/post/gee_viirs-like2_dynamics/"
+
+  - title  : "Space-time dynamics of nighttime lights: DMSP-corrected data"
+    type   : Tutorial
+    topic  : GIS & Remote sensing
+    author : "Mendez"
+    lang   : GEE
+    url    : "https://carlos-mendez.org/post/gee_ntl_dmsp_corrected/"
+
+  # ---------------- Tutorials: Panel data ----------------
+  - title  : "An interactive exploration of panel data with ExPanDaR"
+    type   : Tutorial
+    topic  : Panel data
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/explore-panel-interactively"
+
+  - title  : "Wrangling and plotting panel data in R: using the panelr package"
+    type   : Tutorial
+    topic  : Panel data
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/learn-panelr"
+
+  - title  : "Introduction to panel data methods in Python"
+    type   : Tutorial
+    topic  : Panel data
+    author : "Mendez"
+    lang   : Python
+    url    : "https://carlos-mendez.org/post/python_panel_intro/"
+
+  - title  : "Dynamic panel data models in Python: from Nickell bias to system GMM"
+    type   : Tutorial
+    topic  : Panel data
+    author : "Mendez"
+    lang   : Python
+    url    : "https://carlos-mendez.org/post/python_dynamic_panel/"
+
+  - title  : "High-dimensional fixed effects regression: an introduction in Python"
+    type   : Tutorial
+    topic  : Panel data
+    author : "Mendez"
+    lang   : Python
+    url    : "https://carlos-mendez.org/post/python_pyfixest/"
+
+  - title  : "MGWFER: causal spatially varying coefficients via panel fixed effects"
+    type   : Tutorial
+    topic  : Panel data
+    author : "Mendez"
+    lang   : Python
+    url    : "https://carlos-mendez.org/post/python_mgwrfer/"
+
+  # ---------------- Tutorials: Time series ----------------
+  - title  : "Long-run vs short-run decompositions in R: the HP filter vs the Hamilton filter"
+    type   : Tutorial
+    topic  : Time series
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/long-run-filters"
+
+  # ---------------- Tutorials: Cross-sectional ----------------
+  - title  : "An interactive exploration of cross-sectional data with ExPanDaR"
+    type   : Tutorial
+    topic  : Cross-sectional
+    author : "Mendez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/quarcs-lab/explore-cross-section-interactively"
+
+  - title  : "Using the missForest package for imputation of missing values"
+    type   : Tutorial
+    topic  : Cross-sectional
+    author : "Santos-Marquez (2020)"
+    lang   : R
+    url    : "https://rpubs.com/FelipeSantos/na_missforest"
+
+  # ---------------- Projects ----------------
+  - title  : "GeoDevelopment Dashboards"
+    type   : Project
+    topic  : GIS & Remote sensing
+    lang   : GEE
+    desc   : "Interactive Google Earth Engine apps visualizing nighttime lights and development metrics across regions worldwide."
+    url    : "https://carlos-mendez.org/projects/dashboards/"
+
+  - title  : "ds4ds — Data science for development studies"
+    type   : Project
+    topic  : Development & productivity
+    lang   : Python
+    desc   : "Computational notebooks and apps teaching data science methods for development economics research."
+    url    : "https://cmg777.github.io/ds4ds/"
+
+  - title  : "geometrics — Regional growth & convergence toolkit"
+    type   : Project
+    topic  : Regional convergence
+    lang   : Python
+    desc   : "A Python package for analyzing regional growth, convergence, and spatial inequality with an Explore/Analyze/Learn workflow."
+    url    : "https://github.com/quarcs-lab/geometrics"
+
+  - title  : "expdpy — Interactive panel-data exploration"
+    type   : Project
+    topic  : Panel data
+    lang   : Python
+    desc   : "A Python package for exploring and learning panel-data econometrics interactively with fixest-style models."
+    url    : "https://github.com/cmg777/expdpy"
+
+  - title  : "DS4Bolivia — Geospatial development data for Bolivia"
+    type   : Project
+    topic  : GIS & Remote sensing
+    desc   : "A repository of spatial and socio-economic datasets and dashboards across Bolivia's 339 municipalities."
+    url    : "https://github.com/quarcs-lab/ds4bolivia"
+
+  - title  : "Indonesia514 — District-level data for Indonesia"
+    type   : Project
+    topic  : Regional convergence
+    desc   : "Geospatial and regional-economic indicators across all 514 Indonesian districts, unified by a common identifier."
+    url    : "https://quarcs-lab.github.io/indonesia514/"
+
+  - title  : "GeoDevelopment Observatory of Cambodia"
+    type   : Project
+    topic  : GIS & Remote sensing
+    desc   : "A platform integrating satellite and survey indicators to monitor sustainable regional development in Cambodia."
+    url    : "https://bit.ly/gdo-cambodia"

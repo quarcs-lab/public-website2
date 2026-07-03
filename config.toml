@@ -19,19 +19,10 @@ name    = "Events"
 #url     = "portfolio/webinars"
 url     = "https://lu.ma/quarcs"
 weight  = 43
-#[[menu.main]]
-#name    = "Learning"
-#url     = "portfolio/webinars"
-#url     = "https://discord.gg/NKb5GJJmkd"
-#weight  = 50
 [[menu.main]]
 name    = "Tutorials"
 url     = "portfolio/data-tutorials"
 weight  = 60
-#[[menu.main]]
-#name    = "Projects"
-#url     = "service"
-#weight  = 80
 [[menu.main]]
 name    = "Community"
 url     = "https://discord.gg/pfEmxwSEHy"
@@ -51,10 +42,10 @@ home = "Home"
 logo = "images/logo.png"
 dateFormat = "6 January 2006"
 # Meta data
-description = "Airspace Hugo theme"
-author = "Themefisher"
-# Google Analitycs
-googleAnalitycsID = "Your ID"
+description = "QuaRCS-lab Network — research on quantitative regional and computational science."
+author = "QuaRCS-lab Network"
+# Google Analytics — set a real GA tracking ID here to enable analytics
+googleAnalitycsID = ""
 # contact form action
 contactFormAction = "#" # contact form works with https://formspree.io
 

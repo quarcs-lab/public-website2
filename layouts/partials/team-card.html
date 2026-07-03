@@ -2,7 +2,7 @@
      The stagger delay resets every 4 cards (one desktop row) so the whole grid reveals fast. */}}
 {{ $m := .m }}
 {{ $index := .index }}
-<div class="col-lg-3 col-sm-6 col-6 team-col">
+<div class="col-lg-3 col-md-4 col-sm-6 col-6 team-col">
   <article class="team-member wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul (mod $index 4) 60 }}ms">
 
     {{ with $m.image }}
@@ -29,11 +29,15 @@
 
     {{ with $m.description }}<p class="team_text">{{ . }}</p>{{ end }}
 
-    <p class="social-icons">
-      {{ with $m.net }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $m.name }} &mdash; research profile"><i class="ion-earth"></i></a>{{ end }}
-      {{ with $m.linkedIn }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $m.name }} on LinkedIn"><i class="ion-social-linkedin"></i></a>{{ end }}
-      {{ with $m.web }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $m.name }} &mdash; personal website"><i class="ion-link"></i></a>{{ end }}
+    {{/* Only the member's website is kept — one clear labeled button, no social/RG icons. */}}
+    {{ with $m.web }}
+    <p class="team-links">
+      <a class="team-website" href="{{ . }}" target="_blank" rel="noopener"
+         aria-label="{{ $m.name }} &mdash; website">
+        <i class="ion-earth"></i><span>Website</span>
+      </a>
     </p>
+    {{ end }}
 
   </article>
 </div>

@@ -6,10 +6,38 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+
+                <!-- Publication filter bar (progressive enhancement: works only if JS is enabled;
+                     without JS the full list still renders below) -->
+                <div class="research-filter" role="search">
+                    <input type="search" id="research-search" class="research-input research-search"
+                           placeholder="Search title, author, or journal…"
+                           aria-label="Search publications" autocomplete="off">
+                    <select id="research-year" class="research-input" aria-label="Filter by year">
+                        <option value="">All years</option>
+                        {{ range .Pages.GroupByDate "2006" }}<option value="{{ .Key }}">{{ .Key }}</option>{{ end }}
+                    </select>
+                    <select id="research-type" class="research-input" aria-label="Filter by type">
+                        <option value="">All types</option>
+                        <option value="article">Journal articles</option>
+                        <option value="book">Books &amp; chapters</option>
+                        <option value="working">Working papers</option>
+                    </select>
+                    <button type="button" id="research-reset" class="research-reset">Reset</button>
+                    <span id="research-count" class="research-count" aria-live="polite"></span>
+                </div>
+                <p id="research-noresults" class="research-noresults" style="display:none;">
+                    No publications match your filters.
+                </p>
+
                 {{ range .Pages.GroupByDate "2006" }}
+                <div class="research-year-group" data-year="{{ .Key }}">
                 <h2 class="research-year">{{ .Key }}</h2>
                 {{ range .Pages }}
-                <article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+                {{- $author := "" }}{{ with .Params.author }}{{ $author = . }}{{ end -}}
+                {{- $tagstr := "" }}{{ with .Params.tags }}{{ $tagstr = delimit . " " }}{{ end -}}
+                {{- $type := "article" }}{{ with .Params.tags }}{{ range . }}{{ if in . "Book" }}{{ $type = "book" }}{{ else if in . "Working paper" }}{{ $type = "working" }}{{ end }}{{ end }}{{ end -}}
+                <article class="research-item" data-year="{{ .Date.Format "2006" }}" data-type="{{ $type }}" data-search="{{ lower (printf "%s %s %s" .Title $author $tagstr) }}">
 
                     <div class="blog-post-image">
                         <a href="{{ .Permalink }}">
@@ -39,11 +67,77 @@
                     </div>
                 </article>
                 {{ end }}
+                </div>
                 {{ end }}
             </div>
         </div>
     </div>
 </section>
+
+<style>
+.research-filter{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin:0 0 2.2rem;}
+.research-input{padding:.55rem .8rem;border:1px solid #d9d9d9;border-radius:4px;background:#fff;color:#333;font-size:.95rem;line-height:1.2;height:auto;}
+.research-input:focus{outline:none;border-color:#f8563f;box-shadow:0 0 0 2px rgba(248,86,63,.15);}
+.research-search{flex:1 1 260px;min-width:180px;}
+.research-filter select.research-input{cursor:pointer;}
+.research-reset{padding:.55rem 1rem;border:1px solid #d9d9d9;border-radius:4px;background:#f7f7f7;color:#555;font-size:.9rem;cursor:pointer;}
+.research-reset:hover{background:#efefef;}
+.research-count{margin-left:auto;color:#888;font-size:.9rem;white-space:nowrap;}
+.research-noresults{color:#888;font-style:italic;padding:1.5rem 0;}
+.research-item[hidden],.research-year-group[hidden]{display:none;}
+@media (max-width:576px){
+  .research-count{margin-left:0;width:100%;}
+}
+</style>
+
+<script>
+(function(){
+  var search = document.getElementById('research-search');
+  if(!search){return;}
+  var yearSel = document.getElementById('research-year');
+  var typeSel = document.getElementById('research-type');
+  var resetBtn = document.getElementById('research-reset');
+  var countEl = document.getElementById('research-count');
+  var noRes = document.getElementById('research-noresults');
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.research-year-group'));
+  var items = Array.prototype.slice.call(document.querySelectorAll('article.research-item'));
+
+  // accent-insensitive normaliser; pre-compute each item's haystack once
+  function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,''); }
+  items.forEach(function(a){ a._hay = norm(a.getAttribute('data-search')); });
+
+  function apply(){
+    var q = norm(search.value.trim());
+    var y = yearSel.value;
+    var t = typeSel.value;
+    var visible = 0;
+    items.forEach(function(a){
+      var show = (!q || a._hay.indexOf(q) !== -1)
+              && (!y || a.getAttribute('data-year') === y)
+              && (!t || a.getAttribute('data-type') === t);
+      a.hidden = !show;
+      if(show){ visible++; }
+    });
+    groups.forEach(function(g){
+      var anyVisible = Array.prototype.some.call(
+        g.querySelectorAll('article.research-item'),
+        function(a){ return !a.hidden; }
+      );
+      g.hidden = !anyVisible;
+    });
+    countEl.textContent = visible + (visible === 1 ? ' publication' : ' publications');
+    noRes.style.display = visible ? 'none' : '';
+  }
+
+  search.addEventListener('input', apply);
+  yearSel.addEventListener('change', apply);
+  typeSel.addEventListener('change', apply);
+  resetBtn.addEventListener('click', function(){
+    search.value = ''; yearSel.value = ''; typeSel.value = ''; apply(); search.focus();
+  });
+  apply();
+})();
+</script>
 
 {{ partial "cta.html" . }}
 

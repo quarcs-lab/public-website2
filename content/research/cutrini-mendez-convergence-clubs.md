@@ -3,8 +3,8 @@ title: "Convergence clubs and spatial structural change in the European Union"
 author: Eleonora Cutrini and Carlos Mendez
 date: "2023-08-16"
 type: post
-tags: ["Spatial Dependence, Structural Change, Spatial Econometrics, Exploratory Spatial Data Analysis "]
-image: "https://carlos-mendez.org/publication/20230802-sced/featured_hu4319d5ff4a4e9c05cba253c9f6e69f4d_114461_720x0_resize_q75_lanczos.jpg "
+tags: ["Spatial Dependence, Structural Change, Spatial Econometrics, Exploratory Spatial Data Analysis"]
+image: "https://carlos-mendez.org/publication/20230802-sced/featured_hu4319d5ff4a4e9c05cba253c9f6e69f4d_114461_720x0_resize_q75_lanczos.jpg"
 ---
 
 

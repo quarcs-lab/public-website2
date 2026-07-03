@@ -1,7 +1,7 @@
 ---
 title: "Convergence Clubs in Labor Productivity and its Proximate Sources: Evidence from Developed and Developing Countries"
 author: Carlos Mendez
-date: "2020-11-11T13:07:31+02:00"
+date: "2020-11-11"
 type: post
 tags: ["Springer Publisher"]
 image: "images/blog/book-cover-mendez2020.jpg"

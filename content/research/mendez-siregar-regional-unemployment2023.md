@@ -3,8 +3,8 @@ title: "Regional unemployment dynamics in Indonesia: Serial persistence, spatial
 author: Carlos Mendez and Tifani Siregar
 date: "2023-11-26"
 type: post
-tags: ["Regional Unemployment, Cyclical Sensitivity, Spatial Dependence, Common factors, Indonesia "]
-image: "https://carlos-mendez.org/publication/20231124-lsrs/featured_hubf3dc07e857a5599c9cb27abd958d34f_265236_720x0_resize_q75_lanczos.jpg "
+tags: ["Regional Unemployment, Cyclical Sensitivity, Spatial Dependence, Common factors, Indonesia"]
+image: "https://carlos-mendez.org/publication/20231124-lsrs/featured_hubf3dc07e857a5599c9cb27abd958d34f_265236_720x0_resize_q75_lanczos.jpg"
 ---
 
 

@@ -3,7 +3,7 @@ title: "Spatial Beta-Convergence Forecasting Models: Evidence from Municipal Hom
 author: Felipe Santos-Marquez
 type: post
 date: "2021-08-15"
-tags: ["beta convergence, colombia, crime forecasting, spatial effects, "]
+tags: ["beta convergence, colombia, crime forecasting, spatial effects,"]
 image: "images/blog/santos2020-spatial-beta-forecasting.jpg"
 ---
 

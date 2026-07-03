@@ -1,7 +1,7 @@
 ---
 title: "Regional Convergence, Spatial Scale, and Spatial Dependence: Evidence from Homicides and Personal Injuries in Colombia 2010-2018"
 author: Felipe Santos-Marquez and Carlos Mendez.
-date: "2020-11-07T13:07:31+02:00"
+date: "2020-11-07"
 type: post
 tags: ["Regional Science Policy and Practice"]
 image: "images/blog/colombia-homicides2020.jpg"

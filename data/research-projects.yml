@@ -1,0 +1,44 @@
+# Drives /portfolio/research-projects/ via layouts/portfolio/projects.html
+# Titles mirror the homepage hero keywords (config.toml -> [[params.banner.flipText]])
+# so the two surfaces stay in sync.
+enable  : true
+title   : Research projects
+intro   : >
+   Our work spans five connected research lines in Quantitative Regional and Computational
+   Science, integrating development economics, spatial data science, and econometrics to
+   understand and inform sustainable development across regions and countries.
+heading : Main research lines
+link    : https://quarcs-lab.org/research
+linkText: A more detailed description of current projects, slides, and summaries is available at quarcs-lab.org/research
+
+items:
+ - icon        : ion-ios-world-outline
+   title       : Sustainable Regional Development
+   description : >
+      The quantitative geography of sustainable development — combining satellite remote sensing,
+      spatial econometrics, and spatial machine learning to understand how subnational regions
+      develop sustainably.
+
+ - icon        : ion-ios-location-outline
+   title       : The Geography of Development
+   description : >
+      Measuring the wealth and inequality of subnations from outer space, using satellite remote
+      sensing to map where development happens and who is being left behind.
+
+ - icon        : ion-ios-analytics-outline
+   title       : Regional Growth and Inequality
+   description : >
+      Regional growth, inequality, and convergence across subnational regions and countries,
+      studied through the lens of spatial econometrics and machine learning.
+
+ - icon        : ion-shuffle
+   title       : Spatial Structural Change
+   description : >
+      Modeling the wealth and inequality of subnations through spatial spillovers and spatial
+      heterogeneity, and identifying development clusters with spatial machine learning.
+
+ - icon        : ion-ios-bolt-outline
+   title       : Spatial Energy Economics
+   description : >
+      The spatial dimensions of energy demand, efficiency, and the low-carbon transition —
+      linking regional energy dynamics to sustainable development. [DRAFT — please review]

@@ -1,0 +1,51 @@
+{{ define "main" }}
+{{ $data := index .Site.Data "research-projects" }}
+
+{{ "<!-- Page Header -->" | safeHTML }}
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>{{ with $data.title }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                {{ with $data.intro }}<p class="projects-intro">{{ . }}</p>{{ end }}
+
+                {{ with $data.heading }}<h3 class="projects-heading">{{ . }}</h3>{{ end }}
+
+                {{ with $data.link }}
+                <p class="projects-link">
+                    <a href="{{ . }}" target="_blank" rel="noopener">
+                        {{ with $data.linkText }}{{ . }}{{ else }}{{ $data.link }}{{ end }}
+                    </a>
+                </p>
+                {{ end }}
+
+                <div class="project-grid">
+                    {{ range $index, $item := $data.items }}
+                    <article class="project-card wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul (mod $index 3) 90 }}ms">
+                        {{ with $item.icon }}<div class="project-icon"><i class="{{ . }}"></i></div>{{ end }}
+                        {{ with $item.title }}<h3 class="project-title">{{ . }}</h3>{{ end }}
+                        {{ with $item.description }}<p class="project-desc">{{ . }}</p>{{ end }}
+                    </article>
+                    {{ end }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ end }}

@@ -830,3 +830,81 @@ figure figcaption p { color: var(--muted); }
 @media (max-width: 767px) {
   .project-grid { grid-template-columns: 1fr; gap: 1.1rem; }
 }
+
+/* ======================================= Mobile polish (phones + tablets) */
+
+/* Hero rotating headline on phones + tablets.
+   The theme's cd-headline ".slide" keeps each phrase on ONE nowrap line and clips the
+   overflow (`.cd-words-wrapper{overflow:hidden}` + `#hero-area{overflow:hidden}`). The
+   longest phrase ("Sustainable Regional Development") is wider than the container at every
+   width ≤991px, so it gets cut off. Let the phrases WRAP and shrink a touch so the full
+   headline is always readable. (Desktop ≥992px keeps the theme's one-line look.) */
+@media (max-width: 991.98px) {
+  #hero-area h1 .cd-words-wrapper {
+    display: block;
+    width: 100% !important;          /* beat the theme's width:auto!important + plugin inline width */
+    max-width: 100%;
+    white-space: normal;
+    overflow: visible;               /* never clip the wrapped lines */
+    text-align: center;
+    font-size: clamp(1.6rem, 6.4vw, 2.9rem);
+    line-height: 1.14;
+    padding: .1em 0;
+  }
+  #hero-area .cd-words-wrapper b {
+    white-space: normal !important;  /* theme forces nowrap; allow the phrase to wrap */
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+}
+
+/* Hero CTA is white-space:nowrap and ~353px wide; on the narrowest phones it exceeds the
+   viewport and its rounded ends get clipped by #hero-area{overflow:hidden}. Shrink it to fit. */
+@media (max-width: 400px) {
+  #hero-area .btn,
+  #hero-area .btn-green {
+    font-size: 12px;
+    letter-spacing: .03em;
+    padding: 13px 18px;
+    max-width: 100%;
+  }
+}
+
+/* Team roster: progressive columns — 1-up (narrow phone) · 2-up (phone/large-phone)
+   · 3-up (tablet, via col-md-4 added in team-card.html) · 4-up (desktop, col-lg-3). */
+
+/* Branded 404 page (layouts/404.html) — centered, on-palette, fully responsive */
+.error-page { padding: 90px 0 96px; text-align: center; }
+.error-page .error-code {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1;
+  font-size: clamp(4.5rem, 18vw, 9rem);
+  letter-spacing: -.03em;
+  background: linear-gradient(120deg, var(--cyan-600), var(--amber));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 6px;
+}
+.error-page .error-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: clamp(1.4rem, 4.5vw, 2rem);
+  margin: 0 0 14px;
+}
+.error-page p { max-width: 520px; margin: 0 auto 30px; }
+.error-page .btn-home {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--cyan-600), var(--cyan));
+  color: var(--ink);
+  border: none;
+  font-weight: 700;
+  letter-spacing: .06em;
+  padding: 14px 32px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-glow);
+}
+.error-page .btn-home:hover { color: var(--ink); box-shadow: 0 16px 40px rgba(6, 182, 212, .5); }

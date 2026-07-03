@@ -1,0 +1,18 @@
+{{/* Branded, responsive 404. Plugs into _default/baseof.html so it inherits the site
+     <head> (viewport meta, fonts, CSS), the nav and the footer. The theme's own
+     layouts/404.html is empty, which produced a blank, viewport-less page on mobile. */}}
+{{ define "main" }}
+<section class="error-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
+        <p class="error-code">404</p>
+        <h1 class="error-title">This page wandered off the map</h1>
+        <p>The page you’re looking for doesn’t exist or may have moved. Let’s get you
+           back to familiar ground.</p>
+        <a class="btn btn-home" href="{{ .Site.BaseURL }}">Back to home</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

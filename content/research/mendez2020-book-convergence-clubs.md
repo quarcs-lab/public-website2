@@ -3,6 +3,7 @@ title: "Convergence Clubs in Labor Productivity and its Proximate Sources: Evide
 author: Carlos Mendez
 date: "2020-11-11"
 type: post
+pubtype: "book"
 tags: ["Springer Publisher"]
 image: "images/blog/book-cover-mendez2020.jpg"
 ---

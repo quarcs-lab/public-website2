@@ -6,6 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                {{- $groups := .Pages.GroupByDate "2006" -}}
 
                 <!-- Publication filter bar (progressive enhancement: works only if JS is enabled;
                      without JS the full list still renders below) -->
@@ -15,7 +16,7 @@
                            aria-label="Search publications" autocomplete="off">
                     <select id="research-year" class="research-input" aria-label="Filter by year">
                         <option value="">All years</option>
-                        {{ range .Pages.GroupByDate "2006" }}<option value="{{ .Key }}">{{ .Key }}</option>{{ end }}
+                        {{ range $groups }}<option value="{{ .Key }}">{{ .Key }}</option>{{ end }}
                     </select>
                     <select id="research-type" class="research-input" aria-label="Filter by type">
                         <option value="">All types</option>
@@ -30,14 +31,20 @@
                     No publications match your filters.
                 </p>
 
-                {{ range .Pages.GroupByDate "2006" }}
+                {{ range $groups }}
                 <div class="research-year-group" data-year="{{ .Key }}">
                 <h2 class="research-year">{{ .Key }}</h2>
                 {{ range .Pages }}
                 {{- $author := "" }}{{ with .Params.author }}{{ $author = . }}{{ end -}}
-                {{- $tagstr := "" }}{{ with .Params.tags }}{{ $tagstr = delimit . " " }}{{ end -}}
-                {{- $type := "article" }}{{ with .Params.tags }}{{ range . }}{{ if in . "Book" }}{{ $type = "book" }}{{ else if in . "Working paper" }}{{ $type = "working" }}{{ end }}{{ end }}{{ end -}}
-                <article class="research-item" data-year="{{ .Date.Format "2006" }}" data-type="{{ $type }}" data-search="{{ lower (printf "%s %s %s" .Title $author $tagstr) }}">
+                {{- /* type: explicit front-matter `pubtype` wins; else fall back to a tag heuristic; else article */ -}}
+                {{- $tagstr := "" -}}
+                {{- $type := .Params.pubtype | default "" -}}
+                {{- with .Params.tags -}}
+                    {{- $tagstr = delimit . " " -}}
+                    {{- if not $type -}}{{- range . -}}{{- if in . "Book" -}}{{- $type = "book" -}}{{- else if in . "Working paper" -}}{{- $type = "working" -}}{{- end -}}{{- end -}}{{- end -}}
+                {{- end -}}
+                {{- if not $type }}{{ $type = "article" }}{{ end -}}
+                <article class="research-item" data-year="{{ .Date.Format "2006" }}" data-type="{{ $type }}" data-search="{{ printf "%s %s %s" .Title $author $tagstr }}">
 
                     <div class="blog-post-image">
                         <a href="{{ .Permalink }}">

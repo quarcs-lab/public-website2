@@ -4,7 +4,7 @@ author: Harry Aginta, Carlos Mendez and Masakazu Someya
 date: "2023-10-16"
 type: post
 tags: ["Regional Labor Market, Okun’s Law, Causal Inference, Instrumental Variable, Indonesia"]
-image: "https://carlos-mendez.org/publication/20231012-ael/featured.jpeg"
+image: "images/blog/aginta-mendez-someya2023-okun-law-endogineity.jpeg"
 ---
 
 

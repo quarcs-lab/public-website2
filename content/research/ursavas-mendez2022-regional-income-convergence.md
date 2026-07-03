@@ -4,7 +4,7 @@ author: Ugur Ursavas and Carlos Mendez
 date: "2022-08-07"
 type: post
 tags: ["Spatial Dependence, Structural Change, Spatial Econometrics, Exploratory Spatial Data Analysis, Club Convergence, Turkey"]
-image: "https://carlos-mendez.org/publication/20220808-arc/featured_hu28ee51ba9463c2810c551d491646b963_143566_720x0_resize_q75_lanczos.jpg"
+image: "images/blog/ursavas-mendez2022-regional-income-convergence.jpg"
 ---
 
 

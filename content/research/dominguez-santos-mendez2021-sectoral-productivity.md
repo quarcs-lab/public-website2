@@ -4,7 +4,7 @@ author: Alvaro Dominguez, Felipe Santos and Carlos Mendez
 date: "2021-12-15"
 type: post
 tags: ["Productivity, Convergence, Input-Output, Networks, Japan"]
-image: "https://carlos-mendez.org/publication/20211030-structuralchange/featured.jpg"
+image: "images/blog/dominguez-santos-mendez2021-sectoral-productivity.jpg"
 ---
 
 

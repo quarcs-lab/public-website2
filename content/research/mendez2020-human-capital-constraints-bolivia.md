@@ -4,7 +4,7 @@ author: Carlos Mendez and Erick Gonzales
 type: post
 date: "2021-03-16"
 tags: ["Human Capital, Spatial Dependence, Regionalization, Clusters, Principal Components, Spatial Clusters, Bolivia"]
-image: "https://carlos-mendez.org/publication/20210318-economia/featured_hu5e7968b8e9169c491d0e84e5a170265a_156517_720x0_resize_q75_lanczos.jpg"
+image: "images/blog/mendez2020-human-capital-constraints-bolivia.jpg"
 ---
 
 

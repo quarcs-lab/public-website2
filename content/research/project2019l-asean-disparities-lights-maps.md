@@ -4,7 +4,7 @@ author: Carlos Mendez and Felipe Santos
 date: "2020-08-27"
 type: post
 tags: ["Regional Science Policy and Practice"]
-image: "https://carlos-mendez.org/publication/20200817-rspp/featured_hu4319d5ff4a4e9c05cba253c9f6e69f4d_191491_720x0_resize_q75_lanczos.jpg"
+image: "images/blog/project2019l-asean-disparities-lights-maps.jpg"
 ---
 
 

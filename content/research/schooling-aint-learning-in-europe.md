@@ -4,7 +4,7 @@ author: Linda Glawe and Carlos Mendez.
 date: "2022-06-21"
 type: post
 tags: ["Comparative Economic Studies"]
-image: "https://carlos-mendez.org/publication/20220616-jces/featured_hu560ca697c410df9b5815509881526529_93185_720x0_resize_q75_lanczos.jpg"
+image: "images/blog/schooling-aint-learning-in-europe.jpg"
 ---
 
 

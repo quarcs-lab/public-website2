@@ -4,7 +4,7 @@ author: Carlos Mendez and Felipe Santos.
 date: "2022-01-04"
 type: post
 tags: ["Comparative Economic Studies"]
-image: "https://carlos-mendez.org/publication/20220104-comparativeecostud/featured_hu4319d5ff4a4e9c05cba253c9f6e69f4d_193630_720x0_resize_q75_lanczos.jpg"
+image: "images/blog/mendez-santos2022-economic-and-social-disparities.jpg"
 ---
 
 

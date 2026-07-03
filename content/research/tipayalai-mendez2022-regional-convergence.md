@@ -4,7 +4,7 @@ author: Katikar Tipayalai and Carlos Mendez
 date: "2022-03-03"
 type: post
 tags: ["Regional Inequality, Spatial Dependence, Spatial Heterogeneity,  Convergence, Club Convergence, Thailand"]
-image: "https://carlos-mendez.org/publication/20220303-jape/featured_hu077e14076757a03ba07370127123193d_156573_720x0_resize_q75_lanczos.jpg"
+image: "images/blog/tipayalai-mendez2022-regional-convergence.jpg"
 ---
 
 

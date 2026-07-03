@@ -4,7 +4,7 @@ author: Anang Gunawan, Carlos Mendez  and Shigeru Otsubo
 date: "2021-08-15"
 type: post
 tags: ["Club Convergence, Logit Model, Industrialization, Indonesia"]
-image: "https://carlos-mendez.org/publication/20210920-growthchange/featured_hu243d2e89861325ed236d93c6222ab6e9_153399_720x0_resize_q75_lanczos.jpg"
+image: "images/blog/budi-mendez-otsubo2021.jpg"
 ---
 
 

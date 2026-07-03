@@ -4,7 +4,7 @@ author: Cani Miranti and Carlos Mendez
 date: "2022-04-29"
 type: post
 tags: ["Regional Inequality, Spatial Dependence, Spatial Econometrics, Convergence, Indonesia"]
-image: "https://carlos-mendez.org/publication/20220303-bies/featured_hud6e0c467148e45bb03790018c3cab111_153886_720x0_resize_q75_lanczos.jpg"
+image: "images/blog/miranti-mendez2022-social-and-economic-convergence.jpg"
 ---
 
 

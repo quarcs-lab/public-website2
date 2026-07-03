@@ -11,7 +11,9 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }}</title>
-  <link rel="icon" href="{{ "images/favicon.ico" | absURL }}">
+  <link rel="icon" href="{{ "images/favicon.ico" | absURL }}" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="{{ "images/favicon.svg" | absURL }}">
+  <link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | absURL }}">
 
   {{ "<!-- Google Fonts: Space Grotesk (display) + Inter (body); loaded non-render-blocking with a fallback stack -->" | safeHTML }}
   <link rel="preconnect" href="https://fonts.googleapis.com">

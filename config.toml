@@ -39,7 +39,7 @@ weight  = 95
 # Site Params
 [params]
 home = "Home"
-logo = "images/logo.png"
+logo = "images/logo-white.png"
 dateFormat = "6 January 2006"
 # Meta data
 description = "QuaRCS-lab Network — research on quantitative regional and computational science."
@@ -61,7 +61,7 @@ image   = "images/about/about.png"
 # Banner Section
 [params.banner]
 enable  = true
-bgImage = "images/slider7.jpg"
+bgImage = "images/slider7-hires.jpg"
 heading = "We conduct research about"
 description = "Quantitative Regional and Computational Science"
 # button

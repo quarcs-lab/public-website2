@@ -1,13 +1,13 @@
 enable  : true
-title   : "Datasets, tutorials & projects"
-intro   : "Open datasets, interactive explorations, hands-on tutorials, and research projects on the quantitative geography of development. Use the search box and filters to find resources by type and topic."
+title   : "Resources"
+intro   : "Open datasets, interactive explorations, hands-on tutorials, and research software on the quantitative geography of development. Use the search box and filters to find resources by type and topic."
 
 # Controlled vocabulary — drives the filter dropdowns (and their order)
 types:
+  - Software
   - Dataset
   - Interactive app
   - Tutorial
-  - Project
 
 topics:
   - Spatial analysis
@@ -366,49 +366,44 @@ items:
     lang   : R
     url    : "https://rpubs.com/FelipeSantos/na_missforest"
 
-  # ---------------- Projects ----------------
-  - title  : "GeoDevelopment Dashboards"
-    type   : Project
-    topic  : GIS & Remote sensing
-    lang   : GEE
-    desc   : "Interactive Google Earth Engine apps visualizing nighttime lights and development metrics across regions worldwide."
-    url    : "https://carlos-mendez.org/projects/dashboards/"
-
-  - title  : "ds4ds — Data science for development studies"
-    type   : Project
-    topic  : Development & productivity
-    lang   : Python
-    desc   : "Computational notebooks and apps teaching data science methods for development economics research."
-    url    : "https://cmg777.github.io/ds4ds/"
-
+  # ---------------- Software ----------------
   - title  : "geometrics — Regional growth & convergence toolkit"
-    type   : Project
+    type   : Software
     topic  : Regional convergence
     lang   : Python
     desc   : "A Python package for analyzing regional growth, convergence, and spatial inequality with an Explore/Analyze/Learn workflow."
     url    : "https://github.com/quarcs-lab/geometrics"
 
   - title  : "expdpy — Interactive panel-data exploration"
-    type   : Project
+    type   : Software
     topic  : Panel data
     lang   : Python
     desc   : "A Python package for exploring and learning panel-data econometrics interactively with fixest-style models."
     url    : "https://github.com/cmg777/expdpy"
 
+  # ---------------- Datasets (repositories) ----------------
   - title  : "DS4Bolivia — Geospatial development data for Bolivia"
-    type   : Project
+    type   : Dataset
     topic  : GIS & Remote sensing
     desc   : "A repository of spatial and socio-economic datasets and dashboards across Bolivia's 339 municipalities."
     url    : "https://github.com/quarcs-lab/ds4bolivia"
 
   - title  : "Indonesia514 — District-level data for Indonesia"
-    type   : Project
+    type   : Dataset
     topic  : Regional convergence
     desc   : "Geospatial and regional-economic indicators across all 514 Indonesian districts, unified by a common identifier."
     url    : "https://quarcs-lab.github.io/indonesia514/"
 
+  # ---------------- Interactive apps (platforms) ----------------
+  - title  : "GeoDevelopment Dashboards"
+    type   : Interactive app
+    topic  : GIS & Remote sensing
+    lang   : GEE
+    desc   : "Interactive Google Earth Engine apps visualizing nighttime lights and development metrics across regions worldwide."
+    url    : "https://carlos-mendez.org/projects/dashboards/"
+
   - title  : "GeoDevelopment Observatory of Cambodia"
-    type   : Project
+    type   : Interactive app
     topic  : GIS & Remote sensing
     desc   : "A platform integrating satellite and survey indicators to monitor sustainable regional development in Cambodia."
     url    : "https://bit.ly/gdo-cambodia"

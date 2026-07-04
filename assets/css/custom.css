@@ -928,9 +928,9 @@ figure figcaption p { color: var(--muted); }
 .resource-section[data-type="Tutorial"],
 .resource-card[data-type="Tutorial"],
 .rstat[data-type="Tutorial"]               { --acc: var(--violet-ink);  --acc-bright: var(--violet); }
-.resource-section[data-type="Project"],
-.resource-card[data-type="Project"],
-.rstat[data-type="Project"]                { --acc: var(--emerald-ink); --acc-bright: var(--emerald); }
+.resource-section[data-type="Software"],
+.resource-card[data-type="Software"],
+.rstat[data-type="Software"]               { --acc: var(--emerald-ink); --acc-bright: var(--emerald); }
 
 /* ---- Hero ---- */
 .resources-hero { padding-bottom: 72px; }

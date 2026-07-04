@@ -1702,6 +1702,13 @@ figure figcaption p { color: var(--muted); }
 /* Body rhythm (mirrors the research-projects page) */
 .explainer-body { padding: 60px 0 24px; }
 .explainer-body .projects-heading { margin-top: 2.6rem; }
+/* Center the lede on data-driven explainer pages (Community, Events, GitHub) to
+   mirror the centered header band. research-projects' .projects-intro is NOT in
+   .explainer-body, so it stays left-aligned. */
+.explainer-body .projects-intro {
+  margin-inline: auto;   /* center the 46rem box; keeps base top/bottom margin */
+  text-align: center;    /* center the text to match the header */
+}
 
 /* "How to join" numbered steps */
 .explainer-steps { margin-top: 3rem; }

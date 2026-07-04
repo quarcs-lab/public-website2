@@ -3,7 +3,9 @@
 Operating notes for AI agents working in this repo. This is the QuaRCS-lab Network website:
 a **Hugo** static site on a vendored **`timer-hugo`** theme, deployed by **Netlify** from
 `master`. For full detail (structure, content schemas, design tokens) see **`README.md`** —
-this file is just the rules and pointers, not a duplicate.
+this file is just the rules and pointers, not a duplicate. Before adding a person, publication,
+resource, event, or research area, consult **`README.md` → The coupling map** (change X → also
+update Y) and run `python3 scripts/check-content.py` before committing.
 
 ## Build / preview / deploy
 
@@ -14,17 +16,21 @@ this file is just the rules and pointers, not a duplicate.
   build). Must stay **0.89.4** to match Netlify. Verify changes with a build before committing.
 - To screenshot/verify visually: build/serve, then drive headless Chrome
   (`/Applications/Google Chrome.app/...`); `puppeteer-core` can be installed in the scratchpad.
+- **Validate before committing:** `python3 scripts/check-content.py` (pure stdlib, no npm) — exit 1
+  on any coupling error. Scaffold new content with `hugo new research/<slug>.md` (archetypes).
 
 ## Golden rules
 
 1. **Never edit `themes/timer-hugo/**` to customize.** Shadow the file from the project root
-   instead. Current overrides: `layouts/index.html` (homepage section order),
-   `layouts/partials/{head,footer,banner,team,team-card,portfolio,feature,research-areas,mission}.html`,
-   `layouts/people/list.html`, `layouts/research/list.html`, `layouts/portfolio/resources.html`,
-   `assets/css/custom.css`, `assets/js/custom.js`. (Theme copies still exist but are ignored —
-   edit the root ones. `research-areas.html` and `mission.html` are new — no theme copy exists.
-   `feature.html` and `research-areas.html` render the shared `.info-grid`/`.info-card` homepage
-   card system; `mission.html` is the homepage mission-statement band (`#mission`).)
+   instead — see **`README.md` → Architecture** for the complete override table. The full set:
+   `layouts/{404,index}.html`; `layouts/partials/{head,footer,banner,mission,research-areas,feature,
+   portfolio,team,team-card,cta,authors-linkify,author-keys}.html`; `layouts/people/list.html`;
+   `layouts/research/list.html`; `layouts/post/single.html`;
+   `layouts/portfolio/{explainer,projects,publications,resources}.html`; `assets/css/custom.css`;
+   `assets/js/custom.js`. Files with **no theme copy** (new): `mission`, `research-areas`,
+   `team-card`, `authors-linkify`, `author-keys`, and all four `portfolio/*` layouts (`cta.html` is
+   a new *override* of a theme partial). `feature.html`/`research-areas.html` render the shared,
+   count-agnostic `.info-grid`/`.info-card` system; `mission.html` is the `#mission` band.
 2. **Load order is load-bearing:** `custom.css` loads after theme `style.css` (in `head.html`)
    and `custom.js` after `script.js` (in `footer.html`). Keep it that way or overrides lose.
 3. **Do not remove `wow.min.js`** from `footer.html` — theme `script.js` calls
@@ -33,32 +39,44 @@ this file is just the rules and pointers, not a duplicate.
 4. **Design changes go in `assets/css/custom.css`.** The palette lives in `:root` custom props
    (`--ink`, `--navy`, `--cyan`, `--cyan-ink`, `--amber`, …); fonts are Space Grotesk + Inter.
    Bright `--cyan`/`--amber` are for dark backgrounds; use `--cyan-ink`/`--muted` on white (AA).
-5. **Publication type filter:** set `pubtype: book|working|article` in a research post's
-   front-matter when the tag heuristic would misclassify it (heuristic: a tag containing "Book"
-   or "Working paper"; else "article").
+5. **Publication type is decided ONLY by `pubtype`** (`article` by default). Set
+   `pubtype: book|working` on a non-article or it is mislabeled "Article". `tags[0]` only refines
+   the label (`Book chapter`) and supplies the journal name / cover key — there is **no** tag-based
+   type heuristic in the code (older docs claiming one were wrong).
 6. **`public/` and `resources/` are gitignored** build artifacts — never commit them.
 7. **Keep the Themefisher footer credit** (theme-license requirement).
 8. **Concurrent editors:** this repo is edited from multiple sessions/people. `git fetch`
    first, keep commits tightly scoped to your files, and fetch-then-push (rebase if behind).
    Don't clobber unrelated in-flight changes.
+9. **Keep coupled content in sync** — see `README.md → The coupling map`; run
+   `scripts/check-content.py` before committing. Notably: a new team member needs `key`+`aliases`
+   (else their publications won't link); a book needs `pubtype`; an article's `tags[0]` needs a
+   `journal_covers.yml` entry + image; hero keywords come from `research-projects.yml`; the
+   Discord/GitHub/Luma URLs live once in `[params.links]`.
 
 ## Where things live (quick map)
 
 | To change… | Edit… |
 |---|---|
-| Hero keywords / heading, nav menu, About/CTA text, logo path | `config.toml` |
-| Publications | `content/research/*.md` (+ image in `static/images/blog/`) |
-| People roster | `data/team.yml` (+ photo in `static/images/team/`) |
-| Tutorials/datasets/projects hub | `data/resources.yml` |
+| Nav menu, About/CTA text, shared links (`[params.links]`), logo | `config.toml` |
+| Hero rotating keywords **and** Research Areas | `data/research-projects.yml` (single source for both) |
+| Publications | `content/research/*.md` (`hugo new research/<slug>.md`) + cover in `static/images/journals/` |
+| People roster + publication↔author links | `data/team.yml` (`key`+`aliases`; photo in `static/images/team/`) |
+| Journal cover thumbnails | `data/journal_covers.yml` + `static/images/journals/` |
+| Resources hub | `data/resources.yml` (type/topic must match the vocab lists) |
 | "Research methods" section | `data/feature.yml` |
-| Homepage "Activities" cards | `content/portfolio/*.md` |
+| Events / Community / GitHub pages | `data/{events,community,github}.yml` (page = `layout: explainer` + `dataKey`) |
+| Homepage "Activities" cards | `content/portfolio/*.md` (`hugo new portfolio/<slug>.md`) |
 | Styles / palette / motion | `assets/css/custom.css`, `assets/js/custom.js` |
 | Logo / favicons | `static/images/` (SVG set) + `layouts/partials/head.html` |
+| Validate before committing | `python3 scripts/check-content.py` |
 
 ## Pointers
 
-- **Content recipes** (add a publication / team member / resource, change hero): see
-  `README.md` → *Editing content*.
+- **Coupling map (change X → also update Y):** `README.md` → *The coupling map* — consult before
+  adding a person, publication, resource, event, or research area; then run `scripts/check-content.py`.
+- **Content recipes** (add a publication / team member / resource / webinar / research area, change
+  hero): see `README.md` → *Editing content*.
 - **Architecture & override table:** `README.md` → *Architecture*.
 - **Palette tokens & motion:** `README.md` → *Design system*.
 - **Latent/placeholder areas to ignore:** `content/{contact,gallery,service}/` and

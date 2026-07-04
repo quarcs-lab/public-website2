@@ -95,6 +95,61 @@ items:
     lang   : R/Shiny
     url    : "https://jgassen.shinyapps.io/expand_co2/"
 
+  # GeoDevelopment dashboards (Google Earth Engine apps)
+  - title  : "Localized monthly time series of nighttime lights (VIIRS-like) 1992–2024"
+    type   : Interactive app
+    topic  : GIS & Remote sensing
+    lang   : GEE
+    url    : "https://carlos-mendez.projects.earthengine.app/view/viirs-like-monthly"
+
+  - title  : "Regional monthly time series of nighttime lights (VIIRS-like) 1992–2024"
+    type   : Interactive app
+    topic  : GIS & Remote sensing
+    lang   : GEE
+    url    : "https://carlos-mendez.projects.earthengine.app/view/viirs-like-monthly-regions"
+
+  - title  : "Localized annual time series of nighttime lights (VIIRS-like) 1992–2024"
+    type   : Interactive app
+    topic  : GIS & Remote sensing
+    lang   : GEE
+    url    : "https://carlos-mendez.projects.earthengine.app/view/viirs-like-yearly"
+
+  - title  : "Regional annual time series of nighttime lights (VIIRS-like) 1992–2024"
+    type   : Interactive app
+    topic  : GIS & Remote sensing
+    lang   : GEE
+    url    : "https://carlos-mendez.projects.earthengine.app/view/viirs-like-yearly-region"
+
+  - title  : "Localized annual time series of nighttime lights (DMSP-like) 1992–2025"
+    type   : Interactive app
+    topic  : GIS & Remote sensing
+    lang   : GEE
+    url    : "https://carlos-mendez.projects.earthengine.app/view/dmsp-like-econ"
+
+  - title  : "Regional annual time series of nighttime lights (DMSP-like) 1992–2025"
+    type   : Interactive app
+    topic  : GIS & Remote sensing
+    lang   : GEE
+    url    : "https://carlos-mendez.projects.earthengine.app/view/dmsp-like-econ-regional"
+
+  - title  : "Split view of nighttime lights (DMSP-like) across the world 1992–2025"
+    type   : Interactive app
+    topic  : GIS & Remote sensing
+    lang   : GEE
+    url    : "https://carlos-mendez.projects.earthengine.app/view/dmsp-like-econ-split-view"
+
+  - title  : "Space-time dynamics of population, luminosity, land cover, and GDP in Cambodia (2013–2019)"
+    type   : Interactive app
+    topic  : GIS & Remote sensing
+    lang   : GEE
+    url    : "https://carlos-mendez.projects.earthengine.app/view/geoexplorer1"
+
+  - title  : "Exploring regional disparities in Japan: multi-scale comparison of GDP per capita (1990–2022)"
+    type   : Interactive app
+    topic  : GIS & Remote sensing
+    lang   : GEE
+    url    : "https://carlos-mendez.projects.earthengine.app/view/japan-regional-gdp-disparities"
+
   # ---------------- Tutorials: Spatial analysis ----------------
   - title  : "Measuring the evolution of spatial dependence and spatial inequality"
     type   : Tutorial

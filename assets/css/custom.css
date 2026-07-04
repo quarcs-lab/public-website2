@@ -18,6 +18,7 @@
   --cyan: #2ed6ee;
   --cyan-600: #06b6d4;
   --cyan-ink: #0e7490;
+  --cyan-ink-deep: #0b5a6e;  /* darker teal for hover/active fills — keeps white-text AA (>=4.5:1) */
   --amber: #ffb84d;
   --amber-ink: #9a5f00;      /* AA on white (~5.2:1); was #b06d00 which failed AA */
   --violet: #a78bfa;         /* dark-bg only */
@@ -146,7 +147,7 @@ a { color: var(--cyan-ink); }
 #related-items .block h4 span,
 .pagination a { color: var(--cyan-ink); }
 .pagination li.active a,
-.pagination a:hover { background: var(--cyan-600); border-color: var(--cyan-600); color: #fff; }
+.pagination a:hover { background: var(--cyan-ink); border-color: var(--cyan-ink); color: #fff; }
 blockquote { border-left-color: var(--cyan-600); }
 input:focus,
 textarea:focus,
@@ -462,26 +463,9 @@ select:focus,
 
 /* ------------------------------------------------- Activities / portfolio */
 .works { background: var(--surface-alt); padding: var(--section-y) 0; }
-figure {
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  overflow: hidden;
-  border: 1px solid var(--line);
-  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
-}
-figure:hover { transform: translateY(var(--lift-md)); box-shadow: var(--shadow-md); }
-figure:hover img { transform: scale3d(1.08, 1.08, 1); }   /* toned down from 1.2 */
-figure .overlay { background: rgba(10, 16, 36, .55); }
-figure .overlay a {
-  border-radius: var(--radius-pill);
-  border-color: rgba(255, 255, 255, .85);
-  font-weight: 600;
-  letter-spacing: .04em;
-}
-figure .buttons a:hover { background: var(--cyan-600); border-color: var(--cyan-600); }
-figure figcaption h4 a { color: var(--text-dark); transition: color .25s var(--ease); }
-figure:hover figcaption h4 a { color: var(--cyan-ink); }
-figure figcaption p { color: var(--muted); }
+/* (Removed the old theme `figure`-based Activities card styles — the redesign emits
+   `.activity-card` markup, no `<figure>` remains, and the bare `figure{}` rules would
+   have card-styled/zoomed any future {{< figure >}} shortcode image.) */
 
 /* Activity cards — uniform, bolder redesign (layouts/partials/portfolio.html).
    Equal-height grid + fixed 3:2 cropped media + always-visible CTA. */
@@ -805,11 +789,14 @@ figure figcaption p { color: var(--muted); }
   pointer-events: none;
 }
 .global-page-header .block { position: relative; z-index: 1; }   /* keep content above both washes */
-.global-page-header h2 {
+.global-page-header h1 {
   font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: -.01em;
   position: relative;
+  /* Fluid title — was inheriting the theme's flat 42px, which overflowed on <=360px phones. */
+  font-size: clamp(1.9rem, 4.8vw, 2.75rem);
+  text-transform: uppercase;
 }
 /* Consistent Home / Title breadcrumb (shared page-header.html) */
 .global-page-header .page-breadcrumb { margin-top: var(--space-4); font-size: var(--step--1); color: rgba(255, 255, 255, .7); }
@@ -830,7 +817,8 @@ figure figcaption p { color: var(--muted); }
 .blog-content h2 a:hover { color: var(--cyan-ink); }
 .blog-content .blog-meta a { color: var(--cyan-ink); }
 .blog-content .btn-details {
-  background: var(--cyan-600);
+  background: var(--cyan-ink);
+  color: #fff;
   border: none;
   box-shadow: none;
   border-radius: var(--radius-pill);
@@ -838,7 +826,7 @@ figure figcaption p { color: var(--muted); }
   letter-spacing: .04em;
   padding: 9px 22px;
 }
-.blog-content .btn-details:hover { color: var(--ink); }
+.blog-content .btn-details:hover { background: var(--cyan-ink-deep); color: #fff; }
 
 /* single post */
 .single-post .media { border: 1px solid var(--line); border-radius: var(--radius); }
@@ -846,8 +834,8 @@ figure figcaption p { color: var(--muted); }
 .single-post .post-content ol li a { color: var(--cyan-ink); }
 .single-post .post-comment .btn-send,
 .btn-work, .btn-send {
-  background: var(--cyan-600);
-  border-color: var(--cyan-600);
+  background: var(--cyan-ink);
+  border-color: var(--cyan-ink);
   border-radius: var(--radius-pill);
   color: #fff;
 }
@@ -1027,8 +1015,8 @@ figure figcaption p { color: var(--muted); }
   transition: background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease), transform .25s var(--ease);
 }
 .team-member .team-website:hover {
-  background: var(--cyan-600);
-  border-color: var(--cyan-600);
+  background: var(--cyan-ink);
+  border-color: var(--cyan-ink);
   color: #fff;
   transform: translateY(-2px);
 }
@@ -1081,7 +1069,7 @@ figure figcaption p { color: var(--muted); }
 #contact-section .address,
 #contact-section .email,
 #contact-section .phone { border-radius: var(--radius); background: var(--surface-alt); }
-#contact-section .contact-form .btn-send { background: var(--cyan-600); border-color: var(--cyan-600); }
+#contact-section .contact-form .btn-send { background: var(--cyan-ink); border-color: var(--cyan-ink); }
 #contact-section input,
 #contact-section textarea { border-radius: var(--radius-sm); }
 
@@ -1373,11 +1361,16 @@ figure figcaption p { color: var(--muted); }
   line-height: 1;
   font-size: clamp(4.5rem, 18vw, 9rem);
   letter-spacing: -.03em;
-  background: linear-gradient(120deg, var(--cyan-600), var(--amber));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--cyan-ink);   /* fallback if background-clip:text is unsupported (else text is invisible) */
   margin: 0 0 6px;
+}
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .error-page .error-code {
+    background: linear-gradient(120deg, var(--cyan-600), var(--amber));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 .error-page .error-title {
   font-family: var(--font-display);
@@ -1460,12 +1453,14 @@ figure figcaption p { color: var(--muted); }
   line-height: 1;
   color: var(--acc-bright, var(--cyan));
 }
-.rstat--total .rstat-num {
-  background: linear-gradient(120deg, var(--cyan), var(--amber));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--cyan);
+.rstat--total .rstat-num { color: var(--cyan-ink); }   /* fallback if background-clip:text is unsupported */
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .rstat--total .rstat-num {
+    background: linear-gradient(120deg, var(--cyan), var(--amber));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 .rstat-label {
   margin-top: 6px;
@@ -1573,7 +1568,7 @@ figure figcaption p { color: var(--muted); }
   color: var(--muted); background: var(--surface);
   transition: color .2s var(--ease), background .2s var(--ease);
 }
-.author-chip-x:hover { color: #fff; background: var(--cyan-600); }
+.author-chip-x:hover { color: #fff; background: var(--cyan-ink); }
 
 /* ---- Sections ---- */
 .resource-section { margin-top: 48px; }
@@ -1769,7 +1764,7 @@ figure figcaption p { color: var(--muted); }
   font-weight: 700;
   font-size: 1.05rem;
   color: #fff;
-  background: linear-gradient(135deg, var(--cyan-600), var(--cyan));
+  background: linear-gradient(135deg, var(--cyan-ink-deep), var(--cyan-ink));
   box-shadow: 0 6px 16px rgba(6, 182, 212, .3);
 }
 .step-title {
@@ -1885,7 +1880,7 @@ figure figcaption p { color: var(--muted); }
 }
 .pub-view-btn + .pub-view-btn { border-left: 1px solid var(--line); }
 .pub-view-btn:hover { color: var(--cyan-ink); }
-.pub-view-btn.is-active { background: var(--cyan-600); color: #fff; }
+.pub-view-btn.is-active { background: var(--cyan-ink); color: #fff; }
 .pub-view-btn svg { width: 18px; height: 18px; }
 
 /* ---- Year chart ---- */
@@ -1977,8 +1972,7 @@ figure figcaption p { color: var(--muted); }
 .pub-card:focus-within { border-color: var(--cyan-600); box-shadow: var(--shadow-md); }
 .pub-card[hidden] { display: none; }
 
-.pub-list.is-list .pub-card { flex-direction: row; align-items: stretch; margin-bottom: 1.1rem; }
-.pub-list.is-list .pub-card { display: flex; }
+.pub-list.is-list .pub-card { display: flex; flex-direction: row; align-items: stretch; margin-bottom: 1.1rem; }
 .pub-list.is-list .pub-thumb { flex: 0 0 156px; align-self: stretch; min-height: 196px; }
 .pub-list.is-list .pub-content { flex: 1 1 auto; padding: 1.25rem 1.4rem; }
 .pub-list.is-list .pub-thumb-title { -webkit-line-clamp: 4; }
@@ -2023,8 +2017,8 @@ figure figcaption p { color: var(--muted); }
 .pub-topics { display: flex; flex-wrap: wrap; gap: .3rem; margin: 0 0 .8rem; }
 .pub-topic { font-size: .72rem; font-weight: 600; color: var(--cyan-ink); background: var(--cyan-050); border: 1px solid var(--cyan-100); padding: .15rem .5rem; border-radius: var(--radius-pill); }
 .pub-links { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; }
-.pub-link { display: inline-flex; align-items: center; gap: .25rem; font-size: .8rem; font-weight: 600; padding: .4rem .8rem; border-radius: var(--radius-pill); background: var(--cyan-600); color: #fff; transition: background .2s var(--ease), transform .2s var(--ease); }
-.pub-link:hover { background: var(--cyan-ink); color: #fff; transform: translateY(-1px); }
+.pub-link { display: inline-flex; align-items: center; gap: .25rem; font-size: .8rem; font-weight: 600; padding: .4rem .8rem; border-radius: var(--radius-pill); background: var(--cyan-ink); color: #fff; transition: background .2s var(--ease), transform .2s var(--ease); }
+.pub-link:hover { background: var(--cyan-ink-deep); color: #fff; transform: translateY(-1px); }
 .pub-link svg { width: 12px; height: 12px; }
 .pub-link--ghost { background: transparent; color: var(--muted); border: 1px solid var(--line); }
 .pub-link--ghost:hover { background: var(--surface-alt); color: var(--cyan-ink); border-color: var(--cyan-600); }

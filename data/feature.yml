@@ -1,3 +1,7 @@
+# Drives the homepage "Research methods" section (#feature) via layouts/partials/feature.html.
+# Shares the count-agnostic .info-grid card system with Research Areas, so you can add or
+# remove methods freely. Each item needs: icon (an Ionicons class, https://ionicons.com/),
+# title, description. `enable: false` hides the whole section.
 enable  : true
 title   : Research methods
 subtitle: State-of-the-art methods from spatial data science, machine learning, remote sensing, and economics.

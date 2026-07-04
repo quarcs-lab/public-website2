@@ -1,0 +1,16 @@
+#!/bin/sh
+# Optional pre-commit gate: runs the content consistency checker and blocks the commit
+# if it finds a hard ERROR. No npm/husky — pure Python 3 stdlib.
+#
+# Enable it (once, per clone) with:
+#     git config core.hooksPath scripts/git-hooks
+# Disable again with:
+#     git config --unset core.hooksPath
+# Bypass for a single commit with:  git commit --no-verify
+#
+# See README.md -> "Content validation" and "The coupling map".
+python3 "$(git rev-parse --show-toplevel)/scripts/check-content.py" || {
+  echo
+  echo "check-content.py found errors — fix them or commit with --no-verify to bypass."
+  exit 1
+}

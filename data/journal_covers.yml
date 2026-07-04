@@ -38,3 +38,15 @@ covers:
   "The Annals of Regional Science": journals/the-annals-of-regional-science.jpg
   "The Journal of International Trade & Economic Development": journals/the-journal-of-international-trade-economic-development.jpg
   "The Singapore Economic Review": journals/the-singapore-economic-review.jpg
+
+# ── Text-fallback venues (no cover by design) ─────────────────────────────────
+# The journals below are intentionally absent from the map: they have no portrait
+# cover art comparable to the set. Some are online bulletins / working-paper venues
+# with no cover at all; the MDPI (Economies) and PUCP (Economía) journals publish
+# only wide logo banners, which render badly in the dark, object-fit:contain card.
+# Articles in these venues show the styled TEXT-FALLBACK card on /research — this is
+# expected, not a bug. check-content.py lists them as an informational note, not an
+# error. To give one a real cover later, add a `"<exact tags[0]>": journals/<slug>.jpg`
+# line above and drop a portrait image (~600×800) at static/images/journals/<slug>.jpg.
+#   Economies · Empirical Economics Letters · Economía · Economics Bulletin ·
+#   Coyuntural Economics · Forum of International Development Studies

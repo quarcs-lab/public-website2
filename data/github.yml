@@ -20,10 +20,11 @@ sections:
  - heading: Ways to take part
    items:
     - icon        : ion-code
-      title       : Browse the code
+      title       : Browse & contribute to the code
       description : >
          Explore the source of the network's website and open materials — all public
-         and free to read, reuse, and adapt.
+         and free to read, reuse, and adapt. Fork the repository, make changes, and
+         open a pull request.
 
     - icon        : ion-chatbubbles
       title       : Join the discussion
@@ -35,12 +36,6 @@ sections:
       description : >
          Spotted a problem or have a suggestion? Open an issue and help us make the
          network's work better.
-
-    - icon        : ion-pull-request
-      title       : Contribute
-      description : >
-         Fork the repository, make your changes, and open a pull request —
-         contributions are welcome.
 
 steps:
    heading: How to get started
@@ -63,9 +58,9 @@ cta:
    note   : >
       Open the code, suggest improvements, or start a conversation — we build in the open.
    label  : Join the discussion
-   url    : https://github.com/quarcs-lab/public-website2/discussions/1
+   linkKey: discussions      # resolved to [params.links].discussions in config.toml
    icon   : ion-chatbubbles
    secondary:
       label : View the repository
-      url   : https://github.com/quarcs-lab/public-website2
+      linkKey: github        # resolved to [params.links].github in config.toml
       icon  : ion-social-github

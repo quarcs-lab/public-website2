@@ -24,8 +24,9 @@ sections:
     - icon        : ion-ios-videocam-outline
       title       : Research talks
       description : >
-         Researchers from around the world present their work on spatial data science,
-         econometrics, and regional development.
+         Researchers from around the world present their work across the network's themes —
+         from spatial data science and econometrics to the geography of development,
+         regional growth, structural change, and spatial energy economics.
 
     - icon        : ion-ios-chatboxes-outline
       title       : Discussion, not just slides
@@ -38,12 +39,6 @@ sections:
       description : >
          The series connects a global research community working on quantitative
          regional and computational science.
-
-    - icon        : ion-ios-analytics-outline
-      title       : Across the research lines
-      description : >
-         Talks range across the network's themes — from the geography of development to
-         regional growth, structural change, and spatial energy economics.
 
 steps:
    heading: How to join
@@ -65,5 +60,5 @@ cta:
    note   : >
       Register on Luma to see upcoming talks and take part in the series.
    label  : Register on Luma
-   url    : https://lu.ma/quarcs
+   linkKey: luma             # resolved to [params.links].luma in config.toml
    icon   : ion-ios-calendar-outline

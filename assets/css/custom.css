@@ -514,42 +514,12 @@ figure figcaption p { color: var(--muted); }
 .global-page-header .breadcrumb li a { color: rgba(255, 255, 255, .78); }
 .global-page-header .breadcrumb li a:hover { color: var(--cyan); }
 
-/* ------------------------------------------- Research list & blog posts */
+/* ------------------------------------------- Blog / taxonomy list posts
+   (theme _default/list.html + /tags/ pages). The /research/ page itself now
+   uses the .pub-* system near the end of this file. */
 #blog-full-width { padding: 70px 0 90px; }
-.research-year {
-  font-family: var(--font-display);
-  font-weight: 700;
-  color: var(--text-dark);
-  font-size: 30px;
-  margin: 10px 0 26px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid var(--line);
-  position: relative;
-}
-.research-year::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 72px;
-  height: 2px;
-  background: linear-gradient(90deg, var(--cyan-600), var(--amber));
-}
-/* Scoped to .research-item so the card style does not leak onto taxonomy
-   (/tags/…) pages, which share the same #blog-full-width > article markup. */
-.research-item {
-  padding: 28px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  margin-bottom: 30px;
-  background: var(--surface);
-  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
-}
-.research-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
 .blog-post-image { margin-top: 0; border-radius: var(--radius-sm); overflow: hidden; }
 .blog-post-image img { transition: transform .5s var(--ease); width: 100%; }
-.research-item:hover .blog-post-image img { transform: scale(1.03); }
 .blog-content h2 a { color: var(--text-dark); font-family: var(--font-display); transition: color .25s var(--ease); }
 .blog-content h2 a:hover { color: var(--cyan-ink); }
 .blog-content .blog-meta a { color: var(--cyan-ink); }
@@ -1397,4 +1367,246 @@ figure figcaption p { color: var(--muted); }
 @media (prefers-reduced-motion: reduce) {
   .step, #call-to-action .btn-cta { transition: none; }
   .step:hover, #call-to-action .btn-cta:hover { transform: none; }
+}
+
+/* ============================================================================
+   Research page  (/research/  ->  layouts/research/list.html + single.html)
+   Dark hero + animated stats + clickable year chart + floating toolbar
+   (search / topic / journal / type / sort / grid-list toggle) + accent cards.
+   Reuses .global-page-header, .page-eyebrow, .page-hero-lead, .resources-stats,
+   .rstat, and the global .research-filter / .research-input / .research-reset /
+   .research-count / .research-search-* controls. New bits below use .pub-*.
+   ========================================================================== */
+
+/* Per-type accent: --acc = AA-on-white ink; --acc-bright = for the dark hero. */
+.pub-card                       { --acc: var(--cyan-ink);    --acc-bright: var(--cyan); }
+.pub-card[data-type="article"],
+.rstat[data-pub="article"]      { --acc: var(--cyan-ink);    --acc-bright: var(--cyan); }
+.pub-card[data-type="book"],
+.rstat[data-pub="book"]         { --acc: var(--amber-ink);   --acc-bright: var(--amber); }
+.pub-card[data-type="working"],
+.rstat[data-pub="working"]      { --acc: var(--violet-ink);  --acc-bright: var(--violet); }
+.rstat[data-pub="journals"]     { --acc: var(--emerald-ink); --acc-bright: var(--emerald); }
+
+/* ---- Hero ---- */
+.research-hero { padding-bottom: 82px; }
+.research-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(680px 320px at 88% 15%, rgba(255, 184, 77, .13), transparent 60%);
+  pointer-events: none;
+}
+.research-hero .block { position: relative; z-index: 1; }
+.pub-stats { margin-top: 26px; }
+
+/* ---- Body + floating toolbar ---- */
+.pub-body { padding: 0 0 96px; }
+.pub-toolbar {
+  position: relative;
+  z-index: 3;
+  margin-top: -42px;
+  margin-bottom: 8px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+.pub-toolbar .research-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  align-items: center;
+  margin: 0;
+}
+/* Selects size to their longest <option> by default (some journal names are very
+   long), which can overflow narrow screens — let them grow/shrink instead. */
+.pub-toolbar .research-filter select.research-input { flex: 1 1 150px; min-width: 0; max-width: 240px; }
+
+/* Grid / list view toggle */
+.pub-views { display: inline-flex; border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; }
+.pub-view-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--surface);
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background .2s var(--ease), color .2s var(--ease);
+}
+.pub-view-btn + .pub-view-btn { border-left: 1px solid var(--line); }
+.pub-view-btn:hover { color: var(--cyan-ink); }
+.pub-view-btn.is-active { background: var(--cyan-600); color: #fff; }
+.pub-view-btn svg { width: 18px; height: 18px; }
+
+/* ---- Year chart ---- */
+.pub-chart-wrap {
+  margin: 22px 0 30px;
+  padding: 18px 20px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.pub-chart-label { font-family: var(--font-display); font-weight: 700; color: var(--text-dark); font-size: .95rem; margin-bottom: 14px; }
+.pub-chart-hint { font-family: var(--font-sans); font-weight: 500; color: var(--muted); font-size: .82rem; }
+.pub-chart { display: flex; align-items: flex-end; gap: 6px; height: 104px; }
+.pub-chart-bar {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.pub-chart-bar:focus-visible { outline: 2px solid var(--cyan-600); outline-offset: 2px; border-radius: 4px; }
+.pub-chart-val { font-family: var(--font-display); font-weight: 700; font-size: .72rem; color: var(--muted); margin-bottom: 4px; opacity: 0; transition: opacity .18s var(--ease); }
+.pub-chart-bar:hover .pub-chart-val,
+.pub-chart-bar:focus-visible .pub-chart-val,
+.pub-chart-bar.is-active .pub-chart-val { opacity: 1; color: var(--cyan-ink); }
+.pub-chart-fill {
+  width: 100%;
+  max-width: 34px;
+  height: var(--h, 4px);
+  min-height: 4px;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(180deg, var(--cyan), var(--cyan-600));
+  transform-origin: bottom;
+  transition: filter .2s var(--ease), background .2s var(--ease);
+}
+.pub-chart-bar:hover .pub-chart-fill,
+.pub-chart-bar:focus-visible .pub-chart-fill { filter: brightness(1.08); }
+.pub-chart-bar.is-active .pub-chart-fill { background: linear-gradient(180deg, var(--amber), var(--amber-ink)); }
+.pub-chart-yr { margin-top: 7px; font-size: .7rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.pub-chart-bar.is-active .pub-chart-yr { color: var(--amber-ink); }
+@keyframes pubBarGrow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@media (prefers-reduced-motion: no-preference) {
+  .pub-chart-fill { animation: pubBarGrow .7s var(--ease) both; }
+}
+
+/* ---- List / grid container ---- */
+.pub-list.is-list { display: flex; flex-direction: column; }
+.pub-list.is-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; align-items: start; }
+
+/* Year divider (spans full width in grid) */
+.pub-year {
+  grid-column: 1 / -1;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 1.6rem;
+  margin: 2.4rem 0 1.2rem;
+  padding-bottom: .6rem;
+  border-bottom: 2px solid var(--line);
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: .6rem;
+}
+.pub-year:first-child { margin-top: .4rem; }
+.pub-year::after { content: ''; position: absolute; left: 0; bottom: -2px; width: 72px; height: 3px; border-radius: 3px; background: linear-gradient(90deg, var(--cyan-600), var(--amber)); }
+.pub-year-n { font-family: var(--font-sans); font-size: .8rem; font-weight: 700; color: var(--muted); background: var(--surface-alt); padding: .12rem .6rem; border-radius: var(--radius-pill); }
+.pub-year[hidden] { display: none; }
+
+/* ---- Card ---- */
+.pub-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
+}
+.pub-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--acc-bright), var(--acc)); opacity: .9; z-index: 2; }
+.pub-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
+.pub-card[hidden] { display: none; }
+
+.pub-list.is-list .pub-card { flex-direction: row; align-items: stretch; margin-bottom: 1.1rem; }
+.pub-list.is-list .pub-card { display: flex; }
+.pub-list.is-list .pub-thumb { flex: 0 0 190px; min-height: 150px; }
+.pub-list.is-list .pub-content { flex: 1 1 auto; padding: 1.25rem 1.4rem; }
+.pub-list.is-list .pub-thumb-title { -webkit-line-clamp: 4; }
+
+.pub-list.is-grid .pub-card { display: flex; flex-direction: column; }
+.pub-list.is-grid .pub-thumb { width: 100%; aspect-ratio: 16 / 10; }
+.pub-list.is-grid .pub-content { padding: 1.15rem 1.25rem 1.25rem; }
+.pub-list.is-grid .pub-excerpt { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Thumbnail + gradient fallback */
+.pub-thumb { position: relative; display: block; overflow: hidden; background: linear-gradient(135deg, var(--navy), var(--cyan-600)); text-decoration: none; }
+.pub-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s var(--ease); }
+.pub-card:hover .pub-thumb img { transform: scale(1.04); }
+.pub-thumb-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: .4rem;
+  padding: 1rem 1.1rem;
+  background: linear-gradient(140deg, var(--ink) 0%, var(--navy) 55%, var(--cyan-ink) 130%);
+}
+.pub-thumb-fallback::before { content: ''; position: absolute; inset: 0; background: radial-gradient(420px 200px at 85% 12%, rgba(46, 214, 238, .22), transparent 60%); pointer-events: none; }
+.pub-thumb-eyebrow { position: relative; font-family: var(--font-sans); font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--cyan); }
+.pub-thumb-title { position: relative; font-family: var(--font-display); font-weight: 600; font-size: .92rem; line-height: 1.3; color: var(--text); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Card content */
+.pub-badges { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .55rem; }
+.pub-badge { font-size: .68rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: .2rem .55rem; border-radius: var(--radius-pill); white-space: nowrap; }
+.pub-badge--type { background: var(--acc); color: #fff; }
+.pub-badge--journal { background: var(--surface-alt); color: var(--muted); text-transform: none; font-weight: 600; letter-spacing: 0; }
+.pub-title { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; line-height: 1.32; margin: 0 0 .35rem; }
+.pub-title a { color: var(--text-dark); transition: color .2s var(--ease); }
+.pub-title a:hover { color: var(--acc); }
+.pub-meta { font-size: .82rem; color: var(--muted); margin: 0 0 .55rem; }
+.pub-dot { margin: 0 .4rem; opacity: .6; }
+.pub-excerpt { font-size: .9rem; line-height: 1.6; color: var(--muted); margin: 0 0 .7rem; }
+.pub-topics { display: flex; flex-wrap: wrap; gap: .3rem; margin: 0 0 .8rem; }
+.pub-topic { font-size: .72rem; font-weight: 600; color: var(--cyan-ink); background: rgba(6, 182, 212, .08); border: 1px solid rgba(6, 182, 212, .18); padding: .15rem .5rem; border-radius: var(--radius-pill); }
+.pub-links { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; }
+.pub-link { display: inline-flex; align-items: center; gap: .25rem; font-size: .8rem; font-weight: 600; padding: .4rem .8rem; border-radius: var(--radius-pill); background: var(--cyan-600); color: #fff; transition: background .2s var(--ease), transform .2s var(--ease); }
+.pub-link:hover { background: var(--cyan-ink); color: #fff; transform: translateY(-1px); }
+.pub-link svg { width: 12px; height: 12px; }
+.pub-link--ghost { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+.pub-link--ghost:hover { background: var(--surface-alt); color: var(--cyan-ink); border-color: var(--cyan-600); }
+
+/* ---- Single publication page ---- */
+.pub-single-header .portfolio-meta { margin-top: 10px; }
+.pub-single-badges { display: flex; flex-wrap: wrap; gap: .4rem; margin: 16px 0 0; }
+.pub-single-badges .pub-badge--type { background: var(--acc-bright); color: var(--ink); }
+.pub-single-badges .pub-topic { color: var(--cyan); background: rgba(46, 214, 238, .12); border-color: rgba(46, 214, 238, .28); }
+.pub-single-body { padding: 56px 0 20px; }
+.pub-single-figure { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-md); margin-bottom: 30px; max-width: 420px; }
+.pub-single-figure img { width: 100%; display: block; }
+.pub-single-links { display: flex; flex-wrap: wrap; gap: .6rem; margin: 8px 0 32px; }
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .pub-list.is-list .pub-card { flex-direction: column; }
+  .pub-list.is-list .pub-thumb { flex-basis: auto; width: 100%; aspect-ratio: 16 / 9; min-height: 0; }
+  .pub-chart { height: 88px; gap: 3px; }
+  .pub-chart-yr { font-size: .6rem; }
+  .pub-chart-val { display: none; }
+}
+@media (max-width: 576px) {
+  .research-count { margin-left: 0; width: 100%; }
+  .pub-list.is-grid { grid-template-columns: 1fr; }
+  .pub-views { margin-left: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pub-card, .pub-thumb img, .pub-link, .pub-title a, .pub-view-btn, .pub-chart-fill, .pub-chart-val { transition: none; }
+  .pub-card:hover { transform: none; }
+  .pub-card:hover .pub-thumb img { transform: none; }
+  .pub-chart-fill { animation: none; }
 }

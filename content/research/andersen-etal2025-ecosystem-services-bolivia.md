@@ -4,8 +4,8 @@ author: Lykke E. Andersen, Fabiana Karina Argandoña Gonzales, Diego Calderón, 
 date: "2025-06-01"
 type: post
 tags: ["Revista Latinoamericana de Desarrollo Económico"]
+topics: ["Health & environment"]
+links: [{"label":"Read paper","url":"https://doi.org/10.35319/lajed.202544594"}]
 ---
 
 This paper estimates the economic value of ecosystem services from Bolivia's natural areas—around US$3.4 billion per year locally and up to roughly US$29 billion including global carbon and biodiversity values—finding that protected areas and Indigenous territories generate about 56% of the total.
-
-[- Link to the published paper](https://doi.org/10.35319/lajed.202544594)

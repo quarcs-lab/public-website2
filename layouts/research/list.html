@@ -1,150 +1,294 @@
 {{ define "main" }}
 
-{{ partial "page-title.html" . }}
+{{- $groups := .Pages.GroupByDate "2006" -}}
+{{- $total := len .Pages -}}
+{{- $books := len (where .Pages "Params.pubtype" "book") -}}
+{{- $working := len (where .Pages "Params.pubtype" "working") -}}
+{{- $articles := sub (sub $total $books) $working -}}
 
-<section id="blog-full-width">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                {{- $groups := .Pages.GroupByDate "2006" -}}
+{{- /* Distinct topics + journals for the filter dropdowns, and the chart max. */ -}}
+{{- $topics := slice -}}
+{{- $journals := slice -}}
+{{- range .Pages -}}
+  {{- range .Params.topics -}}{{- if not (in $topics .) -}}{{- $topics = $topics | append . -}}{{- end -}}{{- end -}}
+  {{- $t := .Params.pubtype | default "article" -}}
+  {{- if eq $t "article" -}}{{- with (index .Params.tags 0) -}}{{- if not (in $journals .) -}}{{- $journals = $journals | append . -}}{{- end -}}{{- end -}}{{- end -}}
+{{- end -}}
+{{- $topics = sort $topics -}}
+{{- $journals = sort $journals -}}
+{{- $max := 1 -}}
+{{- range $groups -}}{{- if gt (len .Pages) $max -}}{{- $max = len .Pages -}}{{- end -}}{{- end -}}
 
-                <!-- Publication filter bar (progressive enhancement: works only if JS is enabled;
-                     without JS the full list still renders below) -->
-                <div class="research-filter" role="search">
-                    <input type="search" id="research-search" class="research-input research-search"
-                           placeholder="Search title, author, or journal…"
-                           aria-label="Search publications" autocomplete="off">
-                    <select id="research-year" class="research-input" aria-label="Filter by year">
-                        <option value="">All years</option>
-                        {{ range $groups }}<option value="{{ .Key }}">{{ .Key }}</option>{{ end }}
-                    </select>
-                    <select id="research-type" class="research-input" aria-label="Filter by type">
-                        <option value="">All types</option>
-                        <option value="article">Journal articles</option>
-                        <option value="book">Books &amp; chapters</option>
-                        <option value="working">Working papers</option>
-                    </select>
-                    <button type="button" id="research-reset" class="research-reset">Reset</button>
-                    <span id="research-count" class="research-count" aria-live="polite"></span>
-                </div>
-                <p id="research-noresults" class="research-noresults" style="display:none;">
-                    No publications match your filters.
-                </p>
-
-                {{ range $groups }}
-                <div class="research-year-group" data-year="{{ .Key }}">
-                <h2 class="research-year">{{ .Key }}</h2>
-                {{ range .Pages }}
-                {{- $author := "" }}{{ with .Params.author }}{{ $author = . }}{{ end -}}
-                {{- /* type: explicit front-matter `pubtype` wins; else fall back to a tag heuristic; else article */ -}}
-                {{- $tagstr := "" -}}
-                {{- $type := .Params.pubtype | default "" -}}
-                {{- with .Params.tags -}}
-                    {{- $tagstr = delimit . " " -}}
-                    {{- if not $type -}}{{- range . -}}{{- if in . "Book" -}}{{- $type = "book" -}}{{- else if in . "Working paper" -}}{{- $type = "working" -}}{{- end -}}{{- end -}}{{- end -}}
-                {{- end -}}
-                {{- if not $type }}{{ $type = "article" }}{{ end -}}
-                <article class="research-item" data-year="{{ .Date.Format "2006" }}" data-type="{{ $type }}" data-search="{{ printf "%s %s %s" .Title $author $tagstr }}">
-
-                    <div class="blog-post-image">
-                        <a href="{{ .Permalink }}">
-                             {{ with .Params.image }}<img class="img-fluid" src="{{ . | absURL }}" alt="post-image"/>{{ end }}
-                        </a>
-                    </div>
-                    <div class="blog-content">
-                        <h2 class="blogpost-title">
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
-                        </h2>
-                        <div class="blog-meta">
-                            <span>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>
-                            {{ with .Params.author }}<span>by
-                                {{ . }}
-                            </span>
-                            {{ end }}
-                            {{ with .Params.tags }}
-                            <span>
-                                {{ delimit . ", " }}
-                            </span>
-                            {{ end }}
-                        </div>
-                        <p>
-                            {{ .Summary }}
-                        </p>
-                        {{ with .Permalink }}<a href="{{ . }}" class="btn btn-dafault btn-details hvr-bounce-to-right">Continue Reading</a>{{ end }}
-                    </div>
-                </article>
-                {{ end }}
-                </div>
-                {{ end }}
-            </div>
+<!-- ===== Hero ===== -->
+<section class="global-page-header research-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <p class="page-eyebrow">Research outcomes</p>
+          <h2>Publications &amp; working papers</h2>
+          <p class="page-hero-lead">Peer-reviewed articles, books, and working papers from the QuaRCS-lab network — spanning regional convergence, spatial econometrics, productivity, and data-driven development research. Search, filter by topic or journal, and explore the record year by year.</p>
+          <div class="resources-stats pub-stats">
+            <div class="rstat rstat--total"><span class="rstat-num" data-count="{{ $total }}">{{ $total }}</span><span class="rstat-label">Publications</span></div>
+            <div class="rstat" data-pub="article"><span class="rstat-num" data-count="{{ $articles }}">{{ $articles }}</span><span class="rstat-label">Journal articles</span></div>
+            <div class="rstat" data-pub="book"><span class="rstat-num" data-count="{{ $books }}">{{ $books }}</span><span class="rstat-label">Books &amp; chapters</span></div>
+            <div class="rstat" data-pub="working"><span class="rstat-num" data-count="{{ $working }}">{{ $working }}</span><span class="rstat-label">Working papers</span></div>
+            <div class="rstat" data-pub="journals"><span class="rstat-num" data-count="{{ len $journals }}">{{ len $journals }}</span><span class="rstat-label">Journals</span></div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<style>
-/* Uses the design tokens from assets/css/custom.css, with fallbacks. */
-.research-filter{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin:0 0 2.2rem;font-family:var(--font-sans,inherit);}
-.research-input{padding:.6rem .85rem;border:1px solid var(--line,#e6eaf2);border-radius:var(--radius-sm,10px);background:var(--surface,#fff);color:var(--text-dark,#0f1836);font-size:.95rem;line-height:1.2;font-family:inherit;transition:border-color .2s var(--ease,ease),box-shadow .2s var(--ease,ease);}
-.research-input::placeholder{color:var(--muted,#4a5578);opacity:.7;}
-.research-input:focus{outline:none;border-color:var(--cyan-600,#06b6d4);box-shadow:0 0 0 3px rgba(46,214,238,.18);}
-.research-search{flex:1 1 260px;min-width:180px;}
-.research-filter select.research-input{cursor:pointer;}
-.research-reset{padding:.6rem 1.1rem;border:1px solid var(--line,#e6eaf2);border-radius:var(--radius-pill,999px);background:var(--surface-alt,#f5f7fb);color:var(--muted,#4a5578);font-size:.9rem;font-family:inherit;cursor:pointer;transition:color .2s var(--ease,ease),border-color .2s var(--ease,ease);}
-.research-reset:hover{color:var(--cyan-ink,#0e7490);border-color:var(--cyan-600,#06b6d4);}
-.research-count{margin-left:auto;color:var(--muted,#4a5578);font-size:.9rem;white-space:nowrap;}
-.research-noresults{color:var(--muted,#4a5578);font-style:italic;padding:1.5rem 0;}
-.research-item[hidden],.research-year-group[hidden]{display:none;}
-@media (max-width:576px){
-  .research-count{margin-left:0;width:100%;}
-}
-</style>
+<section class="pub-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <!-- ===== Toolbar (progressive enhancement: without JS the full list still renders) ===== -->
+        <div class="pub-toolbar">
+          <div class="research-filter" role="search">
+            <div class="research-search-wrap">
+              <svg class="research-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="search" id="research-search" class="research-input research-search" placeholder="Search title, author, journal, topic…" aria-label="Search publications" autocomplete="off">
+            </div>
+            <select id="research-topic" class="research-input" aria-label="Filter by topic">
+              <option value="">All topics</option>
+              {{ range $topics }}<option value="{{ . }}">{{ . }}</option>{{ end }}
+            </select>
+            <select id="research-journal" class="research-input" aria-label="Filter by journal">
+              <option value="">All journals</option>
+              {{ range $journals }}<option value="{{ . }}">{{ . }}</option>{{ end }}
+            </select>
+            <select id="research-type" class="research-input" aria-label="Filter by type">
+              <option value="">All types</option>
+              <option value="article">Journal articles</option>
+              <option value="book">Books &amp; chapters</option>
+              <option value="working">Working papers</option>
+            </select>
+            <select id="research-sort" class="research-input" aria-label="Sort">
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+              <option value="journal">Journal A–Z</option>
+              <option value="title">Title A–Z</option>
+            </select>
+            <div class="pub-views" role="group" aria-label="Layout">
+              <button type="button" id="pub-view-list" class="pub-view-btn is-active" aria-pressed="true" title="List view" aria-label="List view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg></button>
+              <button type="button" id="pub-view-grid" class="pub-view-btn" aria-pressed="false" title="Grid view" aria-label="Grid view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button>
+            </div>
+            <button type="button" id="research-reset" class="research-reset">Reset</button>
+            <span id="research-count" class="research-count" aria-live="polite"></span>
+          </div>
+        </div>
+        <p id="research-noresults" class="research-noresults" style="display:none;">No publications match your filters.</p>
+
+        <!-- ===== Publications-by-year chart ===== -->
+        <div class="pub-chart-wrap">
+          <div class="pub-chart-label">Publications by year <span class="pub-chart-hint">— click a bar to filter</span></div>
+          <div class="pub-chart" role="group" aria-label="Publications by year">
+            {{ range (sort $groups "Key") }}
+            <button type="button" class="pub-chart-bar" data-year="{{ .Key }}" aria-pressed="false" style="--h: {{ printf "%.1f" (div (mul (len .Pages) 100.0) $max) }}%;" aria-label="{{ .Key }}: {{ len .Pages }} publications">
+              <span class="pub-chart-val">{{ len .Pages }}</span>
+              <span class="pub-chart-fill"></span>
+              <span class="pub-chart-yr">'{{ substr .Key 2 }}</span>
+            </button>
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- ===== List / grid ===== -->
+        <div id="pub-list" class="pub-list is-list">
+          {{ range $groups }}
+          <h3 class="pub-year" data-year="{{ .Key }}">{{ .Key }}<span class="pub-year-n">{{ len .Pages }}</span></h3>
+          {{ range .Pages }}
+          {{- $type := .Params.pubtype | default "article" -}}
+          {{- $author := .Params.author | default "" -}}
+          {{- $journal := "" -}}
+          {{- if eq $type "article" -}}{{- $journal = index .Params.tags 0 -}}{{- end -}}
+          {{- $typeLabel := "Article" -}}
+          {{- if eq $type "book" -}}{{- $typeLabel = "Book" -}}{{- if eq (index .Params.tags 0) "Book chapter" -}}{{- $typeLabel = "Chapter" -}}{{- end -}}{{- else if eq $type "working" -}}{{- $typeLabel = "Working paper" -}}{{- end -}}
+          {{- $topicstr := delimit (.Params.topics | default slice) "|" -}}
+          <article class="pub-card"
+                   data-year="{{ .Date.Format "2006" }}"
+                   data-type="{{ $type }}"
+                   data-journal="{{ $journal }}"
+                   data-topics="{{ $topicstr }}"
+                   data-date="{{ .Date.Unix }}"
+                   data-title="{{ .Title }}"
+                   data-search="{{ printf "%s %s %s %s" .Title $author $journal (delimit (.Params.topics | default slice) " ") }}">
+            <a class="pub-thumb" href="{{ .Permalink }}" tabindex="-1" aria-hidden="true">
+              {{ with .Params.image }}
+              <img loading="lazy" src="{{ . | absURL }}" alt="">
+              {{ else }}
+              <span class="pub-thumb-fallback">
+                <span class="pub-thumb-eyebrow">{{ $typeLabel }}</span>
+                <span class="pub-thumb-title">{{ .Title }}</span>
+              </span>
+              {{ end }}
+            </a>
+            <div class="pub-content">
+              <div class="pub-badges">
+                <span class="pub-badge pub-badge--type">{{ $typeLabel }}</span>
+                {{ with $journal }}<span class="pub-badge pub-badge--journal">{{ . }}</span>{{ end }}
+              </div>
+              <h4 class="pub-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+              <p class="pub-meta">{{ with $author }}{{ . }}<span class="pub-dot">·</span>{{ end }}{{ .Date.Format "Jan 2006" }}</p>
+              <p class="pub-excerpt">{{ .Summary | plainify | truncate 220 }}</p>
+              {{ with .Params.topics }}
+              <div class="pub-topics">{{ range . }}<span class="pub-topic">{{ . }}</span>{{ end }}</div>
+              {{ end }}
+              <div class="pub-links">
+                {{ range first 3 .Params.links }}
+                <a class="pub-link" href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></a>
+                {{ end }}
+                <a class="pub-link pub-link--ghost" href="{{ .Permalink }}">Details</a>
+              </div>
+            </div>
+          </article>
+          {{ end }}
+          {{ end }}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 <script>
 (function(){
+  var listEl = document.getElementById('pub-list');
+  if(!listEl){ return; }
   var search = document.getElementById('research-search');
-  if(!search){return;}
-  var yearSel = document.getElementById('research-year');
+  var topicSel = document.getElementById('research-topic');
+  var journalSel = document.getElementById('research-journal');
   var typeSel = document.getElementById('research-type');
+  var sortSel = document.getElementById('research-sort');
   var resetBtn = document.getElementById('research-reset');
   var countEl = document.getElementById('research-count');
   var noRes = document.getElementById('research-noresults');
-  var groups = Array.prototype.slice.call(document.querySelectorAll('.research-year-group'));
-  var items = Array.prototype.slice.call(document.querySelectorAll('article.research-item'));
+  var cards = Array.prototype.slice.call(listEl.querySelectorAll('article.pub-card'));
+  var dividers = Array.prototype.slice.call(listEl.querySelectorAll('.pub-year'));
+  var bars = Array.prototype.slice.call(document.querySelectorAll('.pub-chart-bar'));
+  var reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var activeYear = '';
 
-  // accent-insensitive normaliser; pre-compute each item's haystack once
   function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,''); }
-  items.forEach(function(a){ a._hay = norm(a.getAttribute('data-search')); });
+  cards.forEach(function(c){
+    c._hay = norm(c.getAttribute('data-search'));
+    c._year = c.getAttribute('data-year');
+    c._type = c.getAttribute('data-type');
+    c._journal = c.getAttribute('data-journal') || '';
+    c._topics = (c.getAttribute('data-topics')||'').split('|').filter(Boolean);
+    c._date = Number(c.getAttribute('data-date')||0);
+    c._title = norm(c.getAttribute('data-title'));
+  });
+  var dividerByYear = {};
+  dividers.forEach(function(d){ dividerByYear[d.getAttribute('data-year')] = d; });
+
+  function sortRender(){
+    var mode = sortSel ? sortSel.value : 'newest';
+    var grouped = (mode === 'newest' || mode === 'oldest');
+    var frag = document.createDocumentFragment();
+    if(grouped){
+      var years = dividers.map(function(d){ return d.getAttribute('data-year'); });
+      years.sort(function(a,b){ return mode==='newest' ? (b-a) : (a-b); });
+      years.forEach(function(y){
+        var d = dividerByYear[y];
+        if(d){ frag.appendChild(d); }
+        var grp = cards.filter(function(c){ return c._year === y; });
+        grp.sort(function(a,b){ return mode==='newest' ? (b._date-a._date) : (a._date-b._date); });
+        grp.forEach(function(c){ frag.appendChild(c); });
+      });
+    } else {
+      dividers.forEach(function(d){ d.hidden = true; frag.appendChild(d); });
+      var all = cards.slice();
+      if(mode==='journal'){ all.sort(function(a,b){ return (a._journal||'￿').localeCompare(b._journal||'￿') || (b._date-a._date); }); }
+      else { all.sort(function(a,b){ return a._title.localeCompare(b._title); }); }
+      all.forEach(function(c){ frag.appendChild(c); });
+    }
+    listEl.appendChild(frag);
+  }
 
   function apply(){
     var q = norm(search.value.trim());
-    var y = yearSel.value;
-    var t = typeSel.value;
+    var tp = topicSel.value, jr = journalSel.value, ty = typeSel.value;
+    var grouped = (sortSel.value === 'newest' || sortSel.value === 'oldest');
     var visible = 0;
-    items.forEach(function(a){
-      var show = (!q || a._hay.indexOf(q) !== -1)
-              && (!y || a.getAttribute('data-year') === y)
-              && (!t || a.getAttribute('data-type') === t);
-      a.hidden = !show;
+    cards.forEach(function(c){
+      var show = (!q || c._hay.indexOf(q) !== -1)
+        && (!tp || c._topics.indexOf(tp) !== -1)
+        && (!jr || c._journal === jr)
+        && (!ty || c._type === ty)
+        && (!activeYear || c._year === activeYear);
+      c.hidden = !show;
       if(show){ visible++; }
     });
-    groups.forEach(function(g){
-      var anyVisible = Array.prototype.some.call(
-        g.querySelectorAll('article.research-item'),
-        function(a){ return !a.hidden; }
-      );
-      g.hidden = !anyVisible;
+    dividers.forEach(function(d){
+      if(!grouped){ d.hidden = true; return; }
+      var y = d.getAttribute('data-year');
+      d.hidden = !cards.some(function(c){ return c._year===y && !c.hidden; });
     });
-    countEl.textContent = visible + (visible === 1 ? ' publication' : ' publications');
+    countEl.textContent = visible + (visible===1 ? ' publication' : ' publications');
     noRes.style.display = visible ? 'none' : '';
   }
 
-  search.addEventListener('input', apply);
-  yearSel.addEventListener('change', apply);
-  typeSel.addEventListener('change', apply);
-  resetBtn.addEventListener('click', function(){
-    search.value = ''; yearSel.value = ''; typeSel.value = ''; apply(); search.focus();
+  bars.forEach(function(b){
+    b.addEventListener('click', function(){
+      var y = b.getAttribute('data-year');
+      activeYear = (activeYear === y) ? '' : y;
+      bars.forEach(function(x){
+        var on = x.getAttribute('data-year') === activeYear;
+        x.classList.toggle('is-active', on);
+        x.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      apply();
+      if(activeYear){ listEl.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); }
+    });
   });
+
+  var btnList = document.getElementById('pub-view-list');
+  var btnGrid = document.getElementById('pub-view-grid');
+  function setView(v){
+    var grid = (v === 'grid');
+    listEl.classList.toggle('is-grid', grid);
+    listEl.classList.toggle('is-list', !grid);
+    if(btnList){ btnList.classList.toggle('is-active', !grid); btnList.setAttribute('aria-pressed', !grid?'true':'false'); }
+    if(btnGrid){ btnGrid.classList.toggle('is-active', grid); btnGrid.setAttribute('aria-pressed', grid?'true':'false'); }
+    try { localStorage.setItem('pubView', v); } catch(e){}
+  }
+  if(btnList){ btnList.addEventListener('click', function(){ setView('list'); }); }
+  if(btnGrid){ btnGrid.addEventListener('click', function(){ setView('grid'); }); }
+  var savedView = 'list';
+  try { savedView = localStorage.getItem('pubView') || 'list'; } catch(e){}
+
+  function counters(){
+    var nums = Array.prototype.slice.call(document.querySelectorAll('.rstat-num[data-count]'));
+    nums.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'),10) || 0;
+      if(reduce){ el.textContent = target; return; }
+      var start = null, dur = 900;
+      el.textContent = '0';
+      function step(ts){ if(!start){ start = ts; } var p = Math.min((ts-start)/dur, 1); el.textContent = Math.round(p*target); if(p<1){ requestAnimationFrame(step); } }
+      requestAnimationFrame(step);
+    });
+  }
+
+  search.addEventListener('input', apply);
+  topicSel.addEventListener('change', apply);
+  journalSel.addEventListener('change', apply);
+  typeSel.addEventListener('change', apply);
+  sortSel.addEventListener('change', function(){ sortRender(); apply(); });
+  resetBtn.addEventListener('click', function(){
+    search.value=''; topicSel.value=''; journalSel.value=''; typeSel.value=''; sortSel.value='newest'; activeYear='';
+    bars.forEach(function(x){ x.classList.remove('is-active'); x.setAttribute('aria-pressed','false'); });
+    sortRender(); apply(); search.focus();
+  });
+
+  setView(savedView);
+  sortRender();
   apply();
+  counters();
 })();
 </script>
 

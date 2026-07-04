@@ -4,8 +4,8 @@ author: Katerine Restrepo
 date: "2026-02-22"
 type: post
 tags: ["Discover Public Health"]
+topics: ["Health & environment","Spatial econometrics"]
+links: [{"label":"Read paper","url":"https://doi.org/10.1186/s12982-026-01533-w"}]
 ---
 
 This study examines adult obesity prevalence across 2,446 Mexican municipalities using Multiscale Geographically Weighted Regression (MGWR) together with GIS, satellite, and socioeconomic predictors. It finds significant geographic clustering—notably elevated near the U.S. border—and spatially varying associations that support location-specific public health interventions.
-
-[- Link to the published paper](https://doi.org/10.1186/s12982-026-01533-w)

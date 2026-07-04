@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+{{- /* Research publications carry `type: post` in front matter, so Hugo resolves
+       their single page here (type beats section in the lookup order). */ -}}
+{{- $type := .Params.pubtype | default "article" -}}
+{{- $journal := "" -}}
+{{- if eq $type "article" -}}{{- $journal = index .Params.tags 0 -}}{{- end -}}
+{{- $typeLabel := "Article" -}}
+{{- if eq $type "book" -}}{{- $typeLabel = "Book" -}}{{- if eq (index .Params.tags 0) "Book chapter" -}}{{- $typeLabel = "Book chapter" -}}{{- end -}}{{- else if eq $type "working" -}}{{- $typeLabel = "Working paper" -}}{{- end -}}
+
+<section class="global-page-header pub-single-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <p class="page-eyebrow">{{ $typeLabel }}{{ with $journal }} · {{ . }}{{ end }}</p>
+          <h2>{{ .Title }}</h2>
+          <div class="portfolio-meta">
+            {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
+            <span>{{ .Date.Format "January 2, 2006" }}</span>
+          </div>
+          {{ with .Params.topics }}
+          <div class="pub-single-badges">
+            {{ range . }}<span class="pub-topic">{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="single-post pub-single-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{ with .Params.image }}
+        <div class="pub-single-figure"><img class="img-fluid" src="{{ . | absURL }}" alt="{{ $.Title }}"></div>
+        {{ end }}
+        {{ with .Params.links }}
+        <div class="pub-single-links">
+          {{ range . }}
+          <a class="pub-link" href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></a>
+          {{ end }}
+        </div>
+        {{ end }}
+        <div class="post-content">
+          {{ .Content }}
+        </div>
+        <p><a class="pub-link pub-link--ghost" href="{{ "research" | absURL }}">← All publications</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ end }}

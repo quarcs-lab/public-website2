@@ -1067,7 +1067,7 @@ figure figcaption p { color: var(--muted); }
    Drives /portfolio/research-projects/ — layouts/portfolio/projects.html
    + data/research-projects.yml. Titles mirror the hero flip-text keywords. */
 .projects-intro {
-  max-width: 60rem;
+  max-width: var(--measure);
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 1.65;
@@ -1305,7 +1305,7 @@ figure figcaption p { color: var(--muted); }
 }
 .resources-hero .block { position: relative; z-index: 1; }
 .resources-hero-intro {
-  max-width: 60rem;
+  max-width: var(--measure);
   margin: 16px 0 0;
   color: var(--text-dim);
   font-size: 1.12rem;
@@ -1348,6 +1348,18 @@ figure figcaption p { color: var(--muted); }
   letter-spacing: .06em;
   text-transform: uppercase;
   color: var(--text-dim);
+}
+/* Type tiles double as one-click filters on /resources (JS-enhanced) */
+.rstat[data-type] {
+  cursor: pointer;
+  transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.rstat[data-type]:hover { transform: translateY(-2px); border-color: var(--acc-bright, var(--cyan)); }
+.rstat[data-type]:focus-visible { outline: 2px solid var(--acc-bright, var(--cyan)); outline-offset: 2px; }
+.rstat[data-type].is-active { border-color: var(--acc-bright, var(--cyan)); background: rgba(255, 255, 255, .12); }
+@media (prefers-reduced-motion: reduce) {
+  .rstat[data-type] { transition: none; }
+  .rstat[data-type]:hover { transform: none; }
 }
 
 /* ---- Body / toolbar ---- */
@@ -1579,7 +1591,7 @@ figure figcaption p { color: var(--muted); }
 
 /* One-line lead under the header title (on dark) */
 .page-hero-lead {
-  max-width: 60rem;
+  max-width: var(--measure);
   margin: 14px 0 0;
   color: var(--text-dim);
   font-size: 1.12rem;

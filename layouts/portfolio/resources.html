@@ -114,6 +114,7 @@
   var noRes = document.getElementById('res-noresults');
   var cards = Array.prototype.slice.call(document.querySelectorAll('article.resource-card'));
   var sections = Array.prototype.slice.call(document.querySelectorAll('.resource-section'));
+  var statTiles = Array.prototype.slice.call(document.querySelectorAll('.rstat[data-type]'));
 
   function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,''); }
   cards.forEach(function(c){ c._hay = norm(c.getAttribute('data-search')); });
@@ -139,6 +140,9 @@
     });
     countEl.textContent = visible + (visible === 1 ? ' resource' : ' resources');
     noRes.style.display = visible ? 'none' : '';
+    statTiles.forEach(function(tile){
+      tile.classList.toggle('is-active', !!typeSel.value && tile.getAttribute('data-type') === typeSel.value);
+    });
   }
 
   search.addEventListener('input', apply);
@@ -147,6 +151,25 @@
   resetBtn.addEventListener('click', function(){
     search.value = ''; typeSel.value = ''; topicSel.value = ''; apply(); search.focus();
   });
+
+  // Hero stat tiles double as one-click type filters (progressive enhancement).
+  function activateType(t){
+    typeSel.value = (typeSel.value === t) ? '' : t;   // click the active tile again to clear
+    apply();
+    var body = document.querySelector('.resources-body');
+    if(body){ body.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  }
+  statTiles.forEach(function(tile){
+    var t = tile.getAttribute('data-type');
+    tile.setAttribute('role', 'button');
+    tile.setAttribute('tabindex', '0');
+    tile.setAttribute('aria-label', 'Filter to ' + t);
+    tile.addEventListener('click', function(){ activateType(t); });
+    tile.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); activateType(t); }
+    });
+  });
+
   apply();
 })();
 </script>

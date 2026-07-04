@@ -25,7 +25,7 @@
       <div class="col-md-12">
         <div class="block">
           <p class="page-eyebrow">Research outcomes</p>
-          <h2>Publications</h2>
+          <h1>Publications</h1>
           <p class="page-hero-lead">Peer-reviewed articles and books from the QuaRCS Network — advancing interdisciplinary science for economic, social, and environmental sustainability through spatial econometrics, machine learning, remote sensing, and regional development. Search, filter by topic or journal, and explore the record year by year.</p>
           <div class="resources-stats pub-stats">
             <div class="rstat rstat--total"><span class="rstat-num" data-count="{{ $total }}">{{ $total }}</span><span class="rstat-label">Publications</span></div>
@@ -98,7 +98,7 @@
         <!-- ===== List / grid ===== -->
         <div id="pub-list" class="pub-list is-list">
           {{ range $groups }}
-          <h3 class="pub-year" data-year="{{ .Key }}">{{ .Key }}<span class="pub-year-n">{{ len .Pages }}</span></h3>
+          <h2 class="pub-year" data-year="{{ .Key }}">{{ .Key }}<span class="pub-year-n">{{ len .Pages }}</span></h2>
           {{ range .Pages }}
           {{- $type := .Params.pubtype | default "article" -}}
           {{- $author := .Params.author | default "" -}}
@@ -136,7 +136,7 @@
                 <span class="pub-badge pub-badge--type">{{ $typeLabel }}</span>
                 {{ with $journal }}<span class="pub-badge pub-badge--journal">{{ . }}</span>{{ end }}
               </div>
-              <h4 class="pub-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+              <h3 class="pub-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
               <p class="pub-meta">{{ with $author }}{{ partialCached "authors-linkify.html" . . }}<span class="pub-dot">·</span>{{ end }}{{ .Date.Format "Jan 2006" }}</p>
               <p class="pub-excerpt">{{ .Summary | plainify | truncate 220 }}</p>
               {{ with .Params.topics }}

@@ -10,7 +10,7 @@
                 {{ $rp := index .Site.Data "research-projects" }}
                 {{ with $rp }}
                 <div class="research-programs-block">
-                    <h3>Main research programs</h3>
+                    <h2>Main research programs</h2>
                     <ul class="research-programs">
                         {{ range .items }}
                         <li><strong>{{ .title }}</strong> — {{ .description }}</li>

@@ -11,7 +11,7 @@
             <div class="col-md-12">
                 <div class="block">
                     {{ with $data.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
-                    <h2>{{ with $data.title }}{{ . }}{{ else }}{{ $.Title }}{{ end }}</h2>
+                    <h1>{{ with $data.title }}{{ . }}{{ else }}{{ $.Title }}{{ end }}</h1>
                     {{ with $data.subtitle }}<p class="page-hero-lead">{{ . }}</p>{{ end }}
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 {{ with $data.lede }}<p class="projects-intro">{{ . }}</p>{{ end }}
 
                 {{ range $data.sections }}
-                {{ with .heading }}<h3 class="projects-heading">{{ . }}</h3>{{ end }}
+                {{ with .heading }}<h2 class="projects-heading">{{ . }}</h2>{{ end }}
                 <div class="project-grid">
                     {{ range $index, $item := .items }}
                     <article class="project-card wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul (mod $index 3) 90 }}ms">
@@ -41,13 +41,13 @@
 
                 {{ with $data.steps }}
                 <div class="explainer-steps">
-                    {{ with .heading }}<h3 class="projects-heading">{{ . }}</h3>{{ end }}
+                    {{ with .heading }}<h2 class="projects-heading">{{ . }}</h2>{{ end }}
                     <ol class="steps">
                         {{ range $i, $step := .items }}
                         <li class="step wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul $i 90 }}ms">
                             <span class="step-num">{{ add $i 1 }}</span>
                             <div class="step-body">
-                                {{ with $step.title }}<h4 class="step-title">{{ . }}</h4>{{ end }}
+                                {{ with $step.title }}<h3 class="step-title">{{ . }}</h3>{{ end }}
                                 {{ with $step.description }}<p class="step-desc">{{ . }}</p>{{ end }}
                             </div>
                         </li>

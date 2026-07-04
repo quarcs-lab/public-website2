@@ -23,7 +23,7 @@
     {{ with $directors }}
     <div class="team-group">
       <div class="row"><div class="col-12">
-        <h3 class="team-group-title">Directors <span class="count">{{ len . }}</span></h3>
+        <h2 class="team-group-title">Directors <span class="count">{{ len . }}</span></h2>
       </div></div>
       <div class="row">
         {{ range $index, $m := . }}
@@ -37,7 +37,7 @@
     {{ with $associates }}
     <div class="team-group">
       <div class="row"><div class="col-12">
-        <h3 class="team-group-title">Associates <span class="count">{{ len . }}</span></h3>
+        <h2 class="team-group-title">Associates <span class="count">{{ len . }}</span></h2>
       </div></div>
       <div class="row">
         {{ range $index, $m := . }}

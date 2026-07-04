@@ -4,7 +4,7 @@
     <div class="container">
         <div class="section-heading">
             <span class="section-eyebrow wow fadeInDown" data-wow-delay=".2s">Get involved</span>
-            {{ with .Site.Params.portfolio.title }}<h1 class="title wow fadeInDown" data-wow-delay=".3s">{{ . }}</h1>{{ end }}
+            {{ with .Site.Params.portfolio.title }}<h2 class="title wow fadeInDown" data-wow-delay=".3s">{{ . }}</h2>{{ end }}
             {{ with .Site.Params.portfolio.subtitle }}<p class="wow fadeInDown" data-wow-delay=".5s">{{ . }}</p>{{ end }}
         </div>
         <div class="activity-grid">
@@ -14,7 +14,7 @@
                     <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}" loading="lazy">
                 </a>
                 <div class="activity-body">
-                    <h4 class="activity-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                    <h3 class="activity-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
                     {{ with .Params.caption }}<p class="activity-caption">{{ . }}</p>{{ end }}
                     <a class="activity-btn" href="{{ .Permalink }}">
                         Details

@@ -1,0 +1,51 @@
+{{ define "main" }}
+{{/* Project override of the theme's portfolio/single.html (Golden rule 1: shadow, don't edit
+     the theme). Only content/portfolio/book-mendez2020.md renders here (every other portfolio
+     page sets its own `layout:`). Fixes vs the theme copy: the page title is an <h1> (one h1
+     per page), the image alt is descriptive, and the "website:" line only shows when set. */}}
+
+{{ "<!-- Page Header -->" | safeHTML }}
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>{{ .Title }}</h1>
+                    <div class="portfolio-meta">
+                        <span>{{ .Date.Format "2006-01-02" }}</span>
+                        {{ with .Params.category }}<span>| Category: {{ delimit . ", " }}</span>{{ end }}
+                        {{ with .Params.liveLink }}<span>| website: <a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></span>{{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ "<!-- work details part start -->" | safeHTML }}
+<section class="work-single">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                {{ with .Params.image }}
+                <div class="work-single-image">
+                    <img class="img-fluid w-100" src="{{ . | absURL }}" alt="{{ $.Title }}">
+                </div>
+                {{ end }}
+                {{ with .Content }}
+                <div class="work-single-content">
+                    {{ . }}
+                </div>
+                {{ end }}
+            </div>
+            <div class="col-lg-4">
+                <!-- sidebar -->
+            </div>
+        </div>
+    </div>
+</section>
+{{"<!-- work details part end -->" | safeHTML }}
+
+{{ partial "cta.html" . }}
+
+{{ end }}

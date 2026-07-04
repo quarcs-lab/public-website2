@@ -78,6 +78,7 @@
             <span id="research-count" class="research-count" aria-live="polite"></span>
           </div>
         </div>
+        <p id="research-author-chip" class="research-author-chip" hidden></p>
         <p id="research-noresults" class="research-noresults" style="display:none;">No publications match your filters.</p>
 
         <!-- ===== Publications-by-year chart ===== -->
@@ -88,7 +89,7 @@
             <button type="button" class="pub-chart-bar" data-year="{{ .Key }}" aria-pressed="false" style="--h: {{ printf "%.1f" (div (mul (len .Pages) 100.0) $max) }}%;" aria-label="{{ .Key }}: {{ len .Pages }} publications">
               <span class="pub-chart-val">{{ len .Pages }}</span>
               <span class="pub-chart-fill"></span>
-              <span class="pub-chart-yr">'{{ substr .Key 2 }}</span>
+              <span class="pub-chart-yr">{{ .Key }}</span>
             </button>
             {{ end }}
           </div>
@@ -113,7 +114,8 @@
                    data-topics="{{ $topicstr }}"
                    data-date="{{ .Date.Unix }}"
                    data-title="{{ .Title }}"
-                   data-search="{{ printf "%s %s %s %s" .Title $author $journal (delimit (.Params.topics | default slice) " ") }}">
+                   data-search="{{ printf "%s %s %s %s" .Title $author $journal (delimit (.Params.topics | default slice) " ") }}"
+                   data-authors="{{ partialCached "author-keys.html" $author $author }}">
             {{- $cover := "" -}}
             {{- with .Params.cover -}}{{- $cover = . | absURL -}}{{- end -}}
             {{- if and (not $cover) (eq $type "article") -}}{{- with $.Site.Data.journal_covers -}}{{- with (index .covers $journal) -}}{{- $cover = (printf "images/%s" .) | absURL -}}{{- end -}}{{- end -}}{{- end -}}
@@ -135,7 +137,7 @@
                 {{ with $journal }}<span class="pub-badge pub-badge--journal">{{ . }}</span>{{ end }}
               </div>
               <h4 class="pub-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-              <p class="pub-meta">{{ with $author }}{{ . }}<span class="pub-dot">·</span>{{ end }}{{ .Date.Format "Jan 2006" }}</p>
+              <p class="pub-meta">{{ with $author }}{{ partialCached "authors-linkify.html" . . }}<span class="pub-dot">·</span>{{ end }}{{ .Date.Format "Jan 2006" }}</p>
               <p class="pub-excerpt">{{ .Summary | plainify | truncate 220 }}</p>
               {{ with .Params.topics }}
               <div class="pub-topics">{{ range . }}<span class="pub-topic">{{ . }}</span>{{ end }}</div>
@@ -157,6 +159,9 @@
   </div>
 </section>
 
+{{- $names := dict -}}
+{{- range site.Data.team.members -}}{{- $names = merge $names (dict .key .name) -}}{{- end -}}
+<script>window.__authorNames = {{ $names | jsonify | safeJS }};</script>
 <script>
 (function(){
   var listEl = document.getElementById('pub-list');
@@ -174,6 +179,7 @@
   var bars = Array.prototype.slice.call(document.querySelectorAll('.pub-chart-bar'));
   var reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   var activeYear = '';
+  var activeAuthor = '';
 
   function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,''); }
   cards.forEach(function(c){
@@ -182,6 +188,7 @@
     c._type = c.getAttribute('data-type');
     c._journal = c.getAttribute('data-journal') || '';
     c._topics = (c.getAttribute('data-topics')||'').split('|').filter(Boolean);
+    c._authors = (c.getAttribute('data-authors')||'').split(' ').filter(Boolean);
     c._date = Number(c.getAttribute('data-date')||0);
     c._title = norm(c.getAttribute('data-title'));
   });
@@ -222,6 +229,7 @@
         && (!tp || c._topics.indexOf(tp) !== -1)
         && (!jr || c._journal === jr)
         && (!ty || c._type === ty)
+        && (!activeAuthor || c._authors.indexOf(activeAuthor) !== -1)
         && (!activeYear || c._year === activeYear);
       c.hidden = !show;
       if(show){ visible++; }
@@ -282,13 +290,37 @@
   typeSel.addEventListener('change', apply);
   sortSel.addEventListener('change', function(){ sortRender(); apply(); });
   resetBtn.addEventListener('click', function(){
-    search.value=''; topicSel.value=''; journalSel.value=''; typeSel.value=''; sortSel.value='newest'; activeYear='';
+    search.value=''; topicSel.value=''; journalSel.value=''; typeSel.value=''; sortSel.value='newest'; activeYear=''; activeAuthor='';
     bars.forEach(function(x){ x.classList.remove('is-active'); x.setAttribute('aria-pressed','false'); });
-    sortRender(); apply(); search.focus();
+    if(history.replaceState && /author=/.test(location.hash)){ history.replaceState(null,'',location.pathname+location.search); }
+    renderAuthorChip(); sortRender(); apply(); search.focus();
   });
+
+  // --- author deep-link filter (keyed, consistent with build-time counts) ---
+  var authorChip = document.getElementById('research-author-chip');
+  function renderAuthorChip(){
+    if(!authorChip){ return; }
+    if(!activeAuthor){ authorChip.innerHTML=''; authorChip.hidden=true; return; }
+    var name = (window.__authorNames||{})[activeAuthor] || activeAuthor;
+    authorChip.hidden=false;
+    authorChip.innerHTML = 'Publications by <strong></strong> <button type="button" class="author-chip-x" aria-label="Clear author filter">&times;</button>';
+    authorChip.querySelector('strong').textContent = name;
+    authorChip.querySelector('.author-chip-x').addEventListener('click', function(){
+      activeAuthor='';
+      if(history.replaceState){ history.replaceState(null,'',location.pathname+location.search); }
+      renderAuthorChip(); apply();
+    });
+  }
+  function readAuthorHash(){
+    var m = (location.hash||'').match(/author=([a-z0-9-]+)/);
+    activeAuthor = m ? m[1] : '';
+    renderAuthorChip();
+  }
+  window.addEventListener('hashchange', function(){ readAuthorHash(); apply(); });
 
   setView(savedView);
   sortRender();
+  readAuthorHash();
   apply();
   counters();
 })();

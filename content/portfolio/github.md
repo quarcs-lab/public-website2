@@ -8,7 +8,6 @@ description: "The QuaRCS network on GitHub — explore the open-source repositor
 caption: "Build with us in the open"
 image: images/portfolio/github.svg
 category: []
-liveLink: https://github.com/quarcs-lab/public-website2
 ---
 
 <!-- Content is data-driven: see data/github.yml, rendered by layouts/portfolio/explainer.html -->

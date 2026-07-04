@@ -439,8 +439,13 @@ figure figcaption p { color: var(--muted); }
 #research-areas { padding: 110px 0; background: var(--surface-alt); }
 
 .info-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* Count-agnostic: flex-wrap centers any partial last row, so 5, 6, 7, N cards all
+     look right — a new research area or method needs no CSS change. 3 per row on
+     desktop, 2 on tablet, 1 on phone. The nth-child(4n+…) accent cycle below has no
+     adjacent clashes at 3-up because gcd(4,3)=1 (each row rotates one hue). */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.6rem;
 }
 .info-card {
@@ -448,6 +453,8 @@ figure figcaption p { color: var(--muted); }
   --accent: var(--cyan-600);
   --accent-soft: var(--cyan);
   --accent-ink: var(--cyan-ink);
+  flex: 0 0 calc((100% - 3.2rem) / 3);   /* 3 per row: full width minus 2 × 1.6rem gaps */
+  max-width: calc((100% - 3.2rem) / 3);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -508,19 +515,12 @@ figure figcaption p { color: var(--muted); }
 .info-card:nth-child(4n+3) { --accent: var(--violet-ink); --accent-soft: var(--violet);  --accent-ink: var(--violet-ink); }
 .info-card:nth-child(4n+4) { --accent: var(--emerald-ink);--accent-soft: var(--emerald); --accent-ink: var(--emerald-ink); }
 
-@media (max-width: 992px) { .info-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 640px)  { .info-grid { grid-template-columns: 1fr; } }
-
-/* Research Areas has 5 cards — center the last row (grid can't center a partial row,
-   so switch this section to flex). Methods (#feature) has 6 and keeps the 3-col grid. */
-#research-areas .info-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media (max-width: 992px) {
+  .info-card { flex-basis: calc((100% - 1.6rem) / 2); max-width: calc((100% - 1.6rem) / 2); }   /* 2 per row */
 }
-#research-areas .info-card { width: calc((100% - 3.2rem) / 3); }   /* 3 per row (2 × 1.6rem gaps) */
-@media (max-width: 992px) { #research-areas .info-card { width: calc((100% - 1.6rem) / 2); } }
-@media (max-width: 640px)  { #research-areas .info-card { width: 100%; } }
+@media (max-width: 640px) {
+  .info-card { flex-basis: 100%; max-width: 100%; }   /* 1 per row */
+}
 @media (prefers-reduced-motion: reduce) {
   .info-card, .info-title { transition: none; }
   .info-card:hover { transform: none; }
@@ -870,6 +870,30 @@ figure figcaption p { color: var(--muted); }
   outline-offset: 2px;
 }
 .team-member .team-website i { font-size: 15px; line-height: 1; }
+
+/* Publications count — reverse half of the author↔publication link. Links to /research
+   filtered by this member's key. Sits under the Website button; when a member has no
+   website it pins itself to the card bottom instead. Hidden when the member has 0 pubs. */
+.team-member .team-pubs { margin-top: auto; padding: 0; text-align: center; }
+.team-member .team-links ~ .team-pubs { margin-top: 10px; }
+.team-member .team-pubs-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+  transition: color .25s var(--ease), border-color .25s var(--ease);
+}
+.team-member .team-pubs-link:hover { color: var(--cyan-ink); border-bottom-color: var(--cyan-ink); }
+.team-member .team-pubs-link:focus-visible { outline: 2px solid var(--cyan-600); outline-offset: 2px; }
+.team-member .team-pubs-link i { font-size: 14px; line-height: 1; }
+
+/* Anchor target from a publication's author link — clear the sticky header on jump */
+.team-member { scroll-margin-top: 90px; }
 
 /* Fast, row-aware reveal — WOW writes inline delays without !important, so this caps duration */
 .team-member.wow { animation-duration: .5s !important; }
@@ -1248,6 +1272,29 @@ figure figcaption p { color: var(--muted); }
 .research-count { margin-left: auto; color: var(--muted); font-size: .88rem; font-weight: 600; white-space: nowrap; }
 .research-noresults { color: var(--muted); font-style: italic; padding: 1.5rem 0; }
 
+/* Author links (forward half of the author↔publication link): a team member's name in a
+   publication byline links to their /people profile. */
+.author-link { color: var(--cyan-ink); border-bottom: 1px solid transparent; transition: border-color .2s var(--ease); }
+.author-link:hover { border-bottom-color: var(--cyan-ink); }
+
+/* Active author-filter chip on /research (set via #author=<key> from a team card). */
+.research-author-chip {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin: 0 0 1.1rem; padding: 7px 8px 7px 15px;
+  font-family: var(--font-sans); font-size: .9rem; color: var(--text-dark);
+  background: var(--surface-alt); border: 1px solid var(--line); border-radius: var(--radius-pill);
+}
+.research-author-chip[hidden] { display: none; }
+.research-author-chip strong { color: var(--cyan-ink); font-weight: 700; }
+.author-chip-x {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px; padding: 0; border: 0; border-radius: 50%;
+  font-size: 15px; line-height: 1; cursor: pointer;
+  color: var(--muted); background: var(--surface);
+  transition: color .2s var(--ease), background .2s var(--ease);
+}
+.author-chip-x:hover { color: #fff; background: var(--cyan-600); }
+
 /* ---- Sections ---- */
 .resource-section { margin-top: 48px; }
 .resource-section[hidden] { display: none; }
@@ -1594,7 +1641,7 @@ figure figcaption p { color: var(--muted); }
   cursor: pointer;
 }
 .pub-chart-bar:focus-visible { outline: 2px solid var(--cyan-600); outline-offset: 2px; border-radius: 4px; }
-.pub-chart-val { font-family: var(--font-display); font-weight: 700; font-size: .72rem; color: var(--muted); margin-bottom: 4px; opacity: 0; transition: opacity .18s var(--ease); }
+.pub-chart-val { font-family: var(--font-display); font-weight: 700; font-size: .72rem; color: var(--muted); margin-bottom: 4px; opacity: 1; transition: color .18s var(--ease); }
 .pub-chart-bar:hover .pub-chart-val,
 .pub-chart-bar:focus-visible .pub-chart-val,
 .pub-chart-bar.is-active .pub-chart-val { opacity: 1; color: var(--cyan-ink); }
@@ -1720,9 +1767,10 @@ figure figcaption p { color: var(--muted); }
 @media (max-width: 768px) {
   .pub-list.is-list .pub-card { flex-direction: column; }
   .pub-list.is-list .pub-thumb { flex-basis: auto; width: 100%; height: 210px; min-height: 0; }
+  .pub-chart-wrap { padding-bottom: 26px; }
   .pub-chart { height: 88px; gap: 3px; }
-  .pub-chart-yr { font-size: .6rem; }
-  .pub-chart-val { display: none; }
+  .pub-chart-yr { font-size: .6rem; transform: rotate(-45deg); transform-origin: center top; white-space: nowrap; }
+  .pub-chart-val { display: block; font-size: .58rem; margin-bottom: 2px; }
 }
 @media (max-width: 576px) {
   .research-count { margin-left: 0; width: 100%; }

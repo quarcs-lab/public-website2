@@ -1,0 +1,32 @@
+{{- /* authors-linkify.html — forward link (publication → person).
+       Input  (.) : the raw author display string, e.g. "Carlos Mendez and Felipe Santos".
+       Output     : safeHTML with every team-member alias wrapped in a link to /people/#<key>.
+
+       Why the placeholder pass: replacing "Felipe Santos" after "Felipe Santos-Marquez"
+       would re-match inside the already-inserted anchor text. So we (1) swap each matched
+       alias for a lowercase-slug sentinel "%%A<slug>%%" that no mixed-case alias can match,
+       then (2) swap sentinels for anchors. Aliases are sorted globally longest-first so a
+       long name is always consumed before its shorter form. */ -}}
+{{- $out := . -}}
+{{- $pairs := slice -}}
+{{- range site.Data.team.members -}}
+  {{- $k := .key -}}
+  {{- range (.aliases | default slice) -}}
+    {{- $pairs = $pairs | append (dict "alias" . "key" $k "len" (len .)) -}}
+  {{- end -}}
+{{- end -}}
+{{- $pairs = sort $pairs "len" "desc" -}}
+{{- $hits := slice -}}
+{{- range $pairs -}}
+  {{- if strings.Contains $out .alias -}}
+    {{- $ph := printf "%%%%A%s%%%%" (anchorize .alias) -}}
+    {{- $out = replace $out .alias $ph -}}
+    {{- $hits = $hits | append (dict "ph" $ph "key" .key "alias" .alias) -}}
+  {{- end -}}
+{{- end -}}
+{{- range $hits -}}
+  {{- $href := printf "%s#%s" (relURL "people/") .key -}}
+  {{- $a := printf "<a class=\"author-link\" href=\"%s\">%s</a>" $href .alias -}}
+  {{- $out = replace $out .ph $a -}}
+{{- end -}}
+{{- $out | safeHTML -}}

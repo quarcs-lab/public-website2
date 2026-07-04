@@ -3,7 +3,7 @@
 {{ $m := .m }}
 {{ $index := .index }}
 <div class="col-lg-3 col-md-4 col-sm-6 col-6 team-col">
-  <article class="team-member wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul (mod $index 4) 60 }}ms">
+  <article {{ with $m.key }}id="{{ . }}" {{ end }}class="team-member wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul (mod $index 4) 60 }}ms">
 
     {{ with $m.image }}
     <div class="team-img">
@@ -35,6 +35,30 @@
       <a class="team-website" href="{{ . }}" target="_blank" rel="noopener"
          aria-label="{{ $m.name }} &mdash; website">
         <i class="ion-earth"></i><span>Website</span>
+      </a>
+    </p>
+    {{ end }}
+
+    {{/* Reverse link: this member's publications, matched by alias at build time.
+         /research filters by the member key, so this count and the filtered list
+         always agree — including author-name spelling variants. Hidden when zero. */}}
+    {{- $n := 0 -}}
+    {{- $aliases := $m.aliases | default slice -}}
+    {{- if $aliases -}}
+      {{- range (where site.RegularPages "Section" "research") -}}
+        {{- $a := .Params.author | default "" -}}
+        {{- $matched := false -}}
+        {{- range $aliases -}}
+          {{- if and (not $matched) (strings.Contains $a .) -}}{{- $matched = true -}}{{- end -}}
+        {{- end -}}
+        {{- if $matched -}}{{- $n = add $n 1 -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{ if gt $n 0 }}
+    <p class="team-pubs">
+      <a class="team-pubs-link" href="{{ relURL "research/" }}#author={{ $m.key }}"
+         aria-label="{{ $m.name }} &mdash; {{ $n }} publications">
+        <i class="ion-document-text"></i><span>Publications ({{ $n }})</span>
       </a>
     </p>
     {{ end }}

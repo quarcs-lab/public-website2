@@ -68,17 +68,21 @@ btn     = true
 btnText = "Research Projects and Outcomes"
 btnURL  = "research"
 
-# flip text
-[[params.banner.flipText]]
-title   = "Sustainable Regional Development"
-[[params.banner.flipText]]
-title   = "The Geography of Development"
-[[params.banner.flipText]]
-title   = "Regional Growth and Inequality"
-[[params.banner.flipText]]
-title   = "Spatial Structural Change"
-[[params.banner.flipText]]
-title   = "Spatial Energy Economics"
+# The hero's rotating keywords are DERIVED from data/research-projects.yml (the item
+# titles) by layouts/partials/banner.html — edit them there, not here. This block is only
+# a fallback used if that data file is missing; keep it in sync if you rely on it.
+# [[params.banner.flipText]]
+#   title = "Sustainable Regional Development"
+
+
+# Shared external links — single source of truth. Templates that can read config
+# (cta.html, portfolio/explainer.html) pull from here so a URL lives in ONE place.
+# check-content.py asserts the socialIcon Discord url below matches params.links.discord.
+[params.links]
+discord     = "https://discord.gg/pfEmxwSEHy"
+github      = "https://github.com/quarcs-lab/public-website2"
+discussions = "https://github.com/quarcs-lab/public-website2/discussions/1"
+luma        = "https://lu.ma/quarcs"
 
 
 # Call to Action
@@ -87,7 +91,7 @@ enable  = true
 title   = "Do you conduct similar research?"
 content = "Join our research and learning community"
 btnText = "JOIN US"
-btnURL  = "https://discord.gg/pfEmxwSEHy"
+# btnURL is sourced from [params.links].discord via layouts/partials/cta.html
 
 # Portfolio Section On Homepage
 [params.portfolio]

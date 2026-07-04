@@ -15,13 +15,19 @@
                             {{ with .Site.Params.banner.heading }}<span class="hero-eyebrow">{{ . }}</span>{{ end }}
                             <br>
                             <span class="cd-words-wrapper">
-                                {{ range $index, $element := .Site.Params.banner.flipText }}
-                                    {{ if eq $index 0 }}
-                                    <b class="is-visible">{{ .title }}</b>
-                                    {{else}}
-                                    <b>{{ .title }}</b>
-                                    {{end}}
-                                {{ end }}
+                                {{- /* Rotating keywords are DERIVED from data/research-projects.yml
+                                       (single source, kept in sync with the Research Areas section),
+                                       falling back to [[params.banner.flipText]] if that data is absent. */ -}}
+                                {{- $words := slice -}}
+                                {{- with (index .Site.Data "research-projects") -}}
+                                    {{- range .items -}}{{- with .title -}}{{- $words = $words | append . -}}{{- end -}}{{- end -}}
+                                {{- end -}}
+                                {{- if not $words -}}
+                                    {{- range .Site.Params.banner.flipText -}}{{- $words = $words | append .title -}}{{- end -}}
+                                {{- end -}}
+                                {{- range $index, $w := $words -}}
+                                    {{- if eq $index 0 }}<b class="is-visible">{{ $w }}</b>{{ else }}<b>{{ $w }}</b>{{ end -}}
+                                {{- end -}}
                             </span>
                         </h1>
                     </section>

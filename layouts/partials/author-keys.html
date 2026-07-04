@@ -1,0 +1,17 @@
+{{- /* author-keys.html — reverse link helper.
+       Input  (.) : an author display string.
+       Output     : space-separated team-member keys whose alias appears in the string
+                    (deduped). Emitted as data-authors on each pub card so the /research
+                    author filter can match by key — keeping the card count and the
+                    filtered result identical even when a name has spelling variants. */ -}}
+{{- $author := . -}}
+{{- $keys := slice -}}
+{{- range site.Data.team.members -}}
+  {{- $k := .key -}}
+  {{- range (.aliases | default slice) -}}
+    {{- if and (strings.Contains $author .) (not (in $keys $k)) -}}
+      {{- $keys = $keys | append $k -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- delimit $keys " " -}}

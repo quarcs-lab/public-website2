@@ -1,0 +1,21 @@
+{{ if .Site.Params.cta.enable }}
+{{ "<!-- Call To Action Section Start -->" | safeHTML }}
+{{/* Root override of the theme CTA. Identical markup, except the button URL is sourced
+     from [params.links].discord (single source) instead of a duplicated [params.cta].btnURL. */}}
+{{- $href := .Site.Params.links.discord | default .Site.Params.cta.btnURL -}}
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    {{ with .Site.Params.cta.title }}<h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">{{ . }}</h2>{{ end }}
+                    {{ with .Site.Params.cta.content }}<p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">{{ . | safeHTML }}</p>{{ end }}
+                    <a href="{{ $href }}" target="_blank" rel="noopener" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">{{ .Site.Params.cta.btnText }}</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{{ "<!-- Call To Action Section End -->" | safeHTML }}
+{{ end }}

@@ -2,16 +2,32 @@ enable  : true
 title   : "QuaRCS network: Directors and associates"
 members  :
 
-#  - name  : Anang Gunawan
-#    image : images/team/team-4.jpg
-#    designation : Doctoral student (D3), Indonesia
+# ── Member schema ────────────────────────────────────────────────────────────
+# Required : name, key, aliases, image, designation, description, web
+#   key      : stable slug (write it literally). Used for the /people/#<key> anchor
+#              and the two-way link to this person's publications. Never change it.
+#   aliases  : the exact name strings as they appear in a publication's `author:`
+#              field, LONGEST FIRST (e.g. "Felipe Santos-Marquez" before "Felipe
+#              Santos"). Build-time matching turns those names into links and powers
+#              the "Publications (N)" button on the card — so a new member with no
+#              aliases gets zero linked publications. Always fill this in.
+#   designation : LOAD-BEARING format "Sentence one. Role, Institution, COUNTRY."
+#              The first sentence must contain "director" to land in the Directors
+#              group; the trailing ALL-CAPS token becomes the country pill.
+#   web      : the ONLY link field that renders (a "Website" button). net/linkedIn
+#              are kept for reference but are not shown on the card.
+# Deactivate a member by commenting the whole block with `#` (don't delete).
+# After editing, run: python3 scripts/check-content.py
+#
+#  - name    : Anang Gunawan
+#    key     : anang-gunawan
+#    aliases : ["Anang Budi Gunawan", "Anang Gunawan"]
+#    image   : images/team/team-4.jpg
+#    designation : Research associate. Regional development planner, INDONESIA.
 #    description : Research topic TBA
-#    facebook    : https://www.fb.com/themefisher
-#    twitter     : https://www.twitter.com/themefisher
-#    linkedIn    : https://www.linkedin.com/themefisher
-#    googleplus  : https://plus.google.com/themefisher
-#    website     : https://carlos-mendez.rbind.io
-#    web         : https://carlos-mendez.rbind.io
+#    net         : https://www.researchgate.net/profile/Anang_Gunawan
+#    linkedIn    : https://www.linkedin.com/in/anang-budi-gunawan-a934751b1/
+#    web         : http://anang-gunawan.rbind.io/
 
 # Note : The website option has been added by modifying the html code of the file themes/timer-hugo/layouts/partials/team.html
 # the added html code is
@@ -37,6 +53,8 @@ members  :
 
 
   - name  : Carlos Mendez
+    key     : carlos-mendez
+    aliases : ["Carlos Mendez"]
     image : images/team/carlos-mendez.jpg
     designation : Founding research director. Associate professor, Nagoya University, JAPAN.
     description : "Research interests: Development Macroeconomics, Regional Economics, Spatial econometrics"
@@ -47,6 +65,8 @@ members  :
 
 
   - name  : Felipe Santos-Marquez
+    key     : felipe-santos-marquez
+    aliases : ["Felipe Santos-Marquez", "Felipe Santos"]
     image : images/team/felipe-santos.png
     designation : Founding research director. Ph.D. in Economics (TU Dresden), based in Nagoya, JAPAN.
     description : "Research interests: Development Economics, Regional Inequality, Spatial econometrics"
@@ -56,6 +76,8 @@ members  :
 
 
   - name  : Linda Glawe
+    key     : linda-glawe
+    aliases : ["Linda Glawe"]
     image : images/team/linda-glawe2.png
     designation : Research director. Tenure-Track Professor of Empirical Economics, University of Rostock, GERMANY.
     description : "Research interests: Economic Growth and Development, Regional Economics, Human Capital, Spatial Econometrics"
@@ -65,6 +87,8 @@ members  :
 
 
   - name  : Harry Aginta
+    key     : harry-aginta
+    aliases : ["Harry Aginta"]
     image : images/team/harry-aginta.jpg
     designation : Research director. Senior Economist, Bank Indonesia, INDONESIA.
     description : "Research topic: Regional inflation dynamics in Indonesia"
@@ -73,6 +97,8 @@ members  :
     web         : https://www.researchgate.net/profile/Harry_Aginta2
 
   - name  : Mitsuhiko Kataoka
+    key     : mitsuhiko-kataoka
+    aliases : ["Mitsuhiko Kataoka"]
     image : images/team/mitsuhiko-kataoka.png
     designation : Research associate. Professor, Rikkyo University, JAPAN.
     description : "Research interests: Regional Economics, Economic Development, Efficiency Analysis"
@@ -81,6 +107,8 @@ members  :
     web         : https://univdb.rikkyo.ac.jp/view?l=en&u=100001600
 
   - name  : Mehak Sachdeva
+    key     : mehak-sachdeva
+    aliases : ["Mehak Sachdeva"]
     image : images/team/Mehak-Sachdeva.png
     designation : Research associate. Assistant Professor of Urban Science, Florida State University, USA.
     description : "Research interests: Computational spatial science, Urban analysis, Statistical analysis with GIS"
@@ -90,6 +118,8 @@ members  :
 
 
   - name  : Tifani Husna Siregar
+    key     : tifani-husna-siregar
+    aliases : ["Tifani Husna Siregar", "Tifani Siregar"]
     image : images/team/tifani.png
     designation : Research associate. Postdoctoral Fellow, King Fahd University of Petroleum and Minerals, SAUDI ARABIA.
     description : "Research interests: Applied spatial econometrics, Regional economics, Labor markets, Causal inference"
@@ -99,6 +129,8 @@ members  :
 
 
   - name  : Alvaro Dominguez
+    key     : alvaro-dominguez
+    aliases : ["Alvaro Dominguez"]
     image : images/team/Alvaro-dominguez.png
     designation : Research associate. Lecturer, Nagoya University, JAPAN.
     description : "Research interests: Economics of Networks, Environmental Economics, Spatial analysis"
@@ -108,6 +140,8 @@ members  :
 
 
   - name  : Erick Gonzales Rocha
+    key     : erick-gonzales-rocha
+    aliases : ["Erick Gonzales Rocha", "Erick Gonzales"]
     image : images/team/erick-gonzales.jpg
     designation : Research associate. Economic Affairs Officer, United Nations Office for Disaster Risk Reduction (UNDRR), SWITZERLAND.
     description : "Research interests: Development economics, Labor economics, Institutional economics"
@@ -117,6 +151,8 @@ members  :
 
 
   - name  : Lykke Andersen
+    key     : lykke-andersen
+    aliases : ["Lykke E. Andersen", "Lykke Andersen"]
     image : images/team/lykke-andersen.png
     designation : Research associate. Executive Director of SDSN, BOLIVIA.
     description : "Research interests: Sustainable development, Environmental economics, Applied econometrics"
@@ -126,6 +162,8 @@ members  :
 
 
   - name  : Ugur Ursavas
+    key     : ugur-ursavas
+    aliases : ["Ugur Ursavas"]
     image : images/team/ugur-ursavas.jpg
     designation : Research associate. Associate Professor, Zonguldak Bülent Ecevit University, TURKEY.
     description : "Research interests: Economic Growth and Development, Regional Economics,  Spatial Analysis."
@@ -136,6 +174,8 @@ members  :
 
 
   - name  : Sujana Kabiraj
+    key     : sujana-kabiraj
+    aliases : ["Sujana Kabiraj"]
     image : images/team/Sujana-Kabiraj.png
     designation : Research associate. Associate Professor, Shiv Nadar University, INDIA.
     description : "Research interests: Economic growth, regional economics, Indian economy"
@@ -190,6 +230,8 @@ members  :
   #   web         : https://www.researchgate.net/profile/ADDprofileHere
 
   - name  : Osmar Bolivar
+    key     : osmar-bolivar
+    aliases : ["Osmar Bolivar"]
     image : images/team/Osmar-Bolivar.png
     designation : Research associate. Economist, CEBEC-CAINCO, BOLIVIA.
     description : "Research interests: Development Economics, Machine Learning, Econometrics, Remote Sensing"
@@ -206,6 +248,8 @@ members  :
 #    web         : https://yilinchen.my.canva.site/
 
   - name  : Katerine Restrepo
+    key     : katerine-restrepo
+    aliases : ["Katerine Restrepo"]
     image : images/team/katerine-restrepo2.png
     designation : Research associate. Ph.D. student, Nagoya University, JAPAN.
     description : "Research interests: Development Economics, Regional Inequality, Nutritional Inequality, Spatial econometrics"
@@ -215,6 +259,8 @@ members  :
 
 
   - name  : Jiaqi Li
+    key     : jiaqi-li
+    aliases : ["Jiaqi Li"]
     image : images/team/jiaqi-li.webp
     designation : Research associate. Research Associate at Asian Development Bank Institute (ADBI), JAPAN.
     description : "Research interests: Digital financial inclusion, Regional economic growth, Environmental economics, Remote sensing"

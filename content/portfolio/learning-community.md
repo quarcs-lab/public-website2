@@ -8,7 +8,6 @@ description: "The QuaRCS-network learning community on Discord — a friendly pl
 caption: "Learn together on Discord"
 image: images/portfolio/learning-community.jpg
 category: []
-liveLink: https://discord.gg/pfEmxwSEHy
 ---
 
 <!-- Content is data-driven: see data/community.yml, rendered by layouts/portfolio/explainer.html -->

@@ -71,8 +71,11 @@
                     {{ with .heading }}<h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">{{ . }}</h2>{{ end }}
                     {{ with .note }}<p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">{{ . }}</p>{{ end }}
                     <div class="cta-actions">
-                        <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-cta wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">{{ with .icon }}<i class="{{ . }}"></i> {{ end }}{{ .label }}</a>
-                        {{ with .secondary }}<a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".85s" data-wow-duration="500ms">{{ with .icon }}<i class="{{ . }}"></i> {{ end }}{{ .label }}</a>{{ end }}
+                        {{- /* Prefer a linkKey resolved against [params.links] (single source);
+                               fall back to a literal url if a page still supplies one. */ -}}
+                        {{- $u := .url -}}{{- with .linkKey -}}{{- $u = index $.Site.Params.links . -}}{{- end -}}
+                        <a href="{{ $u }}" target="_blank" rel="noopener" class="btn btn-cta wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">{{ with .icon }}<i class="{{ . }}"></i> {{ end }}{{ .label }}</a>
+                        {{ with .secondary }}{{- $su := .url -}}{{- with .linkKey -}}{{- $su = index $.Site.Params.links . -}}{{- end -}}<a href="{{ $su }}" target="_blank" rel="noopener" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".85s" data-wow-duration="500ms">{{ with .icon }}<i class="{{ . }}"></i> {{ end }}{{ .label }}</a>{{ end }}
                     </div>
                 </div>
             </div>

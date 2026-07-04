@@ -8,7 +8,6 @@ description: "QuaRCS-network events — a webinar series where researchers prese
 caption: "Webinars & research talks"
 image: images/portfolio/webinar3.jpg
 category: ["webinar"]
-liveLink: https://lu.ma/quarcs
 ---
 
 <!-- Content is data-driven: see data/events.yml, rendered by layouts/portfolio/explainer.html -->

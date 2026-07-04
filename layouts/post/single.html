@@ -16,7 +16,7 @@
           <p class="page-eyebrow">{{ $typeLabel }}{{ with $journal }} · {{ . }}{{ end }}</p>
           <h2>{{ .Title }}</h2>
           <div class="portfolio-meta">
-            {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
+            {{ with .Params.author }}<span>{{ partial "authors-linkify.html" . }}</span>{{ end }}
             <span>{{ .Date.Format "January 2, 2006" }}</span>
           </div>
           {{ with .Params.topics }}

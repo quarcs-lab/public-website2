@@ -1167,6 +1167,53 @@ figure figcaption p { color: var(--muted); }
   .project-grid { grid-template-columns: 1fr; gap: 1.1rem; }
 }
 
+/* ============================================ All-publications bibliography
+   /portfolio/all-publications/ — layouts/portfolio/publications.html.
+   A plain hanging-indent citation list (deliberately distinct from the rich /research
+   .pub-* cards), now token-driven so it no longer diverges with raw hex, and its classes
+   are namespaced .citation-* so they can't collide with the /research .pub-* system. */
+.research-programs-block h3,
+.publications-intro h3 { margin-top: 1.6rem; }
+.research-programs { padding-left: 1.2rem; margin: .8rem 0 1.6rem; }
+.research-programs li { margin-bottom: .6rem; line-height: var(--lh); color: var(--muted); }
+.research-programs strong { color: var(--text-dark); }
+.publications-intro { margin-bottom: var(--space-6); }
+
+.citation-cta { margin: 0 0 var(--space-6); }
+.citation-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .7rem 1.3rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: var(--ink);
+  background: linear-gradient(135deg, var(--cyan-600), var(--cyan));
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-glow);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.citation-cta-btn:hover { color: var(--ink); transform: translateY(-2px); box-shadow: var(--shadow-glow-strong); }
+.citation-cta-btn svg { transition: transform var(--dur) var(--ease); }
+.citation-cta-btn:hover svg { transform: translateX(3px); }
+
+.citation-list { padding-left: 1.4rem; margin: var(--space-4) 0 var(--space-5); }
+.citation {
+  margin-bottom: var(--space-4);
+  padding-left: .3rem;
+  line-height: var(--lh);
+  color: var(--muted);
+}
+.citation::marker { color: var(--cyan-ink); font-weight: 600; }
+.citation em { color: var(--text-dark); }
+.citation a { white-space: nowrap; font-weight: 600; }
+.citation-total { color: var(--muted); font-size: var(--step--1); font-weight: 600; }
+@media (prefers-reduced-motion: reduce) {
+  .citation-cta-btn, .citation-cta-btn svg { transition: none; }
+  .citation-cta-btn:hover { transform: none; }
+}
+
 /* ======================================= Mobile polish (phones + tablets) */
 
 /* Hero rotating headline on phones + tablets.
@@ -1322,10 +1369,12 @@ figure figcaption p { color: var(--muted); }
 
 /* ---- Body / toolbar ---- */
 .resources-body { padding: 0 0 90px; }
-.resources-toolbar {
+/* Shared filter-toolbar chrome — used by BOTH /research (.pub-toolbar) and
+   /resources (.resources-toolbar); page-specific bits stay on those classes. */
+.filter-toolbar {
   position: relative;
   z-index: 3;
-  margin-top: -42px;
+  margin-top: -42px;              /* float up to overlap the dark hero */
   margin-bottom: 8px;
   padding: 16px;
   background: var(--surface);
@@ -1333,13 +1382,16 @@ figure figcaption p { color: var(--muted); }
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
 }
-.resources-toolbar .research-filter {
+.filter-toolbar .research-filter {
   display: flex;
   flex-wrap: wrap;
-  gap: .6rem;
+  gap: var(--space-3);
   align-items: center;
   margin: 0;
 }
+/* Selects size to their longest <option> by default (some journal names are very
+   long), which can overflow narrow screens — let them grow/shrink instead. */
+.filter-toolbar .research-filter select.research-input { flex: 1 1 150px; min-width: 0; max-width: 240px; }
 .research-search-wrap { position: relative; flex: 1 1 260px; min-width: 180px; display: flex; align-items: center; }
 .research-search-icon { position: absolute; left: .85rem; color: var(--muted); pointer-events: none; }
 .research-input {
@@ -1681,27 +1733,12 @@ figure figcaption p { color: var(--muted); }
 
 /* ---- Body + floating toolbar ---- */
 .pub-body { padding: 0 0 96px; }
-.pub-toolbar {
-  position: relative;
-  z-index: 3;
-  margin-top: -42px;
-  margin-bottom: 8px;
-  padding: 16px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
+/* /research toolbar chrome now comes from the shared .filter-toolbar. It additionally
+   sticks just under the fixed nav while the long list scrolls (desktop/tablet only —
+   on phones it wraps to several rows, so keep it in normal flow there). */
+@media (min-width: 768px) {
+  .pub-toolbar { position: sticky; top: 70px; z-index: 20; }
 }
-.pub-toolbar .research-filter {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .6rem;
-  align-items: center;
-  margin: 0;
-}
-/* Selects size to their longest <option> by default (some journal names are very
-   long), which can overflow narrow screens — let them grow/shrink instead. */
-.pub-toolbar .research-filter select.research-input { flex: 1 1 150px; min-width: 0; max-width: 240px; }
 
 /* Grid / list view toggle */
 .pub-views { display: inline-flex; border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; }
@@ -1733,7 +1770,7 @@ figure figcaption p { color: var(--muted); }
 }
 .pub-chart-label { font-family: var(--font-display); font-weight: 700; color: var(--text-dark); font-size: .95rem; margin-bottom: 14px; }
 .pub-chart-hint { font-family: var(--font-sans); font-weight: 500; color: var(--muted); font-size: .82rem; }
-.pub-chart { display: flex; align-items: flex-end; gap: 6px; height: 104px; }
+.pub-chart { display: flex; align-items: flex-end; gap: 6px; height: 104px; padding-bottom: 2px; border-bottom: 1px solid var(--line); }
 .pub-chart-bar {
   flex: 1 1 0;
   min-width: 0;
@@ -1748,7 +1785,7 @@ figure figcaption p { color: var(--muted); }
   cursor: pointer;
 }
 .pub-chart-bar:focus-visible { outline: 2px solid var(--cyan-600); outline-offset: 2px; border-radius: 4px; }
-.pub-chart-val { font-family: var(--font-display); font-weight: 700; font-size: .72rem; color: var(--muted); margin-bottom: 4px; opacity: 1; transition: color .18s var(--ease); }
+.pub-chart-val { font-family: var(--font-display); font-weight: 700; font-size: .72rem; color: var(--muted); margin-bottom: 4px; opacity: .55; transition: color .18s var(--ease), opacity .18s var(--ease); }
 .pub-chart-bar:hover .pub-chart-val,
 .pub-chart-bar:focus-visible .pub-chart-val,
 .pub-chart-bar.is-active .pub-chart-val { opacity: 1; color: var(--cyan-ink); }
@@ -1808,6 +1845,7 @@ figure figcaption p { color: var(--muted); }
 }
 .pub-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--acc-bright), var(--acc)); opacity: .9; z-index: 2; }
 .pub-card:hover { transform: translateY(var(--lift-sm)); box-shadow: var(--shadow-md); border-color: transparent; }
+.pub-card:focus-within { border-color: var(--cyan-600); box-shadow: var(--shadow-md); }
 .pub-card[hidden] { display: none; }
 
 .pub-list.is-list .pub-card { flex-direction: row; align-items: stretch; margin-bottom: 1.1rem; }
@@ -1820,6 +1858,8 @@ figure figcaption p { color: var(--muted); }
 .pub-list.is-grid .pub-thumb { width: 100%; height: 220px; }
 .pub-list.is-grid .pub-content { padding: 1.15rem 1.25rem 1.25rem; }
 .pub-list.is-grid .pub-excerpt { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+/* List view: clamp the excerpt to 2 lines so rows keep an even scan edge */
+.pub-list.is-list .pub-excerpt { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
 /* Thumbnail + gradient fallback */
 .pub-thumb { position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 14px; background: linear-gradient(140deg, var(--ink) 0%, var(--navy) 60%, var(--navy-2) 120%); text-decoration: none; }
@@ -1869,6 +1909,22 @@ figure figcaption p { color: var(--muted); }
 .pub-single-figure { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-md); margin-bottom: 30px; max-width: 420px; }
 .pub-single-figure img { width: 100%; display: block; }
 .pub-single-links { display: flex; flex-wrap: wrap; gap: .6rem; margin: 8px 0 32px; }
+
+/* Byline (author) links on the dark header — AA on navy, and clearly interactive */
+.pub-single-header .portfolio-meta a { color: var(--cyan); border-bottom: 1px solid transparent; transition: border-color .2s var(--ease); }
+.pub-single-header .portfolio-meta a:hover { border-bottom-color: var(--cyan); }
+
+/* Reading column: comfortable measure + heading rhythm; kills the theme's full-width,
+   teal-linked prose that the single page otherwise inherits. */
+.pub-single-body .post-content { max-width: 72ch; margin-bottom: var(--space-6); }
+.pub-single-body .post-content p,
+.pub-single-body .post-content li { font-size: var(--step-0); line-height: 1.75; color: var(--muted); }
+.pub-single-body .post-content p { margin: 0 0 var(--space-4); }
+.pub-single-body .post-content h2 { font-family: var(--font-display); color: var(--text-dark); font-size: var(--step-2); margin: var(--space-6) 0 var(--space-3); }
+.pub-single-body .post-content h3 { font-family: var(--font-display); color: var(--text-dark); font-size: var(--step-1); margin: var(--space-5) 0 var(--space-3); }
+.pub-single-body .post-content a { color: var(--cyan-ink); border-bottom: 1px solid transparent; transition: border-color .2s var(--ease); }
+.pub-single-body .post-content a:hover { border-bottom-color: var(--cyan-ink); }
+.pub-single-body .post-content img { max-width: 100%; height: auto; border-radius: var(--radius); }
 
 /* ---- Responsive ---- */
 @media (max-width: 767.98px) {

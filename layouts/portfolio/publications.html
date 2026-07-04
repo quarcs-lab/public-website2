@@ -32,9 +32,16 @@
 
                 {{ with .Content }}<div class="publications-intro">{{ . }}</div>{{ end }}
 
+                <p class="citation-cta">
+                    <a class="citation-cta-btn" href="{{ "/research/" | relLangURL }}">
+                        Browse the interactive publications library
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </p>
+
                 {{ $pubs := where (where .Site.RegularPages "Section" "research") "Params.type" "post" }}
                 {{ $count := 0 }}
-                <ol class="pub-list">
+                <ol class="citation-list">
                 {{ range $pubs.ByDate.Reverse }}
                     {{ if not (hasPrefix .File.BaseFileName "project2019") }}
                         {{ $count = add $count 1 }}
@@ -43,7 +50,7 @@
                         {{ range $ms }}{{ if and (eq $url "") (or (in (lower .) "publish") (in (lower .) "paper")) }}{{ $url = replaceRE `.*\((https?://[^)]+)\).*` "$1" . }}{{ end }}{{ end }}
                         {{ if eq $url "" }}{{ range $ms }}{{ if and (eq $url "") (in (lower .) "book") }}{{ $url = replaceRE `.*\((https?://[^)]+)\).*` "$1" . }}{{ end }}{{ end }}{{ end }}
                         {{ if eq $url "" }}{{ with index $ms 0 }}{{ $url = replaceRE `.*\((https?://[^)]+)\).*` "$1" . }}{{ end }}{{ end }}
-                        <li class="pub-item">
+                        <li class="citation">
                             {{ with .Params.author }}{{ . }} {{ end }}({{ .Date.Format "2006" }}). {{ .Title }}.
                             {{ with .Params.tags }}<em>{{ index . 0 }}</em>. {{ end }}
                             {{ with $url }}<a href="{{ . }}" target="_blank" rel="noopener">[Published version]</a>{{ end }}
@@ -51,26 +58,12 @@
                     {{ end }}
                 {{ end }}
                 </ol>
-                <p class="pub-total">{{ $count }} publications.</p>
+                <p class="citation-total">{{ $count }} publications.</p>
 
             </div>
         </div>
     </div>
 </section>
-
-<style>
-.research-programs-block h3,.publications-intro h3{margin-top:1.6rem;}
-.research-programs{padding-left:1.2rem;margin:.8rem 0 1.6rem;}
-.research-programs li{margin-bottom:.6rem;line-height:1.5;color:#3a3a3a;}
-.research-programs strong{color:#2a2a2a;}
-.publications-intro{margin-bottom:2rem;}
-.pub-list{padding-left:1.4rem;margin:1rem 0 1.5rem;}
-.pub-item{margin-bottom:1rem;line-height:1.5;color:#3a3a3a;}
-.pub-item em{color:#555;}
-.pub-item a{color:#02bdd5;white-space:nowrap;}
-.pub-item a:hover{color:#f8563f;}
-.pub-total{color:#888;font-size:.9rem;}
-</style>
 
 {{ partial "cta.html" . }}
 

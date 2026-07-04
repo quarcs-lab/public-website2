@@ -7,6 +7,11 @@ caption: Find out more
 image: images/portfolio/book-cover-mendez2020.jpg
 category: ["book"]
 liveLink: 
+# Keep the book's own page (/portfolio/book-mendez2020/) but drop it from the
+# homepage Activities loop (which ranges .Site.RegularPages "Type" "portfolio").
+_build:
+  render: always
+  list: never
 
 
 ---

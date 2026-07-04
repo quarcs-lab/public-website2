@@ -18,7 +18,7 @@ this file is just the rules and pointers, not a duplicate.
 ## Golden rules
 
 1. **Never edit `themes/timer-hugo/**` to customize.** Shadow the file from the project root
-   instead. Current overrides: `layouts/partials/{head,footer,banner,team,team-card}.html`,
+   instead. Current overrides: `layouts/partials/{head,footer,banner,team,team-card,portfolio}.html`,
    `layouts/people/list.html`, `layouts/research/list.html`, `layouts/portfolio/resources.html`,
    `assets/css/custom.css`, `assets/js/custom.js`. (Theme copies still exist but are ignored —
    edit the root ones.)

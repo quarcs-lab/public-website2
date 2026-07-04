@@ -1,0 +1,36 @@
+{{/* Research Areas section — five cards mirroring the Research methods (#feature) layout.
+     Card content (title/description/icon) is read from data/research-projects.yml so the
+     hero keywords (config.toml), the /portfolio/research-projects/ page, and this homepage
+     section stay in sync from a single source. The section title/subtitle below are
+     homepage-specific framing copy; the data file's own title/intro drive the detail page. */}}
+{{ $data := index .Site.Data "research-projects" }}
+{{ if $data.enable }}
+{{ "<!-- Research Areas Section Start -->" | safeHTML }}
+<section id="research-areas">
+    <div class="container">
+        <div class="section-heading">
+            <h1 class="title wow fadeInDown" data-wow-delay=".3s">Research Areas</h1>
+            <p class="wow fadeInDown" data-wow-delay=".5s">Five connected research lines in Quantitative Regional and Computational Science.</p>
+        </div>
+        <div class="row">
+            {{ range $index, $item := $data.items }}
+            <div class="col-sm-6 col-lg-4">
+                {{ $delay := mul (add $index 1) 300 }}
+                <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="{{ $delay }}ms">
+                    <div class="media-left">
+                        <div class="icon">
+                            {{ with $item.icon }}<i class="{{ . }}"></i>{{ end }}
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        {{ with $item.title }}<h4 class="media-heading">{{ . }}</h4>{{ end }}
+                        {{ with $item.description }}<p>{{ . }}</p>{{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ "<!-- Research Areas Section End -->" | safeHTML }}
+{{ end }}

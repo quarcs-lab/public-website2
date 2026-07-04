@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+{{ partial "banner.html" . }}
+
+{{ partial "about.html" . }}
+
+{{/* Research Areas — the five hero keywords, explained (data/research-projects.yml) */}}
+{{ partial "research-areas.html" . }}
+
+{{/* Research methods */}}
+{{ partial "feature.html" . }}
+
+{{/* Activities — now sits below the two research sections */}}
+{{ partial "portfolio.html" . }}
+
+{{ partial "cta.html" . }}
+
+{{ end }}

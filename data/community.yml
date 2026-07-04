@@ -1,0 +1,69 @@
+# Drives /portfolio/learning-community/ via layouts/portfolio/explainer.html
+# (content/portfolio/learning-community.md sets `layout: explainer` + `dataKey: community`).
+# Copy is drawn ONLY from existing site material — the learning-community blurb in
+# content/portfolio/learning-community.md, the network's research fields, and the
+# SDSN note (config.toml [params.about]). No member counts or dates are invented.
+enable  : true
+eyebrow : Community
+title   : The QuaRCS-network learning community
+subtitle: >
+   A friendly place to learn econometrics, spatial data science, and machine
+   learning — together, on Discord.
+
+lede: >
+   We've set up an online learning community, accessible via Discord, that provides a
+   friendly environment to learn econometrics, spatial data science, and machine learning.
+   It's an open space to ask questions, share resources, and learn alongside the
+   QuaRCS-network research community — part of the UN Sustainable Development Solutions
+   Network (SDSN).
+
+sections:
+ - heading: What you'll find
+   items:
+    - icon        : ion-chatbubbles
+      title       : A friendly place to learn
+      description : >
+         An open, welcoming environment to learn econometrics, spatial data science,
+         and machine learning.
+
+    - icon        : ion-ios-help-outline
+      title       : Ask questions
+      description : >
+         Bring the problem you're stuck on — get help and talk through ideas with others
+         working on the same topics.
+
+    - icon        : ion-ios-people-outline
+      title       : Learn together
+      description : >
+         Study alongside a community of researchers, students, and practitioners across
+         the network's fields.
+
+    - icon        : ion-ios-book-outline
+      title       : Share resources
+      description : >
+         Swap datasets, tutorials, tools, and readings on quantitative regional and
+         computational science.
+
+steps:
+   heading: How to join
+   items:
+    - title       : Open the invite
+      description : >
+         Follow the Discord invite to the QuaRCS-network learning community.
+
+    - title       : Introduce yourself
+      description : >
+         Say hello and tell the community what you're working on or hoping to learn.
+
+    - title       : Start learning
+      description : >
+         Jump into the topics that interest you — econometrics, spatial data science,
+         or machine learning.
+
+cta:
+   heading: Join the community on Discord
+   note   : >
+      It's free and open — come learn with us.
+   label  : Join on Discord
+   url    : https://discord.gg/pfEmxwSEHy
+   icon   : ion-chatbubbles

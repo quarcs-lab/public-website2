@@ -1,0 +1,69 @@
+# Drives /portfolio/webinars/ via layouts/portfolio/explainer.html
+# (content/portfolio/webinars.md sets `layout: explainer` + `dataKey: events`).
+# Copy is drawn ONLY from existing site material — the webinar blurb in
+# content/portfolio/webinars.md, the network's research themes
+# (data/research-projects.yml), and the SDSN note (config.toml [params.about]).
+# No cadence, dates, or counts are invented.
+enable  : true
+eyebrow : Events
+title   : The QuaRCS-network webinar series
+subtitle: >
+   A global platform to present and discuss research on spatial data science,
+   econometrics, and regional development.
+
+lede: >
+   The QuaRCS-network webinar series provides a platform for researchers around the
+   world to present and discuss their research on spatial data science, econometrics,
+   and regional development. Each session gives a researcher the floor to share their
+   work and open it up for discussion with peers across the network — part of the UN
+   Sustainable Development Solutions Network (SDSN).
+
+sections:
+ - heading: What to expect
+   items:
+    - icon        : ion-ios-videocam-outline
+      title       : Research talks
+      description : >
+         Researchers from around the world present their work on spatial data science,
+         econometrics, and regional development.
+
+    - icon        : ion-ios-chatboxes-outline
+      title       : Discussion, not just slides
+      description : >
+         Every session leaves room to ask questions and exchange ideas directly with
+         the presenter and the rest of the audience.
+
+    - icon        : ion-ios-world-outline
+      title       : A worldwide platform
+      description : >
+         The series connects a global research community working on quantitative
+         regional and computational science.
+
+    - icon        : ion-ios-analytics-outline
+      title       : Across the research lines
+      description : >
+         Talks range across the network's themes — from the geography of development to
+         regional growth, structural change, and spatial energy economics.
+
+steps:
+   heading: How to join
+   items:
+    - title       : Register on Luma
+      description : >
+         Sign up on the QuaRCS-network Luma page to see upcoming talks and reserve your spot.
+
+    - title       : Get the joining link
+      description : >
+         You'll receive the link to join each session you register for.
+
+    - title       : Join the conversation
+      description : >
+         Attend the talk, ask your questions, and connect with researchers from around the world.
+
+cta:
+   heading: Present or attend — join us on Luma
+   note   : >
+      Register on Luma to see upcoming talks and take part in the series.
+   label  : Register on Luma
+   url    : https://lu.ma/quarcs
+   icon   : ion-ios-calendar-outline

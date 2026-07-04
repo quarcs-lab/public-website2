@@ -1167,3 +1167,128 @@ figure figcaption p { color: var(--muted); }
   .resource-card, .resource-arrow, .research-input, .research-reset, .resource-title a { transition: none; }
   .resource-card:hover { transform: none; }
 }
+
+/* ============================================================================
+   Explainer pages — Events & Community
+   /portfolio/webinars/  +  /portfolio/learning-community/
+   → layouts/portfolio/explainer.html + data/{events,community}.yml
+   Reuses .project-grid/.project-card, .projects-intro/.projects-heading,
+   .global-page-header, and the #call-to-action band. New bits only below.
+   ========================================================================== */
+
+/* Eyebrow kicker on the dark interior header (bright cyan reads on dark) */
+.global-page-header .page-eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin: 0 0 12px;
+}
+
+/* One-line lead under the header title (on dark) */
+.page-hero-lead {
+  max-width: 60rem;
+  margin: 14px 0 0;
+  color: var(--text-dim);
+  font-size: 1.12rem;
+  line-height: 1.6;
+}
+
+/* Body rhythm (mirrors the research-projects page) */
+.explainer-body { padding: 60px 0 24px; }
+.explainer-body .projects-heading { margin-top: 2.6rem; }
+
+/* "How to join" numbered steps */
+.explainer-steps { margin-top: 3rem; }
+.steps {
+  list-style: none;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.4rem;
+}
+.step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.4rem 1.4rem 1.3rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: transform .2s var(--ease), box-shadow .2s var(--ease), border-color .2s var(--ease);
+}
+.step:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
+.step-num {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--cyan-600), var(--cyan));
+  box-shadow: 0 6px 16px rgba(6, 182, 212, .3);
+}
+.step-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  margin: .15rem 0 .4rem;
+}
+.step-desc { color: var(--muted); font-size: .95rem; line-height: 1.6; margin: 0; }
+
+/* Prominent filled CTA button inside the #call-to-action band
+   (the theme's .btn-contact is an amber outline; this is the primary action) */
+#call-to-action .btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: linear-gradient(135deg, var(--cyan-600), var(--cyan));
+  color: var(--ink);
+  border: none;
+  font-weight: 700;
+  letter-spacing: .06em;
+  padding: 16px 34px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-glow);
+  transition: box-shadow .25s var(--ease), transform .25s var(--ease);
+}
+#call-to-action .btn-cta:hover {
+  color: var(--ink);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(6, 182, 212, .5);
+}
+#call-to-action .btn-cta i { font-size: 1.15em; line-height: 1; }
+
+/* Primary + optional secondary CTA button row (GitHub uses both) */
+#call-to-action .cta-actions {
+  display: flex;
+  gap: 1rem 1.2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1.7rem;
+}
+#call-to-action .cta-actions .btn { margin: 0; }
+/* Outline secondary button — height matched to the filled primary (border-box) */
+#call-to-action .cta-actions .btn-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 14px 30px;
+}
+#call-to-action .cta-actions .btn-contact i { font-size: 1.15em; line-height: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .step, #call-to-action .btn-cta { transition: none; }
+  .step:hover, #call-to-action .btn-cta:hover { transform: none; }
+}

@@ -1,0 +1,71 @@
+# Drives /portfolio/github/ via layouts/portfolio/explainer.html
+# (content/portfolio/github.md sets `layout: explainer` + `dataKey: github`).
+# Encourages open collaboration via the network's public repository and
+# GitHub Discussions. Repo:  https://github.com/quarcs-lab/public-website2
+# Discussion: https://github.com/quarcs-lab/public-website2/discussions/1
+enable  : true
+eyebrow : GitHub
+title   : Build with us on GitHub
+subtitle: >
+   Explore the code, suggest improvements, and join the conversation —
+   the network works in the open.
+
+lede: >
+   The QuaRCS network builds and shares its work in the open on GitHub. The source of
+   this website — along with the network's open materials — lives in a public repository
+   you're welcome to explore, reuse, and improve. Have a question or an idea? Start or
+   join a thread in GitHub Discussions and connect with the community.
+
+sections:
+ - heading: Ways to take part
+   items:
+    - icon        : ion-code
+      title       : Browse the code
+      description : >
+         Explore the source of the network's website and open materials — all public
+         and free to read, reuse, and adapt.
+
+    - icon        : ion-chatbubbles
+      title       : Join the discussion
+      description : >
+         Ask questions, share ideas, and connect with the community in GitHub Discussions.
+
+    - icon        : ion-ios-lightbulb-outline
+      title       : Report issues & ideas
+      description : >
+         Spotted a problem or have a suggestion? Open an issue and help us make the
+         network's work better.
+
+    - icon        : ion-pull-request
+      title       : Contribute
+      description : >
+         Fork the repository, make your changes, and open a pull request —
+         contributions are welcome.
+
+steps:
+   heading: How to get started
+   items:
+    - title       : Open the repository
+      description : >
+         Head to the QuaRCS-network repository on GitHub to browse the code and materials.
+
+    - title       : Join the discussion
+      description : >
+         Introduce yourself and share what you're working on in GitHub Discussions.
+
+    - title       : Contribute
+      description : >
+         Star the repository to follow along, open an issue, or propose a change with a
+         pull request.
+
+cta:
+   heading: Get involved on GitHub
+   note   : >
+      Open the code, suggest improvements, or start a conversation — we build in the open.
+   label  : Join the discussion
+   url    : https://github.com/quarcs-lab/public-website2/discussions/1
+   icon   : ion-chatbubbles
+   secondary:
+      label : View the repository
+      url   : https://github.com/quarcs-lab/public-website2
+      icon  : ion-social-github

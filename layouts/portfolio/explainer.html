@@ -1,0 +1,84 @@
+{{ define "main" }}
+{{/* Data-driven explainer page (Events, Community). Copy lives in the data file
+     named by front-matter `dataKey`; see data/events.yml and data/community.yml.
+     Modeled on layouts/portfolio/projects.html. */}}
+{{ $data := index .Site.Data .Params.dataKey }}
+
+{{ "<!-- Page Header -->" | safeHTML }}
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    {{ with $data.eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+                    <h2>{{ with $data.title }}{{ . }}{{ else }}{{ $.Title }}{{ end }}</h2>
+                    {{ with $data.subtitle }}<p class="page-hero-lead">{{ . }}</p>{{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="single-post explainer-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                {{ with $data.lede }}<p class="projects-intro">{{ . }}</p>{{ end }}
+
+                {{ range $data.sections }}
+                {{ with .heading }}<h3 class="projects-heading">{{ . }}</h3>{{ end }}
+                <div class="project-grid">
+                    {{ range $index, $item := .items }}
+                    <article class="project-card wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul (mod $index 3) 90 }}ms">
+                        {{ with $item.icon }}<div class="project-icon"><i class="{{ . }}"></i></div>{{ end }}
+                        {{ with $item.title }}<h3 class="project-title">{{ . }}</h3>{{ end }}
+                        {{ with $item.description }}<p class="project-desc">{{ . }}</p>{{ end }}
+                    </article>
+                    {{ end }}
+                </div>
+                {{ end }}
+
+                {{ with $data.steps }}
+                <div class="explainer-steps">
+                    {{ with .heading }}<h3 class="projects-heading">{{ . }}</h3>{{ end }}
+                    <ol class="steps">
+                        {{ range $i, $step := .items }}
+                        <li class="step wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul $i 90 }}ms">
+                            <span class="step-num">{{ add $i 1 }}</span>
+                            <div class="step-body">
+                                {{ with $step.title }}<h4 class="step-title">{{ . }}</h4>{{ end }}
+                                {{ with $step.description }}<p class="step-desc">{{ . }}</p>{{ end }}
+                            </div>
+                        </li>
+                        {{ end }}
+                    </ol>
+                </div>
+                {{ end }}
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ with $data.cta }}
+{{ "<!-- Page-specific CTA band (reuses #call-to-action styling) -->" | safeHTML }}
+<section id="call-to-action" class="explainer-cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    {{ with .heading }}<h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">{{ . }}</h2>{{ end }}
+                    {{ with .note }}<p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">{{ . }}</p>{{ end }}
+                    <div class="cta-actions">
+                        <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-cta wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">{{ with .icon }}<i class="{{ . }}"></i> {{ end }}{{ .label }}</a>
+                        {{ with .secondary }}<a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".85s" data-wow-duration="500ms">{{ with .icon }}<i class="{{ . }}"></i> {{ end }}{{ .label }}</a>{{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{ end }}

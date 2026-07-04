@@ -1406,7 +1406,7 @@ figure figcaption p { color: var(--muted); }
 .resources-hero .block { position: relative; z-index: 1; }
 .resources-hero-intro {
   max-width: var(--measure);
-  margin: 16px 0 0;
+  margin: 16px auto 0;
   color: var(--text-dim);
   font-size: 1.12rem;
   line-height: 1.6;
@@ -1414,6 +1414,7 @@ figure figcaption p { color: var(--muted); }
 .resources-stats {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   margin-top: 28px;
 }
@@ -1692,7 +1693,7 @@ figure figcaption p { color: var(--muted); }
 /* One-line lead under the header title (on dark) */
 .page-hero-lead {
   max-width: var(--measure);
-  margin: 14px 0 0;
+  margin: 14px auto 0;
   color: var(--text-dim);
   font-size: 1.12rem;
   line-height: 1.6;

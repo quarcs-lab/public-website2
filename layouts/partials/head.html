@@ -7,12 +7,42 @@
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
+  {{ "<!-- SEO: canonical + Open Graph + Twitter Card. og:image falls back page image -> site ogImage -> hero. -->" | safeHTML }}
+  {{ $desc := "" }}{{ with .Description }}{{ $desc = . }}{{ else }}{{ $desc = .Site.Params.description }}{{ end }}
+  {{ $ogtitle := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Title) }}
+  {{ $ogimg := .Params.image | default .Site.Params.ogImage | default .Site.Params.banner.bgImage }}
+  {{ $ogurl := "" }}{{ with $ogimg }}{{ $r := resources.Get . }}{{ if $r }}{{ $ogurl = $r.Permalink }}{{ else }}{{ $ogurl = . | absURL }}{{ end }}{{ end }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ $ogtitle }}">
+  <meta property="og:description" content="{{ $desc }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ with $ogurl }}<meta property="og:image" content="{{ . }}">{{ end }}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $ogtitle }}">
+  <meta name="twitter:description" content="{{ $desc }}">
+  {{ with $ogurl }}<meta name="twitter:image" content="{{ . }}">{{ end }}
+  {{ if .IsHome }}
+  {{ "<!-- Structured data: Organization + WebSite (built as a dict, jsonify'd once to avoid double-encoding) -->" | safeHTML }}
+  {{ $sameas := slice }}
+  {{ with .Site.Params.links.github }}{{ $sameas = $sameas | append . }}{{ end }}
+  {{ with .Site.Params.links.discord }}{{ $sameas = $sameas | append . }}{{ end }}
+  {{ with .Site.Params.links.luma }}{{ $sameas = $sameas | append . }}{{ end }}
+  {{ $base := .Site.BaseURL }}
+  {{ $org := dict "@type" "Organization" "@id" (printf "%s#organization" $base) "name" .Site.Title "url" $base "logo" (absURL "images/logo.png") "description" .Site.Params.description "sameAs" $sameas }}
+  {{ $web := dict "@type" "WebSite" "@id" (printf "%s#website" $base) "url" $base "name" .Site.Title "publisher" (dict "@id" (printf "%s#organization" $base)) }}
+  {{ $ld := dict "@context" "https://schema.org" "@graph" (slice $org $web) }}
+  <script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+  {{ end }}
+
   {{ "<!-- Mobile Specific Metas -->" | safeHTML }}
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <link rel="icon" href="{{ "images/favicon.ico" | absURL }}" sizes="any">
   <link rel="icon" type="image/svg+xml" href="{{ "images/favicon.svg" | absURL }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "images/favicon-32.png" | absURL }}">
   <link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | absURL }}">
 
   {{ "<!-- Google Fonts: Space Grotesk (display) + Inter (body); loaded non-render-blocking with a fallback stack -->" | safeHTML }}
@@ -36,7 +66,7 @@
   {{ "<!-- hover -->" | safeHTML }}
   <link rel="stylesheet" href="{{ "plugins/hover/hover-min.css" | absURL }}">
   {{ "<!-- template main css file -->" | safeHTML }}
-  {{ $styles := resources.Get "css/style.css" | minify}}
+  {{ $styles := resources.Get "css/style.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
   {{ "<!-- custom modern refresh (loaded last so it wins the cascade) -->" | safeHTML }}
   {{ $custom := resources.Get "css/custom.css" | minify | fingerprint }}

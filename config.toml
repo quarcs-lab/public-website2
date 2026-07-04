@@ -43,6 +43,8 @@ dateFormat = "6 January 2006"
 # Meta data
 description = "The QuaRCS Network: interdisciplinary science and innovation for economic, social, and environmental sustainability — using spatial data science, machine learning, remote sensing, and economics."
 author = "QuaRCS-lab Network"
+# Default social-share/Open Graph image (per-page `image:` overrides this in head.html)
+ogImage = "images/slider7-hires.jpg"
 # Google Analytics — set a real GA tracking ID here to enable analytics
 googleAnalitycsID = ""
 # contact form action
@@ -98,16 +100,3 @@ btnText = "JOIN US"
 enable  = true
 title   = "Activities"
 subtitle= ""
-
-# social icon
-[[params.socialIcon]]
-icon = "ion-social-facebook"
-url = "https://discord.gg/pfEmxwSEHy"
-
-#[[params.socialIcon]]
-#icon = "ion-social-instagram"
-#url = "#"
-
-#[[params.socialIcon]]
-#icon = "ion-social-linkedin"
-#url = "#"

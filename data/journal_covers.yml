@@ -1,0 +1,40 @@
+# Journal cover images (data-driven card thumbnails). Generated; see scratchpad/download-covers.js + patch-covers.js.
+# Maps exact journal name (front-matter tags[0]) -> file under static/images/.
+covers:
+  "Applied Economics": journals/applied-economics.jpg
+  "Applied Economics Letters": journals/applied-economics-letters.jpg
+  "Asia-Pacific Journal of Regional Science": journals/asia-pacific-journal-of-regional-science.jpg
+  "Asian Development Review": journals/asian-development-review.jpg
+  "Bulletin of Indonesian Economic Studies": journals/bulletin-of-indonesian-economic-studies.jpg
+  "China Economic Review": journals/china-economic-review.jpg
+  "Comparative Economic Studies": journals/comparative-economic-studies.jpg
+  "Discover Public Health": journals/discover-public-health.jpg
+  "Economic Modelling": journals/economic-modelling.jpg
+  "Economic Papers": journals/economic-papers.jpg
+  "Empirical Economics": journals/empirical-economics.jpg
+  "Energy Economics": journals/energy-economics.jpg
+  "Geocarto International": journals/geocarto-international.jpg
+  "GeoJournal": journals/geojournal.jpg
+  "Growth and Change": journals/growth-and-change.jpg
+  "Journal of Aging & Social Policy": journals/journal-of-aging-social-policy.jpg
+  "Journal of Asian Economics": journals/journal-of-asian-economics.jpg
+  "Journal of Economic Structures": journals/journal-of-economic-structures.jpg
+  "Journal of Forecasting": journals/journal-of-forecasting.jpg
+  "Journal of the Asia Pacific Economy": journals/journal-of-the-asia-pacific-economy.jpg
+  "Latin American Journal of Central Banking": journals/latin-american-journal-of-central-banking.jpg
+  "Latin American Journal of Economic Development": journals/latin-american-journal-of-economic-development.jpg
+  "Letters in Spatial and Resource Sciences": journals/letters-in-spatial-and-resource-sciences.jpg
+  "Open Economies Review": journals/open-economies-review.jpg
+  "Papers in Regional Science": journals/papers-in-regional-science.jpg
+  "Public Choice": journals/public-choice.jpg
+  "REGION": journals/region.jpg
+  "Regional Science Policy & Practice": journals/regional-science-policy-practice.jpg
+  "Regional Statistics": journals/regional-statistics.jpg
+  "Review of Development Economics": journals/review-of-development-economics.jpg
+  "Revista Latinoamericana de Desarrollo Económico": journals/revista-latinoamericana-de-desarrollo-economico.jpg
+  "Social Indicators Research": journals/social-indicators-research.jpg
+  "Spatial Economic Analysis": journals/spatial-economic-analysis.jpg
+  "Structural Change and Economic Dynamics": journals/structural-change-and-economic-dynamics.jpg
+  "The Annals of Regional Science": journals/the-annals-of-regional-science.jpg
+  "The Journal of International Trade & Economic Development": journals/the-journal-of-international-trade-economic-development.jpg
+  "The Singapore Economic Review": journals/the-singapore-economic-review.jpg

@@ -117,9 +117,13 @@
                    data-date="{{ .Date.Unix }}"
                    data-title="{{ .Title }}"
                    data-search="{{ printf "%s %s %s %s" .Title $author $journal (delimit (.Params.topics | default slice) " ") }}">
+            {{- $cover := "" -}}
+            {{- if eq $type "article" -}}{{- with $.Site.Data.journal_covers -}}{{- $cover = index .covers $journal -}}{{- end -}}{{- end -}}
             <a class="pub-thumb" href="{{ .Permalink }}" tabindex="-1" aria-hidden="true">
-              {{ with .Params.image }}
-              <img loading="lazy" src="{{ . | absURL }}" alt="">
+              {{ if $cover }}
+              <img class="pub-cover" loading="lazy" src="{{ (printf "images/%s" $cover) | absURL }}" alt="{{ $journal }} cover">
+              {{ else if and (ne $type "article") .Params.image }}
+              <img loading="lazy" src="{{ .Params.image | absURL }}" alt="">
               {{ else }}
               <span class="pub-thumb-fallback">
                 <span class="pub-thumb-eyebrow">{{ $typeLabel }}</span>

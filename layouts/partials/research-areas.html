@@ -12,22 +12,13 @@
             <h1 class="title wow fadeInDown" data-wow-delay=".3s">Research Areas</h1>
             <p class="wow fadeInDown" data-wow-delay=".5s">Five connected research lines in Quantitative Regional and Computational Science.</p>
         </div>
-        <div class="row">
+        <div class="info-grid">
             {{ range $index, $item := $data.items }}
-            <div class="col-sm-6 col-lg-4">
-                {{ $delay := mul (add $index 1) 300 }}
-                <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="{{ $delay }}ms">
-                    <div class="media-left">
-                        <div class="icon">
-                            {{ with $item.icon }}<i class="{{ . }}"></i>{{ end }}
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        {{ with $item.title }}<h4 class="media-heading">{{ . }}</h4>{{ end }}
-                        {{ with $item.description }}<p>{{ . }}</p>{{ end }}
-                    </div>
-                </div>
-            </div>
+            <article class="info-card wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul $index 100 }}ms">
+                <div class="info-icon">{{ with $item.icon }}<i class="{{ . }}"></i>{{ end }}</div>
+                {{ with $item.title }}<h4 class="info-title">{{ . }}</h4>{{ end }}
+                {{ with $item.description }}<p class="info-desc">{{ . }}</p>{{ end }}
+            </article>
             {{ end }}
         </div>
     </div>

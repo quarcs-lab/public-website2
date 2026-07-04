@@ -15,30 +15,28 @@ items:
  - icon        : ion-ios-world-outline
    title       : Sustainable Regional Development
    description : >
-      The quantitative geography of sustainable development — combining satellite remote sensing,
-      spatial econometrics, and spatial machine learning to understand how subnational regions
-      develop sustainably.
+      The quantitative geography of sustainable development — remote sensing, spatial
+      econometrics, and machine learning.
 
  - icon        : ion-ios-location-outline
    title       : The Geography of Development
    description : >
-      Measuring the wealth and inequality of subnations from outer space, using satellite remote
-      sensing to map where development happens and who is being left behind.
+      Mapping the wealth and inequality of subnations from outer space with satellite
+      remote sensing.
 
  - icon        : ion-ios-analytics-outline
    title       : Regional Growth and Inequality
    description : >
-      Regional growth, inequality, and convergence across subnational regions and countries,
-      studied through the lens of spatial econometrics and machine learning.
+      Growth, inequality, and convergence across regions and countries through spatial
+      econometrics and machine learning.
 
  - icon        : ion-shuffle
    title       : Spatial Structural Change
    description : >
-      Modeling the wealth and inequality of subnations through spatial spillovers and spatial
-      heterogeneity, and identifying development clusters with spatial machine learning.
+      Modeling subnational wealth through spatial spillovers and finding development
+      clusters with machine learning.
 
  - icon        : ion-ios-bolt-outline
    title       : Spatial Energy Economics
    description : >
-      The spatial dimensions of energy access, poverty, and the low-carbon transition —
-      linking regional energy dynamics to sustainable development.
+      The spatial dimensions of energy access, poverty, and the low-carbon transition.

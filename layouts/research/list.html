@@ -3,8 +3,7 @@
 {{- $groups := .Pages.GroupByDate "2006" -}}
 {{- $total := len .Pages -}}
 {{- $books := len (where .Pages "Params.pubtype" "book") -}}
-{{- $working := len (where .Pages "Params.pubtype" "working") -}}
-{{- $articles := sub (sub $total $books) $working -}}
+{{- $articles := sub $total $books -}}
 
 {{- /* Distinct topics + journals for the filter dropdowns, and the chart max. */ -}}
 {{- $topics := slice -}}
@@ -26,13 +25,12 @@
       <div class="col-md-12">
         <div class="block">
           <p class="page-eyebrow">Research outcomes</p>
-          <h2>Publications &amp; working papers</h2>
-          <p class="page-hero-lead">Peer-reviewed articles, books, and working papers from the QuaRCS Network — advancing interdisciplinary science for economic, social, and environmental sustainability through spatial econometrics, machine learning, remote sensing, and regional development. Search, filter by topic or journal, and explore the record year by year.</p>
+          <h2>Publications</h2>
+          <p class="page-hero-lead">Peer-reviewed articles and books from the QuaRCS Network — advancing interdisciplinary science for economic, social, and environmental sustainability through spatial econometrics, machine learning, remote sensing, and regional development. Search, filter by topic or journal, and explore the record year by year.</p>
           <div class="resources-stats pub-stats">
             <div class="rstat rstat--total"><span class="rstat-num" data-count="{{ $total }}">{{ $total }}</span><span class="rstat-label">Publications</span></div>
             <div class="rstat" data-pub="article"><span class="rstat-num" data-count="{{ $articles }}">{{ $articles }}</span><span class="rstat-label">Journal articles</span></div>
             <div class="rstat" data-pub="book"><span class="rstat-num" data-count="{{ $books }}">{{ $books }}</span><span class="rstat-label">Books &amp; chapters</span></div>
-            <div class="rstat" data-pub="working"><span class="rstat-num" data-count="{{ $working }}">{{ $working }}</span><span class="rstat-label">Working papers</span></div>
             <div class="rstat" data-pub="journals"><span class="rstat-num" data-count="{{ len $journals }}">{{ len $journals }}</span><span class="rstat-label">Journals</span></div>
           </div>
         </div>
@@ -65,7 +63,6 @@
               <option value="">All types</option>
               <option value="article">Journal articles</option>
               <option value="book">Books &amp; chapters</option>
-              <option value="working">Working papers</option>
             </select>
             <select id="research-sort" class="research-input" aria-label="Sort">
               <option value="newest">Newest first</option>
@@ -118,10 +115,11 @@
                    data-title="{{ .Title }}"
                    data-search="{{ printf "%s %s %s %s" .Title $author $journal (delimit (.Params.topics | default slice) " ") }}">
             {{- $cover := "" -}}
-            {{- if eq $type "article" -}}{{- with $.Site.Data.journal_covers -}}{{- $cover = index .covers $journal -}}{{- end -}}{{- end -}}
+            {{- with .Params.cover -}}{{- $cover = . | absURL -}}{{- end -}}
+            {{- if and (not $cover) (eq $type "article") -}}{{- with $.Site.Data.journal_covers -}}{{- with (index .covers $journal) -}}{{- $cover = (printf "images/%s" .) | absURL -}}{{- end -}}{{- end -}}{{- end -}}
             <a class="pub-thumb" href="{{ .Permalink }}" tabindex="-1" aria-hidden="true">
               {{ if $cover }}
-              <img class="pub-cover" loading="lazy" src="{{ (printf "images/%s" $cover) | absURL }}" alt="{{ $journal }} cover">
+              <img class="pub-cover" loading="lazy" src="{{ $cover }}" alt="{{ .Title }}">
               {{ else if and (ne $type "article") .Params.image }}
               <img loading="lazy" src="{{ .Params.image | absURL }}" alt="">
               {{ else }}

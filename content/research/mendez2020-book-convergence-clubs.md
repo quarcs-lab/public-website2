@@ -4,7 +4,7 @@ author: Carlos Mendez
 date: "2020-11-11"
 type: post
 tags: ["Springer Publisher"]
-image: "images/blog/book-cover-mendez2020.jpg"
+image: "images/blog/mendez2020-convergence-clubs-cover.jpg"
 pubtype: "book"
 topics: ["Regional convergence & clubs","Productivity & structural change"]
 links: [{"label":"View book","url":"https://www.springer.com/gp/book/9789811586286"},{"label":"View book","url":"https://www.amazon.co.jp/Convergence-Clubs-Productivity-Proximate-Sources/dp/9811586284/ref=sr_1_1?dchild=1&keywords=%22Convergence+Clubs+in+Labor+Productivity+and+its+Proximate+Sources%22&qid=1599180007&sr=8-1"}]

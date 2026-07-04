@@ -5,6 +5,7 @@ type: post
 date: "2020-11-07"
 tags: ["Economics Bulletin"]
 image: "images/blog/aginta2020-one-price-law-in-indonesia.jpg"
+cover: "images/blog/aginta2020-one-price-law-in-indonesia.jpg"
 topics: ["Money, prices & macro","Regional convergence & clubs"]
 links: [{"label":"Read paper","url":"http://www.accessecon.com/Pubs/EB/2020/Volume40/EB-20-V40-I4-P248.pdf"}]
 ---

@@ -4,6 +4,7 @@ author: Carlos Mendez
 date: "2026-02-01"
 type: post
 tags: ["Book"]
+image: "images/blog/mendez2026-comparative-causal-metrics.jpg"
 pubtype: "book"
 topics: ["Machine learning & data science","Spatial econometrics"]
 links: [{"label":"View book","url":"https://quarcs-lab.github.io/ccm/"}]

@@ -204,7 +204,7 @@ select:focus,
   background: rgba(9, 14, 32, .72);
   -webkit-backdrop-filter: blur(16px) saturate(150%);
   backdrop-filter: blur(16px) saturate(150%);
-  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  border-bottom: 1px solid rgba(46, 214, 238, .14);   /* faint cyan accent once scrolled */
   box-shadow: var(--shadow-nav);
   padding: 10px 0;
   transition: background .3s var(--ease), padding .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
@@ -226,10 +226,11 @@ select:focus,
   .top-bar.animated-header { background: rgba(9, 14, 32, .6); }
 }
 .navbar-brand img {
-  height: 40px;
+  height: 34px;
   width: auto;
-  transition: transform .3s var(--ease);
+  transition: height .3s var(--ease), transform .3s var(--ease);
 }
+.top-bar.animated-header .navbar-brand img { height: 40px; }   /* larger over the hero, shrinks on scroll */
 .navbar-brand:hover img { transform: scale(1.03); }
 
 .navbar .nav-item .nav-link {
@@ -256,11 +257,45 @@ select:focus,
 .navbar .nav-item .nav-link:hover { color: #fff !important; }
 .navbar .nav-item .nav-link:hover::after { transform: scaleX(1); }
 .navbar .nav-item:last-child .nav-link::after { right: 0; }
+/* Active page — persistent underline + full-white label (emitted by the shadowed header.html) */
+.navbar .nav-item .nav-link.active { color: #fff !important; }
+.navbar .nav-item .nav-link.active::after { transform: scaleX(1); }
 
 /* Mobile hamburger → white (theme uses navbar-light's dark icon) */
 .navbar-toggler { border-color: rgba(255, 255, 255, .3); }
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.92%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* …swap to an X while the panel is open */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.92%29' stroke-width='2' stroke-linecap='round' d='M7 7l16 16M7 23L23 7'/%3e%3c/svg%3e");
+}
+
+/* Mobile menu panel (item 24): the expanded collapse otherwise inherits the near-transparent
+   over-hero glass, so give it a near-opaque surface, real 44px tap targets + dividers, and a
+   left accent bar for active/hover (underlines read poorly in a stacked list). */
+@media (max-width: 991.98px) {
+  #navigation {
+    background: rgba(9, 14, 32, .97);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: var(--radius);
+    margin-top: 12px;
+    padding: 6px;
+  }
+  .navbar .nav-item .nav-link {
+    padding: 13px 16px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .navbar .nav-item + .nav-item .nav-link { border-top: 1px solid rgba(255, 255, 255, .06); }
+  .navbar .nav-item .nav-link::after { display: none; }
+  .navbar .nav-item .nav-link.active,
+  .navbar .nav-item .nav-link:hover {
+    background: rgba(46, 214, 238, .10);
+    box-shadow: inset 3px 0 0 var(--cyan);
+    color: #fff !important;
+  }
 }
 
 /* ----------------------------------------------------------------- Hero */
@@ -726,8 +761,10 @@ figure figcaption p { color: var(--muted); }
   background-attachment: initial;
   position: relative;
   overflow: hidden;
-  padding: 150px 0 55px;
+  padding: 150px 0 var(--space-7);
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
 }
+/* Every interior header shares the same cyan (top-left) + amber (top-right) wash */
 .global-page-header::before {
   content: '';
   position: absolute;
@@ -735,12 +772,25 @@ figure figcaption p { color: var(--muted); }
   background: radial-gradient(800px 380px at 15% 10%, rgba(46, 214, 238, .18), transparent 60%);
   pointer-events: none;
 }
+.global-page-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(760px 360px at 85% 15%, var(--amber-050), transparent 60%);
+  pointer-events: none;
+}
+.global-page-header .block { position: relative; z-index: 1; }   /* keep content above both washes */
 .global-page-header h2 {
   font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: -.01em;
   position: relative;
 }
+/* Consistent Home / Title breadcrumb (shared page-header.html) */
+.global-page-header .page-breadcrumb { margin-top: var(--space-4); font-size: var(--step--1); color: rgba(255, 255, 255, .7); }
+.global-page-header .page-breadcrumb a { color: rgba(255, 255, 255, .78); }
+.global-page-header .page-breadcrumb a:hover { color: var(--cyan); }
+.global-page-header .page-breadcrumb-sep { margin: 0 .5rem; opacity: .5; }
 .global-page-header .breadcrumb .active,
 .global-page-header .breadcrumb li a { color: rgba(255, 255, 255, .78); }
 .global-page-header .breadcrumb li a:hover { color: var(--cyan); }
@@ -1011,13 +1061,63 @@ figure figcaption p { color: var(--muted); }
 #contact-section textarea { border-radius: var(--radius-sm); }
 
 /* ---------------------------------------------------------- Footer */
-#footer { background: var(--ink); color: rgba(238, 242, 251, .7); padding: 34px 0; }
-/* The global `p { color: var(--muted) }` (light-context gray) would otherwise beat the
-   footer's inherited light color on this dark background — restore legible text. */
-#footer .copyright { color: rgba(238, 242, 251, .72); }
-#footer .copyright a { color: var(--cyan); }
-#footer .social li a { color: var(--text-dim); transition: color .25s var(--ease); }
-#footer .social li a:hover { color: var(--cyan); }
+#footer {
+  position: relative;
+  background: var(--ink);
+  color: var(--text-dim);
+  padding: var(--space-8) 0 var(--space-6);
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
+#footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyan-600), var(--amber));   /* echoes the card accents */
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--space-7);
+  align-items: start;
+}
+.footer-brand .footer-logo img { height: 34px; width: auto; margin-bottom: var(--space-4); }
+.footer-tagline { color: var(--text-dim); font-size: var(--step--1); line-height: 1.6; max-width: 44ch; margin: 0 0 var(--space-3); }
+.footer-affil { color: rgba(238, 242, 251, .55); font-size: var(--step--1); margin: 0; }
+.footer-col-title {
+  font-family: var(--font-display);
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin: 0 0 var(--space-4);
+}
+.footer-col ul { list-style: none; margin: 0; padding: 0; }
+.footer-col li { margin: 0 0 var(--space-3); }
+.footer-col a { color: var(--text-dim); font-size: var(--step-0); transition: color .25s var(--ease); }
+.footer-col a:hover { color: var(--cyan); }
+.footer-social a { display: inline-flex; align-items: center; gap: .55rem; }
+.footer-social i { font-size: 1.15em; color: var(--cyan); }
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-5);
+  margin-top: var(--space-7);
+  padding-top: var(--space-5);
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
+/* The global `p { color: var(--muted) }` would beat the footer's light text on this dark
+   background — restore legible colours. */
+#footer .copyright { color: rgba(238, 242, 251, .72); margin: 0; font-size: var(--step--1); }
+.footer-credit { color: rgba(238, 242, 251, .55); margin: 0; font-size: var(--step--1); }
+.footer-credit a { color: var(--text-dim); }
+.footer-credit a:hover { color: var(--cyan); }
+@media (max-width: 767.98px) {
+  .footer-grid { grid-template-columns: 1fr; gap: var(--space-6); }
+  .footer-bottom { flex-direction: column; gap: var(--space-2); }
+}
 
 /* =====================================================  Motion / reveals */
 /* Smoother, more consistent WOW / animate.css feel */

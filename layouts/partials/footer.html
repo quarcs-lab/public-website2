@@ -1,22 +1,39 @@
 {{ "<!-- Footer Section Start -->" | safeHTML }}
 <footer id="footer">
     <div class="container">
-        <div class="row content-justify-between">
-            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
-                <p class="copyright">&copy;
-                    <span>
-                        <script>document.write(new Date().getFullYear())</script>
-                    </span> {{ .Site.Title }}. All rights reserved.
-                </p>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a class="footer-logo" href="{{ .Site.BaseURL }}" aria-label="{{ .Site.Title }} home">
+                    <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}">
+                </a>
+                <p class="footer-tagline">Quantitative Regional and Computational Science — mobilizing spatial
+                    data science, machine learning, and satellite remote sensing for sustainable development.</p>
+                <p class="footer-affil">Part of the UN Sustainable Development Solutions Network (SDSN).</p>
             </div>
-            <div class="col-md-4 col-12">
-                {{ "<!-- Social Media -->" | safeHTML }}
-                <ul class="social text-center text-md-right text-lg-right">
-                    {{ range .Site.Params.socialIcon }}
-                    <li><a href="{{ .url | safeURL }}"><i class="{{ .icon }}"></i></a></li>
-                    {{ end }}
+            <nav class="footer-col" aria-label="Explore">
+                <h3 class="footer-col-title">Explore</h3>
+                <ul>
+                    <li><a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a></li>
+                    {{ range .Site.Menus.main }}<li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>{{ end }}
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h3 class="footer-col-title">Community</h3>
+                <ul class="footer-social">
+                    {{ with .Site.Params.links.discord }}<li><a href="{{ . }}" target="_blank" rel="noopener"><i class="ion-chatbubbles"></i><span>Discord</span></a></li>{{ end }}
+                    {{ with .Site.Params.links.github }}<li><a href="{{ . }}" target="_blank" rel="noopener"><i class="ion-social-github"></i><span>GitHub</span></a></li>{{ end }}
+                    {{ with .Site.Params.links.luma }}<li><a href="{{ . }}" target="_blank" rel="noopener"><i class="ion-calendar"></i><span>Events on Luma</span></a></li>{{ end }}
                 </ul>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy;
+                <span><script>document.write(new Date().getFullYear())</script></span>
+                {{ .Site.Title }}. All rights reserved.
+            </p>
+            {{ "<!-- Themefisher theme-license credit — required, do not remove -->" | safeHTML }}
+            <p class="footer-credit">Design and Developed by
+                <a href="https://themefisher.com" target="_blank" rel="noopener">Themefisher</a>.</p>
         </div>
     </div>
 </footer>

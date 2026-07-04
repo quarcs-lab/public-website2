@@ -1,0 +1,39 @@
+{{/* Project override of the theme's header.html (Golden rule 1: shadow, don't edit the theme).
+     Faithful to the theme markup/classes so custom.css keeps skinning it — plus three fixes:
+       1) the theme left the <ul> unclosed before </div>; it is closed here,
+       2) the active nav item now gets .active + aria-current="page",
+       3) Home is active on the homepage. */}}
+{{ $cur := .RelPermalink }}
+<section class="top-bar animated-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="{{ .Site.BaseURL }}">
+						<img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link{{ if .IsHome }} active{{ end }}" href="{{ .Site.BaseURL }}"{{ if .IsHome }} aria-current="page"{{ end }}>{{ .Site.Params.home }}</a>
+							</li>
+							{{ range .Site.Menus.main }}
+							{{ $ext := or (hasPrefix .URL "http") (hasPrefix .URL "//") }}
+							{{ $rel := cond $ext .URL (.URL | relLangURL) }}
+							{{ $active := and (not $ext) (ne $rel "/") (hasPrefix $cur $rel) }}
+							<li class="nav-item">
+								<a class="nav-link{{ if $active }} active{{ end }}" href="{{ .URL | absURL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+							</li>
+							{{ end }}
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>

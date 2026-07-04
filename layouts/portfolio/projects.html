@@ -1,18 +1,7 @@
 {{ define "main" }}
 {{ $data := index .Site.Data "research-projects" }}
 
-{{ "<!-- Page Header -->" | safeHTML }}
-<section class="global-page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="block">
-                    <h2>{{ with $data.title }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{{ partial "page-header.html" (dict "ctx" . "eyebrow" "What we study" "title" (or $data.title .Title)) }}
 
 <section class="single-post">
     <div class="container">

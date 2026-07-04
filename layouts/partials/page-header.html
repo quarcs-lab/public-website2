@@ -1,0 +1,25 @@
+{{/* Shared interior page header (item 26). Call with:
+       {{ partial "page-header.html" (dict "ctx" . "eyebrow" "…" "title" "…" "lead" "…") }}
+     eyebrow / lead / title are all optional; title falls back to the page .Title.
+     Rich pages (/research, /resources, /people, single publication) keep their own
+     bespoke heroes — this is for the otherwise-bare interior headers. */}}
+{{ $ctx := .ctx }}
+{{ $title := .title | default $ctx.Title }}
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    {{ with .eyebrow }}<p class="page-eyebrow">{{ . }}</p>{{ end }}
+                    <h2>{{ $title }}</h2>
+                    {{ with .lead }}<p class="page-hero-lead">{{ . }}</p>{{ end }}
+                    <nav class="page-breadcrumb" aria-label="Breadcrumb">
+                        <a href="{{ $ctx.Site.BaseURL }}">Home</a>
+                        <span class="page-breadcrumb-sep" aria-hidden="true">/</span>
+                        <span aria-current="page">{{ $title }}</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

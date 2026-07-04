@@ -25,6 +25,17 @@
   --emerald: #34d399;        /* dark-bg only */
   --emerald-ink: #0f766e;    /* AA on white */
 
+  /* Warm "Sunrise" accents (hero refresh) — mirror the photo's gold city-lights.
+     Bright golds are DARK-BG only; on white use --amber-ink (already AA ~5.2:1). */
+  --gold: #ffd27a;           /* warm keyword / eyebrow accent on dark */
+  --amber-600: #ff9e42;      /* deep orange-gold — gradient partner */
+  --azure: #57c5ff;          /* softened cool eyebrow (keeps a cool anchor) */
+  --grad-keyword: linear-gradient(92deg, var(--gold), var(--amber-600));   /* hero rotating words */
+  --grad-warm: linear-gradient(135deg, #ffce6a, #ff9e42);         /* primary CTA button */
+  --grad-warm-hover: linear-gradient(135deg, #ffd98a, #ffab52);   /* CTA hover / bounce-fill */
+  --shadow-glow-warm: 0 12px 34px rgba(255, 158, 66, .42);
+  --shadow-glow-warm-strong: 0 18px 46px rgba(255, 158, 66, .55);
+
   /* Accent tints — reused for card chips, topic pills, focus rings, section washes */
   --cyan-050: rgba(6, 182, 212, .08);
   --cyan-100: rgba(6, 182, 212, .18);
@@ -193,8 +204,9 @@ select:focus,
 }
 .btn:hover { transform: translateY(-2px); }
 
-/* Hover.css bounce-fill → recolor to palette so it matches everywhere */
-.hvr-bounce-to-right:before { background: var(--amber) !important; border-radius: inherit; }
+/* Hover.css bounce-fill → brighter warm gradient (only the hero CTA uses this),
+   so the hover reads as the button lightening rather than a colour flip */
+.hvr-bounce-to-right:before { background: var(--grad-warm-hover) !important; border-radius: inherit; }
 .hvr-bounce-to-right:hover { color: var(--ink) !important; }
 
 /* --------------------------------------------------------------- Navbar */
@@ -354,7 +366,7 @@ select:focus,
   font-size: clamp(.78rem, 1.5vw, .95rem);
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--cyan);
+  color: var(--azure);
   padding: 0 0 .5em;
 }
 #hero-area h1 .cd-words-wrapper {
@@ -362,8 +374,20 @@ select:focus,
   font-weight: 700;
   font-size: clamp(2.3rem, 6vw, 4.4rem);
   line-height: 1.08;
-  color: var(--cyan);
+  color: var(--gold);              /* fallback if background-clip:text is unsupported */
   padding: .12em 0;
+}
+/* Sunrise: the rotating words get a warm gold→amber gradient fill. Applied per-<b>
+   (the slide animation absolutely-positions each word) and guarded by @supports, so
+   engines without background-clip:text keep the solid --gold set above. */
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  #hero-area h1 .cd-words-wrapper b {
+    background: var(--grad-keyword);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 
 #hero-area h2 {
@@ -377,10 +401,11 @@ select:focus,
   margin: 22px auto 34px;
 }
 
-/* Primary hero button: bright cyan gradient, dark label */
+/* Primary hero button: warm gold gradient, dark label (Sunrise) — the single
+   warmest, highest-contrast element on the hero so it reads as the primary action */
 #hero-area .btn,
 #hero-area .btn-green {
-  background: linear-gradient(135deg, var(--cyan-600), var(--cyan)) !important;
+  background: var(--grad-warm) !important;
   color: var(--ink) !important;
   border: none;
   font-weight: 700;
@@ -388,9 +413,9 @@ select:focus,
   font-size: 13px;
   letter-spacing: .08em;
   border-radius: var(--radius-pill);
-  box-shadow: var(--shadow-glow);
+  box-shadow: var(--shadow-glow-warm);
 }
-#hero-area .btn:hover { box-shadow: var(--shadow-glow-strong); }
+#hero-area .btn:hover { box-shadow: var(--shadow-glow-warm-strong); }
 
 /* Scroll cue */
 .hero-scroll {
@@ -1273,12 +1298,12 @@ figure figcaption p { color: var(--muted); }
   font-weight: 700;
   letter-spacing: .02em;
   color: var(--ink);
-  background: linear-gradient(135deg, var(--cyan-600), var(--cyan));
+  background: var(--grad-warm);
   border-radius: var(--radius-pill);
-  box-shadow: var(--shadow-glow);
+  box-shadow: var(--shadow-glow-warm);
   transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
 }
-.citation-cta-btn:hover { color: var(--ink); transform: translateY(-2px); box-shadow: var(--shadow-glow-strong); }
+.citation-cta-btn:hover { color: var(--ink); background: var(--grad-warm-hover); transform: translateY(-2px); box-shadow: var(--shadow-glow-warm-strong); }
 .citation-cta-btn svg { transition: transform var(--dur) var(--ease); }
 .citation-cta-btn:hover svg { transform: translateX(3px); }
 
@@ -1364,16 +1389,16 @@ figure figcaption p { color: var(--muted); }
 .error-page p { max-width: 520px; margin: 0 auto 30px; }
 .error-page .btn-home {
   display: inline-block;
-  background: linear-gradient(135deg, var(--cyan-600), var(--cyan));
+  background: var(--grad-warm);
   color: var(--ink);
   border: none;
   font-weight: 700;
   letter-spacing: .06em;
   padding: 14px 32px;
   border-radius: var(--radius-pill);
-  box-shadow: var(--shadow-glow);
+  box-shadow: var(--shadow-glow-warm);
 }
-.error-page .btn-home:hover { color: var(--ink); box-shadow: var(--shadow-glow-strong); }
+.error-page .btn-home:hover { color: var(--ink); background: var(--grad-warm-hover); box-shadow: var(--shadow-glow-warm-strong); }
 
 /* ============================================================================
    Resources page  (/portfolio/data-tutorials/  →  layouts/portfolio/resources.html)
@@ -1762,20 +1787,21 @@ figure figcaption p { color: var(--muted); }
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  background: linear-gradient(135deg, var(--cyan-600), var(--cyan));
+  background: var(--grad-warm);
   color: var(--ink);
   border: none;
   font-weight: 700;
   letter-spacing: .06em;
   padding: 16px 34px;
   border-radius: var(--radius-pill);
-  box-shadow: var(--shadow-glow);
-  transition: box-shadow .25s var(--ease), transform .25s var(--ease);
+  box-shadow: var(--shadow-glow-warm);
+  transition: box-shadow .25s var(--ease), transform .25s var(--ease), background .25s var(--ease);
 }
 #call-to-action .btn-cta:hover {
   color: var(--ink);
+  background: var(--grad-warm-hover);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-glow-strong);
+  box-shadow: var(--shadow-glow-warm-strong);
 }
 #call-to-action .btn-cta i { font-size: 1.15em; line-height: 1; }
 

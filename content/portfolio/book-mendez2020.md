@@ -21,7 +21,7 @@ _build:
 
 ## Convergence clubs in labor productivity and its proximate sources: Evidence from developed and developing countries
 
-![](assets/BookCoverWithPics.jpg)
+![Convergence Clubs in Labor Productivity — book cover](/images/portfolio/book-cover-mendez2020.jpg)
 
 ## About the book
 
@@ -52,10 +52,3 @@ Testing for economic convergence across countries has been a central issue in th
 | [- Explore  the dataset using Python in Deepnote](https://deepnote.com/@Dev-macro/Explore-labor-productivity-data-TvVTPkcdQPiAYlLIfPZG7g)                                     | [Download R dataset of developing countries](https://github.com/quarcs-lab/mendez2020-convergence-clubs-code-data/blob/master/assets/dat_hiYes.zip?raw=true)                                              |
 | [- Explore the dataset using Python in Google Colab](https://colab.research.google.com/github/quarcs-lab/mendez2020-convergence-clubs-code-data/blob/master/assets/dat.ipynb) |                                                                                                                          |
 | [- Explore the dataset using R in R Studio Cloud](https://rstudio.cloud/project/2047179)                                                                                      |                                                                                                                          |
-
-
-
-## Book flyer
-
-
-![Alt text](https://monosnap.com/image/NhHNpO2DJep5bKTgjkpjHiXrJk6ThX)

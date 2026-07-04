@@ -790,28 +790,15 @@ figure figcaption p { color: var(--muted); }
 /* ------------------------------------------------- People / Team */
 #team { margin: 72px 0 96px; }
 
-/* Intro header */
-.team-intro { margin-bottom: 8px; }
-.team-eyebrow {
-  font-family: var(--font-sans);
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-  color: var(--cyan-ink);
-  margin-bottom: 10px;
-}
-#team .team-intro .subtitle { margin-bottom: 14px; }
-.team-lead {
-  color: var(--muted);
-  font-size: 17px;
-  line-height: 1.7;
-  max-width: 720px;
-  margin: 0 auto;
-}
+/* (The team intro/header now lives in the .global-page-header on /people — see
+   layouts/people/list.html. Its former .team-intro/.team-eyebrow/.team-lead CSS is gone.) */
 
 /* Group headings: "Directors" / "Associates" */
-.team-group { margin-top: 52px; }
+.team-group { margin-top: var(--space-8); }
+/* Real gutter between wrapped card rows (replaces the old .team-member margin-top hack) */
+.team-group .row { row-gap: var(--space-6); }
+/* Separate the two rosters with a hairline seam */
+.team-group + .team-group { margin-top: var(--space-7); border-top: 1px solid var(--line); padding-top: var(--space-7); }
 .team-group-title {
   display: flex;
   align-items: center;
@@ -840,7 +827,7 @@ figure figcaption p { color: var(--muted); }
   min-width: 26px; height: 26px;
   padding: 0 8px;
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: var(--step--1);
   font-weight: 600;
   color: var(--cyan-ink);
   background: var(--surface-alt);
@@ -855,7 +842,6 @@ figure figcaption p { color: var(--muted); }
   align-items: center;
   text-align: center;
   height: 100%;
-  margin-top: 26px;
   padding: 30px 20px 24px;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -910,12 +896,12 @@ figure figcaption p { color: var(--muted); }
   font-weight: 600;
   letter-spacing: .07em;
   text-transform: uppercase;
-  color: var(--cyan-ink);
+  color: var(--muted);            /* neutral metadata TAG — not an interactive element */
   background: var(--surface-alt);
   border: 1px solid var(--line);
   border-radius: var(--radius-pill);
 }
-.team-country i { font-size: 13px; line-height: 1; }
+.team-country i { font-size: 13px; line-height: 1; color: var(--cyan-ink); }
 
 /* Role line — clamp to 2 lines */
 .team-member .team_designation {
@@ -1004,15 +990,13 @@ figure figcaption p { color: var(--muted); }
 /* Fast, row-aware reveal — WOW writes inline delays without !important, so this caps duration */
 .team-member.wow { animation-duration: .5s !important; }
 
-/* Responsive columns: 4 desktop · 2 tablet/phone · 1 on the narrowest screens */
+/* Responsive columns (team-card.html): 4 desktop (col-lg-3) · 2 tablet (col-sm-6) ·
+   1 phone (col-12). The reveal stagger resets every 4 to match the desktop row. */
 @media (max-width: 575.98px) {
   .team-member { padding: 24px 14px 20px; }
   .team-member .team-img,
   .team-member .team-img .team-pic { width: 132px; height: 132px; }
   .team-member .team_text { font-size: 13.5px; }
-}
-@media (max-width: 400px) {
-  #team .team-col { flex: 0 0 100%; max-width: 100%; }
 }
 
 /* --------------------------------------------------------- Contact */
@@ -1254,8 +1238,7 @@ figure figcaption p { color: var(--muted); }
   }
 }
 
-/* Team roster: progressive columns — 1-up (narrow phone) · 2-up (phone/large-phone)
-   · 3-up (tablet, via col-md-4 added in team-card.html) · 4-up (desktop, col-lg-3). */
+/* Team roster columns: 1-up (phone, col-12) · 2-up (tablet, col-sm-6) · 4-up (desktop, col-lg-3). */
 
 /* Branded 404 page (layouts/404.html) — centered, on-palette, fully responsive */
 .error-page { padding: 90px 0 96px; text-align: center; }

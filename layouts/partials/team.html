@@ -3,17 +3,8 @@
 <section id="team">
   <div class="container">
 
-    {{/* ---------- Intro header ---------- */}}
-    <div class="row">
-      <div class="col-lg-8 offset-lg-2 text-center team-intro">
-        <p class="team-eyebrow">The QuaRCS network</p>
-        <h2 class="subtitle">Meet the network</h2>
-        <p class="team-lead">QuaRCS-lab is an international, interdisciplinary research network in
-          Quantitative Regional and Computational Science, advancing economic, social, and
-          environmental sustainability through spatial data science, machine learning, remote
-          sensing, and economics. Meet the directors and associates behind the work.</p>
-      </div>
-    </div>
+    {{/* The page intro/header now lives in layouts/people/list.html (.global-page-header)
+         so /people no longer stacks a second intro under the breadcrumb bar. */}}
 
     {{/* ---------- Split the flat roster by ROLE (first sentence only, so an
          associate whose bio mentions "Executive Director" is not miscounted) ---------- */}}

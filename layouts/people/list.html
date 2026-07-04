@@ -1,6 +1,35 @@
 {{ define "main" }}
 
-{{ partial "page-title.html" . }}
+{{/* Roster counts for the header stat row (same first-sentence role split as team.html). */}}
+{{ $members := .Site.Data.team.members }}
+{{ $directors := 0 }}
+{{ range $members }}
+  {{ $role := index (split .designation ".") 0 }}
+  {{ if in (lower $role) "director" }}{{ $directors = add $directors 1 }}{{ end }}
+{{ end }}
+{{ $total := len $members }}
+{{ $assoc := sub $total $directors }}
+
+<section class="global-page-header people-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <p class="page-eyebrow">The QuaRCS network</p>
+          <h2>Meet the network</h2>
+          <p class="page-hero-lead">QuaRCS-lab is an international, interdisciplinary research network in
+            Quantitative Regional and Computational Science, advancing economic, social, and environmental
+            sustainability through spatial data science, machine learning, remote sensing, and economics.</p>
+          <div class="resources-stats">
+            <div class="rstat rstat--total"><span class="rstat-num">{{ $total }}</span><span class="rstat-label">Members</span></div>
+            <div class="rstat"><span class="rstat-num">{{ $directors }}</span><span class="rstat-label">Directors</span></div>
+            <div class="rstat"><span class="rstat-num">{{ $assoc }}</span><span class="rstat-label">Associates</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 {{ partial "team.html" . }}
 

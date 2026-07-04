@@ -2,7 +2,7 @@
      The stagger delay resets every 4 cards (one desktop row) so the whole grid reveals fast. */}}
 {{ $m := .m }}
 {{ $index := .index }}
-<div class="col-lg-3 col-md-4 col-sm-6 col-6 team-col">
+<div class="col-lg-3 col-sm-6 col-12 team-col">
   <article {{ with $m.key }}id="{{ . }}" {{ end }}class="team-member wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul (mod $index 4) 60 }}ms">
 
     {{ with $m.image }}

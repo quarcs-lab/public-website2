@@ -26,10 +26,10 @@ update Y) and run `python3 scripts/check-content.py` before committing.
    `layouts/{404,index}.html`; `layouts/partials/{head,footer,banner,mission,research-areas,feature,
    portfolio,team,team-card,cta,authors-linkify,author-keys}.html`; `layouts/people/list.html`;
    `layouts/research/list.html`; `layouts/post/single.html`;
-   `layouts/portfolio/{explainer,projects,publications,resources}.html`; `assets/css/custom.css`;
+   `layouts/portfolio/{explainer,projects,publications,resources,single}.html`; `assets/css/custom.css`;
    `assets/js/custom.js`. Files with **no theme copy** (new): `mission`, `research-areas`,
-   `team-card`, `authors-linkify`, `author-keys`, and all four `portfolio/*` layouts (`cta.html` is
-   a new *override* of a theme partial). `feature.html`/`research-areas.html` render the shared,
+   `team-card`, `authors-linkify`, `author-keys`, and the `explainer`/`projects`/`publications`/`resources`
+   `portfolio/*` layouts (`cta.html` and `portfolio/single.html` are new *overrides* of theme files). `feature.html`/`research-areas.html` render the shared,
    count-agnostic `.info-grid`/`.info-card` system; `mission.html` is the `#mission` band.
 2. **Load order is load-bearing:** `custom.css` loads after theme `style.css` (in `head.html`)
    and `custom.js` after `script.js` (in `footer.html`). Keep it that way or overrides lose.

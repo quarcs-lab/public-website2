@@ -96,7 +96,7 @@ You don't need this to make content changes, but to preview locally:
 │   └── git-hooks/pre-commit   # Optional hook (git config core.hooksPath scripts/git-hooks)
 │
 ├── content/               # Markdown content, one folder per section
-│   ├── research/          #   81 publication .md files + _index.md  → /research/
+│   ├── research/          #   80 publication .md files + _index.md  → /research/
 │   ├── portfolio/         #   7 pages: all-publications, research-projects, data-tutorials,
 │   │                      #     webinars, learning-community, github, book-mendez2020 (hidden)
 │   ├── people/_index.md   #   People page at /people/; roster from data/team.yml
@@ -138,8 +138,8 @@ Instead, a file placed at the **project root** with the same path *shadows* the 
 |---|---|---|---|
 | `layouts/404.html` | replaces empty theme 404 | Branded 404 page | — |
 | `layouts/index.html` | replaces theme `index.html` | Homepage partial order | its partials |
-| `layouts/partials/head.html` | theme `head.html` | Favicons, Google Fonts; loads `style.css` **then `custom.css` last** | `params` |
-| `layouts/partials/footer.html` | theme `footer.html` | Footer + Themefisher credit; JS order (wow → `script.js` → **`custom.js` last**) | `params.socialIcon` |
+| `layouts/partials/head.html` | theme `head.html` | Favicons, Google Fonts, **SEO/Open Graph/Twitter/canonical + JSON-LD**; loads `style.css` **then `custom.css` last** | `params` |
+| `layouts/partials/footer.html` | theme `footer.html` | Footer + Themefisher credit; JS order (wow → `script.js` → **`custom.js` last**) | `params.links` |
 | `layouts/partials/banner.html` | theme `banner.html` | Cinematic hero; rotating keywords **derived from `research-projects.yml`** | `params.banner` + `research-projects.yml` |
 | `layouts/partials/mission.html` | **new** | Homepage mission band (`#mission`) | hardcoded copy |
 | `layouts/partials/research-areas.html` | **new** | Homepage "Research Areas" info-grid | `research-projects.yml` |
@@ -157,6 +157,7 @@ Instead, a file placed at the **project root** with the same path *shadows* the 
 | `layouts/portfolio/projects.html` | **new** (`layout: projects`) | `/portfolio/research-projects/` | `research-projects.yml` |
 | `layouts/portfolio/publications.html` | **new** (`layout: publications`) | `/portfolio/all-publications/` | `content/research/*` + `research-projects.yml` |
 | `layouts/portfolio/resources.html` | **new** (`layout: resources`) | Resources hub with filters | `resources.yml` |
+| `layouts/portfolio/single.html` | theme `portfolio/single.html` | Portfolio single (only `book-mendez2020`); `<h1>` title, descriptive alt | portfolio front matter |
 | `assets/css/custom.css` | overrides theme `style.css` | The design system (see [Design system](#design-system)) | — |
 | `assets/js/custom.js` | **new** | Hero scroll parallax | — |
 
@@ -195,7 +196,7 @@ it before every commit. **When you change / add X, also update Y:**
 | 7 | Any **`type: portfolio`** page | decide if it should be a homepage Activity card; if not, add **`_build: {list: never}`** | Every portfolio page auto-appears as an Activities card (see `book-mendez2020.md`) | — |
 | 8 | A **`[[menu.main]]`** `url` in `config.toml` | the target content slug/section must exist | Broken nav link (404) | ✅ |
 | 9 | The **hero rotating keywords** | edit the item titles in **`data/research-projects.yml`** (single source) — **not** `config.toml` | The banner *derives* its keywords from that data file; editing config has no effect | — |
-| 10 | A **Discord / GitHub / Luma** URL | the **`[params.links]`** block in `config.toml` (single source) | Templates (`cta.html`, `explainer.html`) read from there. The one URL TOML can't dedupe — `socialIcon` vs `links.discord` — is asserted equal by the checker | ✅ |
+| 10 | A **Discord / GitHub / Luma** URL | the **`[params.links]`** block in `config.toml` (single source) | Templates (`cta.html`, `explainer.html`) and `footer.html` read from there; the checker asserts `links.discord` is set | ✅ |
 | 11 | A team member's **`designation`** | keep the format `"Sentence one. Role, Institution, COUNTRY."` | The **first sentence** must contain "director" for the Directors group; the **trailing ALL-CAPS token** becomes the country pill | ✅ |
 | 12 | A **book cover image** | update **both** copies if the book has one in `static/images/blog/` *and* `static/images/portfolio/` | Cover looks updated on one surface, stale on the other | ✅ (existence) |
 | 13 | A `data/research-projects.yml` item | know it drives **four** surfaces: homepage Research Areas, `/portfolio/research-projects/`, the programs list on `/portfolio/all-publications/`, and the hero keywords | One edit ripples to four places. The card grid is count-agnostic, so add/remove freely | — |
@@ -339,7 +340,7 @@ is only a disabled fallback. The static heading ("We conduct research about") is
 All in `config.toml`: `[params.about].content` (HTML allowed), `[params.cta]`, the `[[menu.main]]`
 entries (each has `name`, `url`, `weight` — lower weight = further left), and **`[params.links]`**
 (the single source for the Discord / GitHub / Luma URLs — coupling #10). The live menu is
-People / Research / Events / Resources / Community / Github / Contact.
+People / Research / Events / Community / Resources / Github / Contact.
 
 ---
 

@@ -23,27 +23,6 @@ topics:
 items:
 
   # ---------------- Datasets ----------------
-  - title  : "Provincial income, convergence clubs and structural change in Indonesia 2001–2017"
-    type   : Dataset
-    topic  : Regional convergence
-    author : "Gunawan & Mendez (2020)"
-    lang   : R
-    url    : "https://rpubs.com/quarcs-lab/data-indonesia-34-provinces-clubs-2001-2017"
-
-  - title  : "Productivity differences in the ASEAN community 1972–2017"
-    type   : Dataset
-    topic  : Development & productivity
-    author : "Mendez, Siew, Chan & Tang (2020)"
-    lang   : R
-    url    : "https://rpubs.com/quarcs-lab/data-productivity-asean-1972-2017"
-
-  - title  : "Regional inequality across countries 1992–2012"
-    type   : Dataset
-    topic  : GIS & Remote sensing
-    author : "Mendez (2020)"
-    lang   : R
-    url    : "https://rpubs.com/quarcs-lab/data-regional-lights-gdp-inequality-1992-2012"
-
   - title  : "Provincial GDP and unemployment in Indonesia 1986–2018"
     type   : Dataset
     topic  : Regional convergence

@@ -24,15 +24,14 @@ sections:
     - icon        : ion-ios-videocam-outline
       title       : Research talks
       description : >
-         Researchers from around the world present their work across the network's themes —
-         from spatial data science and econometrics to the geography of development,
-         regional growth, structural change, and spatial energy economics.
+         Researchers worldwide present their work across the network's themes,
+         from spatial data science to regional development.
 
     - icon        : ion-ios-chatboxes-outline
       title       : Discussion, not just slides
       description : >
-         Every session leaves room to ask questions and exchange ideas directly with
-         the presenter and the rest of the audience.
+         Every session leaves room to ask questions and exchange ideas with
+         the presenter and audience.
 
     - icon        : ion-ios-world-outline
       title       : A worldwide platform

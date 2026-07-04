@@ -22,8 +22,7 @@ sections:
     - icon        : ion-code
       title       : Browse & contribute to the code
       description : >
-         Explore the source of the network's website and open materials — all public
-         and free to read, reuse, and adapt. Fork the repository, make changes, and
+         Explore the network's public source and materials, then fork and
          open a pull request.
 
     - icon        : ion-chatbubbles
@@ -34,8 +33,7 @@ sections:
     - icon        : ion-ios-lightbulb-outline
       title       : Report issues & ideas
       description : >
-         Spotted a problem or have a suggestion? Open an issue and help us make the
-         network's work better.
+         Found a problem or have an idea? Open an issue to help improve our work.
 
 steps:
    heading: How to get started

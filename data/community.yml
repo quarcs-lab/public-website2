@@ -29,8 +29,8 @@ sections:
     - icon        : ion-ios-help-outline
       title       : Ask questions & learn together
       description : >
-         Bring the problem you're stuck on and talk it through with a community of
-         researchers, students, and practitioners working across the network's fields.
+         Bring what you're stuck on and talk it through with fellow researchers
+         and students in the network.
 
     - icon        : ion-ios-book-outline
       title       : Share resources

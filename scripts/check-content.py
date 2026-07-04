@@ -259,6 +259,14 @@ def static_exists(rel):
     return os.path.isfile(os.path.join(ROOT, "static", rel))
 
 
+def asset_exists(rel):
+    # Files under assets/ are processed by Hugo's pipeline (e.g. team avatars).
+    if not rel:
+        return False
+    rel = str(rel).strip().strip("\"'").lstrip("/")
+    return os.path.isfile(os.path.join(ROOT, "assets", rel))
+
+
 def journal_cover_exists(rel):
     # journal_covers.yml values are relative to static/images/, not static/
     if not rel:
@@ -406,7 +414,9 @@ def check_portfolio(c, rep):
 def check_images(c, rep):
     """Coupling #12/#14: every referenced image must exist on disk."""
     for m in c.team:
-        if m.get("image") and not static_exists(m["image"]):
+        # Team avatars run through Hugo's image pipeline, so they live in
+        # assets/images/team/ (not static/). Accept either location.
+        if m.get("image") and not (asset_exists(m["image"]) or static_exists(m["image"])):
             rep.error(f'team image missing: {m["image"]} ({m.get("name")})', "data/team.yml")
     for fm in c.research:
         for field in ("image", "cover"):

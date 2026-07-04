@@ -265,9 +265,10 @@ Edit `data/team.yml` under `members:` (note the `key : value` spacing style):
   land in the **Directors** group (else **Associates**); the trailing ALL-CAPS token (e.g. `JAPAN`)
   becomes the country pill. Keep the `Sentence one. Role, Institution, COUNTRY.` shape.
 - Only **`web`** renders (a "Website" button); `net`/`linkedIn` are kept for reference but not shown.
-- **Add:** append a block; drop the photo in `static/images/team/` (square/round — rendered as a
-  circle). **Deactivate:** comment the block out with leading `#` (don't delete). Members render in
-  file order. Run the checker afterwards.
+- **Add:** append a block; drop the photo in `assets/images/team/` (any size/format — Hugo crops it
+  to a normalized 150/300 WebP circle via the pipeline in `team-card.html`; `image:` stays
+  `images/team/<file>`). **Deactivate:** comment the block out with leading `#` (don't delete).
+  Members render in file order. Run the checker afterwards.
 
 ### Add an Activity card, or a resource
 

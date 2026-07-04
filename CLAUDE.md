@@ -61,7 +61,7 @@ update Y) and run `python3 scripts/check-content.py` before committing.
 | Nav menu, About/CTA text, shared links (`[params.links]`), logo | `config.toml` |
 | Hero rotating keywords **and** Research Areas | `data/research-projects.yml` (single source for both) |
 | Publications | `content/research/*.md` (`hugo new research/<slug>.md`) + cover in `static/images/journals/` |
-| People roster + publication↔author links | `data/team.yml` (`key`+`aliases`; photo in `static/images/team/`) |
+| People roster + publication↔author links | `data/team.yml` (`key`+`aliases`; photo in `assets/images/team/`, Hugo-processed) |
 | Journal cover thumbnails | `data/journal_covers.yml` + `static/images/journals/` |
 | Resources hub | `data/resources.yml` (type/topic must match the vocab lists) |
 | "Research methods" section | `data/feature.yml` |

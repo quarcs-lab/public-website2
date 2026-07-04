@@ -7,8 +7,19 @@
 
     {{ with $m.image }}
     <div class="team-img">
+      {{/* Images live in assets/images/team/ so Hugo processes them into normalized, sharp
+           square WebP avatars (150 @1x / 300 @2x), regardless of source size/format. */}}
+      {{ $src := resources.Get . }}
+      {{ if $src }}
+      {{ $x1 := $src.Fill "150x150 Center webp" }}
+      {{ $x2 := $src.Fill "300x300 Center webp" }}
+      <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x"
+           class="team-pic" alt="Portrait of {{ $m.name }}"
+           width="150" height="150" loading="lazy" decoding="async">
+      {{ else }}
       <img src="{{ . | absURL }}" class="team-pic" alt="Portrait of {{ $m.name }}"
            width="150" height="150" loading="lazy" decoding="async">
+      {{ end }}
     </div>
     {{ end }}
 

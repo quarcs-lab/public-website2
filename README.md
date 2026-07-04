@@ -2,11 +2,13 @@
 
 Source for the **QuaRCS-lab Network** website: **<https://quarcs.netlify.app>**
 
-QuaRCS (Quantitative Regional and Computational Science) is a research network that studies
-the process of sustainable development across subnational regions and countries, integrating
-development economics, spatial data science, and econometrics. The network is part of the UN
-Sustainable Development Solutions Network (SDSN). This repository holds the site's content,
-configuration, and a customized [Hugo](https://gohugo.io/) theme.
+QuaRCS (Quantitative Regional and Computational Science) is an international, interdisciplinary
+research network that promotes science and innovation for economic, social, and environmental
+sustainability, integrating development economics, spatial data science, machine learning, and
+satellite remote sensing to understand and inform sustainable development across subnational
+regions and countries. The network is part of the UN Sustainable Development Solutions Network
+(SDSN). This repository holds the site's content, configuration, and a customized
+[Hugo](https://gohugo.io/) theme.
 
 > **Maintaining the site?** Jump to [Editing content](#editing-content) — most updates are just
 > adding a publication, a team member, or a resource, then pushing to `master`.

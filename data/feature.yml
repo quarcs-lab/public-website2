@@ -1,6 +1,6 @@
 enable  : true
 title   : Research methods
-subtitle:
+subtitle: State-of-the-art methods from spatial data science, machine learning, remote sensing, and economics.
 item    :
  - icon  : ion-cube
    title : Modern data science
@@ -22,10 +22,10 @@ item    :
    description : >
       Exploratory spatial and space-time analysis, dependence, and heterogeneity.
 
- - icon  : ion-ios-pulse-strong
-   title : Nonparametric econometrics
+ - icon  : ion-planet
+   title : Remote sensing
    description : >
-      Nonparametric density estimation and mixture-density models.
+      Satellite imagery and nighttime lights to measure development from outer space.
 
  - icon  : ion-ios-calculator-outline
    title : Bayesian econometrics

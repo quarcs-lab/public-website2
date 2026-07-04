@@ -41,7 +41,7 @@ home = "Home"
 logo = "images/logo-white.svg"
 dateFormat = "6 January 2006"
 # Meta data
-description = "QuaRCS-lab Network — research on quantitative regional and computational science."
+description = "The QuaRCS Network: interdisciplinary science and innovation for economic, social, and environmental sustainability — using spatial data science, machine learning, remote sensing, and economics."
 author = "QuaRCS-lab Network"
 # Google Analytics — set a real GA tracking ID here to enable analytics
 googleAnalitycsID = ""
@@ -53,7 +53,7 @@ contactFormAction = "#" # contact form works with https://formspree.io
 [params.about]
 enable  = true
 title   = "ABOUT US"
-content = "In the QuaRCS network, we conduct research on quantitative regional and computational science. We exploit the integration of development economics, spatial data science, and econometrics to understand and inform the process of sustainable development across subnational regions and countries. <br> <br> The QuaRCS network is also part of the UN Sustainable Development Solutions Network (SDSN). As such, it helps mobilize scientific knowledge and technological expertise to promote global sustainable development."
+content = "The QuaRCS Network is an international, interdisciplinary research network in Quantitative Regional and Computational Science. We combine development economics, spatial data science, machine learning, and satellite remote sensing to understand and inform the process of sustainable development — in its economic, social, and environmental dimensions — across subnational regions and countries. <br> <br> The QuaRCS network is part of the UN Sustainable Development Solutions Network (SDSN), mobilizing scientific knowledge and innovation to promote sustainable development worldwide."
 image   = "images/about/about.png"
 
 

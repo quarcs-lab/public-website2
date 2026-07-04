@@ -19,11 +19,12 @@ this file is just the rules and pointers, not a duplicate.
 
 1. **Never edit `themes/timer-hugo/**` to customize.** Shadow the file from the project root
    instead. Current overrides: `layouts/index.html` (homepage section order),
-   `layouts/partials/{head,footer,banner,team,team-card,portfolio,feature,research-areas}.html`,
+   `layouts/partials/{head,footer,banner,team,team-card,portfolio,feature,research-areas,mission}.html`,
    `layouts/people/list.html`, `layouts/research/list.html`, `layouts/portfolio/resources.html`,
    `assets/css/custom.css`, `assets/js/custom.js`. (Theme copies still exist but are ignored —
-   edit the root ones. `research-areas.html` is new — no theme copy exists. `feature.html` and
-   `research-areas.html` render the shared `.info-grid`/`.info-card` homepage card system.)
+   edit the root ones. `research-areas.html` and `mission.html` are new — no theme copy exists.
+   `feature.html` and `research-areas.html` render the shared `.info-grid`/`.info-card` homepage
+   card system; `mission.html` is the homepage mission-statement band (`#mission`).)
 2. **Load order is load-bearing:** `custom.css` loads after theme `style.css` (in `head.html`)
    and `custom.js` after `script.js` (in `footer.html`). Keep it that way or overrides lose.
 3. **Do not remove `wow.min.js`** from `footer.html` — theme `script.js` calls

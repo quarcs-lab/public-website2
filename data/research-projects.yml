@@ -4,9 +4,10 @@
 enable  : true
 title   : Research projects
 intro   : >
-   Our work spans five connected research lines in Quantitative Regional and Computational
-   Science, integrating development economics, spatial data science, and econometrics to
-   understand and inform sustainable development across regions and countries.
+   Our work promotes interdisciplinary science and innovation for economic, social, and
+   environmental sustainability, integrating development economics, spatial data science,
+   machine learning, and satellite remote sensing to understand and inform sustainable
+   development across regions and countries.
 heading : Main research lines
 link    : https://quarcs-lab.org/research
 linkText: A more detailed description of current projects, slides, and summaries is available at quarcs-lab.org/research

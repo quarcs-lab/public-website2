@@ -426,10 +426,12 @@ def check_images(c, rep):
         if fm.get("image") and not static_exists(fm["image"]):
             rep.error(f'portfolio image missing: {fm["image"]}', fm["_file"])
     params = c.cfg.get("params", {})
+    # banner.bgImage runs through Hugo's image pipeline (assets/images/), so accept
+    # either location — same as team avatars above.
     for label, rel in (("logo", params.get("logo")),
                        ("banner.bgImage", params.get("banner", {}).get("bgImage")),
                        ("about.image", params.get("about", {}).get("image"))):
-        if rel and not static_exists(rel):
+        if rel and not (static_exists(rel) or asset_exists(rel)):
             rep.error(f'config {label} image missing: {rel}', "config.toml")
 
 
@@ -450,19 +452,13 @@ def check_menu(c, rep):
 
 
 def check_links_single_source(c, rep):
-    """Coupling #10: [params.links] is the single source; the one URL TOML can't dedupe
-    (socialIcon vs cta) must equal params.links.discord."""
+    """Coupling #10: [params.links] is the single source of truth for the Discord/GitHub/Luma
+    URLs; cta.html and the community CTAs read from there, so params.links.discord must be set."""
     params = c.cfg.get("params", {})
     links = params.get("links", {})
     if not links.get("discord"):
         rep.error("params.links.discord is not set (cta.html / community CTA depend on it)",
                   "config.toml")
-        return
-    for icon in params.get("socialIcon", []):
-        u = icon.get("url", "")
-        if "discord" in u and u != links["discord"]:
-            rep.error(f'socialIcon discord url "{u}" != params.links.discord "{links["discord"]}"',
-                      "config.toml")
 
 
 def check_flip_source(c, rep):

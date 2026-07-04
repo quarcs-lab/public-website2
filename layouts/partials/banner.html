@@ -1,8 +1,14 @@
 {{ if .Site.Params.banner.enable }}
 <section id="hero-area" class="hero">
     {{ "<!-- Cinematic layers: media (parallax) > inner (Ken Burns) > gradient overlay -->" | safeHTML }}
+    {{- /* Hero LCP image: processed through Hugo's pipeline (asset in assets/images/) into a
+           resized WebP; falls back to the raw static URL if the asset isn't found. */ -}}
+    {{ $bg := .Site.Params.banner.bgImage }}
+    {{ $hero := resources.Get $bg }}
+    {{ $heroURL := $bg | absURL }}
+    {{ with $hero }}{{ $heroURL = ($hero.Resize "1920x webp").RelPermalink }}{{ end }}
     <div class="hero-media" aria-hidden="true">
-        <div class="hero-media-inner" style='background-image: url("{{ .Site.Params.banner.bgImage | absURL }}");'></div>
+        <div class="hero-media-inner" style='background-image: url("{{ $heroURL }}");'></div>
     </div>
     <div class="hero-overlay" aria-hidden="true"></div>
 

@@ -1,0 +1,25 @@
+{{/* Project override of the theme's about.html (Golden rule 1: shadow, don't edit the theme).
+     Content still comes from config.toml [params.about]; this version adds a kicker, vertically
+     centers the two columns, and frames the image to match the site's card language. */}}
+{{ if .Site.Params.about.enable }}
+{{ "<!-- About Section Start (project override) -->" | safeHTML }}
+<section id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <span class="section-eyebrow">Who we are</span>
+                    {{ with .Site.Params.about.title }}<h2>{{ . }}</h2>{{ end }}
+                    {{ with .Site.Params.about.content }}<p>{{ . | safeHTML }}</p>{{ end }}
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                    {{ with .Site.Params.about.image }}<img src="{{ . | absURL }}" alt="about-image">{{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- About Section End -->" | safeHTML }}
+{{ end }}

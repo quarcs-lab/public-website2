@@ -148,6 +148,17 @@ select:focus,
 
 /* Consistent section-heading treatment with a small accent underline */
 .section-heading { margin-bottom: 56px; }
+/* Optional kicker above a section .title — unifies the eyebrow motif across bands */
+.section-eyebrow {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--step--1);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--cyan-ink);
+  margin: 0 0 var(--space-3);
+}
 .title,
 .section-heading .title {
   font-family: var(--font-display);
@@ -298,18 +309,18 @@ select:focus,
   font-weight: 700;
   text-transform: none;
   margin-bottom: 18px;
-  line-height: 1.05;
+  line-height: 1.02;
   text-shadow: 0 2px 30px rgba(4, 8, 20, .45);
 }
 #hero-area h1 .hero-eyebrow {
   display: inline-block;
   font-family: var(--font-sans);
   font-weight: 600;
-  font-size: clamp(.8rem, 1.6vw, 1rem);
-  letter-spacing: .22em;
+  font-size: clamp(.78rem, 1.5vw, .95rem);
+  letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--text-dim);
-  padding: 0 0 .35em;
+  color: var(--cyan);
+  padding: 0 0 .5em;
 }
 #hero-area h1 .cd-words-wrapper {
   font-family: var(--font-display);
@@ -327,7 +338,7 @@ select:focus,
   text-transform: none;
   letter-spacing: .01em;
   font-size: clamp(1rem, 2.2vw, 1.25rem);
-  max-width: 640px;
+  max-width: 560px;
   margin: 22px auto 34px;
 }
 
@@ -386,7 +397,8 @@ select:focus,
   background: linear-gradient(90deg, var(--cyan-600), var(--amber));
 }
 #about .block p { color: var(--muted); line-height: 1.8; }
-#about .block img { border-radius: var(--radius); box-shadow: var(--shadow-md); }
+#about .block img { border-radius: var(--radius); box-shadow: var(--shadow-md); border: 1px solid var(--line); }
+#about .block .section-eyebrow { margin-bottom: var(--space-2); }
 
 /* ------------------------------------------------- Activities / portfolio */
 .works { background: var(--surface-alt); padding: var(--section-y) 0; }
@@ -522,7 +534,15 @@ figure figcaption p { color: var(--muted); }
    equal height (grid rows stretch), a per-card accent that cycles cyan→amber→
    violet→emerald, and the same shell/lift language as the Activities cards. */
 #feature { padding: var(--section-y) 0; background: var(--surface); }
-#research-areas { padding: var(--section-y) 0; background: var(--surface-alt); }
+/* Research Areas gets a tinted wash + a hairline seam so it reads as a distinct band
+   from the visually-identical Research Methods grid that follows it. */
+#research-areas {
+  padding: var(--section-y) 0;
+  background:
+    radial-gradient(900px 500px at 15% 0%, var(--cyan-050), transparent 60%),
+    var(--surface-alt);
+  border-top: 1px solid var(--line);
+}
 
 .info-grid {
   /* Count-agnostic: flex-wrap centers any partial last row, so 5, 6, 7, N cards all

@@ -20,7 +20,7 @@ name    = "Events"
 url     = "https://lu.ma/quarcs"
 weight  = 43
 [[menu.main]]
-name    = "Tutorials"
+name    = "Resources"
 url     = "portfolio/data-tutorials"
 weight  = 60
 [[menu.main]]

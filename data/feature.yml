@@ -3,35 +3,23 @@
 # remove methods freely. Each item needs: icon (an Ionicons class, https://ionicons.com/),
 # title, description. `enable: false` hides the whole section.
 enable  : true
-title   : Research methods
-subtitle: State-of-the-art methods from spatial data science, machine learning, remote sensing, and economics.
+title   : Research methods and data
+subtitle: Geospatial big data, spatial econometrics, and causal machine learning for sustainable development.
 item    :
- - icon  : ion-cube
-   title : Modern data science
+ - icon  : ion-ios-world-outline
+   title : Geospatial Big Data
    description : >
-      A modern, reproducible data-science workflow across all our projects.
+      Large-scale spatial data — satellite imagery, nighttime lights, and remote sensing —
+      processed in reproducible workflows to measure development from space.
 
  - icon  : ion-ios-analytics-outline
-   title : Applied econometrics
-   description : >
-      The latest advances in applied econometrics, put to work on real questions.
-
- - icon  : ion-network
-   title : Machine learning
-   description : >
-      Clustering algorithms from the unsupervised machine-learning literature.
-
- - icon  : ion-ios-world-outline
    title : Spatial econometrics
    description : >
-      Exploratory spatial and space-time analysis, dependence, and heterogeneity.
+      Exploratory spatial and space-time analysis of dependence, clustering, and regional
+      heterogeneity.
 
- - icon  : ion-planet
-   title : Remote sensing
+ - icon  : ion-network
+   title : Causal Machine Learning
    description : >
-      Satellite imagery and nighttime lights to measure development from outer space.
-
- - icon  : ion-ios-calculator-outline
-   title : Bayesian econometrics
-   description : >
-      Bayesian model averaging and inference under uncertainty.
+      Machine-learning methods that estimate causal effects and heterogeneous treatment
+      responses, not just prediction.

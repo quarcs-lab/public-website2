@@ -64,7 +64,7 @@ update Y) and run `python3 scripts/check-content.py` before committing.
 | People roster + publication↔author links | `data/team.yml` (`key`+`aliases`; photo in `assets/images/team/`, Hugo-processed) |
 | Journal cover thumbnails | `data/journal_covers.yml` + `static/images/journals/` |
 | Resources hub | `data/resources.yml` (type/topic must match the vocab lists) |
-| "Research methods" section | `data/feature.yml` |
+| "Research methods and data" section | `data/feature.yml` |
 | Events / Community / GitHub pages | `data/{events,community,github}.yml` (page = `layout: explainer` + `dataKey`) |
 | Homepage "Activities" cards | `content/portfolio/*.md` (`hugo new portfolio/<slug>.md`) |
 | Styles / palette / motion | `assets/css/custom.css`, `assets/js/custom.js` |

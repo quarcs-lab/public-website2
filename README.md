@@ -4,8 +4,8 @@ Source for the **QuaRCS-lab Network** website: **<https://quarcs.netlify.app>**
 
 QuaRCS (Quantitative Regional and Computational Science) is an international, interdisciplinary
 research network that promotes science and innovation for economic, social, and environmental
-sustainability, integrating development economics, spatial data science, machine learning, and
-satellite remote sensing to understand and inform sustainable development across subnational
+sustainability, integrating geospatial big data, spatial econometrics, and causal machine
+learning to understand and inform sustainable development across subnational
 regions and countries. The network is part of the UN Sustainable Development Solutions Network
 (SDSN). This repository holds the site's content, configuration, and a customized
 [Hugo](https://gohugo.io/) theme.
@@ -105,7 +105,7 @@ You don't need this to make content changes, but to preview locally:
 ├── data/                  # YAML that feeds templates (see "Editing content")
 │   ├── team.yml           #   People roster (name, key, aliases, …)        (active)
 │   ├── resources.yml      #   Resources hub (types/topics vocab + items)   (active)
-│   ├── feature.yml        #   Homepage "Research methods" cards            (active)
+│   ├── feature.yml        #   Homepage "Research methods and data" cards   (active)
 │   ├── research-projects.yml #  Research Areas + /research-projects/ + hero keywords (active)
 │   ├── events.yml         #   Events page  (via layout: explainer + dataKey: events)     (active)
 │   ├── community.yml      #   Community page (dataKey: community)          (active)
@@ -143,7 +143,7 @@ Instead, a file placed at the **project root** with the same path *shadows* the 
 | `layouts/partials/banner.html` | theme `banner.html` | Cinematic hero; rotating keywords **derived from `research-projects.yml`** | `params.banner` + `research-projects.yml` |
 | `layouts/partials/mission.html` | **new** | Homepage mission band (`#mission`) | hardcoded copy |
 | `layouts/partials/research-areas.html` | **new** | Homepage "Research Areas" info-grid | `research-projects.yml` |
-| `layouts/partials/feature.html` | theme `feature.html` | Homepage "Research methods" info-grid | `feature.yml` |
+| `layouts/partials/feature.html` | theme `feature.html` | Homepage "Research methods and data" info-grid | `feature.yml` |
 | `layouts/partials/portfolio.html` | theme `portfolio.html` | Homepage "Activities" cards | `content/portfolio/*` |
 | `layouts/partials/team.html` | theme `team.html` | Splits roster into Directors/Associates | `team.yml` |
 | `layouts/partials/team-card.html` | **new** | Member card: country pill + **"Publications (N)"** link | a `team.yml` member |
@@ -173,7 +173,7 @@ Everything else comes straight from the theme — the navbar `header.html`, the 
 2. **mission** ← hardcoded copy in `mission.html` (`#mission`)
 3. **about** ← `[params.about]` (title, HTML `content`, `image`) — *theme partial*
 4. **research-areas** ← `data/research-projects.yml`
-5. **feature** ("Research methods") ← `data/feature.yml`
+5. **feature** ("Research methods and data") ← `data/feature.yml`
 6. **portfolio** ("Activities") ← `content/portfolio/*.md` (`type: portfolio`, minus any `_build: {list: never}`)
 7. **cta** ← `[params.cta]` + `params.links.discord`
 
@@ -396,9 +396,9 @@ Key pieces:
 - **Hero:** the Earth-at-night photo (`static/images/slider7-hires.jpg`) with a slow Ken-Burns
   zoom (CSS) + scroll parallax (`assets/js/custom.js`); all motion respects
   `prefers-reduced-motion`.
-- **Cards:** the homepage **Research Areas** and **Research methods** sections share the
+- **Cards:** the homepage **Research Areas** and **Research methods and data** sections share the
   `.info-grid` / `.info-card` system, which is **count-agnostic** (flex-wrap centers any partial
-  last row) — add a 6th research area or a 7th method with no CSS change.
+  last row) — add a 6th research area or a 4th method with no CSS change.
 - **Logo/favicons:** hand-built **vector** set in `static/images/` — `logo-white.svg` (nav, via
   `params.logo`) and `favicon.svg` / `favicon.ico` / `apple-touch-icon.png` (wired in
   `head.html`). The About-section image (`params.about.image`) is the raster `about/about.png`.

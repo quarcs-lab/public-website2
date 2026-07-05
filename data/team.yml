@@ -57,7 +57,7 @@ members  :
     aliases : ["Carlos Mendez"]
     image : images/team/carlos-mendez.jpg
     designation : Founding research director. Associate professor, Nagoya University, JAPAN.
-    description : "Research interests: Development Macroeconomics, Regional Economics, Spatial econometrics"
+    description : "Research interests: Development Macroeconomics, Regional Economics, Spatial Econometrics"
     net         : https://www.researchgate.net/profile/Carlos_Mendez54
     linkedIn    : https://www.linkedin.com/in/mendezguerra
     web         : https://carlos-mendez.org
@@ -69,7 +69,7 @@ members  :
     aliases : ["Felipe Santos-Marquez", "Felipe Santos"]
     image : images/team/felipe-santos.png
     designation : Founding research director. Ph.D. in Economics (TU Dresden), based in Nagoya, JAPAN.
-    description : "Research interests: Development Economics, Regional Inequality, Spatial econometrics"
+    description : "Research interests: Development Economics, Regional Inequality, Spatial Econometrics"
     net         : https://www.researchgate.net/profile/Felipe_Santos-Marquez
     linkedIn    : https://www.linkedin.com/in/felipe-santos-marquez-0a5273181/
     web         : https://felipe-santos.rbind.io/
@@ -242,7 +242,7 @@ members  :
 #  - name  : Yilin Chen
 #    image : images/team/Yilin-Chen.jpg
 #    designation : Research associate. Ph.D., Nagoya University, JAPAN.
-#    description : "Research interests: Regional Inequality, Structural change, Spatial econometrics, Geospatial Big Data Analysis"
+#    description : "Research interests: Regional Inequality, Structural change, Spatial Econometrics, Geospatial Big Data Analysis"
 #    net         : https://www.researchgate.net/profile/Yilin-Chen-41
 #    linkedIn    : https://www.linkedin.com/in/yilin-chen-657aa81a3/
 #    web         : https://yilinchen.my.canva.site/
@@ -252,7 +252,7 @@ members  :
     aliases : ["Katerine Restrepo"]
     image : images/team/katerine-restrepo2.png
     designation : Research associate. Ph.D. student, Nagoya University, JAPAN.
-    description : "Research interests: Development Economics, Regional Inequality, Nutritional Inequality, Spatial econometrics"
+    description : "Research interests: Development Economics, Regional Inequality, Nutritional Inequality, Spatial Econometrics"
     net         : https://www.researchgate.net/profile/Katerine_Restrepo
     linkedIn    : https://www.linkedin.com/in/katerine-restrepo-gomez-2a555830/
     web         : https://katerinerestrepo.my.canva.site/

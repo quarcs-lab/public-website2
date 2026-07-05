@@ -4,7 +4,7 @@
 # title, description. `enable: false` hides the whole section.
 enable  : true
 title   : Research methods and data
-subtitle: Geospatial big data, spatial econometrics, and causal machine learning for sustainable development.
+subtitle: Geospatial big data, spatial econometrics, causal inference, and machine learning for the quantitative geography of sustainable development.
 item    :
  - icon  : ion-ios-world-outline
    title : Geospatial Big Data
@@ -23,3 +23,15 @@ item    :
    description : >
       Machine-learning methods that estimate causal effects and heterogeneous treatment
       responses, not just prediction.
+
+ - icon  : ion-fork-repo
+   title : Spatial Causal Inference
+   description : >
+      Identifying cause and effect across regions — accounting for spatial spillovers,
+      interference, and confounding to estimate credible policy impacts.
+
+ - icon  : ion-grid
+   title : Spatial Machine Learning
+   description : >
+      Machine-learning models that embed spatial structure and autocorrelation to predict
+      and explain outcomes across regions.

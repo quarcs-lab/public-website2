@@ -55,7 +55,7 @@ contactFormAction = "#" # contact form works with https://formspree.io
 [params.about]
 enable  = true
 title   = "ABOUT US"
-content = "The QuaRCS Network is an international, interdisciplinary research network in Quantitative Regional and Computational Science. We combine development economics, spatial data science, machine learning, and satellite remote sensing to understand and inform the process of sustainable development — in its economic, social, and environmental dimensions — across subnational regions and countries. <br> <br> The QuaRCS network is part of the UN Sustainable Development Solutions Network (SDSN), mobilizing scientific knowledge and innovation to promote sustainable development worldwide."
+content = "The QuaRCS Network is an international, interdisciplinary research network in Quantitative Regional and Computational Science. We combine development economics, spatial data science, machine learning, and satellite remote sensing. With these tools, we work to understand and inform sustainable development across subnational regions and countries. Our focus spans its economic, social, and environmental dimensions. <br> <br> The QuaRCS Network is part of the UN Sustainable Development Solutions Network (SDSN). Together, we mobilize scientific knowledge and innovation to promote sustainable development worldwide."
 image   = "images/about/about.png"
 
 

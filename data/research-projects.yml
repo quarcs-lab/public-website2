@@ -16,28 +16,33 @@ items:
  - icon        : ion-ios-world-outline
    title       : Sustainable Regional Development
    description : >
-      The quantitative geography of sustainable development — remote sensing, spatial
-      econometrics, and machine learning.
+      Integrate satellite remote sensing, spatial econometrics, and machine learning to
+      evaluate local progress toward the Sustainable Development Goals (SDGs), quantify
+      environmental trade-offs, and model regional resilience.
 
  - icon        : ion-ios-location-outline
    title       : The Geography of Development
    description : >
-      Mapping the wealth and inequality of subnations from outer space with satellite
-      remote sensing.
+      Harness Earth observation data to map subnational wealth and health globally. This
+      approach proxies economic activity, tracks poverty dynamics, and reveals spatial
+      inequality in data-scarce regions.
 
  - icon        : ion-ios-analytics-outline
    title       : Regional Growth and Inequality
    description : >
-      Growth, inequality, and convergence across regions and countries through spatial
-      econometrics and machine learning.
+      Apply econometrics and machine learning to analyze regional income convergence,
+      identify persistent spatial poverty traps, and measure the impact of economic
+      spillovers across national and subnational borders.
 
  - icon        : ion-shuffle
    title       : Spatial Structural Change
    description : >
-      Modeling subnational wealth through spatial spillovers and finding development
-      clusters with machine learning.
+      Model how localized sectoral shifts and labor productivity improvements drive regional
+      development. This includes detecting economic clusters and mapping their evolutionary
+      dynamics.
 
  - icon        : ion-ios-bolt-outline
    title       : Spatial Energy Economics
    description : >
-      The spatial dimensions of energy access, poverty, and the low-carbon transition.
+      Quantify the spatial disparities of energy poverty and electricity access while
+      mapping the localized socio-economic impacts of the transition to a low-carbon economy.

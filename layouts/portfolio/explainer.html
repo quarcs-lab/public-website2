@@ -28,12 +28,12 @@
 
                 {{ range $data.sections }}
                 {{ with .heading }}<h2 class="projects-heading">{{ . }}</h2>{{ end }}
-                <div class="project-grid">
+                <div class="info-grid">
                     {{ range $index, $item := .items }}
-                    <article class="project-card wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul (mod $index 3) 90 }}ms">
-                        {{ with $item.icon }}<div class="project-icon"><i class="{{ . }}"></i></div>{{ end }}
-                        {{ with $item.title }}<h3 class="project-title">{{ . }}</h3>{{ end }}
-                        {{ with $item.description }}<p class="project-desc">{{ . }}</p>{{ end }}
+                    <article class="info-card wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul (mod $index 3) 90 }}ms">
+                        {{ with $item.icon }}<div class="info-icon"><i class="{{ . }}"></i></div>{{ end }}
+                        {{ with $item.title }}<h3 class="info-title">{{ . }}</h3>{{ end }}
+                        {{ with $item.description }}<p class="info-desc">{{ . }}</p>{{ end }}
                     </article>
                     {{ end }}
                 </div>

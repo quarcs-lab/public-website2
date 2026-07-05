@@ -970,13 +970,12 @@ select:focus,
 }
 .team-member:hover h3.team_name { color: var(--cyan-ink); }
 
-/* Country pill */
+/* Location tag — a non-interactive metadata pill; sits in the .team-meta action row */
 .team-country {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  margin-bottom: 12px;
-  padding: 3px 12px 3px 9px;
+  padding: 3px 10px 3px 8px;
   font-family: var(--font-sans);
   font-size: 11px;
   font-weight: 600;
@@ -989,44 +988,40 @@ select:focus,
 }
 .team-country i { font-size: 13px; line-height: 1; color: var(--cyan-ink); }
 
-/* Role line — clamp to 2 lines */
+/* Role line — full text, no clamp */
 .team-member .team_designation {
   font-size: 13px;
   line-height: 1.5;
   color: var(--muted);
   margin: 0 0 12px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  min-height: calc(1.5em * 2);
 }
 
-/* Bio — always visible, clamp to 3 lines, reserved height for uniform cards */
+/* Bio — full text, no clamp; cards still align via .team-member { height: 100% } */
 .team-member .team_text {
   font-size: 14px;
   line-height: 1.55;
   color: var(--muted);
   margin: 0 0 18px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  min-height: calc(1.55em * 3);
 }
 
-/* Website link — a single labeled pill, pinned to card bottom */
-.team-member .team-links {
-  margin: auto 0 0;
-  padding: 0;
+/* Location tag + Website button — one centered action row, IN FLOW between role and bio.
+   align-self:stretch lets the centered flex-column child span the card width so
+   justify-content can center the items and flex-wrap can drop to a 2nd line. */
+.team-member .team-meta {
+  align-self: stretch;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 0;
 }
 .team-member .team-website {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 8px 18px;
+  padding: 8px 14px;
   font-family: var(--font-sans);
   font-size: 13px;
   font-weight: 600;
@@ -1049,11 +1044,10 @@ select:focus,
 }
 .team-member .team-website i { font-size: 15px; line-height: 1; }
 
-/* Publications count — reverse half of the author↔publication link. Links to /research
-   filtered by this member's key. Sits under the Website button; when a member has no
-   website it pins itself to the card bottom instead. Hidden when the member has 0 pubs. */
+/* Publications — reverse half of the author↔publication link, to /research filtered by
+   this member's key. Always pinned to the card bottom so it bottom-aligns across a row.
+   Hidden when the member has 0 matched pubs. */
 .team-member .team-pubs { margin-top: auto; padding: 0; text-align: center; }
-.team-member .team-links ~ .team-pubs { margin-top: 10px; }
 .team-member .team-pubs-link {
   display: inline-flex;
   align-items: center;

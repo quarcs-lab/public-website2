@@ -2,6 +2,18 @@
      The stagger delay resets every 4 cards (one desktop row) so the whole grid reveals fast. */}}
 {{ $m := .m }}
 {{ $index := .index }}
+{{/* Split the trailing ALL-CAPS country token off the designation once, at top level, so
+     both the role line and the action row (country pill) can see the values. Declare
+     $country/$role with :=, then REASSIGN with = inside {{ if }} — a := there would be
+     block-scoped and lost outside it. */}}
+{{- $designation := $m.designation | default "" -}}
+{{- $caps := findRE `[A-Z][A-Z]+(?:\s[A-Z]+)*\.?$` $designation -}}
+{{- $country := "" -}}
+{{- $role := $designation -}}
+{{- if $caps -}}
+  {{- $country = replaceRE `\.$` "" (index $caps 0) -}}
+  {{- $role = replaceRE `,?\s*[A-Z][A-Z]+(?:\s[A-Z]+)*\.?$` "" $designation -}}
+{{- end -}}
 <div class="col-lg-3 col-sm-6 col-12 team-col">
   <article {{ with $m.key }}id="{{ . }}" {{ end }}class="team-member wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul (mod $index 4) 60 }}ms">
 
@@ -25,30 +37,27 @@
 
     {{ with $m.name }}<h3 class="team_name">{{ . }}</h3>{{ end }}
 
-    {{/* Pull the trailing ALL-CAPS country token into a pill; keep the rest as the role line.
-         The $-anchored regex only matches the final caps token, never a mid-string acronym
-         like (TU Dresden), (UNDRR), SDSN, or ADBI. Falls back to the raw designation. */}}
-    {{ with $m.designation }}
-      {{ $caps := findRE `[A-Z][A-Z]+(?:\s[A-Z]+)*\.?$` . }}
-      {{ if $caps }}
-        <p class="team_designation">{{ replaceRE `,?\s*[A-Z][A-Z]+(?:\s[A-Z]+)*\.?$` "" . }}</p>
-        <span class="team-country"><i class="ion-location"></i>{{ replaceRE `\.$` "" (index $caps 0) }}</span>
-      {{ else }}
-        <p class="team_designation">{{ . }}</p>
+    {{/* Role/title line — full text, no clamp. Country token split off above. */}}
+    {{ with $role }}<p class="team_designation">{{ . }}</p>{{ end }}
+
+    {{/* Location (non-interactive metadata tag) + Website (the only link). In-flow row
+         directly under the role, above the bio. Renders if EITHER exists; each half is
+         guarded independently so "country, no web" shows just the tag and vice-versa. */}}
+    {{ if or $country $m.web }}
+    <div class="team-meta">
+      {{ with $country }}
+      <span class="team-country"><i class="ion-location"></i>{{ . }}</span>
       {{ end }}
-    {{ end }}
-
-    {{ with $m.description }}<p class="team_text">{{ . }}</p>{{ end }}
-
-    {{/* Only the member's website is kept — one clear labeled button, no social/RG icons. */}}
-    {{ with $m.web }}
-    <p class="team-links">
+      {{ with $m.web }}
       <a class="team-website" href="{{ . }}" target="_blank" rel="noopener"
          aria-label="{{ $m.name }} &mdash; website">
         <i class="ion-earth"></i><span>Website</span>
       </a>
-    </p>
+      {{ end }}
+    </div>
     {{ end }}
+
+    {{ with $m.description }}<p class="team_text">{{ . }}</p>{{ end }}
 
     {{/* Reverse link: this member's publications, matched by alias at build time.
          /research filters by the member key, so this count and the filtered list
@@ -68,8 +77,8 @@
     {{ if gt $n 0 }}
     <p class="team-pubs">
       <a class="team-pubs-link" href="{{ relURL "research/" }}#author={{ $m.key }}"
-         aria-label="{{ $m.name }} &mdash; {{ $n }} publications">
-        <i class="ion-document-text"></i><span>Publications ({{ $n }})</span>
+         aria-label="{{ $m.name }} &mdash; publications">
+        <i class="ion-document-text"></i><span>Publications</span>
       </a>
     </p>
     {{ end }}

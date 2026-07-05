@@ -1421,19 +1421,21 @@ select:focus,
    Dark hero + light grouped sections + type-accented cards.
    ========================================================================== */
 
-/* Per-type accent: --acc = AA-on-white ink; --acc-bright = for dark hero. */
+/* Per-type accent: --acc = AA-on-white ink; --acc-bright = for dark hero;
+   --acc-soft / --acc-line = uniform-lightness tint + border for the soft badge pills
+   (rgba of each type's bright hue, tuned per hue to read equally light on white). */
 .resource-section[data-type="Dataset"],
 .resource-card[data-type="Dataset"],
-.rstat[data-type="Dataset"]                { --acc: var(--cyan-ink);    --acc-bright: var(--cyan); }
+.rstat[data-type="Dataset"]                { --acc: var(--cyan-ink);    --acc-bright: var(--cyan);   --acc-soft: rgba(46,214,238,.15);  --acc-line: rgba(46,214,238,.34); }
 .resource-section[data-type="Interactive app"],
 .resource-card[data-type="Interactive app"],
-.rstat[data-type="Interactive app"]        { --acc: var(--amber-ink);   --acc-bright: var(--amber); }
+.rstat[data-type="Interactive app"]        { --acc: var(--amber-ink);   --acc-bright: var(--amber);  --acc-soft: rgba(255,158,66,.18);  --acc-line: rgba(255,158,66,.40); }
 .resource-section[data-type="Tutorial"],
 .resource-card[data-type="Tutorial"],
-.rstat[data-type="Tutorial"]               { --acc: var(--violet-ink);  --acc-bright: var(--violet); }
+.rstat[data-type="Tutorial"]               { --acc: var(--violet-ink);  --acc-bright: var(--violet); --acc-soft: rgba(167,139,250,.18); --acc-line: rgba(167,139,250,.36); }
 .resource-section[data-type="Software"],
 .resource-card[data-type="Software"],
-.rstat[data-type="Software"]               { --acc: var(--emerald-ink); --acc-bright: var(--emerald); }
+.rstat[data-type="Software"]               { --acc: var(--emerald-ink); --acc-bright: var(--emerald); --acc-soft: rgba(52,211,153,.17); --acc-line: rgba(52,211,153,.36); }
 
 /* ---- Hero ---- */
 .resources-hero { padding-bottom: 72px; }
@@ -1622,7 +1624,7 @@ select:focus,
   width: 42px;
   height: 42px;
   border-radius: var(--radius-sm);
-  background: var(--surface-alt);
+  background: var(--acc-soft);   /* soft type-tint ties the header to its cards' type badge */
   color: var(--acc);
   flex-shrink: 0;
 }
@@ -1677,10 +1679,12 @@ select:focus,
   border-radius: var(--radius-pill);
   background: var(--surface-alt);
   color: var(--muted);
+  border: 1px solid var(--line);   /* shared pill outline so all three badges match */
   white-space: nowrap;
 }
-.resource-badge--type { background: var(--acc); color: #fff; }
-.resource-badge--lang { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+/* Only the type badge carries the (soft) per-type hue; topic + language stay neutral. */
+.resource-badge--type { background: var(--acc-soft); color: var(--acc); border-color: var(--acc-line); }
+.resource-badge--lang { background: var(--surface-alt); color: var(--muted); border-color: var(--line); }
 .resource-title { font-family: var(--font-display); font-size: var(--step-1); line-height: 1.35; margin: 0 0 .5rem; }
 .resource-title a {
   display: inline-flex;

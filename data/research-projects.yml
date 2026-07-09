@@ -14,6 +14,8 @@ linkText: A more detailed description of current projects, slides, and summaries
 
 items:
  - icon        : ion-ios-world-outline
+   image       : images/card-banners/sustainable-regional-development.jpg
+   imageAlt    : Satellite map with regional data overlays summarizing sustainable regional development.
    title       : Sustainable Regional Development
    description : >
       Integrate satellite remote sensing, spatial econometrics, and machine learning to
@@ -21,6 +23,8 @@ items:
       environmental trade-offs, and model regional resilience.
 
  - icon        : ion-ios-location-outline
+   image       : images/card-banners/geography-of-development.jpg
+   imageAlt    : Satellite map with nighttime lights and inequality overlays summarizing the geography of development.
    title       : The Geography of Development
    description : >
       Harness Earth observation data to map subnational wealth and health globally. This
@@ -28,6 +32,8 @@ items:
       inequality in data-scarce regions.
 
  - icon        : ion-ios-analytics-outline
+   image       : images/card-banners/regional-growth-inequality.jpg
+   imageAlt    : Regional satellite map with convergence curves and spillover overlays summarizing growth and inequality.
    title       : Regional Growth and Inequality
    description : >
       Apply econometrics and machine learning to analyze regional income convergence,
@@ -35,6 +41,8 @@ items:
       spillovers across national and subnational borders.
 
  - icon        : ion-shuffle
+   image       : images/card-banners/spatial-structural-change.jpg
+   imageAlt    : Satellite map with economic clusters and transition flows summarizing spatial structural change.
    title       : Spatial Structural Change
    description : >
       Model how localized sectoral shifts and labor productivity improvements drive regional
@@ -42,6 +50,8 @@ items:
       dynamics.
 
  - icon        : ion-ios-bolt-outline
+   image       : images/card-banners/spatial-energy-economics.jpg
+   imageAlt    : Nighttime satellite map with grid and renewable energy overlays summarizing spatial energy economics.
    title       : Spatial Energy Economics
    description : >
       Quantify the spatial disparities of energy poverty and electricity access while

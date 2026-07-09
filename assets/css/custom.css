@@ -630,7 +630,14 @@ select:focus,
   box-shadow: var(--shadow-md), var(--shadow-glow);
   border-color: transparent;
 }
+.info-visual {
+  display: flex;
+  align-items: stretch;
+  gap: var(--space-3);
+  width: 100%;
+}
 .info-icon {
+  flex: 0 0 68px;
   height: 68px;
   width: 68px;
   display: flex;
@@ -641,6 +648,22 @@ select:focus,
   color: #fff;
   background: linear-gradient(135deg, var(--navy), var(--accent));
   box-shadow: 0 10px 24px rgba(15, 24, 54, .18);
+}
+.info-banner {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 68px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--navy);
+  border: 1px solid rgba(15, 24, 54, .08);
+  box-shadow: 0 10px 24px rgba(15, 24, 54, .12);
+}
+.info-banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .info-title {
   font-family: var(--font-display);
@@ -693,6 +716,15 @@ select:focus,
 }
 @media (max-width: 767.98px) {
   .info-card { flex-basis: 100%; max-width: 100%; }   /* 1 per row */
+}
+@media (max-width: 400px) {
+  .info-icon {
+    flex-basis: 60px;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+  .info-banner { height: 60px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .info-card, .info-title { transition: none; }

@@ -7,30 +7,40 @@ title   : Research methods and data
 subtitle: Geospatial big data, spatial econometrics, causal inference, and machine learning for the quantitative geography of sustainable development.
 item    :
  - icon  : ion-ios-world-outline
+   image : images/card-banners/geospatial-big-data.jpg
+   imageAlt : Satellite data mosaic with raster tiles and scan lines summarizing geospatial big data.
    title : Geospatial Big Data
    description : >
       Large-scale spatial data — satellite imagery, nighttime lights, and remote sensing —
       processed in reproducible workflows to measure development from space.
 
  - icon  : ion-ios-analytics-outline
+   image : images/card-banners/spatial-econometrics.jpg
+   imageAlt : Satellite map with cluster and dependence overlays summarizing spatial econometrics.
    title : Spatial Econometrics
    description : >
       Exploratory spatial and space-time analysis of dependence, clustering, and regional
       heterogeneity.
 
  - icon  : ion-network
+   image : images/card-banners/causal-machine-learning.jpg
+   imageAlt : Satellite map with branching model paths and outcome surfaces summarizing causal machine learning.
    title : Causal Machine Learning
    description : >
       Machine-learning methods that estimate causal effects and heterogeneous treatment
       responses, not just prediction.
 
  - icon  : ion-fork-repo
+   image : images/card-banners/spatial-causal-inference.jpg
+   imageAlt : Regional satellite map with intervention and spillover paths summarizing spatial causal inference.
    title : Spatial Causal Inference
    description : >
       Identifying cause and effect across regions — accounting for spatial spillovers,
       interference, and confounding to estimate credible policy impacts.
 
  - icon  : ion-grid
+   image : images/card-banners/spatial-machine-learning.jpg
+   imageAlt : Satellite map with neural mesh and prediction grids summarizing spatial machine learning.
    title : Spatial Machine Learning
    description : >
       Machine-learning models that embed spatial structure and autocorrelation to predict

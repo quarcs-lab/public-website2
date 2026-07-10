@@ -15,7 +15,7 @@ linkText: A more detailed description of current projects, slides, and summaries
 items:
  - icon        : ion-ios-world-outline
    image       : images/card-banners/sustainable-regional-development.jpg
-   imageAlt    : Satellite map with regional data overlays summarizing sustainable regional development.
+   imageAlt    : Geospatial systems visualization connecting environmental, economic, and social resilience indicators.
    title       : Sustainable Regional Development
    description : >
       Integrate satellite remote sensing, spatial econometrics, and machine learning to
@@ -24,7 +24,7 @@ items:
 
  - icon        : ion-ios-location-outline
    image       : images/card-banners/geography-of-development.jpg
-   imageAlt    : Satellite map with nighttime lights and inequality overlays summarizing the geography of development.
+   imageAlt    : Geospatial development visualization with subnational tiles, wealth gradients, and health data traces.
    title       : The Geography of Development
    description : >
       Harness Earth observation data to map subnational wealth and health globally. This
@@ -33,7 +33,7 @@ items:
 
  - icon        : ion-ios-analytics-outline
    image       : images/card-banners/regional-growth-inequality.jpg
-   imageAlt    : Regional satellite map with convergence curves and spillover overlays summarizing growth and inequality.
+   imageAlt    : Regional growth visualization with convergence paths, inequality gradients, and spillover flows.
    title       : Regional Growth and Inequality
    description : >
       Apply econometrics and machine learning to analyze regional income convergence,

@@ -574,9 +574,10 @@ select:focus,
 }
 
 /* ------------------------- Research areas (#research-areas) + methods (#feature)
-   Both render the shared .info-grid / .info-card system: icon-top vertical cards,
-   equal height (grid rows stretch), a per-card accent that cycles cyan→amber→
-   violet→emerald, and the same shell/lift language as the Activities cards. */
+   Both render the shared .info-grid / .info-card system: image-led cards with
+   an icon/title row, equal height (grid rows stretch), a per-card accent that
+   cycles cyan→amber→violet→emerald, and the same shell/lift language as the
+   Activities cards. */
 #feature { padding: var(--section-y) 0; background: var(--surface); }
 /* Research Areas gets a tinted wash + a hairline seam so it reads as a distinct band
    from the visually-identical Research Methods grid that follows it. */
@@ -608,7 +609,7 @@ select:focus,
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: .85rem;
+  gap: 1rem;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -630,40 +631,39 @@ select:focus,
   box-shadow: var(--shadow-md), var(--shadow-glow);
   border-color: transparent;
 }
-.info-visual {
-  display: flex;
-  align-items: stretch;
-  gap: var(--space-3);
-  width: 100%;
-}
-.info-icon {
-  flex: 0 0 68px;
-  height: 68px;
-  width: 68px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius-lg);
-  font-size: 32px;
-  color: #fff;
-  background: linear-gradient(135deg, var(--navy), var(--accent));
-  box-shadow: 0 10px 24px rgba(15, 24, 54, .18);
-}
 .info-banner {
-  flex: 1 1 auto;
-  min-width: 0;
-  height: 68px;
-  border-radius: var(--radius-lg);
+  height: clamp(136px, 10vw, 160px);
+  margin: 0 -1.6rem .1rem;
   overflow: hidden;
   background: var(--navy);
-  border: 1px solid rgba(15, 24, 54, .08);
-  box-shadow: 0 10px 24px rgba(15, 24, 54, .12);
+  border-top: 1px solid rgba(15, 24, 54, .08);
+  border-bottom: 1px solid rgba(15, 24, 54, .08);
+  box-shadow: 0 12px 28px rgba(15, 24, 54, .12);
 }
 .info-banner img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.info-heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+}
+.info-icon {
+  flex: 0 0 58px;
+  height: 58px;
+  width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  font-size: 28px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--navy), var(--accent));
+  box-shadow: 0 10px 24px rgba(15, 24, 54, .18);
 }
 .info-title {
   font-family: var(--font-display);
@@ -719,12 +719,12 @@ select:focus,
 }
 @media (max-width: 400px) {
   .info-icon {
-    flex-basis: 60px;
-    width: 60px;
-    height: 60px;
-    font-size: 28px;
+    flex-basis: 52px;
+    width: 52px;
+    height: 52px;
+    font-size: 25px;
   }
-  .info-banner { height: 60px; }
+  .info-banner { height: 128px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .info-card, .info-title { transition: none; }

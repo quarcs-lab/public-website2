@@ -16,25 +16,25 @@
         <div class="info-grid">
             {{ range $index, $item := $data.items }}
             <article class="info-card wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ mul $index 100 }}ms">
-                <div class="info-visual">
-                    <div class="info-icon">{{ with $item.icon }}<i class="{{ . }}"></i>{{ end }}</div>
-                    {{ with $item.image }}
-                    {{ $src := resources.Get . }}
-                    <div class="info-banner">
-                        {{ if $src }}
-                        {{ $x1 := $src.Fill "360x120 Center webp" }}
-                        {{ $x2 := $src.Fill "720x240 Center webp" }}
-                        <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x"
-                             alt="{{ $item.imageAlt | default (printf "%s visual summary" $item.title) }}"
-                             width="360" height="120" loading="lazy" decoding="async">
-                        {{ else }}
-                        <img src="{{ . | absURL }}" alt="{{ $item.imageAlt | default (printf "%s visual summary" $item.title) }}"
-                             width="360" height="120" loading="lazy" decoding="async">
-                        {{ end }}
-                    </div>
+                {{ with $item.image }}
+                {{ $src := resources.Get . }}
+                <div class="info-banner">
+                    {{ if $src }}
+                    {{ $x1 := $src.Fill "720x260 Center webp" }}
+                    {{ $x2 := $src.Fill "1440x520 Center webp" }}
+                    <img src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x"
+                         alt="{{ $item.imageAlt | default (printf "%s visual summary" $item.title) }}"
+                         width="720" height="260" loading="lazy" decoding="async">
+                    {{ else }}
+                    <img src="{{ . | absURL }}" alt="{{ $item.imageAlt | default (printf "%s visual summary" $item.title) }}"
+                         width="720" height="260" loading="lazy" decoding="async">
                     {{ end }}
                 </div>
-                {{ with $item.title }}<h3 class="info-title">{{ . }}</h3>{{ end }}
+                {{ end }}
+                <div class="info-heading">
+                    <div class="info-icon">{{ with $item.icon }}<i class="{{ . }}"></i>{{ end }}</div>
+                    {{ with $item.title }}<h3 class="info-title">{{ . }}</h3>{{ end }}
+                </div>
                 {{ with $item.description }}<p class="info-desc">{{ . }}</p>{{ end }}
             </article>
             {{ end }}

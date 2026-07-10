@@ -16,7 +16,7 @@ item    :
 
  - icon  : ion-ios-analytics-outline
    image : images/card-banners/spatial-econometrics.jpg
-   imageAlt : Satellite map with cluster and dependence overlays summarizing spatial econometrics.
+   imageAlt : Spatial econometrics visualization with weights matrix, neighbor links, clusters, and time waves.
    title : Spatial Econometrics
    description : >
       Exploratory spatial and space-time analysis of dependence, clustering, and regional

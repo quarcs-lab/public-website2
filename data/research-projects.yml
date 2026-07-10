@@ -24,7 +24,7 @@ items:
 
  - icon        : ion-ios-location-outline
    image       : images/card-banners/geography-of-development.jpg
-   imageAlt    : Geospatial development visualization with subnational tiles, wealth gradients, and health data traces.
+   imageAlt    : Geospatial development visualization highlighting warm hot spots and cool cold spots across subnational regions.
    title       : The Geography of Development
    description : >
       Harness Earth observation data to map subnational wealth and health globally. This
@@ -33,7 +33,7 @@ items:
 
  - icon        : ion-ios-analytics-outline
    image       : images/card-banners/regional-growth-inequality.jpg
-   imageAlt    : Regional growth visualization with convergence paths, inequality gradients, and spillover flows.
+   imageAlt    : Regional inequality visualization showing two territory clusters with a widening development gap.
    title       : Regional Growth and Inequality
    description : >
       Apply econometrics and machine learning to analyze regional income convergence,
@@ -51,7 +51,7 @@ items:
 
  - icon        : ion-ios-bolt-outline
    image       : images/card-banners/spatial-energy-economics.jpg
-   imageAlt    : Nighttime satellite map with grid and renewable energy overlays summarizing spatial energy economics.
+   imageAlt    : Spatial energy economics visualization with energy-source icons, grid lines, and uneven electricity access.
    title       : Spatial Energy Economics
    description : >
       Quantify the spatial disparities of energy poverty and electricity access while

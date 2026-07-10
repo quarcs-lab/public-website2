@@ -41,7 +41,7 @@ home = "Home"
 logo = "images/logo-white.svg"
 dateFormat = "6 January 2006"
 # Meta data
-description = "The QuaRCS Network: interdisciplinary science and innovation for economic, social, and environmental sustainability — using spatial data science, machine learning, remote sensing, and economics."
+description = "The QuaRCS Network: interdisciplinary science and innovation for economic, social, and environmental sustainability — using spatial data science, machine learning, and development economics."
 author = "QuaRCS-lab Network"
 # Default social-share/Open Graph image (per-page `image:` overrides this in head.html)
 ogImage = "images/slider7-hires.jpg"
@@ -55,7 +55,7 @@ contactFormAction = "#" # contact form works with https://formspree.io
 [params.about]
 enable  = true
 title   = "ABOUT US"
-content = "The QuaRCS Network is an international, interdisciplinary research network in Quantitative Regional and Computational Science. We combine development economics, spatial data science, machine learning, and satellite remote sensing. With these tools, we work to understand and inform sustainable development across subnational regions and countries. Our focus spans its economic, social, and environmental dimensions. <br> <br> The QuaRCS Network is part of the UN Sustainable Development Solutions Network (SDSN). Together, we mobilize scientific knowledge and innovation to promote sustainable development worldwide."
+content = "The QuaRCS Network is an international and interdisciplinary research network in Quantitative Regional and Computational Science. We integrate insights from spatial data science, machine learning, and development economics to understand and inform the process of sustainable development across subnational regions and countries. Our focus spans the economic, social, and environmental dimensions of sustainable development. <br> <br> The QuaRCS Network is part of the UN Sustainable Development Solutions Network (SDSN). Together, we mobilize scientific knowledge and innovation to promote sustainable development worldwide."
 image   = "images/about/logo-candidates/quarcs-logo-candidate-03-variation-01.png"
 
 
